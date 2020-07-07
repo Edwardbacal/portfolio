@@ -1,0 +1,93 @@
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  background-color: rgba(4, 4, 37, 0.6);
+  min-height: 100vh;
+}
+
+.landing {
+  min-height: 100vh;
+}
+
+.landing img {
+  width: 150px;
+  min-width: 150px;
+  opacity: 80%;
+  margin-right: 4%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 12%;
+}
+
+ul {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// ABOUT ~~~~~~~~~~~~~~~~~~~~~~~
+
+.about {
+  border-top: 1px solid $accent; 
+  min-height: 100vh;
+  // background-image: linear-gradient(120deg, rgba(18, 31, 26, 0.6) 20%, rgba(5, 1, 35, 0.7) 90%, rgba(44, 6, 36, 0.44));
+  background-color: rgba(3, 25, 27, 0.6);
+  padding: 4% 0;
+}
+
+.about img {
+  width: 30%;
+  border: 2px solid $accent;
+  float: left;
+  margin: 13px 3% 3% 0;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+// WEB ~~~~~~~~~~~~~~~~~~~~~~~
+
+.web {
+  border-top: 1px solid $accent; 
+  min-height: 100vh;
+  // background-image: linear-gradient(120deg, rgba(18, 31, 26, 0.6) 20%, rgba(5, 1, 35, 0.7) 90%, rgba(44, 6, 36, 0.44));
+  background-color: rgba(27, 3, 3, 0.6);
+  padding: 4% 0;
+}
+
+.icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 2.5rem;
+  }
+  img {
+  height: 2.3rem;
+  }
+}
+
+.boxContainer{
+  display: flex;
+  justify-content: space-between;
+  min-height: 55vh;
+  .box {
+    width: 24%;
+    margin-top: 20px;
+    border: 2px solid $accent;
+    min-height: 100%;
+  }
+}
+
+.desIll {
+    background-color: rgba(27, 25, 3, 0.6);
+    height: 100vh;
+    padding: 4% 0;
+}
