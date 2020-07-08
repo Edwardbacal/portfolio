@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+}
+
 .index {
   background-image: url(./assets/bg62midHi.jpg);
   background-size: cover;
@@ -37,12 +41,17 @@ html {
   padding-right: 1%;
 }
 
+section {
+  margin-bottom: 3vh;
+}
+
 .italic {
   font-style: italic;
 }
 
 .orange {
   color: rgb(250, 133, 0);
+  font-weight: 400;
 }
 
 .orangeTwo {
@@ -65,6 +74,7 @@ h5,
 a,
 nav,
 li,
+.headBand span,
 form input,
 .dash {
   font-family: 'Comfortaa', helvetica, arial;
@@ -74,10 +84,31 @@ form input,
   text-decoration: none;
 }
 
+span {
+  text-transform: none;
+}
+
 h3 {
   font-size: 5rem;
   text-align: justify;
 }
+
+.headBand,
+.filler {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 30px 0;
+ 
+}
+
+.filler {
+  color: rgba(255, 0, 149);
+  transition: 3s;
+  opacity: .3;
+}
+
 
 h4 {
   font-size: 3.5rem;
@@ -92,17 +123,13 @@ button,
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
-}
-
-section {
-  padding-bottom: 20vh;
+  color: #2D26C5;
 }
 
 .margin {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   word-break: break-all;
   right: 0px;
   top: 0px;
@@ -132,16 +159,9 @@ section {
   background-color: transparent;
 }
 
-.margin li:last-child {
-  margin-bottom: 40px;
-}
-
 .margin li:hover{
   opacity: 80%;
 }
-
-
-
 
 /* Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -171,8 +191,9 @@ h2,
 .landing {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 50px;
   flex-wrap: wrap;
+  margin-bottom: 7vh;
 }
 
 .landingLeftColumn {
@@ -276,13 +297,8 @@ ul .dash {
 
 /* About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.about
-
 .aboutContainer {
-  padding-top: 20px;
-  margin-top: 40px;
   display: flex;
-  justify-content: space-between;  
   flex-wrap: wrap-reverse;
 }
 
@@ -297,6 +313,27 @@ ul .dash {
   width: 100%;
   box-shadow: -3px 3px 2px #fff;
   border-radius: 5px;
+  min-height: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+.dashes {
+  width: 60%;
+  
+}
+
+.about img {
+  border-radius: 50%;
+  border: 2px solid #2D26C5;
+  padding: 3px;
+  width: 280px;
+  height: 280px;
+  margin: auto;
+}
+
+.embrace {
+  margin-bottom: 0;
 }
 
 p, 
@@ -304,9 +341,9 @@ p,
 .resP,
 .cv {
   background-color: rgba(255, 255, 255, 0.774);
-  border-radius: 7px;
-  padding: 23px 25px 21px 25px;
-  margin: 15px 0;
+  border-radius: 5px;
+  padding: 17px 25px 25px 25px;
+  margin: 8px 0;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -320,15 +357,15 @@ p,
 
 .res {
   background-color: rgba(255, 255, 255, 0.774);
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 5px 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .res i {
-  color: #fa4d18;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0 5px;
   transition: .05s ease-in;
 }
@@ -351,33 +388,12 @@ p,
   padding: 8px 15px;
 }
 
-.aboutPic {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  min-width: 300px;
-  padding: 5px 4% 0 0;
-  
-}
-
-.aboutPic h3 {
-  padding: 25px 0 80px 0;
-  text-align: center;
-}
-
-.aboutPic img {
-  width: 100%;
-  border-radius: 50%;
-  border: 7px solid #2D26C5;
-}
-
 
 
 /*  Skills ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .skillz,
 .wp {
-  margin-top: 25px;
   background-color: #251dc4dc;
   border-radius: 5px;
 }
@@ -390,6 +406,7 @@ p,
 i {
   font-size: 5rem;
   color: #fff;
+  transition: .15s;
 }
 
 .item {
@@ -422,7 +439,6 @@ i {
 /* Web Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .wp { 
-  height: 710px;
   margin: 1px 0;
 }
 
@@ -437,44 +453,53 @@ i {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  height: 610px;
   width: 100%;
+  min-height: 80vh;
   margin: 0 auto;
   position: relative;
   border-bottom: 2px solid #2D26C5;
+  background-image: url(./assets/digIll/hiWorld.png);
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position-x: 60%;
+  background-position-y: 50%;
 }
 
-
-
-.projectModal i {
-  color: #2D26C5;
+.projectModal li  i {
+  font-size: 2rem;
+  padding: 10px 10px 10px 40%;
 }
 
-.lr {
-  display: flex; 
-  width: 94%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 3%;
+.modalLayout {
+  display: flex;
 }
 
+.hiWorld {
+  width: 80%;
+  padding: 160px 130px 100px 70px;
+}
+
+.projectModal ul {
+  text-align: left;
+  padding: 10px;
+  width: 150px;
+}
+
+.projectModal li,
+.projectModal span {
+  font-size: 1.6rem;
+}
 
 
 /* Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.graphics {
+.expandCollapse {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 300px;
   margin: 0 auto;
-}
-
-.graphics h3 {
-  color: #2D26C5;
-  padding: 25px 0;
 }
 
 .designIll {
@@ -493,7 +518,7 @@ i {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
   margin-top: 30px;
-  border-radius: 7px;
+  border-radius: 5px;
   width: 49.5%;
 }
 
@@ -501,11 +526,13 @@ h5 {
   font-size: 2rem;
   color: #2D26C5;
   padding-left: 25px;
+  transition: .15s;
+  line-height: 1.1;
 }
 
 .click i,
-.graphics button,
-.graphics i {
+.expandCollapse button,
+.expandCollapse i {
   font-size: 1.8rem;
   color: #2D26C5;
   text-transform: none;
@@ -513,8 +540,8 @@ h5 {
 
 .box {
   border-bottom: 3px dotted orange;
-     margin: 0px 25px 0px 25px;
-    padding: 50px 0 30px 0;
+  margin: 0px 25px 0px 25px;
+  padding: 40px 0 30px 0;
 }
 
 .box p {
@@ -525,7 +552,7 @@ h5 {
 }
 
 .box img {
-  width: 48%;
+  width: 49.5%;
   border: 1px dotted #2e26c550;
   border-radius: 2px;
   margin: 2% 0;
@@ -560,6 +587,10 @@ button {
   margin-right: 5px;
 }
 
+button i:hover {
+  color: #fa4d18;
+}
+
 
 /* jQuery things */
 
@@ -583,12 +614,12 @@ button {
   position: absolute;
   top: 0;
   right: 10px;
-  transition: ease-out .8s;
+  transition: ease-out .3s;
 }
 
 .mysteryLink i:hover{
-  color: rgb(15, 216, 230);
-  transform: rotate(360deg);
+  color: rgb(141, 7, 230);
+  transform: rotate(180deg);
 }
 
 .size {

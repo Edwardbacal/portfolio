@@ -34,8 +34,9 @@ $(window).scroll(function () {
   if (wS > hH) {
     $(".sideBarNav").fadeIn();
   } else {
-      $(".sideNav").fadeOut();
+      $(".sideBarNav").fadeOut();
     }
 });
+
 
 
