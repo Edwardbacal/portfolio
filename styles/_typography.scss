@@ -1,116 +1,363 @@
-$primaryColour: rgb(250, 250, 248);
-$accent: rgb(230, 196, 7);
-$accent2: #ce3333;
-$accent3: #df7758;
-$accent4: #e79830;
-$accent5: rgb(89, 206, 74);
+$primaryColour: #fa4d18;
+$lightPrimary: rgb(250, 133, 0);
+$secondaryColour: #251dc4dc;
+$highlightColour: rgb(248, 8, 140);
 
-@mixin bodyText ($fontSize) {
-    font-family: 'Major Mono Display', Helvetica;
-    font-size: $fontSize;
-    text-decoration: none;
-    // text-align: justify;
-    color: $primaryColour;
-    line-height: 2;
+.orange {
+  color: $lightPrimary;
+  font-weight: 400;
 }
 
-.accent {
-  color: $accent;
-}
-
-.accent2 {
-  color: $accent2;
-}
-
-.accent3 {
-  color: $accent3;
-}
-
-.accent4 {
-  color: $accent4;
-}
-
-.accent5 {
-  color: $accent5;
-  text-transform: lowercase;
-}
-
-.u {
-  text-decoration: underline;
-  font-size: 40px;
-  transition: .05s ease-in;
-}
-
-.u:hover {
-  text-transform: uppercase;
-}
-
-.small {
-  font-size: 1rem;
+.orangeTwo {
   color: $primaryColour;
 }
 
-h1 {
-  @include bodyText (40px);
-  max-width: 750px;
-    span {
-      font-size: 54px;
-      padding-bottom: 25px;
-  }
+.blue {
+  color: $secondaryColour;
 }
 
-h2 {
-  @include bodyText (2.5rem);
-  color: $accent;
+.white {
+  color: #fff;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// Global Styles
+
+@mixin headingText ($fontSize, $colour) {
+    font-family: 'Comfortaa', Helvetica;
+    font-size: $fontSize;
+    color: $colour;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+// @mixin bodyText ($fontSize, $colour) {
+//     font-family: 'Quicksand', Helvetica;
+//     font-size: $fontSize;
+//     color: $colour;
+//     text-decoration: none;
+//     line-height: 1.5;
+//     text-align: justify;
+//     font-weight: 500;
+//     text-transform: none;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+nav,
+li,
+.headBand span,
+.projectModal button,
+.dash {
+  @include headingText(3rem, $secondaryColour)
+  font-family: 'Comfortaa', helvetica, arial;
+  text-transform: uppercase;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+span {
+  text-transform: none;
 }
 
 h3 {
-  @include bodyText (1.7rem);
-  color: $accent;
+  font-size: 5rem;
+  text-align: justify;
 }
 
+.headBand,
+.filler {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0 30px 0;
+ 
+}
+
+.filler {
+  color: $highlightColour;
+  transition: 3s;
+  opacity: .4;
+}
+
+
 h4 {
-  @include bodyText (1.5rem);
-  color: $accent;
-  letter-spacing: -1px;
+  font-size: 3.5rem;
+  padding: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+h5 {
+  font-size: 2rem;
+  color: $secondaryColour;
+  padding-left: 25px;
+  transition: .15s;
+  line-height: 1.1;
+}
+
+p,
+button,
+.itemName {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  text-transform: none;
+  color: $secondaryColour;
+}
+
+.itemName {
+  color: #fff;
+}
+
+.margin li,
+.navDash {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  width: -1px;
+  color: #fa4d18;
+  text-align: center;
+  position: relative;
+  right: -12px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 8px;
+  opacity: 50%;
+  transition: .1s ease-in;
+}
+
+.margin li:hover{
+  opacity: 1;
+}
+
+.navDash {
+  background-color: transparent;
+}
+
+
+// Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+h1 {
+  font-size: 6.5rem;
+  padding-bottom: 50px;
+  transition: all 5s ease-in;
+  text-align: center;
   line-height: 1.4;
-  padding: 15px;
+    &:hover {
+      color: $highlightColour;
+    }
+}
+
+h2,
+.landingRightColumn span {
+  list-style: none;
+  font-size: 3.3rem;
+  padding-bottom: 3px;
+  line-height: 1.3;
+  transition: all .1s ease-out;
+}
+
+ul {
+  text-align: right;
+  padding: 40px 40px 0 0;
+  width: 100%;
+}
+
+li, 
+ul .dash {
+  font-size: 2.5rem;
+  color: $primaryColour;
+  padding: 5px;
+  line-height: 1.1;
+  transition: .2s;
+}
+
+nav .dash {
+  padding: 2px 5px;
+}
+
+.link:hover,
+.link:focus {
+  color: $secondaryColour;
+  background-color: #fff;
+}
+
+.mysteryLink i {
+  color: rgb(230, 7, 182);
+  font-size: 2rem;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transition: ease-out .3s;
+}
+
+.mysteryLink i:hover{
+  color: rgb(141, 7, 230);
+  transform: rotate(180deg);
+}
+
+
+// About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+p, 
+.res,
+.resP,
+.cv {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 17px 25px 25px 25px;
+  margin: 8px 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: -2px 1px 1px #0015d375;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.res {
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.res i {
+  font-size: 2rem;
+  padding: 6px 7px 6px 5px;
+  border-radius: 3px;
+  transition: .05s ease-in;
+    &:hover {
+    color: #fff;
+    background-color: $secondaryColour;
+  }
+}
+
+.clearP,
+.cv {
+  font-size: 2.1rem;
+  padding: 0 15px 0 0;
+  text-transform: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.cv {
+  font-size: 1.4rem;
+  padding: 8px 15px;
+}
+
+
+// Web Dev ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+i {
+  font-size: 5rem;
+  color: #fff;
+  transition: .15s;
+}
+
+.wp h3 {
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.projectModal {
+  h5 {
+    font-size: 3rem;
+    padding: 20px 0;
+    color: $primaryColour;
+  }
+    span,
+    button {
+      font-size: 1.6rem;
+      text-align: left;
+      color: $primaryColour;
+      padding: 15px;
+
+  }
+}
+
+.projectModal button {
+  padding: 0;
+  text-align: left;
+  color: $primaryColour;
+  padding: 10px;
+    &:hover {
+      color: #fff;
+      background-color: $secondaryColour;
+      border-radius: 2px;
+    }
+}
+
+.projectTitle i {
+  font-size: 3rem;
+  color: $primaryColour;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.projectTitle i:last-child {
+  font-size: 3rem;
+  color: $secondaryColour;
+  margin-left: 30px;
+  &:hover {
+    color: #fff;
+    background-color: $secondaryColour;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  float: left;
+  transition: .2s;
+  padding: 1px 0 0px 0;
+  margin-right: 5px;
+}
+
+button i:hover {
+  color: $primaryColour;
+}
+
+.box a {
+  font-size: 1.5rem;
+  color: $primaryColour;
+  text-transform: none;
+}
+
+
+// Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+
+
+.designIll h3 {
+  padding: 35px 25px 0 25px;
   text-align: center;
 }
 
 
-p {
-  @include bodyText (35px);
-  // text-transform: lowercase;
+.click i,
+.expandCollapse button,
+.expandCollapse i {
+  font-size: 1.8rem;
+  color: $secondaryColour;
+  text-transform: none;
 }
 
-li {
-  @include bodyText (25px);
-  list-style: none;
-  color: $accent;
-}
 
-li:hover {
-  text-transform: uppercase;
-}
 
-.about p {
-  @include bodyText(17px);
-  padding-bottom: 17px;
-  text-align: justify;
-}
 
-.resU {
-  text-decoration: underline;
-  font-size: 25px;
-  transition: .05s ease-in;
-}
-
-.resU:hover {
-  text-transform: uppercase;
-}
-
-.icons li,
-li i {
-  color: $primaryColour;
-}

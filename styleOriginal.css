@@ -76,6 +76,7 @@ nav,
 li,
 .headBand span,
 form input,
+.projectModal button,
 .dash {
   font-family: 'Comfortaa', helvetica, arial;
   text-transform: uppercase;
@@ -366,7 +367,7 @@ p,
 
 .res i {
   font-size: 2rem;
-  padding: 0 5px;
+  padding: 6px 5px;
   transition: .05s ease-in;
 }
 
@@ -389,18 +390,18 @@ p,
 }
 
 
+footer {
+  margin-top: 8vh;
+}
+
+
 
 /*  Skills ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.skillz,
+.blueBox,
 .wp {
   background-color: #251dc4dc;
   border-radius: 5px;
-}
-
-.skillz h3 {
-  color: #fff;
-  padding: 25px 0 0 25px;
 }
 
 i {
@@ -449,29 +450,23 @@ i {
 }
 
 .projectModal {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #fff;
   width: 100%;
   min-height: 80vh;
   margin: 0 auto;
-  position: relative;
   border-bottom: 2px solid #2D26C5;
   background-image: url(./assets/digIll/hiWorld.png);
   background-repeat: no-repeat;
   background-size: 55%;
   background-position-x: 60%;
   background-position-y: 50%;
+  position: relative;
 }
 
 .projectModal li  i {
   font-size: 2rem;
   padding: 10px 10px 10px 40%;
-}
-
-.modalLayout {
-  display: flex;
+  text-align: left;
 }
 
 .hiWorld {
@@ -483,13 +478,36 @@ i {
   text-align: left;
   padding: 10px;
   width: 150px;
+  position: absolute;
 }
 
 .projectModal li,
 .projectModal span {
   font-size: 1.6rem;
+  text-align: left;
 }
 
+.projectModal button {
+  padding: 0;
+  text-align: left;
+  color: #fa4d18;
+}
+
+.bulldogBook {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding-left: 20%;
+  min-height: 80vh;
+  text-align: right;
+  
+  /* display: none; */
+}
+
+.projectModal h5 {
+  font-size: 3rem;
+  padding: 20px;
+  color: #fa4d18;
+}
 
 /* Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -592,7 +610,7 @@ button i:hover {
 }
 
 
-/* jQuery things */
+/* jQuery properties */
 
 .toggle {
   display: none;
@@ -624,4 +642,15 @@ button i:hover {
 
 .size {
   width: 100%;
+}
+
+/* End of Cascade Properties */
+
+.clear {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  text-transform: none;
+  text-decoration: none;
+  box-shadow: none;
 }

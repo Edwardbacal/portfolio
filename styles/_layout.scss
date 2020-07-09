@@ -1,93 +1,333 @@
+$backgroundColour: rgba(255, 255, 255, 0.75);
+$primaryColour: #fa4d18;
+$lightPrimary: rgb(250, 133, 0);
+$secondaryColour: #251dc4dc;
+$highlightColour: #db0e86dc;
+
+
+// Global Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .wrapper {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-main {
-  background-color: rgba(4, 4, 37, 0.6);
-  min-height: 100vh;
+.wrapperNav {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 1%;
 }
+
+section {
+  margin-bottom: 3vh;
+}
+
+a {
+  padding: 0;
+}
+
+// Sidebar Nav ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.margin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+  right: 0px;
+  top: 0px;
+  width: 25px;
+  height: 100vh;
+  position: fixed;
+  position: -webkit-sticky;
+}
+
+
+
+// Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .landing {
-  min-height: 100vh;
-}
-
-.landing img {
-  width: 150px;
-  min-width: 150px;
-  opacity: 80%;
-  margin-right: 4%;
-}
-
-header {
   display: flex;
-  align-items: center;
-  padding-top: 12%;
-}
-
-ul {
+  justify-content: center;
   padding-top: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 7vh;
+}
+
+.landingLeftColumn {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+  margin-right: 1%;
+  width: 50%;
+  margin-right: 3%;
+}
+
+.landingRightColumn {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 10px;
+    span {
+      display: block;
+    }
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  max-width: 240px;
   flex-wrap: wrap;
 }
 
-// ABOUT ~~~~~~~~~~~~~~~~~~~~~~~
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 
-.about {
-  border-top: 1px solid $accent; 
-  min-height: 100vh;
-  // background-image: linear-gradient(120deg, rgba(18, 31, 26, 0.6) 20%, rgba(5, 1, 35, 0.7) 90%, rgba(44, 6, 36, 0.44));
-  background-color: rgba(3, 25, 27, 0.6);
-  padding: 4% 0;
+.bio {
+  width: 60%;
+}
+
+.myFace {
+  width: 485px;
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
+
+// About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hi {
+  background-color: $secondaryColour;
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+.dashes {
+  width: 60%;
 }
 
 .about img {
-  width: 30%;
-  border: 2px solid $accent;
-  float: left;
-  margin: 13px 3% 3% 0;
-  padding: 5px;
-  border-radius: 1px;
+  border-radius: 50%;
+  border: 2px solid $secondaryColour;
+  padding: 3px;
+  width: 280px;
+  height: 280px;
+  margin: auto;
 }
 
-// WEB ~~~~~~~~~~~~~~~~~~~~~~~
+.embrace {
+  margin-bottom: 0;
+}
 
-.web {
-  border-top: 1px solid $accent; 
-  min-height: 100vh;
-  // background-image: linear-gradient(120deg, rgba(18, 31, 26, 0.6) 20%, rgba(5, 1, 35, 0.7) 90%, rgba(44, 6, 36, 0.44));
-  background-color: rgba(27, 3, 3, 0.6);
-  padding: 4% 0;
+
+
+
+
+// Web Development ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.blueBox,
+.wp {
+  background-color: $secondaryColour;
+  border-radius: 5px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemName {
+  font-size: 1.3rem;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.pngIcon {
+  height: 50px;
 }
 
 .icons {
-  margin: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  i {
-    font-size: 2.5rem;
-  }
-  img {
-  height: 2.3rem;
-  }
+  flex-wrap: wrap;
+  padding: 0 25px 25px 25px;
 }
 
-.boxContainer{
+
+
+// Web Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.wp { 
+  margin: 1px 0;
+}
+
+.projectModal {
+  background-color: #fff;
+  width: 100%;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding-left: 180px;
+  border-bottom: 2px solid #2D26C5;
+  background-image: url(../assets/digIll/hiWorld.png);
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position-x: 60%;
+  background-position-y: 50%;
+  position: relative;
+    li i {
+      font-size: 2rem;
+      padding: 10px 10px 10px 40%;
+      text-align: left;
+    }
+    ul {
+      text-align: left;
+      padding: 10px;
+      width: 170px;
+      position: absolute;
+      left: 0;
+    }
+}
+
+.hiWorld {
+  width: 80%;
+  padding: 160px 130px 100px 70px;
+}
+
+
+// Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.project {
+  display: flex;
+}
+
+.projectBox {
+  background-color: #fff;
+  padding: 25px 25px 25px 5px;
+  min-height: 80vh;
+  // display: none;
+}
+
+.projectTitle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.screenshots {
+  padding: 5px;
+  margin-right: 25px;
+  border: 1px dotted #2e26c550;
+    img {
+      border-radius: 2px;
+    }
+}
+
+.projectRightColumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+// Graphics ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.expandCollapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.designIll {
   display: flex;
   justify-content: space-between;
-  min-height: 55vh;
-  .box {
-    width: 24%;
-    margin-top: 20px;
-    border: 2px solid $accent;
-    min-height: 100%;
-  }
 }
 
-.desIll {
-    background-color: rgba(27, 25, 3, 0.6);
-    height: 100vh;
-    padding: 4% 0;
+.design,
+.illustration {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 49.5%;
+}
+
+.ill {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.box {
+  border-bottom: 3px dotted orange;
+  margin: 0px 25px 0px 25px;
+  padding: 40px 0 30px 0;
+    p {
+      padding: 0 0;
+      box-shadow: none;
+      background-color: transparent;
+      margin-bottom: -5px;
+    }
+    img {
+      width: 49.5%;
+      border: 1px dotted #2e26c550;
+      border-radius: 2px;
+      margin: 2% 0;
+      padding: 5px;
+      transition: .3s linear;
+    }
+}
+
+div .box:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+.box 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  margin-top: 8vh;
 }
