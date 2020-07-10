@@ -1,19 +1,11 @@
-$primaryColour: #fa4d18;
+$primaryColour: #fa3218;
 $lightPrimary: rgb(250, 133, 0);
-$secondaryColour: #251dc4dc;
+$secondaryColour: #251dc4;
 $highlightColour: rgb(248, 8, 140);
 
 .orange {
   color: $lightPrimary;
   font-weight: 400;
-}
-
-.orangeTwo {
-  color: $primaryColour;
-}
-
-.blue {
-  color: $secondaryColour;
 }
 
 .white {
@@ -57,7 +49,7 @@ li,
 .headBand span,
 .projectModal button,
 .dash {
-  @include headingText(3rem, $secondaryColour)
+  @include headingText(3rem, $secondaryColour);
   font-family: 'Comfortaa', helvetica, arial;
   text-transform: uppercase;
   margin: 0;
@@ -81,8 +73,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0 30px 0;
- 
+  padding: 30px 0;
 }
 
 .filler {
@@ -94,7 +85,7 @@ h3 {
 
 h4 {
   font-size: 3.5rem;
-  padding: 35px;
+  padding: 25px;
   color: #fff;
   text-align: center;
 }
@@ -109,7 +100,8 @@ h5 {
 
 p,
 button,
-.itemName {
+.itemName,
+.normalizeText {
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
@@ -136,7 +128,8 @@ button,
   transition: .1s ease-in;
 }
 
-.margin li:hover{
+.margin li:hover,
+.margin li:focus {
   opacity: 1;
 }
 
@@ -153,9 +146,6 @@ h1 {
   transition: all 5s ease-in;
   text-align: center;
   line-height: 1.4;
-    &:hover {
-      color: $highlightColour;
-    }
 }
 
 h2,
@@ -169,7 +159,7 @@ h2,
 
 ul {
   text-align: right;
-  padding: 40px 40px 0 0;
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -190,6 +180,7 @@ nav .dash {
 .link:focus {
   color: $secondaryColour;
   background-color: #fff;
+  border-radius: 2px;
 }
 
 .mysteryLink i {
@@ -202,7 +193,8 @@ nav .dash {
   transition: ease-out .3s;
 }
 
-.mysteryLink i:hover{
+.mysteryLink i:hover,
+.mysteryLink i:focus {
   color: rgb(141, 7, 230);
   transform: rotate(180deg);
 }
@@ -213,51 +205,65 @@ nav .dash {
 p, 
 .res,
 .resP,
-.cv {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 17px 25px 25px 25px;
-  margin: 8px 0;
+.cv,
+.normalizeText {
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
-  box-shadow: -2px 1px 1px #0015d375;
   font-weight: 500;
   text-transform: none;
 }
 
-.res {
-  background-color: rgba(255, 255, 255, 0.774);
+.pBackground {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 17px 25px 25px 25px;
+  margin: 8px 0;
+  box-shadow: -2px 1px 1px #0015d375;
   border-radius: 5px;
+}
+
+.hi span {
+  color: $lightPrimary;
+}
+
+.pBackground span {
+  color: $primaryColour;
+}
+
+
+.res {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+    p {
+    font-size: 2.1rem;
+    padding-right: 10px;
+    }
+    .cv {
+      font-size: 1.5rem;
+      padding: 0 10px;
+    }
+    i {
+    font-size: 2rem;
+    padding: 6px 7px 5px 5px;
+    margin: 0 2px;
+    border-radius: 3px;
+    transition: .05s ease-in;
+    color: $primaryColour;
+      &:hover,
+      &:focus {
+      color: #fff;
+      background-color: $secondaryColour;
+     }
+    }
 }
 
-
-.res i {
-  font-size: 2rem;
-  padding: 6px 7px 6px 5px;
-  border-radius: 3px;
-  transition: .05s ease-in;
-    &:hover {
-    color: #fff;
-    background-color: $secondaryColour;
-  }
-}
-
-.clearP,
 .cv {
-  font-size: 2.1rem;
   padding: 0 15px 0 0;
   text-transform: none;
   background-color: transparent;
   box-shadow: none;
-}
-
-.cv {
-  font-size: 1.4rem;
-  padding: 8px 15px;
 }
 
 
@@ -278,8 +284,8 @@ i {
 .projectModal {
   h5 {
     font-size: 3rem;
-    padding: 20px 0;
-    color: $primaryColour;
+    padding: 20px 0 20px 5px;
+    color: $secondaryColour;
   }
     span,
     button {
@@ -287,7 +293,11 @@ i {
       text-align: left;
       color: $primaryColour;
       padding: 15px;
-
+  }
+  p {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 7px 0;
   }
 }
 
@@ -296,28 +306,32 @@ i {
   text-align: left;
   color: $primaryColour;
   padding: 10px;
-    &:hover {
+    &:hover,
+    &:focus {
       color: #fff;
       background-color: $secondaryColour;
       border-radius: 2px;
     }
 }
 
-.projectTitle i {
+.projectTitle i,
+.pngIconBox {
   font-size: 3rem;
   color: $primaryColour;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 3px;
 }
 
 .projectTitle i:last-child {
   font-size: 3rem;
   color: $secondaryColour;
-  margin-left: 30px;
-  &:hover {
-    color: #fff;
-    background-color: $secondaryColour;
-  }
+  margin-left: 50px;
+  padding: 10px;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $secondaryColour;
+    }
 }
 
 button {
@@ -325,12 +339,17 @@ button {
   border: none;
   float: left;
   transition: .2s;
-  padding: 1px 0 0px 0;
+  padding: 2.5px 3px 2.3px 3px;
   margin-right: 5px;
 }
 
-button i:hover {
-  color: $primaryColour;
+.arrow:hover,
+.arrow i:hover,
+.arrow:focus,
+.arrow i:focus {
+  color: #fff;
+  background-color: $secondaryColour;
+  border-radius: 2px;
 }
 
 .box a {
@@ -345,8 +364,9 @@ button i:hover {
 
 
 .designIll h3 {
-  padding: 35px 25px 0 25px;
+  padding: 30px 25px;
   text-align: center;
+  color: #fff;
 }
 
 
@@ -358,6 +378,12 @@ button i:hover {
   text-transform: none;
 }
 
+.contact h3,
+.contact span {
+  color: #fff;
+}
 
-
-
+footer p {
+  color: #fff;
+  font-size: 1.5rem;
+}
