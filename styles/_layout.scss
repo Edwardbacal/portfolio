@@ -72,7 +72,7 @@ a {
 .landingLeftColumn {
   @include flex;
   flex-direction: column;
-  min-width: 500px;
+  min-width: 405px;
   width: 50%;
   margin-right: 3%;
 }
@@ -81,6 +81,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 40%;
+  min-width: 345px;
   margin-top: 10px;
     span {
       display: block;
@@ -95,20 +96,13 @@ a {
   max-width: 240px;
 }
 
-
-// About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .aboutContainer {
   display: flex;
   flex-wrap: wrap-reverse;
 }
 
-.bio {
-  width: 60%;
-}
-
 .myFace {
-  width: 485px;
+  max-width: 470px;
   animation: spin 30s linear infinite;
 }
 
@@ -122,6 +116,7 @@ a {
 }
 
 
+
 // About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hi {
@@ -133,6 +128,10 @@ a {
   min-height: 100px;
   padding: 50px;
   text-align: center;
+}
+
+.bio {
+  width: 60%;
 }
 
 .dashes {
@@ -163,9 +162,7 @@ a {
   padding-top: 10px;
 }
 
-.pngIcon {
-  height: 50px;
-}
+
 
 .pngIconBox {
   width: 50px;
@@ -202,18 +199,6 @@ a {
   background-position-x: 60%;
   background-position-y: 50%;
   position: relative;
-    li i {
-      font-size: 2rem;
-      padding: 10px 10px 10px 40%;
-      text-align: left;
-    }
-    ul {
-      text-align: left;
-      padding: 10px;
-      width: 170px;
-      position: absolute;
-      left: 0;
-    }
 }
 
 .hiWorld {
@@ -341,7 +326,13 @@ div .box:last-child {
   @include flex;
   justify-content: space-evenly;
   padding: 40px;
-  margin-top: 30px;
+  // margin-top: 30px;
+}
+
+.contact p {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 footer {

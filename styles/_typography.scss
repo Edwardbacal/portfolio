@@ -143,7 +143,6 @@ button,
 h1 {
   font-size: 6.5rem;
   padding-bottom: 50px;
-  transition: all 5s ease-in;
   text-align: center;
   line-height: 1.4;
 }
@@ -270,9 +269,12 @@ p,
 // Web Dev ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 i {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
-  transition: .15s;
+}
+
+.pngIcon {
+  height: 40px;
 }
 
 .wp h3 {
@@ -299,6 +301,19 @@ i {
     text-align: left;
     padding: 7px 0;
   }
+    li i {
+      font-size: 2rem;
+      padding: 10px 10px 10px 40%;
+      text-align: left;
+      color: $primaryColour;
+    }
+    ul {
+      text-align: left;
+      padding: 10px;
+      width: 170px;
+      position: absolute;
+      left: 0;
+    }
 }
 
 .projectModal button {
@@ -379,7 +394,8 @@ button {
 }
 
 .contact h3,
-.contact span {
+.contact span,
+.contact p {
   color: #fff;
 }
 

@@ -319,7 +319,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 500px;
+  min-width: 405px;
   width: 50%;
   margin-right: 3%;
 }
@@ -333,6 +333,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40%;
+  min-width: 345px;
   margin-top: 10px;
 }
 
@@ -373,12 +374,8 @@ a {
       flex-wrap: wrap-reverse;
 }
 
-.bio {
-  width: 60%;
-}
-
 .myFace {
-  width: 485px;
+  max-width: 470px;
   -webkit-animation: spin 30s linear infinite;
           animation: spin 30s linear infinite;
 }
@@ -414,6 +411,10 @@ a {
   min-height: 100px;
   padding: 50px;
   text-align: center;
+}
+
+.bio {
+  width: 60%;
 }
 
 .dashes {
@@ -453,10 +454,6 @@ a {
   font-size: 1.3rem;
   color: #fff;
   padding-top: 10px;
-}
-
-.pngIcon {
-  height: 50px;
 }
 
 .pngIconBox {
@@ -502,20 +499,6 @@ a {
   background-position-x: 60%;
   background-position-y: 50%;
   position: relative;
-}
-
-.projectModal li i {
-  font-size: 2rem;
-  padding: 10px 10px 10px 40%;
-  text-align: left;
-}
-
-.projectModal ul {
-  text-align: left;
-  padding: 10px;
-  width: 170px;
-  position: absolute;
-  left: 0;
 }
 
 .hiWorld {
@@ -725,7 +708,12 @@ div .box:last-child {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 40px;
-  margin-top: 30px;
+}
+
+.contact p {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 footer {
@@ -863,8 +851,6 @@ button,
 h1 {
   font-size: 6.5rem;
   padding-bottom: 50px;
-  -webkit-transition: all 5s ease-in;
-  transition: all 5s ease-in;
   text-align: center;
   line-height: 1.4;
 }
@@ -1000,10 +986,12 @@ p,
 }
 
 i {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
-  -webkit-transition: .15s;
-  transition: .15s;
+}
+
+.pngIcon {
+  height: 40px;
 }
 
 .wp h3 {
@@ -1030,6 +1018,21 @@ i {
   font-size: 1.6rem;
   text-align: left;
   padding: 7px 0;
+}
+
+.projectModal li i {
+  font-size: 2rem;
+  padding: 10px 10px 10px 40%;
+  text-align: left;
+  color: #fa3218;
+}
+
+.projectModal ul {
+  text-align: left;
+  padding: 10px;
+  width: 170px;
+  position: absolute;
+  left: 0;
 }
 
 .projectModal button {
@@ -1105,13 +1108,42 @@ button {
 }
 
 .contact h3,
-.contact span {
+.contact span,
+.contact p {
   color: #fff;
 }
 
 footer p {
   color: #fff;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1187px) {
+  h1 {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 859px) {
+  .landingRightColumn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+  }
+  .landingRightColumn .roles {
+    width: 40%;
+  }
+  .landingRightColumn ul {
+    padding-top: 60px;
+  }
+  .myface {
+    margin: 30px 0 70px 0;
+  }
 }
 
 /* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
