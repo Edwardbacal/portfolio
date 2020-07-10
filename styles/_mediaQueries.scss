@@ -9,6 +9,12 @@
 
 
 @media(max-width: 859px) {
+
+
+  .landingLeftColumn img {
+    margin: 30px 0 70px 0;
+  }
+
   .landingRightColumn {
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +27,4 @@
     }
   }
 
-  .myface {
-    margin: 30px 0 70px 0;
-  }
 }

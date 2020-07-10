@@ -3,10 +3,7 @@ $lightPrimary: rgb(250, 133, 0);
 $secondaryColour: #251dc4;
 $highlightColour: rgb(248, 8, 140);
 
-.orange {
-  color: $lightPrimary;
-  font-weight: 400;
-}
+
 
 .white {
   color: #fff;
@@ -26,17 +23,6 @@ $highlightColour: rgb(248, 8, 140);
     text-transform: uppercase;
     font-weight: 600;
 }
-
-// @mixin bodyText ($fontSize, $colour) {
-//     font-family: 'Quicksand', Helvetica;
-//     font-size: $fontSize;
-//     color: $colour;
-//     text-decoration: none;
-//     line-height: 1.5;
-//     text-align: justify;
-//     font-weight: 500;
-//     text-transform: none;
-// }
 
 h1,
 h2,
@@ -59,6 +45,12 @@ li,
 
 span {
   text-transform: none;
+}
+
+.hi span,
+.contact span {
+  color: $lightPrimary;
+  font-weight: 400;
 }
 
 h3 {
@@ -394,8 +386,8 @@ button {
 }
 
 .contact h3,
-.contact span,
-.contact p {
+.contact p,
+.contact .headBand span {
   color: #fff;
 }
 

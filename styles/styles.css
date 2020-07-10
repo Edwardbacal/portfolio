@@ -324,6 +324,34 @@ a {
   margin-right: 3%;
 }
 
+.landingLeftColumn img {
+  max-width: 470px;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 .landingRightColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,34 +402,6 @@ a {
       flex-wrap: wrap-reverse;
 }
 
-.myFace {
-  max-width: 470px;
-  -webkit-animation: spin 30s linear infinite;
-          animation: spin 30s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
 .hi {
   background-color: #251dc4dc;
   color: #fff;
@@ -415,6 +415,7 @@ a {
 
 .bio {
   width: 60%;
+  margin-right: 20px;
 }
 
 .dashes {
@@ -722,11 +723,6 @@ footer {
   background-color: #251dc4dc;
 }
 
-.orange {
-  color: #fa8500;
-  font-weight: 400;
-}
-
 .white {
   color: #fff;
 }
@@ -761,6 +757,12 @@ li,
 
 span {
   text-transform: none;
+}
+
+.hi span,
+.contact span {
+  color: #fa8500;
+  font-weight: 400;
 }
 
 h3 {
@@ -1108,8 +1110,8 @@ button {
 }
 
 .contact h3,
-.contact span,
-.contact p {
+.contact p,
+.contact .headBand span {
   color: #fff;
 }
 
@@ -1125,6 +1127,9 @@ footer p {
 }
 
 @media (max-width: 859px) {
+  .landingLeftColumn img {
+    margin: 30px 0 70px 0;
+  }
   .landingRightColumn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1140,9 +1145,6 @@ footer p {
   }
   .landingRightColumn ul {
     padding-top: 60px;
-  }
-  .myface {
-    margin: 30px 0 70px 0;
   }
 }
 

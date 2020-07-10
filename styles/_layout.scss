@@ -75,7 +75,22 @@ a {
   min-width: 405px;
   width: 50%;
   margin-right: 3%;
+    img {
+    max-width: 470px;
+    animation: spin 30s linear infinite;
+  }
 }
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
 
 .landingRightColumn {
   display: flex;
@@ -101,19 +116,6 @@ a {
   flex-wrap: wrap-reverse;
 }
 
-.myFace {
-  max-width: 470px;
-  animation: spin 30s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(-360deg);
-  }
-}
 
 
 
@@ -132,6 +134,7 @@ a {
 
 .bio {
   width: 60%;
+  margin-right: 20px;
 }
 
 .dashes {
