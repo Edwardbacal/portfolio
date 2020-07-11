@@ -12,9 +12,13 @@
 </head>
 <body class="index">
   
-  <div class="mysteryLink">
-    <a href="alternatePage.html"><i class="fas fa-wave-square"></i></a>
+  <div class="hamburger">
+    <i class="fas fa-hamburger"></i>
   </div>
+
+  <!-- <div class="mysteryLink">
+    <a href="alternatePage.html"><i class="fas fa-wave-square"></i></a>
+  </div> -->
 
   <main class="wrapper" id="scroll">
 
@@ -29,10 +33,11 @@
        
         <img src="./assets/Me.png" class="myFace"
           alt="an illustration of Edward Bacal's face, slowly rotating in a circle" />
+          <!-- <button><a href="#roles"><i class="fas fa-chevron-down"></i></a></button> -->
       </div>
   
       <div class="landingRightColumn">
-        <div class="roles">
+        <div class="roles" id="roles">
           <h2>Front-End Development</h2>
           <span class="dash">/</span>
 
@@ -67,7 +72,47 @@
 
 <!-- Side Bar Nav ================================================ -->
 
-  <nav class="sideBarNav">
+<nav class="hamburgerMenu">
+
+  <img src="./assets/Me.png" class="hamburgerFace" alt="an illustration of Edward Bacal's face, slowly rotating in a circle" />
+
+    <div class="hamburger">
+      <i class="fas fa-hamburger"></i>
+    </div>
+  <ul class=>
+    <a href="#home">
+      <li class="ham">Home</li>
+    </a>
+    <span class="dash">/</span>
+
+    <a href="#about">
+      <li class="ham">About</li>
+    </a>
+    <span class="dash">/</span>
+
+    <a href="#web">
+      <li class="ham">Web</li>
+    </a>
+    <span class="dash">/</span>
+
+    <a href="#graphics">
+      <li class="ham">Graphics</li>
+    </a>
+    <span class="dash">/</span>
+
+    <a href="#writing">
+      <li class="ham">Writing</li>
+    </a>
+    <span class="dash">/</span>
+
+    <a href="#contact"></a>
+    <li id="ham">Contact</li>
+  </ul>
+</nav>
+
+
+
+  <!-- <nav class="sideBarNav">
     <ul class="margin">
       <a href="#home"><li class="italic">Home</li></a>
       <span class="navDash">/</span>
@@ -86,7 +131,7 @@
      
       <a href="#contact"></a><li class="italic">Contact</li>
     </ul>
-  </nav>
+  </nav> -->
 
 
 <!-- Filler ================================================ -->
@@ -126,7 +171,7 @@
             <span role="img" aria-label="wave emoji">👋</span> Hi! I'm a Toronto-based <span class>developer</span>, <span class>designer</span>, and <span class>writer</span>.
           </p>
              
-          <p class="pBackground">
+          <p class="pBackground noGhostMarg">
             I embrace a holistic approach to web media by thinking <span class="italic">across</span> <span>code</span>, <span>content</span>, <span>UI</span>, and <span>UX</span>: I'm just as passionate about creating beautiful, user-friendly webpages as I am about developing technical solutions for client-facing content.
           </p>
         </div> <!-- end of bio container -->
@@ -516,7 +561,7 @@
               <h3>Contact</h3><span>△</span><span>▽</span><span></span>
             </div>
 
-            <p>If you're interested in my work I'd love to hear from you. The easiest way to get in touch is to email me at <span class="bub">edwarddbacal[at]gmail[dot]com</span></p>
+            <p>If you're interested in my work I'd love to hear from you. The easiest way to get in touch is to email me at <span>edwardDbacal[at]gmail[dot]com</span></p>
 
             <ul class="contactBox">
               <div class="item">

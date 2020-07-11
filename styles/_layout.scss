@@ -24,11 +24,15 @@ $highlightColour: #db0e86dc;
   width: 88%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-right: 1%;
+  padding-right: 5px;
 }
 
 section {
   margin-bottom: 3vh;
+}
+
+.filler {
+  padding: 15px 0;
 }
 
 .fillerBox {
@@ -47,16 +51,41 @@ a {
 
 // Sidebar Nav ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.margin {
-  @include flex;
-  flex-direction: column;
-  justify-content: start;
-  word-break: break-all;
-  right: 30px;
-  top: 0px;
-  width: 25px;
-  height: 100vh;
+// .margin {
+//   @include flex;
+//   flex-direction: column;
+//   justify-content: start;
+//   word-break: break-all;
+//   right: 30px;
+//   top: 0px;
+//   width: 25px;
+//   height: 100vh;
+//   position: fixed;
+// }
+
+.hamburgerMenu {
   position: fixed;
+  top: 10px;
+  right: -1000px;
+  background: linear-gradient(-30deg, #cfdcf0, #eeecec);
+  border: 1px solid #d0ddf0;
+  padding: 50px;
+  width: calc(100% - 20px);
+  height: calc(100vh - 20px);
+  border-radius: 5px;
+  // display: none;
+  transition: .6s;
+  height: 0%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.hamburgerFace {
+  width: 45%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  animation: spin 30s linear infinite;
 }
 
 
@@ -74,11 +103,14 @@ a {
   flex-direction: column;
   min-width: 405px;
   width: 50%;
-  margin-right: 3%;
+  margin-right: 26px;
     img {
     max-width: 470px;
     animation: spin 30s linear infinite;
   }
+    i {
+      display: none;
+    }
 }
 
 
@@ -192,13 +224,13 @@ a {
 .projectModal {
   background-color: #fff;
   width: 100%;
-  min-height: 80vh;
+  min-height: 370px;
   margin: 0 auto;
   padding-left: 180px;
   border-bottom: 2px solid #2D26C5;
   background-image: url(../assets/digIll/hiWorld.png);
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 400px;
   background-position-x: 60%;
   background-position-y: 50%;
   position: relative;
@@ -219,34 +251,39 @@ a {
 .projectBox {
   background-color: #fff;
   padding: 25px 45px 25px 5px;
-  min-height: 80vh;
   display: none;
 }
 
 .projectTitle {
   @include flex;
+  justify-content: flex-start;
   position: relative;
-    a {
-      position: absolute;
-      top: 10px;
-      right: 0;
-    }
 }
 
+.projectBox a i,
+.projectBox a {
+      position: absolute;
+      top: 21px;
+      right: 20px;
+      font-size: 2.8rem;
+      color: $secondaryColour;
+    }
+
+
 .iconMap {
-  @include flex;
-  justify-content: center;
-  width: 40%;
-  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0 60px 0 25px;
 }
 
 .screenshots {
-  padding: 5px;
   margin-right: 30px;
-  border: 1px dotted #2e26c550;
+  width: 280px;
+  min-width: 230px;
     img {
       border-radius: 2px;
-      height: 100%;
+      border: 1px dotted #2e26c550;
+      padding: 5px;
     }
 }
 
@@ -254,7 +291,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 50%;
+  width: 67%;
 }
 
 
@@ -298,7 +335,7 @@ a {
 }
 
 .box {
-  border-bottom: 3px dotted orange;
+  border-bottom: 3px dotted $primaryColour;
   margin: 0px 25px 0px 25px;
   padding: 40px 0 30px 0;
     p {

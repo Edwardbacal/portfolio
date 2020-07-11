@@ -51,6 +51,7 @@ span {
 .contact span {
   color: $lightPrimary;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -70,7 +71,6 @@ h3 {
 
 .filler {
   color: $highlightColour;
-  transition: 3s;
   opacity: .4;
 }
 
@@ -116,7 +116,7 @@ button,
   background-color: #fff;
   border-radius: 3px;
   padding: 8px;
-  opacity: 50%;
+  opacity: .7;
   transition: .1s ease-in;
 }
 
@@ -174,21 +174,45 @@ nav .dash {
   border-radius: 2px;
 }
 
-.mysteryLink i {
-  color: rgb(230, 7, 182);
+.hamburger,
+.hamburger i {
+  color: $primaryColour;
+  // color: rgb(230, 7, 182);
   font-size: 2rem;
   padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  transition: ease-out .3s;
+  position: fixed;
+  top: 5px;
+  right: 8px;
+  transition: ease-in .1s;
+  border-radius: 3px;
+  display: none;
 }
 
-.mysteryLink i:hover,
-.mysteryLink i:focus {
-  color: rgb(141, 7, 230);
-  transform: rotate(180deg);
+.hamburger :hover,
+.hamburger :focus {
+  color: #fff;
+  background-color: $secondaryColour;
+  // color: rgb(141, 7, 230);
+  // transform: rotate(360deg);
 }
+
+
+
+// .mysteryLink i {
+//   color: rgb(230, 7, 182);
+//   font-size: 2rem;
+//   padding: 10px;
+//   position: absolute;
+//   top: 0;
+//   right: 10px;
+//   transition: ease-out .3s;
+// }
+
+// .mysteryLink i:hover,
+// .mysteryLink i:focus {
+//   color: rgb(141, 7, 230);
+//   transform: rotate(180deg);
+// }
 
 
 // About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -211,6 +235,10 @@ p,
   margin: 8px 0;
   box-shadow: -2px 1px 1px #0015d375;
   border-radius: 5px;
+}
+
+.noGhostMarg {
+  margin-bottom: 0;
 }
 
 .hi span {
@@ -238,7 +266,6 @@ p,
     i {
     font-size: 2rem;
     padding: 6px 7px 5px 5px;
-    margin: 0 2px;
     border-radius: 3px;
     transition: .05s ease-in;
     color: $primaryColour;
@@ -323,23 +350,23 @@ i {
 
 .projectTitle i,
 .pngIconBox {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: $primaryColour;
-  padding: 10px 20px;
+  padding: 10px 10px 20px 10px;
   border-radius: 3px;
 }
 
-.projectTitle i:last-child {
-  font-size: 3rem;
-  color: $secondaryColour;
-  margin-left: 50px;
-  padding: 10px;
-    &:hover,
-    &:focus {
-      color: #fff;
-      background-color: $secondaryColour;
-    }
-}
+// .projectTitle i:last-child {
+//   font-size: 3rem;
+//   color: $secondaryColour;
+//   margin-left: 50px;
+//   padding: 10px;
+//     &:hover,
+//     &:focus {
+//       color: #fff;
+//       background-color: $secondaryColour;
+//     }
+// }
 
 button {
   background: none;

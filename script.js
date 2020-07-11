@@ -1,3 +1,14 @@
+// Hamburger Menu
+
+$(".hamburger").on("click", function () {
+  $(".hamburgerMenu").toggleClass("hamburgerOpen");
+});
+
+$(".ham").on("click", function () {
+  $(".hamburgerMenu").toggleClass("hamburgerOpen");
+});
+
+
 // accordion menu for design/illustration sections
 
 $("#expand").on("click", function () {
@@ -17,19 +28,20 @@ $(".click").on("click", function () {
 
 const portfolio = {
   "ce": `<div class="projectTitle">
-              <h5>CE Art Trace</h5>
-             
-              <div class="iconMap">
-                <i class="fab fa-react"></i>
-                <i class="fab fa-css3-alt"></i>
-               
-                <div class="pngIconBox">
-                  <img src="./assets/apiOrange.png" alt="API">
-                </div>   
-              </div>
+          <h5>CE Art Trace</h5>
+          
+          <div class="iconMap">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-css3-alt"></i>
+            
+            <div class="pngIconBox">
+              <img src="./assets/apiOrange.png" alt="API">
+            </div>   
+          </div>
+        </div>
 
-              <a href=""><i class="fas fa-external-link-alt"></i></a>
-            </div>
+          <a href=""><i class="fas fa-external-link-alt"></i></a>
+
             
             <div class="project">
               <div class="screenshots">

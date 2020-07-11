@@ -4,27 +4,133 @@
     padding-bottom: 30px;
   }
 
+  .hi {
+    padding: 40px;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .res P {
+    font-size: 1.9rem;
+    padding-right: 7px;
+  }
+
+  .res .cv {
+    font-size: 1.4rem;
+    padding: 0 2px 0 6px;
+  }
+}
+
+
+@media(max-width: 862px) {
+
+  .landingLeftColumn {
+    margin: 0 13px;
+    i {
+      // display: block;
+      color: $secondaryColour;
+      margin: 40px 0;
+      padding: 5px 6px 1px 5px;
+      border-radius: 50%;
+      transition: .1s ease-in;
+        &:hover,
+        &:focus {
+          color: #fff;
+          background-color: $secondaryColour;
+        }
+    }
+  }
+
+  .roles {
+    padding: 50px 0 20px 20px;
+  }
+
+  .landingRightColumn ul {
+    display: none;
+  }
+
+  .hamburger,
+  .hamburger i {
+    display: block;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  .landing {
+    margin-bottom: 0;
+  }
+
+  .headBand span {
+    font-size: 2rem;
+  }
+
+  .filler {
+    padding: 20px 0;
+  }
+
+  .bio {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .hi,
+  .res p {
+    // padding: 35px;
+    font-size: 1.8rem;
+  }
+
+  .res {
+    // padding: 0 0 4px 0;
+    line-height: 1;
+  }
+
+  p {
+  font-size: 1.6rem;
+  }
+
+  .planes {
+    width: 70px;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  .projectModal {
+    background-position-x: 75%;
+  }
 }
 
 
 
-@media(max-width: 859px) {
+@media(max-width: 450px) {
 
-
-  .landingLeftColumn img {
-    margin: 30px 0 70px 0;
-  }
-
-  .landingRightColumn {
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-    .roles {
-      width: 40%;
+    h1 {
+      font-size: 5rem;
     }
-    ul {
-      padding-top: 60px;
+    .landingLeftColumn img {
+      width: 50%;
     }
-  }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .res p {
+      font-size: 1.5rem;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .pBackground {
+      padding: 12px 15px 15px 15px;
+      margin: 4px 0;
+    }
+
+
 
 }
