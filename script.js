@@ -2,6 +2,7 @@
 
 $(".hamburger").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
+  $("#burger").replaceWith(`<i class="far fa-times-circle"></i>`);
 });
 
 $(".ham").on("click", function () {

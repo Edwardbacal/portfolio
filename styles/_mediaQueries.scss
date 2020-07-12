@@ -72,6 +72,10 @@
     padding: 20px 0;
   }
 
+  .about img {
+    margin: 15px auto;
+  }
+
   .bio {
     width: 100%;
     margin: 30px 0 0 0;
@@ -100,9 +104,33 @@
     font-size: 3rem;
   }
 
+  // .icons {
+  //   padding: 0 4% 25px 4%;
+  // }
+
+  .vertical {
+    display: flex;
+  }
+
+  .horizontal {
+    display: none;
+  }
+
   .projectModal {
     background-position-x: 75%;
   }
+
+  .designIll {
+    flex-direction: column;
+  }
+
+  .design,
+  .illustration {
+    width: 100%;
+  }
+   
+
+  
 }
 
 

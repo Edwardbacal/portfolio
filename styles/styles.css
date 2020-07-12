@@ -258,18 +258,19 @@ a {
 .hamburgerMenu {
   position: fixed;
   top: 10px;
-  right: -1000px;
+  right: -1500px;
   background: linear-gradient(-30deg, #cfdcf0, #eeecec);
   border: 1px solid #d0ddf0;
   padding: 50px;
   width: calc(100% - 20px);
   height: calc(100vh - 20px);
   border-radius: 5px;
-  -webkit-transition: .6s;
-  transition: .6s;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   height: 0%;
   overflow: hidden;
   z-index: 10;
+  opacity: 0;
 }
 
 .hamburgerFace {
@@ -462,6 +463,20 @@ a {
   padding-top: 10px;
 }
 
+.iconQuarter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 180px;
+}
+
 .pngIconBox {
   width: 50px;
   padding: 10px;
@@ -485,7 +500,11 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 0 25px 25px 25px;
+  padding: 0 50px 25px 50px;
+}
+
+.vertical {
+  display: none;
 }
 
 .wp {
@@ -1170,6 +1189,9 @@ footer p {
   .filler {
     padding: 20px 0;
   }
+  .about img {
+    margin: 15px auto;
+  }
   .bio {
     width: 100%;
     margin: 30px 0 0 0;
@@ -1190,8 +1212,26 @@ footer p {
   h4 {
     font-size: 3rem;
   }
+  .vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .horizontal {
+    display: none;
+  }
   .projectModal {
     background-position-x: 75%;
+  }
+  .designIll {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design,
+  .illustration {
+    width: 100%;
   }
 }
 
@@ -1254,6 +1294,7 @@ img {
   display: block;
   height: 100%;
   right: 10px;
+  opacity: 1;
 }
 
 /* End of Cascade Properties */
