@@ -1,5 +1,6 @@
 @media(max-width: 1187px) {
 
+
   h1 {
     padding-bottom: 30px;
   }
@@ -23,8 +24,32 @@
   }
 }
 
+@media(max-width: 1080px) {
+
+  .icons {
+    padding: 0 50px 25px 50px;
+  }
+
+  .vertical {
+    display: flex;
+  }
+
+  .horizontal {
+    display: none;
+  }
+}
+
+// Tablet
 
 @media(max-width: 862px) {
+
+  .landing {
+  padding-top: 25px;
+  }
+
+  h1 {
+    padding-bottom: 25px;
+  }
 
   .landingLeftColumn {
     margin: 0 13px;
@@ -44,14 +69,14 @@
   }
 
   .roles {
-    padding: 50px 0 20px 20px;
+    padding: 25px 0 20px 20px;
   }
 
   .landingRightColumn ul {
     display: none;
   }
 
-  .hamburger,
+  .steamedHam i,
   .hamburger i {
     display: block;
   }
@@ -70,6 +95,10 @@
 
   .filler {
     padding: 20px 0;
+  }
+
+  .fillerBox {
+    padding: 0 15px;
   }
 
   .about img {
@@ -104,17 +133,6 @@
     font-size: 3rem;
   }
 
-  // .icons {
-  //   padding: 0 4% 25px 4%;
-  // }
-
-  .vertical {
-    display: flex;
-  }
-
-  .horizontal {
-    display: none;
-  }
 
   .projectModal {
     background-position-x: 75%;
@@ -159,6 +177,12 @@
       margin: 4px 0;
     }
 
+    h3 {
+      font-size: 3.5rem;
+    }
 
+    .headBand span {
+    font-size: 1.6rem;
+  }
 
 }

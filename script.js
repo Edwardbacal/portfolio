@@ -2,8 +2,9 @@
 
 $(".hamburger").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
-  $("#burger").replaceWith(`<i class="far fa-times-circle"></i>`);
+  // $("#burger").replaceWith(`<i class="far fa-times-circle"></i>`);
 });
+
 
 $(".ham").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
@@ -38,10 +39,13 @@ const portfolio = {
             <div class="pngIconBox">
               <img src="./assets/apiOrange.png" alt="API">
             </div>   
-          </div>
+          
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+
+          
+            </div>
         </div>
 
-          <a href=""><i class="fas fa-external-link-alt"></i></a>
 
             
             <div class="project">

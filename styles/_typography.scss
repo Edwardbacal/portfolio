@@ -174,28 +174,20 @@ nav .dash {
   border-radius: 2px;
 }
 
-.hamburger,
 .hamburger i {
   color: $primaryColour;
-  // color: rgb(230, 7, 182);
   font-size: 2rem;
   padding: 10px;
   position: fixed;
   top: 5px;
   right: 8px;
-  transition: ease-in .1s;
   border-radius: 3px;
   display: none;
+    &:hover {
+      color: #fff;
+      background-color: $secondaryColour;
+    }
 }
-
-.hamburger :hover,
-.hamburger :focus {
-  color: #fff;
-  background-color: $secondaryColour;
-  // color: rgb(141, 7, 230);
-  // transform: rotate(360deg);
-}
-
 
 
 // .mysteryLink i {
