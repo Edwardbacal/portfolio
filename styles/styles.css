@@ -1163,8 +1163,12 @@ footer p {
   h1 {
     padding-bottom: 25px;
   }
+  h2 {
+    font-size: 3.1rem;
+  }
   .landingLeftColumn {
     margin: 0 13px;
+    min-width: 350px;
   }
   .landingLeftColumn i {
     color: #251dc4;
