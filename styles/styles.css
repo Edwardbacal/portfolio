@@ -238,12 +238,8 @@ section {
   margin-bottom: 3vh;
 }
 
-.filler {
-  padding: 15px 0;
-}
-
 .fillerBox {
-  padding: 15px;
+  padding: 30px 10px;
 }
 
 a {
@@ -261,7 +257,7 @@ a {
   right: -1500px;
   background: linear-gradient(-30deg, #cfdcf0, #eeecec);
   border: 1px solid #d0ddf0;
-  padding: 50px;
+  padding: 25px;
   width: calc(100% - 20px);
   height: calc(100vh - 20px);
   border-radius: 5px;
@@ -805,6 +801,7 @@ h3 {
 .filler {
   color: #f8088c;
   opacity: .4;
+  padding: 40px 0;
 }
 
 h4 {
@@ -863,6 +860,10 @@ button,
   background-color: transparent;
 }
 
+.noGhostMarg {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 6.5rem;
   padding-bottom: 50px;
@@ -896,10 +897,6 @@ ul .dash {
   transition: .2s;
 }
 
-nav .dash {
-  padding: 2px 5px;
-}
-
 .link:hover,
 .link:focus {
   color: #251dc4;
@@ -913,14 +910,9 @@ nav .dash {
   padding: 10px;
   position: fixed;
   top: 5px;
-  right: 8px;
+  right: 5px;
   border-radius: 3px;
   display: none;
-}
-
-.hamburger i:hover {
-  color: #fff;
-  background-color: #251dc4;
 }
 
 p,
@@ -942,10 +934,6 @@ p,
   -webkit-box-shadow: -2px 1px 1px #0015d375;
           box-shadow: -2px 1px 1px #0015d375;
   border-radius: 5px;
-}
-
-.noGhostMarg {
-  margin-bottom: 0;
 }
 
 .hi span {
@@ -1008,6 +996,7 @@ i {
 
 .pngIcon {
   height: 40px;
+  width: 100%;
 }
 
 .wp h3 {
@@ -1188,9 +1177,11 @@ footer p {
   .landingRightColumn ul {
     display: none;
   }
-  .steamedHam i,
   .hamburger i {
     display: block;
+  }
+  li, ul .dash {
+    padding: 15px 5px;
   }
   h3 {
     font-size: 4rem;
@@ -1200,12 +1191,6 @@ footer p {
   }
   .headBand span {
     font-size: 2rem;
-  }
-  .filler {
-    padding: 20px 0;
-  }
-  .fillerBox {
-    padding: 0 15px;
   }
   .about img {
     margin: 15px auto;
@@ -1285,7 +1270,7 @@ img {
 }
 
 .index {
-  background-image: url(../assets/bg62midHi.jpg);
+  background-image: url(../assets/bg62small.jpg);
   background-size: cover;
   background-repeat: repeat-y;
   position: relative;

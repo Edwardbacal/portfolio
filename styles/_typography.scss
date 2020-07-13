@@ -72,6 +72,7 @@ h3 {
 .filler {
   color: $highlightColour;
   opacity: .4;
+  padding: 40px 0;
 }
 
 
@@ -129,6 +130,9 @@ button,
   background-color: transparent;
 }
 
+.noGhostMarg {
+  margin-bottom: 0;
+}
 
 // Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -163,10 +167,6 @@ ul .dash {
   transition: .2s;
 }
 
-nav .dash {
-  padding: 2px 5px;
-}
-
 .link:hover,
 .link:focus {
   color: $secondaryColour;
@@ -180,13 +180,9 @@ nav .dash {
   padding: 10px;
   position: fixed;
   top: 5px;
-  right: 8px;
+  right: 5px;
   border-radius: 3px;
   display: none;
-    &:hover {
-      color: #fff;
-      background-color: $secondaryColour;
-    }
 }
 
 
@@ -229,9 +225,7 @@ p,
   border-radius: 5px;
 }
 
-.noGhostMarg {
-  margin-bottom: 0;
-}
+
 
 .hi span {
   color: $lightPrimary;
@@ -286,6 +280,7 @@ i {
 
 .pngIcon {
   height: 40px;
+  width: 100%
 }
 
 .wp h3 {
@@ -394,7 +389,6 @@ button {
   text-align: center;
   color: #fff;
 }
-
 
 .click i,
 .expandCollapse button,

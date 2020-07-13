@@ -31,12 +31,12 @@ section {
   margin-bottom: 3vh;
 }
 
-.filler {
-  padding: 15px 0;
-}
+// .filler {
+//   padding: 30px 0;
+// }
 
 .fillerBox {
-  padding: 15px;
+  padding: 30px 10px;
 }
 
 a {
@@ -70,7 +70,7 @@ a {
   right: -1500px;
   background: linear-gradient(-30deg, #cfdcf0, #eeecec);
   border: 1px solid #d0ddf0;
-  padding: 50px;
+  padding: 25px;
   width: calc(100% - 20px);
   height: calc(100vh - 20px);
   border-radius: 5px;

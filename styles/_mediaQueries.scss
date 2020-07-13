@@ -54,7 +54,7 @@
   h2{
     font-size: 3.1rem;
   }
-  
+
   .landingLeftColumn {
     margin: 0 13px;
     min-width: 350px;
@@ -81,9 +81,12 @@
     display: none;
   }
 
-  .steamedHam i,
   .hamburger i {
     display: block;
+  }
+
+  li, ul .dash {
+    padding: 15px 5px;
   }
 
   h3 {
@@ -98,13 +101,13 @@
     font-size: 2rem;
   }
 
-  .filler {
-    padding: 20px 0;
-  }
+  // .filler {
+  //   padding: 20px 0;
+  // }
 
-  .fillerBox {
-    padding: 0 15px;
-  }
+  // .fillerBox {
+  //   padding: 0 15px;
+  // }
 
   .about img {
     margin: 15px auto;
