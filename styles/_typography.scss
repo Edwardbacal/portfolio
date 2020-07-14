@@ -51,7 +51,7 @@ span {
 .contact span {
   color: $lightPrimary;
   font-weight: 400;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
 }
 
 h3 {
@@ -87,7 +87,6 @@ h5 {
   font-size: 2rem;
   color: $secondaryColour;
   padding-left: 25px;
-  transition: .15s;
   line-height: 1.1;
 }
 
@@ -105,32 +104,8 @@ button,
   color: #fff;
 }
 
-.margin li,
-.navDash {
-  font-size: 1.2rem;
-  line-height: 1.1;
-  width: -1px;
-  color: #fa4d18;
-  text-align: center;
-  position: relative;
-  right: -12px;
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 8px;
-  opacity: .7;
-  transition: .1s ease-in;
-}
 
-.margin li:hover,
-.margin li:focus {
-  opacity: 1;
-}
-
-.navDash {
-  background-color: transparent;
-}
-
-.noGhostMarg {
+.ghostMargin {
   margin-bottom: 0;
 }
 
@@ -149,7 +124,6 @@ h2,
   font-size: 3.3rem;
   padding-bottom: 3px;
   line-height: 1.3;
-  transition: all .1s ease-out;
 }
 
 ul {
@@ -280,7 +254,7 @@ i {
 
 .pngIcon {
   height: 40px;
-  width: 100%
+  width: 43px;
 }
 
 .wp h3 {

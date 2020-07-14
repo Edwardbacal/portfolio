@@ -75,6 +75,8 @@
 
   .roles {
     padding: 25px 0 20px 20px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .landingRightColumn ul {
@@ -85,7 +87,7 @@
     display: block;
   }
 
-  li, ul .dash {
+  ul .dash {
     padding: 15px 5px;
   }
 
@@ -100,14 +102,6 @@
   .headBand span {
     font-size: 2rem;
   }
-
-  // .filler {
-  //   padding: 20px 0;
-  // }
-
-  // .fillerBox {
-  //   padding: 0 15px;
-  // }
 
   .about img {
     margin: 15px auto;
@@ -141,7 +135,6 @@
     font-size: 3rem;
   }
 
-
   .projectModal {
     background-position-x: 75%;
   }
@@ -154,43 +147,111 @@
   .illustration {
     width: 100%;
   }
-   
 
-  
+  .icons {
+    padding: 0 35px 25px 35px;
+  }
 }
 
+@media(max-width: 550px) {
+
+  .vertical {
+    display: none;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconQuarter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+  .icons {
+    padding: 0 25px 25px 25px;
+  }
+
+}
 
 
 @media(max-width: 450px) {
 
-    h1 {
-      font-size: 5rem;
-    }
-    .landingLeftColumn img {
-      width: 50%;
-    }
+  h1 {
+    font-size: 5rem;
+    padding-bottom: 15px;
+  }
+  
+  .landingLeftColumn {
+    min-width: 0;
+    width: 100%;
+      img {
+      width: 84%;
+  }
+}
 
-    p {
-      font-size: 1.4rem;
-    }
+  // .roles {
+  //   width: 100%;
+  // }
 
-    .res p {
-      font-size: 1.5rem;
-      padding: 10px;
-      text-align: left;
-    }
+   h2 {
+    font-size: 2.5rem;
+  }
 
-    .pBackground {
-      padding: 12px 15px 15px 15px;
-      margin: 4px 0;
+  .landingRightColumn {
+    min-width: 0;
+    width: 100%;
+      span {
+      font-size: 1.9rem;
     }
+  }
 
-    h3 {
-      font-size: 3.5rem;
-    }
+  p {
+    font-size: 1.4rem;
+  }
 
-    .headBand span {
+  .res p {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .pBackground {
+    padding: 12px 15px 15px 15px;
+    margin: 4px 0;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  .headBand span {
     font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 350px) {
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .item i {
+    font-size: 3rem;
+  }
+
+  .itemName {
+    font-size: 1.2rem;
+  }
+
+  .pngIcon {
+    height: 30px;
+    width: 32px;
   }
 
 }

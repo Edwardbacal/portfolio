@@ -81,7 +81,7 @@
     <button class="hamburger">
       <i class="far fa-times-circle" id="burger"></i>
     </button>
-  <ul class=>
+  <ul class="hamburgerLi">
     <a href="#home">
       <li class="ham link">Home</li>
     </a>
@@ -112,28 +112,6 @@
   </ul>
 </nav>
 
-
-
-  <!-- <nav class="sideBarNav">
-    <ul class="margin">
-      <a href="#home"><li class="italic">Home</li></a>
-      <span class="navDash">/</span>
-     
-      <a href="#about"><li class="italic">About</li></a>
-      <span class="navDash">/</span>
-     
-      <a href="#web"><li class="italic">Web</li></a>
-      <span class="navDash">/</span>
-     
-      <a href="#graphics"><li class="italic">Graphics</li></a>
-      <span class="navDash">/</span>
-     
-      <a href="#writing"><li class="italic">Wr iting</li></a>
-      <span class="navDash">/</span>
-     
-      <a href="#contact"></a><li class="italic">Contact</li>
-    </ul>
-  </nav> -->
 
 
 <!-- Filler ================================================ -->
@@ -173,12 +151,12 @@
             <span role="img" aria-label="wave emoji">👋</span> Hi! I'm a Toronto-based <span class>developer</span>, <span class>designer</span>, and <span class>writer</span>.
           </p>
              
-          <p class="pBackground noGhostMarg">
+          <p class="pBackground ghostMargin">
             I embrace a holistic approach to web media by thinking <span class="italic">across</span> <span>code</span>, <span>content</span>, <span>UI</span>, and <span>UX</span>: I'm just as passionate about creating beautiful, user-friendly webpages as I am about developing technical solutions for client-facing content.
           </p>
         </div> <!-- end of bio container -->
           
-          <img src="./assets/eebRound.png" alt="Edward Bacal at Komazawa Olympic park holding three french bulldogs on a leash" />
+          <img src="./assets/eebRound.jpg" alt="Edward Bacal at Komazawa Olympic park holding three french bulldogs on a leash" />
       </div> <!-- end of container for top-half of about -->
 
       <p class="pBackground">
@@ -258,7 +236,7 @@
          
           <div class="item">
             <li><i class="fab fa-sass"></i></li>
-            <li class="itemName">scss</li>
+            <li class="itemName sass">scss</li>
           </div>
          
           <div class="item">
@@ -309,87 +287,161 @@
           </div>
         </ul>
 
-<!-- Vertical Icons (activated at width:862) -->
+      <!-- Vertical Icons (activated at width:862) -->
 
-  <ul class="icons vertical">  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><i class="fab fa-html5"></i></li>
-        <li class="itemName">html5</li>
-      </div>
-  
-      <div class="item">
-        <li><i class="fab fa-css3-alt"></i></li>
-        <li class="itemName">css3</li>
-      </div>
-    </div>
-  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><i class="fab fa-sass"></i></li>
-        <li class="itemName">scss</li>
-      </div>
-  
-      <div class="item">
-        <li><i class="fab fa-js"></i></li>
-        <li class="itemName">javascript</li>
-      </div>
-    </div>
-  
-  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><img src="./assets/jquery.png" class="pngIcon" alt="JQuery"></li>
-        <li class="itemName">jQuery</li>
-      </div>
-  
-      <div class="item">
-        <li><i class="fab fa-react"></i></li>
-        <li class="itemName">react</li>
-      </div>
-    </div>
-  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><img src="./assets/firebase.png" class="pngIcon" alt="Firebase"></li>
-        <li class="itemName">firebase</li>
-      </div>
-  
-      <div class="item">
-        <li><i class="fab fa-wordpress"></i></li>
-        <li class="itemName">wordpress</li>
-      </div>
-    </div>
-  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><i class="fab fa-git-alt"></i></li>
-        <li class="itemName">git</li>
-      </div>
-  
-  
-      <div class="item">
-        <li><img src="./assets/api.png" class="pngIcon" alt="API"></li>
-        <li class="itemName">rest apis</li>
-        <!-- icon courtesy of from smashicons -->
-      </div>
-    </div>
-  
-    <div class="iconQuarter">
-      <div class="item">
-        <li><i class="fas fa-universal-access"></i></li>
-        <li class="itemName">wcag</li>
-      </div>
-  
-      <div class="item">
-        <li><img src="./assets/resp.png" class="pngIcon" alt="responsive design"></li>
-        <li class="itemName">responsive</li>
-      </div>
-    </div>
-  
-  </ul>
+          <ul class="icons vertical">
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fab fa-html5"></i></li>
+                <li class="itemName">html5</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li class="itemName">css3</li>
+              </div>
+            </div>
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fab fa-sass"></i></li>
+                <li class="itemName sass">scss</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-js"></i></li>
+                <li class="itemName">javascript</li>
+              </div>
+            </div>
+          
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><img src="./assets/jquery.png" class="pngIcon" alt="JQuery"></li>
+                <li class="itemName">jQuery</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-react"></i></li>
+                <li class="itemName">react</li>
+              </div>
+            </div>
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><img src="./assets/firebase.png" class="pngIcon" alt="Firebase"></li>
+                <li class="itemName">firebase</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-wordpress"></i></li>
+                <li class="itemName">wordpress</li>
+              </div>
+            </div>
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fab fa-git-alt"></i></li>
+                <li class="itemName">git</li>
+              </div>
+          
+          
+              <div class="item">
+                <li><img src="./assets/api.png" class="pngIcon" alt="API"></li>
+                <li class="itemName">rest apis</li>
+                <!-- icon courtesy of from smashicons -->
+              </div>
+            </div>
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fas fa-universal-access"></i></li>
+                <li class="itemName">wcag</li>
+              </div>
+          
+              <div class="item">
+                <li><img src="./assets/resp.png" class="pngIcon" alt="responsive design"></li>
+                <li class="itemName">responsive</li>
+              </div>
+            </div>
+          </ul>
+
+          <!-- Grid Icons (activated at width:550) -->
+          
+          <ul class="icons grid">
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fab fa-html5"></i></li>
+                <li class="itemName">html5</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li class="itemName">css3</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-sass"></i></li>
+                <li class="itemName sass">scss</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-js"></i></li>
+                <li class="itemName">javascript</li>
+              </div>
+            </div>
+          
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><img src="./assets/jquery.png" class="pngIcon" alt="JQuery"></li>
+                <li class="itemName">jQuery</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-react"></i></li>
+                <li class="itemName">react</li>
+              </div>
+          
+              <div class="item">
+                <li><img src="./assets/firebase.png" class="pngIcon" alt="Firebase"></li>
+                <li class="itemName">firebase</li>
+              </div>
+          
+              <div class="item">
+                <li><i class="fab fa-wordpress"></i></li>
+                <li class="itemName">wordpress</li>
+              </div>
+            </div>
+          
+          
+            <div class="iconQuarter">
+              <div class="item">
+                <li><i class="fab fa-git-alt"></i></li>
+                <li class="itemName">git</li>
+              </div>
+          
+              <div class="item">
+                <li><img src="./assets/api.png" class="pngIcon" alt="API"></li>
+                <li class="itemName">rest apis</li>
+                <!-- icon courtesy of from smashicons -->
+              </div>
+          
+              <div class="item">
+                <li><i class="fas fa-universal-access"></i></li>
+                <li class="itemName">wcag</li>
+              </div>
+          
+              <div class="item">
+                <li><img src="./assets/resp.png" class="pngIcon" alt="responsive design"></li>
+                <li class="itemName">responsive</li>
+              </div>
+            </div>
+          
+          </ul>
 
       </div> <!-- Skills Ends  -->
+
 
 
 
@@ -652,23 +704,23 @@
 
             <ul class="contactBox">
               <div class="item">
-                <button><i class="fas fa-envelope"></i></button>    
+                <button><a href="mailto:edwarddbacal@gmail.com"><i class="fas fa-envelope"></a></i></button>    
               </div>
 
               <div class="item">
-                <button><i class="fab fa-github"></i></button>
+                <button><a href="https://github.com/Edwardbacal"><i class="fab fa-github"></i></a></button>
               </div>
 
               <div class="item">
-                <button><i class="fab fa-twitter"></i></button>
+                <button><a href="https://twitter.com/edwardDbacal"><i class="fab fa-twitter"></i></a></button>
               </div>
 
               <div class="item">
-                <button><i class="fab fa-linkedin"></i></button>
+                <button><a href="https://www.linkedin.com/in/edward-bacal-36a374161/"></a><i class="fab fa-linkedin"></i></button>
               </div>
 
               <div class="item">
-                <button><img src="./assets/academia.png" alt="academia.edu" class="pngIcon"></button>
+                <button><a href="https://utoronto.academia.edu/EdwardBacal"><img src="./assets/academia.png" alt="academia.edu" class="pngIcon"></a></button>
               </div>
             </ul>
         </section> <!-- end of Contact  -->

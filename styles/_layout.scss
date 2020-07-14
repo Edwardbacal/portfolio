@@ -108,6 +108,7 @@ a {
     img {
     max-width: 470px;
     animation: spin 30s linear infinite;
+    overflow: hidden;
   }
     i {
       display: none;
@@ -213,6 +214,10 @@ a {
   }
 }
 
+.sass {
+  padding-right: 12px;
+}
+
 
 .icons {
   @include flex;
@@ -223,6 +228,9 @@ a {
   display: none;
 }
 
+.grid {
+  display: none;
+}
 
 
 // Web Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
