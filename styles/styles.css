@@ -253,13 +253,13 @@ a {
 
 .hamburgerMenu {
   position: fixed;
-  top: 10px;
+  top: 5px;
   right: -1500px;
   background: linear-gradient(-30deg, #cfdcf0, #eeecec);
   border: 1px solid #d0ddf0;
   padding: 25px;
-  width: calc(100% - 20px);
-  height: calc(100vh - 20px);
+  width: calc(100% - 10px);
+  height: calc(100vh - 10px);
   border-radius: 5px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -272,8 +272,8 @@ a {
 .hamburgerFace {
   width: 45%;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   -webkit-animation: spin 30s linear infinite;
           animation: spin 30s linear infinite;
 }
@@ -525,7 +525,7 @@ a {
   border-bottom: 2px solid #2D26C5;
   background-image: url(../assets/digIll/hiWorld.png);
   background-repeat: no-repeat;
-  background-size: 400px;
+  background-size: 460px;
   background-position-x: 60%;
   background-position-y: 50%;
   position: relative;
@@ -540,31 +540,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .projectBox {
   background-color: #fff;
   padding: 25px 45px 25px 5px;
-  display: none;
 }
 
-.projectTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.projectBoxImg {
+  margin: 0 30px 15px 0;
+  width: 50%;
+  min-width: 230px;
+  border-radius: 2px;
+  border: 1px dotted #2e26c550;
+  padding: 5px;
+  float: left;
+  max-width: 280px;
 }
 
 .projectBox a i,
@@ -582,18 +575,6 @@ a {
   margin: 0 60px 0 25px;
 }
 
-.screenshots {
-  margin-right: 30px;
-  width: 280px;
-  min-width: 230px;
-}
-
-.screenshots img {
-  border-radius: 2px;
-  border: 1px dotted #2e26c550;
-  padding: 5px;
-}
-
 .projectRightColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,7 +586,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 67%;
+  width: 50%;
 }
 
 .compress {
@@ -742,14 +723,6 @@ footer {
   background-color: #251dc4dc;
 }
 
-.white {
-  color: #fff;
-}
-
-.italic {
-  font-style: italic;
-}
-
 h1,
 h2,
 h3,
@@ -774,19 +747,25 @@ li,
   border-radius: 5px;
 }
 
-span {
+p,
+button,
+.itemName,
+.contact span a {
+  font-family: 'Quicksand';
+  font-weight: 500;
   text-transform: none;
+  color: #251dc4;
 }
 
 .hi span,
-.contact span {
+.contact span a {
   color: #fa8500;
   font-weight: 400;
 }
 
 h3 {
   font-size: 5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .headBand,
@@ -826,18 +805,8 @@ h5 {
   line-height: 1.1;
 }
 
-p,
-button,
-.itemName,
-.normalizeText {
-  font-family: 'Quicksand';
-  font-weight: 500;
-  text-transform: none;
-  color: #251dc4;
-}
-
-.itemName {
-  color: #fff;
+.italic {
+  font-style: italic;
 }
 
 .ghostMargin {
@@ -878,26 +847,33 @@ ul .dash {
 .link:hover,
 .link:focus {
   color: #251dc4;
-  background-color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(270deg, #fff, rgba(255, 255, 255, 0.7));
   border-radius: 2px;
 }
 
 .hamburger i {
   color: #fa3218;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 10px;
   position: fixed;
-  top: 5px;
-  right: 5px;
-  border-radius: 3px;
+  top: 0;
+  right: 0;
   display: none;
+  z-index: 10;
+}
+
+.hamburgerLi li:hover,
+.hamburgerLi li:focus {
+  background: -webkit-gradient(linear, right top, left top, color-stop(15%, #fff), color-stop(70%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #fff 15%, rgba(255, 255, 255, 0) 70%);
 }
 
 p,
 .res,
 .resP,
 .cv,
-.normalizeText {
+.contact span a {
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
@@ -906,7 +882,7 @@ p,
 }
 
 .pBackground {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: white;
   padding: 17px 25px 25px 25px;
   margin: 8px 0;
   -webkit-box-shadow: -2px 1px 1px #0015d375;
@@ -977,9 +953,12 @@ i {
   width: 43px;
 }
 
+.itemName {
+  color: #fff;
+}
+
 .wp h3 {
   padding: 25px;
-  text-align: center;
   color: #fff;
 }
 
@@ -1019,16 +998,17 @@ i {
 }
 
 .projectModal button {
-  padding: 0;
+  margin: 2px 0;
   text-align: left;
   color: #fa3218;
   padding: 10px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 .projectModal button:hover, .projectModal button:focus {
   color: #fff;
   background-color: #251dc4;
-  border-radius: 2px;
 }
 
 .projectTitle i,
@@ -1055,7 +1035,7 @@ button {
 .arrow i:focus {
   color: #fff;
   background-color: #251dc4;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .box a {
@@ -1066,7 +1046,6 @@ button {
 
 .designIll h3 {
   padding: 30px 25px;
-  text-align: center;
   color: #fff;
 }
 
@@ -1106,6 +1085,9 @@ footer p {
   .res .cv {
     font-size: 1.4rem;
     padding: 0 2px 0 6px;
+  }
+  .projectModal {
+    background-position-x: 70%;
   }
 }
 
@@ -1191,12 +1173,14 @@ footer p {
   }
   .planes {
     width: 70px;
+    text-align: center;
   }
   h4 {
     font-size: 3rem;
   }
   .projectModal {
-    background-position-x: 75%;
+    background-position-x: 85%;
+    background-size: 60%;
   }
   .designIll {
     -webkit-box-orient: vertical;
@@ -1211,9 +1195,34 @@ footer p {
   .icons {
     padding: 0 35px 25px 35px;
   }
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .projectBoxImg {
+    width: 100%;
+    max-width: 320px;
+  }
+  .projectModal p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
+  .landingLeftColumn img {
+    width: 90%;
+  }
+  .webDevelopment .headBand {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.3;
+    text-align: center;
+  }
   .vertical {
     display: none;
   }
@@ -1244,6 +1253,42 @@ footer p {
   .icons {
     padding: 0 25px 25px 25px;
   }
+  .projectModal {
+    background-position-x: 50%;
+    background-position-y: 90%;
+    background-size: 60%;
+    padding-left: 25px;
+    min-height: 540px;
+  }
+  .projectModal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+    position: static;
+    margin: 0 auto;
+  }
+  .projectBox {
+    text-align: center;
+    padding: 0 25px 25px 0;
+  }
+  .projectBoxImg {
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: none;
+  }
+  .iconMap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hamburger i {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1268,7 +1313,8 @@ footer p {
   .landingRightColumn span {
     font-size: 1.9rem;
   }
-  p {
+  p,
+  .contact span a {
     font-size: 1.4rem;
   }
   .res p {
@@ -1286,11 +1332,28 @@ footer p {
   .headBand span {
     font-size: 1.6rem;
   }
+  .hide2 {
+    display: none;
+  }
+  h4 {
+    font-size: 2.7rem;
+  }
+  .hamburger i {
+    font-size: 1.8rem;
+    top: -4px;
+    right: -4px;
+  }
+  .projectModal {
+    min-height: 510px;
+  }
 }
 
 @media (max-width: 350px) {
   h2 {
     font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 3.2rem;
   }
   .item i {
     font-size: 3rem;
@@ -1301,6 +1364,11 @@ footer p {
   .pngIcon {
     height: 30px;
     width: 32px;
+  }
+  .hamburger i {
+    font-size: 1.7rem;
+    -webkit-filter: drop-shadow(-1px 2px #fff);
+            filter: drop-shadow(-1px 2px #fff);
   }
 }
 
@@ -1318,9 +1386,8 @@ img {
 
 .index {
   background-image: url(../assets/bg62small.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
-  position: relative;
 }
 
 /* jQuery properties */
@@ -1341,7 +1408,7 @@ img {
 .hamburgerOpen {
   display: block;
   height: 100%;
-  right: 10px;
+  right: 5px;
   opacity: 1;
 }
 

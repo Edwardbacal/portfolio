@@ -2,7 +2,6 @@
 
 $(".hamburger").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
-  // $("#burger").replaceWith(`<i class="far fa-times-circle"></i>`);
 });
 
 
@@ -30,43 +29,34 @@ $(".click").on("click", function () {
 
 const portfolio = {
   "ce": `<div class="projectTitle">
-          <h5>CE Art Trace</h5>
-          
-          <div class="iconMap">
-            <i class="fab fa-react"></i>
-            <i class="fab fa-css3-alt"></i>
-            
-            <div class="pngIconBox">
-              <img src="./assets/apiOrange.png" alt="API">
-            </div>   
-          
-                    <a href=""><i class="fas fa-external-link-alt"></i></a>
-
-          
-            </div>
-        </div>
-
-
-            
-            <div class="project">
-              <div class="screenshots">
-                <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page">
+              <h5>CE Art Trace</h5>
+              <div class="iconMap">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>     
+                <div class="pngIconBox">
+                  <img src="./assets/icons/apiOrange.png" alt="API" >
+                </div>
+                <a href=""><i class="fas fa-external-link-alt"></i></a>   
               </div>
-              <div class="projectRightColumn">
-                <p>This interactive React app displays semi-random selections from the Harvard Art Museums' collection of over 230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected object that matches that classification, displaying an image, title, name, date. As an art historian, I've often needed to find new examples of art in a certain medium and from a certain time and place. I developed this app as a way to do that, to discover new work and broaden 
-              </p>
-
-              <p>
-                NB: I am currently expanding this app to allow users to search according to criteria and region in addition to medium.   
-              </p>
-              </div>`,
+            </div>                  
+            <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page" class="projectBoxImg">
+            <p>This interactive React app displays semi-random selections from the Harvard Art Museums'         collection of over
+              230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected
+              object that matches that classification, displaying an image, title, name, date. As an art historian, I've often
+              needed to find new examples of art in a certain medium and from a certain time and place. I developed this app as
+              a way to do that, to discover new work and broaden
+            </p>
+            <p>
+              NB: I am currently expanding this app to allow users to search according to criteria and region in addition to
+              medium.
+            </p>`,
   "bulldog":`<div class="projectTitle">
               <h5>Bulldog Book Club</h5>
               <div class="iconMap">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-sass"></i>
                 <div class="pngIconBox">
-                  <img src="./assets/jqueryOrange.png" alt="jquery">
+                  <img src="./assets/icons/jqueryOrange.png" alt="jquery">
                 </div>
                 <a href=""><i class="fas fa-external-link-alt"></i></a>
               </div>
@@ -98,10 +88,10 @@ const portfolio = {
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-sass"></i>
                 <div class="pngIconBox">
-                  <img src="./assets/jqueryOrange.png" alt="API">
+                  <img src="./assets/icons/jqueryOrange.png" alt="API">
                 </div>
                 <div class="pngIconBox">
-                  <img src="./assets/apiOrange.png" alt="API">
+                  <img src="./assets/icons/apiOrange.png" alt="API">
                 </div>   
               </div>
               <a href=""><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
@@ -127,6 +117,7 @@ $(".projectButton").on("click", function () {
   console.log(project);
   $('.projectBox').empty();
   $('.projectBox').fadeIn("slow");
+  $('.projectModal').css("min-height", "680px").css("background-image", "none");
   for (let projectTitle in portfolio) {
     if (project === projectTitle) {
       $('.projectBox').append((portfolio[projectTitle]));

@@ -18,9 +18,8 @@ img {
 
 .index {
   background-image: url(../assets/bg62small.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
-  position: relative;
 }
 
 /* jQuery properties */
@@ -41,7 +40,7 @@ img {
 .hamburgerOpen {
   display: block;
   height: 100%;
-  right: 10px;
+  right: 5px;
   opacity: 1;
 }
 

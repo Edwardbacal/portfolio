@@ -4,15 +4,6 @@ $secondaryColour: #251dc4;
 $highlightColour: rgb(248, 8, 140);
 
 
-
-.white {
-  color: #fff;
-}
-
-.italic {
-  font-style: italic;
-}
-
 // Global Styles
 
 @mixin headingText ($fontSize, $colour) {
@@ -43,20 +34,25 @@ li,
   border-radius: 5px;
 }
 
-span {
+p,
+button,
+.itemName,
+.contact span a {
+  font-family: 'Quicksand';
+  font-weight: 500;
   text-transform: none;
+  color: $secondaryColour;
 }
 
 .hi span,
-.contact span {
+.contact span a {
   color: $lightPrimary;
   font-weight: 400;
-  // letter-spacing: 1px;
 }
 
 h3 {
   font-size: 5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .headBand,
@@ -75,7 +71,6 @@ h3 {
   padding: 40px 0;
 }
 
-
 h4 {
   font-size: 3.5rem;
   padding: 25px;
@@ -90,20 +85,10 @@ h5 {
   line-height: 1.1;
 }
 
-p,
-button,
-.itemName,
-.normalizeText {
-  font-family: 'Quicksand';
-  font-weight: 500;
-  text-transform: none;
-  color: $secondaryColour;
-}
 
-.itemName {
-  color: #fff;
+.italic {
+  font-style: italic;
 }
-
 
 .ghostMargin {
   margin-bottom: 0;
@@ -144,19 +129,24 @@ ul .dash {
 .link:hover,
 .link:focus {
   color: $secondaryColour;
-  background-color: #fff;
+  background: linear-gradient(270deg, #fff, rgba(255, 255, 255, 0.7));
   border-radius: 2px;
 }
 
 .hamburger i {
   color: $primaryColour;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 10px;
   position: fixed;
-  top: 5px;
-  right: 5px;
-  border-radius: 3px;
+  top: 0;
+  right: 0;
   display: none;
+  z-index: 10;
+}
+
+.hamburgerLi li:hover,
+.hamburgerLi li:focus {
+  background: linear-gradient(270deg, #fff 15%, rgba(255, 255, 255, 0) 70%);
 }
 
 
@@ -183,7 +173,7 @@ p,
 .res,
 .resP,
 .cv,
-.normalizeText {
+.contact span a {
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
@@ -192,13 +182,12 @@ p,
 }
 
 .pBackground {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 95%);
   padding: 17px 25px 25px 25px;
   margin: 8px 0;
   box-shadow: -2px 1px 1px #0015d375;
   border-radius: 5px;
 }
-
 
 
 .hi span {
@@ -247,6 +236,7 @@ p,
 
 // Web Dev ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 i {
   font-size: 4rem;
   color: #fff;
@@ -257,9 +247,12 @@ i {
   width: 43px;
 }
 
+.itemName {
+  color: #fff;
+}
+
 .wp h3 {
   padding: 25px;
-  text-align: center;
   color: #fff;
 }
 
@@ -297,15 +290,16 @@ i {
 }
 
 .projectModal button {
-  padding: 0;
+  margin: 2px 0;
   text-align: left;
   color: $primaryColour;
   padding: 10px;
+  background-color: rgba(255, 255, 255, 95%);
+  border-radius: 2px;
     &:hover,
     &:focus {
       color: #fff;
       background-color: $secondaryColour;
-      border-radius: 2px;
     }
 }
 
@@ -317,17 +311,6 @@ i {
   border-radius: 3px;
 }
 
-// .projectTitle i:last-child {
-//   font-size: 3rem;
-//   color: $secondaryColour;
-//   margin-left: 50px;
-//   padding: 10px;
-//     &:hover,
-//     &:focus {
-//       color: #fff;
-//       background-color: $secondaryColour;
-//     }
-// }
 
 button {
   background: none;
@@ -344,7 +327,7 @@ button {
 .arrow i:focus {
   color: #fff;
   background-color: $secondaryColour;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .box a {
@@ -354,13 +337,11 @@ button {
 }
 
 
+
 // Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
-
-
 
 .designIll h3 {
   padding: 30px 25px;
-  text-align: center;
   color: #fff;
 }
 
