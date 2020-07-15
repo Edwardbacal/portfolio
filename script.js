@@ -38,7 +38,8 @@ const portfolio = {
                 </div>
                 <a href=""><i class="fas fa-external-link-alt"></i></a>   
               </div>
-            </div>                  
+            </div>        
+
             <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page" class="projectBoxImg">
             <p>This interactive React app displays semi-random selections from the Harvard Art Museums'         collection of over
               230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected
@@ -61,11 +62,7 @@ const portfolio = {
                 <a href=""><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>       
-            <div class="project">
-              <div class="screenshots">
-                <img src="./assets/BBC.jpg" alt="screenshot of Bulldog Book Club page">
-              </div>
-              <div class="projectRightColumn">
+                <img src="./assets/BBC.jpg" class="projectBoxImg" alt="screenshot of Bulldog Book Club page">
                 <p>
                   This app models an dynamic interface for digital publications, using jQuery methods and a simple design to achieve a more user-friendly alternative to traditional e-texts. As an academic, I found that most publishers overlook UI and UX concerns by sticking to traditional print layouts. From my frustration with the blank pdf/ebook format, I sought to develop front-end solutions for long-form texts and volumes, which benefit from in-browser experience.  
                 </p>
@@ -80,8 +77,7 @@ const portfolio = {
                 </p>
                 <p>
                 • Buttons to enlarge and minimize text size.
-                </p>               
-              </div>`,
+                </p>`,
   "beer": `<div class="projectTitle">
               <h5>Beer Matchmaker</h5>     
               <div class="iconMap">
@@ -96,18 +92,14 @@ const portfolio = {
               </div>
               <a href=""><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
             </div>
-            
-            <div class="project">
-              <div class="screenshots">
-                <img src="./assets/beer.jpg" alt="screenshot of Beer Matchmaker page">
-              </div>
-              <div class="projectRightColumn">
+
+                <img src="./assets/beer.jpg" class="projectBoxImg" alt="screenshot of Beer Matchmaker page">
+
                 <p>This interactive app serves as a beer companion app that draws on a REST api to pair craft beer selections with a complimentary food choice. Users can submit a food-related term and receive a list of appropriate results, displaying the name, label, and description of each beer. 
               </p>
               <p>
                 Developed in collaboration with <a href="" class="normalizeText orangeTwo">Vigyan Kayastha</a>
-              </p>
-              </div>`,
+              </p>`,
   "psd": "psddddddd",
 };
 
