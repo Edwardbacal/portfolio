@@ -249,6 +249,12 @@ a {
   flex-wrap: wrap-reverse;
 }
 
+.projectTitle {
+  @include flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 .projectBox {
   background-color: #fff;
   padding: 25px 45px 25px 5px;
@@ -275,7 +281,7 @@ a {
 .iconMap {
   display: flex;
   align-items: center;
-  margin: 0 60px 0 25px;
+  // margin: 0 60px 0 25px;
 }
 
 

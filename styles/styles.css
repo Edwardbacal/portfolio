@@ -544,6 +544,26 @@ a {
       flex-wrap: wrap-reverse;
 }
 
+.projectTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
 .projectBox {
   background-color: #fff;
   padding: 25px 45px 25px 5px;
@@ -572,7 +592,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 60px 0 25px;
 }
 
 .compress {
@@ -841,7 +860,7 @@ ul .dash {
 .hamburger i {
   color: #fa3218;
   font-size: 2.5rem;
-  padding: 10px;
+  padding: 10px 10px 20px 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -950,8 +969,9 @@ i {
 
 .projectModal h5 {
   font-size: 3rem;
-  padding: 20px 0 20px 5px;
+  padding: 5px;
   color: #251dc4;
+  margin: 0 20px 2px 20px;
 }
 
 .projectModal span,
@@ -1279,11 +1299,15 @@ footer p {
   .hamburger i {
     font-size: 2rem;
   }
+  .filler {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 450px) {
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-bottom: 15px;
   }
   .landingLeftColumn {
@@ -1303,6 +1327,10 @@ footer p {
   .landingRightColumn span {
     font-size: 1.9rem;
   }
+  .about img {
+    width: 80%;
+    height: 80%;
+  }
   p,
   .contact span a {
     font-size: 1.4rem;
@@ -1311,6 +1339,9 @@ footer p {
     font-size: 1.5rem;
     padding: 10px;
     text-align: left;
+  }
+  .planes {
+    margin-right: 25px;
   }
   .pBackground {
     padding: 12px 15px 15px 15px;
@@ -1336,9 +1367,24 @@ footer p {
   .projectModal {
     min-height: 510px;
   }
+  .filler {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+  .fillerBox {
+    padding: 20px 10px;
+  }
 }
 
 @media (max-width: 350px) {
+  .hamburger i {
+    font-size: 1.7rem;
+    -webkit-filter: drop-shadow(-1px 2px #fff);
+            filter: drop-shadow(-1px 2px #fff);
+  }
+  h1 {
+    font-size: 3.1rem;
+  }
   h2 {
     font-size: 2.3rem;
   }
@@ -1355,10 +1401,8 @@ footer p {
     height: 30px;
     width: 32px;
   }
-  .hamburger i {
-    font-size: 1.7rem;
-    -webkit-filter: drop-shadow(-1px 2px #fff);
-            filter: drop-shadow(-1px 2px #fff);
+  .planes {
+    margin-right: 5px;
   }
 }
 

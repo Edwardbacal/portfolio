@@ -89,18 +89,17 @@ const portfolio = {
                 <div class="pngIconBox">
                   <img src="./assets/icons/apiOrange.png" alt="API">
                 </div>   
-              </div>
               <a href=""><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
+              </div>
             </div>
 
-                <img src="./assets/beer.jpg" class="projectBoxImg" alt="screenshot of Beer Matchmaker page">
+                <img src="./assets/budsSuds.jpg" class="projectBoxImg" alt="screenshot of Beer Matchmaker page">
 
                 <p>This interactive app serves as a beer companion app that draws on a REST api to pair craft beer selections with a complimentary food choice. Users can submit a food-related term and receive a list of appropriate results, displaying the name, label, and description of each beer. 
               </p>
               <p>
                 Developed in collaboration with <a href="" class="normalizeText orangeTwo">Vigyan Kayastha</a>
               </p>`,
-  "psd": "psddddddd",
 };
 
 

@@ -252,13 +252,18 @@
     .hamburger i {
     font-size: 2rem;
     }
+
+    .filler {
+      font-size: 2rem;
+      padding: 20px 0;
+    }
 }
 
 
 @media(max-width: 450px) {
 
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-bottom: 15px;
   }
   
@@ -282,6 +287,11 @@
     }
   }
 
+  .about img {
+    width: 80%;
+    height: 80%;
+  }
+
   p,
   .contact span a{
     font-size: 1.4rem;
@@ -291,6 +301,10 @@
     font-size: 1.5rem;
     padding: 10px;
     text-align: left;
+  }
+
+  .planes {
+    margin-right: 25px;
   }
 
   .pBackground {
@@ -323,9 +337,27 @@
   .projectModal {
     min-height: 510px;
   }
+
+  .filler {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+
+  .fillerBox {
+    padding: 20px 10px;
+}
 }
 
 @media(max-width: 350px) {
+
+  .hamburger i {
+    font-size: 1.7rem;
+    filter: drop-shadow(-1px 2px #fff);
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
 
   h2 {
     font-size: 2.3rem;
@@ -348,9 +380,12 @@
     width: 32px;
   }
 
-  .hamburger i {
-    font-size: 1.7rem;
-    filter: drop-shadow(-1px 2px #fff);
+
+
+  .planes {
+    margin-right: 5px;
   }
+
+
 
 }
