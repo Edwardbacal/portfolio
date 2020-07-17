@@ -1,18 +1,12 @@
-$primaryColour: #fa3218;
-$lightPrimary: rgb(250, 133, 0);
-$secondaryColour: #251dc4;
-$highlightColour: rgb(248, 8, 140);
-
-
 // Global Styles
 
 @mixin headingText ($fontSize, $colour) {
-    font-family: 'Comfortaa', Helvetica;
-    font-size: $fontSize;
-    color: $colour;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: 'Comfortaa', Helvetica;
+  font-size: $fontSize;
+  color: $colour;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 h1,
@@ -85,14 +79,11 @@ h5 {
   line-height: 1.1;
 }
 
-
 .italic {
   font-style: italic;
 }
 
-.ghostMargin {
-  margin-bottom: 0;
-}
+
 
 // Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -136,7 +127,7 @@ ul .dash {
 .hamburger i {
   color: $primaryColour;
   font-size: 2.5rem;
-  padding: 10px 10px 20px 20px;
+  padding: 10px 10px 15px 15px;
   position: fixed;
   top: 0;
   right: 0;
@@ -204,6 +195,7 @@ p,
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid $secondaryColour;
     p {
     font-size: 2.1rem;
     padding-right: 10px;

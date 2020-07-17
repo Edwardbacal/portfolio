@@ -1,5 +1,8 @@
 @media(max-width: 1187px) {
 
+  .landingLeftColumn {
+    height: 682px;
+  }
 
   h1 {
     padding-bottom: 30px;
@@ -54,7 +57,7 @@
   }
 
   h1 {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 
   h2{
@@ -64,6 +67,7 @@
   .landingLeftColumn {
     margin: 0 13px;
     min-width: 350px;
+    height: auto;
     i {
       // display: block;
       color: $secondaryColour;
@@ -76,18 +80,25 @@
           color: #fff;
           background-color: $secondaryColour;
         }
+      }
+      img {
+        width: 95%;
+        margin: 10px 0;
     }
   }
 
   .roles {
-    padding: 25px 0 20px 20px;
+    padding: 35px 0 20px 20px;
     width: 90%;
     margin: 0 auto;
   }
 
-  .landingRightColumn ul {
+  .landingRightColumn {
+    width: 47%;
+     ul {
     display: none;
   }
+}
 
   .hamburger i {
     display: block;
@@ -186,7 +197,7 @@
 @media(max-width: 550px) {
 
   .landingLeftColumn img {
-      width: 90%;
+      width: 85%;
   }
 
   .webDevelopment .headBand {
@@ -271,19 +282,24 @@
     min-width: 0;
     width: 100%;
       img {
-      width: 84%;
+      width: 75%;
   }
 }
 
+  .roles {
+    width: 75%;
+    margin-left: 15%;
+  }
+
    h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .landingRightColumn {
     min-width: 0;
     width: 100%;
       span {
-      font-size: 1.9rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -338,6 +354,12 @@
     min-height: 510px;
   }
 
+  .box img {
+    width: 90%;
+    margin: 10px auto;
+
+  }
+
   .filler {
     font-size: 1.7rem;
     padding: 20px;
@@ -360,7 +382,7 @@
   }
 
   h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   h3 {

@@ -32,7 +32,6 @@ section {
   margin-bottom: 3vh;
 }
 
-
 .fillerBox {
   padding: 30px 10px;
 }
@@ -46,7 +45,9 @@ a {
   border-radius: 5px;
 }
 
-
+.ghostMargin {
+  margin-bottom: 0;
+}
 
 // Hamburger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -70,8 +71,8 @@ a {
 .hamburgerFace {
   width: 45%;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 25px;
+  left: 25px;
   animation: spin 30s linear infinite;
 }
 
@@ -88,6 +89,7 @@ a {
 .landingLeftColumn {
   @include flex;
   flex-direction: column;
+  justify-content: start;
   min-width: 405px;
   width: 50%;
   margin-right: 26px;
@@ -115,7 +117,7 @@ a {
   flex-direction: column;
   width: 40%;
   min-width: 345px;
-  margin-top: 10px;
+  margin-top: -7px;
     span {
       display: block;
     }
@@ -329,6 +331,9 @@ a {
   border-bottom: 3px dotted $primaryColour;
   margin: 0px 25px 0px 25px;
   padding: 40px 0 30px 0;
+    a {
+      width: 49.5%;
+    }
     p {
       padding: 0 0;
       box-shadow: none;
@@ -336,12 +341,10 @@ a {
       margin-bottom: -5px;
     }
     img {
-      width: 49.5%;
       border: 1px dotted #2e26c550;
       border-radius: 2px;
       margin: 2% 0;
       padding: 5px;
-      transition: .3s linear;
     }
 }
 

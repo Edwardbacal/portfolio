@@ -251,6 +251,10 @@ a {
   border-radius: 5px;
 }
 
+.ghostMargin {
+  margin-bottom: 0;
+}
+
 .hamburgerMenu {
   position: fixed;
   top: 5px;
@@ -272,8 +276,8 @@ a {
 .hamburgerFace {
   width: 45%;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 25px;
+  left: 25px;
   -webkit-animation: spin 30s linear infinite;
           animation: spin 30s linear infinite;
 }
@@ -317,6 +321,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   min-width: 405px;
   width: 50%;
   margin-right: 26px;
@@ -365,7 +372,7 @@ a {
           flex-direction: column;
   width: 40%;
   min-width: 345px;
-  margin-top: 10px;
+  margin-top: -7px;
 }
 
 .landingRightColumn span {
@@ -670,6 +677,10 @@ a {
   padding: 40px 0 30px 0;
 }
 
+.box a {
+  width: 49.5%;
+}
+
 .box p {
   padding: 0 0;
   -webkit-box-shadow: none;
@@ -679,13 +690,10 @@ a {
 }
 
 .box img {
-  width: 49.5%;
   border: 1px dotted #2e26c550;
   border-radius: 2px;
   margin: 2% 0;
   padding: 5px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
 }
 
 div .box:last-child {
@@ -741,7 +749,7 @@ li,
 .dash {
   font-family: 'Comfortaa', Helvetica;
   font-size: 3rem;
-  color: #251dc4;
+  color: #251dc4dc;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -759,7 +767,7 @@ button,
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
-  color: #251dc4;
+  color: #251dc4dc;
 }
 
 .hi span,
@@ -791,7 +799,7 @@ h3 {
 }
 
 .filler {
-  color: #f8088c;
+  color: #db0e86dc;
   opacity: .4;
   padding: 40px 0;
 }
@@ -805,17 +813,13 @@ h4 {
 
 h5 {
   font-size: 2rem;
-  color: #251dc4;
+  color: #251dc4dc;
   padding-left: 25px;
   line-height: 1.1;
 }
 
 .italic {
   font-style: italic;
-}
-
-.ghostMargin {
-  margin-bottom: 0;
 }
 
 h1 {
@@ -842,7 +846,7 @@ ul {
 li,
 ul .dash {
   font-size: 2.5rem;
-  color: #fa3218;
+  color: #fa4d18;
   padding: 5px;
   line-height: 1.1;
   -webkit-transition: .2s;
@@ -851,16 +855,16 @@ ul .dash {
 
 .link:hover,
 .link:focus {
-  color: #251dc4;
+  color: #251dc4dc;
   background: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0.7)));
   background: linear-gradient(270deg, #fff, rgba(255, 255, 255, 0.7));
   border-radius: 2px;
 }
 
 .hamburger i {
-  color: #fa3218;
+  color: #fa4d18;
   font-size: 2.5rem;
-  padding: 10px 10px 20px 20px;
+  padding: 10px 10px 15px 15px;
   position: fixed;
   top: 0;
   right: 0;
@@ -900,7 +904,7 @@ p,
 }
 
 .pBackground span {
-  color: #fa3218;
+  color: #fa4d18;
 }
 
 .res {
@@ -914,6 +918,7 @@ p,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid #251dc4dc;
 }
 
 .res p {
@@ -932,12 +937,12 @@ p,
   border-radius: 3px;
   -webkit-transition: .05s ease-in;
   transition: .05s ease-in;
-  color: #fa3218;
+  color: #fa4d18;
 }
 
 .res i:hover, .res i:focus {
   color: #fff;
-  background-color: #251dc4;
+  background-color: #251dc4dc;
 }
 
 .cv {
@@ -970,7 +975,7 @@ i {
 .projectModal h5 {
   font-size: 3rem;
   padding: 5px;
-  color: #251dc4;
+  color: #251dc4dc;
   margin: 0 20px 2px 20px;
 }
 
@@ -978,7 +983,7 @@ i {
 .projectModal button {
   font-size: 1.6rem;
   text-align: left;
-  color: #fa3218;
+  color: #fa4d18;
   padding: 15px;
 }
 
@@ -992,7 +997,7 @@ i {
   font-size: 2rem;
   padding: 10px 10px 10px 40%;
   text-align: left;
-  color: #fa3218;
+  color: #fa4d18;
 }
 
 .projectModal ul {
@@ -1006,7 +1011,7 @@ i {
 .projectModal button {
   margin: 2px 0;
   text-align: left;
-  color: #fa3218;
+  color: #fa4d18;
   padding: 10px;
   background-color: white;
   border-radius: 2px;
@@ -1014,13 +1019,13 @@ i {
 
 .projectModal button:hover, .projectModal button:focus {
   color: #fff;
-  background-color: #251dc4;
+  background-color: #251dc4dc;
 }
 
 .projectTitle i,
 .pngIconBox {
   font-size: 2.8rem;
-  color: #fa3218;
+  color: #fa4d18;
   padding: 10px 10px 20px 10px;
   border-radius: 3px;
 }
@@ -1040,13 +1045,13 @@ button {
 .arrow:focus,
 .arrow i:focus {
   color: #fff;
-  background-color: #251dc4;
+  background-color: #251dc4dc;
   border-radius: 5px;
 }
 
 .box a {
   font-size: 1.5rem;
-  color: #fa3218;
+  color: #fa4d18;
   text-transform: none;
 }
 
@@ -1059,7 +1064,7 @@ button {
 .expandCollapse button,
 .expandCollapse i {
   font-size: 1.8rem;
-  color: #251dc4;
+  color: #251dc4dc;
   text-transform: none;
 }
 
@@ -1079,6 +1084,9 @@ footer p {
 }
 
 @media (max-width: 1187px) {
+  .landingLeftColumn {
+    height: 682px;
+  }
   h1 {
     padding-bottom: 30px;
   }
@@ -1120,7 +1128,7 @@ footer p {
     padding-top: 25px;
   }
   h1 {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
   h2 {
     font-size: 3.1rem;
@@ -1128,9 +1136,10 @@ footer p {
   .landingLeftColumn {
     margin: 0 13px;
     min-width: 350px;
+    height: auto;
   }
   .landingLeftColumn i {
-    color: #251dc4;
+    color: #251dc4dc;
     margin: 40px 0;
     padding: 5px 6px 1px 5px;
     border-radius: 50%;
@@ -1139,12 +1148,19 @@ footer p {
   }
   .landingLeftColumn i:hover, .landingLeftColumn i:focus {
     color: #fff;
-    background-color: #251dc4;
+    background-color: #251dc4dc;
+  }
+  .landingLeftColumn img {
+    width: 95%;
+    margin: 10px 0;
   }
   .roles {
-    padding: 25px 0 20px 20px;
+    padding: 35px 0 20px 20px;
     width: 90%;
     margin: 0 auto;
+  }
+  .landingRightColumn {
+    width: 47%;
   }
   .landingRightColumn ul {
     display: none;
@@ -1225,7 +1241,7 @@ footer p {
 
 @media (max-width: 550px) {
   .landingLeftColumn img {
-    width: 90%;
+    width: 85%;
   }
   .webDevelopment .headBand {
     width: 90%;
@@ -1315,17 +1331,21 @@ footer p {
     width: 100%;
   }
   .landingLeftColumn img {
-    width: 84%;
+    width: 75%;
+  }
+  .roles {
+    width: 75%;
+    margin-left: 15%;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .landingRightColumn {
     min-width: 0;
     width: 100%;
   }
   .landingRightColumn span {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .about img {
     width: 80%;
@@ -1367,6 +1387,10 @@ footer p {
   .projectModal {
     min-height: 510px;
   }
+  .box img {
+    width: 90%;
+    margin: 10px auto;
+  }
   .filler {
     font-size: 1.7rem;
     padding: 20px;
@@ -1386,7 +1410,7 @@ footer p {
     font-size: 3.1rem;
   }
   h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
   h3 {
     font-size: 3.2rem;
@@ -1421,7 +1445,7 @@ img {
 .index {
   background-image: url(../assets/bg62small.jpg);
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
 }
 
 /* jQuery properties */
@@ -1441,7 +1465,7 @@ img {
 
 .hamburgerOpen {
   display: block;
-  height: 100%;
+  height: calc(100% - 10px);
   right: 5px;
   opacity: 1;
 }

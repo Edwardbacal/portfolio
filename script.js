@@ -4,7 +4,6 @@ $(".hamburger").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
 });
 
-
 $(".ham").on("click", function () {
   $(".hamburgerMenu").toggleClass("hamburgerOpen");
 });
@@ -64,22 +63,25 @@ const portfolio = {
             </div>       
                 <img src="./assets/BBC.jpg" class="projectBoxImg" alt="screenshot of Bulldog Book Club page">
                 <p>
-                  This app models an dynamic interface for digital publications, using jQuery methods and a simple design to achieve a more user-friendly alternative to traditional e-texts. As an academic, I found that most publishers overlook UI and UX concerns by sticking to traditional print layouts. From my frustration with the blank pdf/ebook format, I sought to develop front-end solutions for long-form texts and volumes, which benefit from in-browser experience.  
+                  This app models an dynamic interface for digital publications, using jQuery methods and a simple design to achieve a more user-friendly alternative to traditional e-texts. As an academic, I found that most publishers overlook UI and UX concerns by sticking to traditional print layouts. From my frustration with the blank pdf/ebook format, I sought to develop front-end solutions for long-form texts and volumes, which benefit from the in-browser experience.  
                 </p>
                 <p>
                   This app features...
                 <p>    
                 <p>
-                • An accordion menu that allows users to easily condense and expand contents;
+                  • An accordion menu that allows users to easily condense and expand contents;
                 </p>
                 <p>
-                • Dynamically generated endnotes, which allows to view easily access notes directly
+                  • Dynamically generated endnotes, which allows to view easily access notes directly
                 </p>
                 <p>
-                • Buttons to enlarge and minimize text size.
+                  • Buttons to enlarge and minimize text size.
+                </p>
+                <p>
+                  • In progress: highlight buttons and a bibliographic citation generator.
                 </p>`,
   "beer": `<div class="projectTitle">
-              <h5>Beer Matchmaker</h5>     
+              <h5>Buds for Suds</h5>     
               <div class="iconMap">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-sass"></i>
@@ -102,6 +104,7 @@ const portfolio = {
               </p>`,
 };
 
+// Project display
 
 $(".projectButton").on("click", function () {
   const project = $(this).attr("id");
@@ -116,16 +119,13 @@ $(".projectButton").on("click", function () {
   }
 });
 
-// $(".footnote").on("click", function () {
-//   const number = $(this).attr("id");
-//   $('.note').empty();
-//   $('.note').toggle();
-//   for (let footnote in cite) {
-//     if (number === footnote) {
-//       $('.note').append("<p>" + (cite[footnote]) + "</p>");
-//     }
-//   }
-// });
+// Email obfuscation (thanks, Robert Duhig!)
+
+  $("#gmoil").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
+  });
+
 
 
 
@@ -137,20 +137,5 @@ $(".projectButton").on("click", function () {
 // $(".box img").on("mouseleave", function () {
 //   $(this).css("width", "48%");
 // });
-
-
-// nav sidebar 
-
-$(window).scroll(function () {
-  const hT = $('#scroll').offset().top,
-    hH = $('#scroll').outerHeight(),
-    wS = $(this).scrollTop();
-  if (wS > hH) {
-    $(".sideBarNav").fadeIn();
-  } else {
-      $(".sideBarNav").fadeOut();
-    }
-});
-
 
 
