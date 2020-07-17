@@ -325,6 +325,12 @@ button {
   margin-right: 5px;
 }
 
+// wtf is this mystery element (hiding it offscreen for now). 
+.hamburger {
+  position: absolute;
+  right: -50px;
+}
+
 .arrow:hover,
 .arrow i:hover,
 .arrow:focus,

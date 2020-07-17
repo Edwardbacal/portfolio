@@ -91,7 +91,7 @@ const portfolio = {
                 <div class="pngIconBox">
                   <img src="./assets/icons/apiOrange.png" alt="API">
                 </div>   
-              <a href="https://edwardbacal.github.io/BudsForSuds/"><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://sharp-jones-4634e5.netlify.app/"><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
 

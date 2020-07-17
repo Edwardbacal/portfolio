@@ -1053,6 +1053,11 @@ button {
   margin-right: 5px;
 }
 
+.hamburger {
+  position: absolute;
+  right: -50px;
+}
+
 .arrow:hover,
 .arrow i:hover,
 .arrow:focus,
