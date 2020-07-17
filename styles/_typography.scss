@@ -327,8 +327,9 @@ button {
 
 // wtf is this mystery element (hiding it offscreen for now). 
 .hamburger {
-  position: absolute;
+  position: fixed;
   right: -50px;
+  overflow: hidden;
 }
 
 .arrow:hover,

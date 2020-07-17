@@ -1054,8 +1054,9 @@ button {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   right: -50px;
+  overflow: hidden;
 }
 
 .arrow:hover,
