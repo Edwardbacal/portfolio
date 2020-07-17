@@ -100,6 +100,11 @@
   }
 }
 
+  .wrapperNav {
+    width: 90%;
+    padding-right: 6px;
+  }
+
   .hamburger i {
     display: block;
   }
@@ -186,8 +191,14 @@
   }
 
   .projectModal p {
-    display: flex;
+    display: inline-block;
     width: 100%;
+  }
+
+  .hamburger i {
+    font-size: 2.2rem;
+    top: -3px;
+    right: -3px;
   }
 }
 
@@ -288,7 +299,7 @@
 
   .roles {
     width: 75%;
-    margin-left: 15%;
+    margin-left: 12%;
   }
 
    h2 {
@@ -346,15 +357,15 @@
 
   .hamburger i {
     font-size: 1.8rem;
-    top: -4px;
-    right: -4px;
+    top: -5px;
+    right: -5px;
   }
 
   .projectModal {
     min-height: 510px;
   }
 
-  .box img {
+  .box a {
     width: 90%;
     margin: 10px auto;
 
@@ -367,15 +378,21 @@
 
   .fillerBox {
     padding: 20px 10px;
-}
+  }
 }
 
 @media(max-width: 350px) {
 
+  .wrapperNav {
+    width: 90%;
+    padding-right: 10px;
+  }
+
   .hamburger i {
     font-size: 1.7rem;
-    filter: drop-shadow(-1px 2px #fff);
-  }
+    top: -4px;
+    right: -4px;
+    }
 
   h1 {
     font-size: 3.1rem;
@@ -402,12 +419,8 @@
     width: 32px;
   }
 
-
-
   .planes {
     margin-right: 5px;
   }
-
-
-
 }
+

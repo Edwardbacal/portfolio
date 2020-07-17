@@ -31,7 +31,8 @@ li,
 p,
 button,
 .itemName,
-.contact span a {
+.contact span a,
+.normalizeText {
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
@@ -83,7 +84,9 @@ h5 {
   font-style: italic;
 }
 
-
+.underline {
+  text-decoration: underline;
+}
 
 // Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -254,6 +257,7 @@ i {
     padding: 5px;
     color: $secondaryColour;
     margin: 0 20px 2px 20px;
+    text-align: center;
   }
     span,
     button {
@@ -280,6 +284,13 @@ i {
       position: absolute;
       left: 0;
     }
+}
+
+.normalizeText {
+  font-size: 1.6rem;
+  color: $primaryColour;
+  padding: 0 3px;
+  border-radius: 1px;
 }
 
 .projectModal button {
@@ -317,10 +328,12 @@ button {
 .arrow:hover,
 .arrow i:hover,
 .arrow:focus,
-.arrow i:focus {
+.arrow i:focus,
+.normalizeText:hover,
+.normalizeText:focus {
   color: #fff;
   background-color: $secondaryColour;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .box a {

@@ -35,16 +35,16 @@ const portfolio = {
                 <div class="pngIconBox">
                   <img src="./assets/icons/apiOrange.png" alt="API" >
                 </div>
-                <a href=""><i class="fas fa-external-link-alt"></i></a>   
+                <a href="https://edwardbacal.github.io/CeArtTrace/"><i class="fas fa-external-link-alt"></i></a>   
               </div>
             </div>        
 
             <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page" class="projectBoxImg">
-            <p>This interactive React app displays semi-random selections from the Harvard Art Museums'         collection of over
+            <p>This interactive React app displays semi-random selections from the Harvard Art Museums' collection of over
               230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected
               object that matches that classification, displaying an image, title, name, date. As an art historian, I've often
               needed to find new examples of art in a certain medium and from a certain time and place. I developed this app as
-              a way to do that, to discover new work and broaden
+              a way to do that, to discover new work and broaden my knowledge base.
             </p>
             <p>
               NB: I am currently expanding this app to allow users to search according to criteria and region in addition to
@@ -58,12 +58,12 @@ const portfolio = {
                 <div class="pngIconBox">
                   <img src="./assets/icons/jqueryOrange.png" alt="jquery">
                 </div>
-                <a href=""><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://edwardbacal.github.io/BulldogBookClub/"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>       
                 <img src="./assets/BBC.jpg" class="projectBoxImg" alt="screenshot of Bulldog Book Club page">
                 <p>
-                  This app models an dynamic interface for digital publications, using jQuery methods and a simple design to achieve a more user-friendly alternative to traditional e-texts. As an academic, I found that most publishers overlook UI and UX concerns by sticking to traditional print layouts. From my frustration with the blank pdf/ebook format, I sought to develop front-end solutions for long-form texts and volumes, which benefit from the in-browser experience.  
+                  This app models an dynamic interface for digital publications, using jQuery methods and a effective UI to achieve a more user-friendly alternative to traditional e-texts. As an academic, I found that most publishers overlook UI and UX concerns by sticking to traditional print layouts. From my frustration with the blank pdf/ebook format, I sought to develop front-end solutions for long-form texts and volumes, which benefit from in-browser experience.  
                 </p>
                 <p>
                   This app features...
@@ -91,7 +91,7 @@ const portfolio = {
                 <div class="pngIconBox">
                   <img src="./assets/icons/apiOrange.png" alt="API">
                 </div>   
-              <a href=""><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://edwardbacal.github.io/BudsForSuds/"><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
 
@@ -100,8 +100,15 @@ const portfolio = {
                 <p>This interactive app serves as a beer companion app that draws on a REST api to pair craft beer selections with a complimentary food choice. Users can submit a food-related term and receive a list of appropriate results, displaying the name, label, and description of each beer. 
               </p>
               <p>
-                Developed in collaboration with <a href="" class="normalizeText orangeTwo">Vigyan Kayastha</a>
+                Developed in collaboration with <a href="https://www.vigyankayastha.com/" class="normalizeText underline">Vigyan Kayastha</a>
               </p>`,
+  "production": `<div class="projectTitle">
+              <h5>In Production</h5>     
+            </div>
+                <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of grids page">
+
+                <p>Current projects inculde a "web essay" on the role of the grid in art history and visual culture. I intend to use this project to explore the design possibilities of CSS Grids while applying my specialized knowledge in a creative way. 
+              </p>`
 };
 
 // Project display
