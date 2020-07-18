@@ -1063,9 +1063,7 @@ i {
 .arrow i:focus,
 .normalizeText:hover,
 .normalizeText:focus {
-  color: #fff;
-  background-color: #251dc4dc;
-  border-radius: 3px;
+  color: #fa4d18;
 }
 
 .box a {
