@@ -379,6 +379,17 @@
   .fillerBox {
     padding: 20px 10px;
   }
+
+  .contactBox i,
+  .contactBox img {
+    font-size: 3rem;
+    height: 28px;
+    width: 28px;
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
 }
 
 @media(max-width: 350px) {
@@ -421,6 +432,10 @@
 
   .planes {
     margin-right: 5px;
+  }
+
+  .contactBox {
+    padding: 25px;
   }
 }
 
