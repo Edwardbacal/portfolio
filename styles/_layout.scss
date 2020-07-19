@@ -363,8 +363,7 @@ div .box:last-child {
 .contactBox {
   @include flex;
   justify-content: space-evenly;
-  padding: 40px;
-  // margin-top: 30px;
+  padding: 30px;
 }
 
 .contact p {
