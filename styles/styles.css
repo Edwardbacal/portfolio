@@ -871,6 +871,10 @@ ul .dash {
   border-radius: 2px;
 }
 
+.top {
+  display: none;
+}
+
 .hamburger {
   color: #fa4d18;
   font-size: 2.5rem;
@@ -878,7 +882,6 @@ ul .dash {
   position: fixed;
   top: 0;
   right: 0;
-  display: none;
   z-index: 1;
 }
 
@@ -1153,6 +1156,9 @@ footer p {
   .landing {
     padding-top: 25px;
   }
+  .top {
+    display: block;
+  }
   h1 {
     padding-bottom: 10px;
   }
@@ -1194,9 +1200,6 @@ footer p {
   .wrapperNav {
     width: 90%;
     padding-right: 6px;
-  }
-  .hamburger {
-    display: block;
   }
   ul .dash {
     padding: 15px 5px;

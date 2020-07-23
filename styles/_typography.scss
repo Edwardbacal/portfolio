@@ -134,6 +134,10 @@ ul .dash {
   border-radius: 2px;
 }
 
+.top {
+ display: none;
+}
+
 .hamburger {
   color: $primaryColour;
   font-size: 2.5rem;
@@ -141,7 +145,6 @@ ul .dash {
   position: fixed;
   top: 0;
   right: 0;
-  display: none;
   z-index: 1;
 }
 
