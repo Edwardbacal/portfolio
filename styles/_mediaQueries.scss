@@ -26,9 +26,9 @@
     padding: 0 2px 0 6px;
   }
 
-    .projectModal {
+  .projectModal {
     background-position-x: 70%;
-    }
+  }
 }
 
 @media(max-width: 1080px) {
@@ -49,6 +49,10 @@
 // 862 / Tablet =================================
 
 @media(max-width: 862px) {
+
+  .wrapper {
+    width: 92%;
+  }
 
   .landing {
     padding-top: 25px;
@@ -101,11 +105,6 @@
     display: none;
   }
 }
-
-  .wrapperNav {
-    width: 90%;
-    padding-right: 6px;
-  }
 
   ul .dash {
     padding: 15px 5px;
@@ -193,11 +192,6 @@
     width: 100%;
   }
 
-  .hamburger {
-    font-size: 2.2rem;
-    top: -3px;
-    right: -3px;
-  }
 }
 
 
@@ -268,10 +262,6 @@
   .iconMap {
     justify-content: center;
   }
-
-    .hamburger {
-    font-size: 2rem;
-    }
 
     .filler {
       font-size: 2rem;
@@ -353,11 +343,7 @@
     font-size: 2.7rem;
   }
 
-  .hamburger {
-    font-size: 1.8rem;
-    top: -4px;
-    right: -4px;
-  }
+
 
   .projectModal {
     min-height: 510px;
@@ -394,16 +380,9 @@
 
 @media(max-width: 350px) {
 
-  .wrapperNav {
-    width: 90%;
-    padding-right: 10px;
+  .wrapper {
+    width: 94%;
   }
-
-  .hamburger {
-    font-size: 1.7rem;
-    top: -3px;
-    right: -3px;
-    }
 
   h1 {
     font-size: 3.1rem;
