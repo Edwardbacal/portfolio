@@ -106,9 +106,13 @@ const portfolio = {
               <h5>In Production</h5>     
             </div>
                 <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of grids page">
-
-                <p>Current projects inculde a "web essay" on the role of the grid in art history and visual culture. I intend to use this project to explore the design possibilities of CSS Grids while applying my specialized knowledge in a creative way. 
-              </p>`
+                <img src="./assets/responsiveRecs.jpg" class="projectBoxImg" alt="screenshot of grids page">
+                <p>
+                  Current projects include a "web essay" on the role of the grid in art history and visual culture. This project explores the design possibilities of CSS Grid while communicating my academic knowledge in creative ways. 
+                </p>
+                <p>I have also started a web design project called <a href="https://dreamy-mayer-d90013.netlify.app/" class="normalizeText underline">Responsive Records</a>, in which I reinterpret some of my favourite album covers as responsive browser layouts.   
+              
+              `
 };
 
 // Project display
