@@ -27,29 +27,44 @@ $(".click").on("click", function () {
 });
 
 const portfolio = {
-  "ce": `<div class="projectTitle">
-              <h5>CE Art Trace</h5>
-              <div class="iconMap">
-                <i class="fab fa-react"></i>
-                <i class="fab fa-css3-alt"></i>     
-                <div class="pngIconBox">
-                  <img src="./assets/icons/apiOrange.png" alt="API" >
-                </div>
-                <a href="https://edwardbacal.github.io/CeArtTrace/"><i class="fas fa-external-link-alt"></i></a>   
-              </div>
-            </div>        
+  "resRecs": `
+    <div class="projectTitle">
+      <h5>Responsive Records</h5>
+      <div class="iconMap">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-sass"></i>  
+        <i class="fab fa-js"></i>     
+        <a href="https://dreamy-mayer-d90013.netlify.app/"><i class="fas fa-external-link-alt"></i></a>   
+      </div>
+    </div>        
 
-            <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page" class="projectBoxImg">
-            <p>This interactive React app displays semi-random selections from the Harvard Art Museums' collection of over
-              230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected
-              object that matches that classification, displaying an image, title, name, date. As an art historian, I've often
-              needed to find new examples of art in a certain medium and from a certain time and place. I developed this app as
-              a way to do that, to discover new work and broaden my knowledge base.
-            </p>
-            <p>
-              NB: I am currently expanding this app to allow users to search according to criteria and region in addition to
-              medium.
-            </p>`,
+    <img src="./assets/responsiveRecs.jpg" class="projectBoxImg" alt="screenshot of Responsive Records page">
+    <p>This site is an ongoing design project in which I recreate some of my favourite album covers in the context of a responsive web browser. Here, I experiment with the possibilities and limitations that come with reinterpreting static, fixed-frame images as dynamic, interactive layouts, including animations and functionality via vanilla JavaScript  (Of course, this page only makes sense if you're on a desktop browser.
+    </p>`,
+  "ce": 
+    `<div class="projectTitle">
+      <h5>CE Art Trace</h5>
+      <div class="iconMap">
+        <i class="fab fa-react"></i>
+        <i class="fab fa-css3-alt"></i>     
+        <div class="pngIconBox">
+          <img src="./assets/icons/apiOrange.png" alt="API" >
+        </div>
+        <a href="https://edwardbacal.github.io/CeArtTrace/"><i class="fas fa-external-link-alt"></i></a>   
+      </div>
+    </div>        
+
+    <img src="./assets/ceArtTrace.jpg" alt="screenshot of CE Art Trace page" class="projectBoxImg">
+    <p>This interactive React app displays semi-random selections from the Harvard Art Museums' collection of over
+      230,000 items. When users select a medium, the app will call the institution's API and return a randomly selected
+      object that matches that classification, displaying an image, title, name, date. As an art historian, I've often
+      needed to find new examples of art in a certain medium and from a certain time and place. I developed this app as
+      a way to do that, to discover new work and broaden my knowledge base.
+    </p>
+    <p>
+      NB: I am currently expanding this app to allow users to search according to criteria and region in addition to
+      medium.
+    </p>`,
   "bulldog":`<div class="projectTitle">
               <h5>Bulldog Book Club</h5>
               <div class="iconMap">
@@ -106,14 +121,12 @@ const portfolio = {
               <h5>In Production</h5>     
             </div>
                 <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of grids page">
-                <img src="./assets/responsiveRecs.jpg" class="projectBoxImg" alt="screenshot of grids page">
                 <p>
                   Current projects include a "web essay" on the role of the grid in art history and visual culture. This project explores the design possibilities of CSS Grid while communicating my academic knowledge in creative ways. 
                 </p>
-                <p>I have also started a web design project called <a href="https://dreamy-mayer-d90013.netlify.app/" class="normalizeText underline">Responsive Records</a>, in which I reinterpret some of my favourite album covers as responsive browser layouts.   
-              
+                <p>I am also working on a dark-mode version of my portfolio with an entirely different UI.   
               `
-};
+  };
 
 // Project display
 
