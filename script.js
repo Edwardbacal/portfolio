@@ -39,7 +39,7 @@ const portfolio = {
     </div>        
 
     <img src="./assets/responsiveRecs.jpg" class="projectBoxImg" alt="screenshot of Responsive Records page">
-    <p>This site is an ongoing design project in which I recreate some of my favourite album covers in the context of a responsive web browser. Here, I experiment with the possibilities and limitations that come with reinterpreting static, fixed-frame images as dynamic, interactive layouts, including animations and functionality via vanilla JavaScript  (Of course, this page only makes sense if you're on a desktop browser.
+    <p>This site is an ongoing design project in which I recreate some of my favourite album covers in the context of a responsive web browser. Here, I experiment with the possibilities and limitations that come with reinterpreting static, fixed-frame images as dynamic, interactive layouts, including animations and functionality via vanilla JavaScript.
     </p>`,
   "ce": 
     `<div class="projectTitle">
