@@ -1,8 +1,10 @@
 $backgroundColour: rgba(0, 0, 0, 0.75);
-$primaryColour: #fa4d18;
-$lightPrimary: rgb(250, 133, 0);
-$secondaryColour: #251dc4dc;
-$highlightColour: #db0e86dc;
+$primaryColour: #a7e9fd;
+$lightPrimary: #0e6cd6;
+$secondaryColour: #fff66f;
+$highlightColour: #f17923;
+$textColour: #f4ffdd;
+$dark: #000000;
 
 @mixin flex {
   display: flex;
@@ -17,16 +19,12 @@ $highlightColour: #db0e86dc;
 
 .wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 section {
   margin-bottom: 3vh;
-}
-
-.fillerBox {
-  padding: 30px 10px;
 }
 
 a {
@@ -76,7 +74,7 @@ a {
   @include flex;
   justify-content: center;
   padding-top: 50px;
-  margin-bottom: 7vh;
+  margin-bottom: 13vh;
 }
 
 .landingLeftColumn {
@@ -101,7 +99,7 @@ a {
       transform: rotate(0deg);
   }
   100% {
-      transform: rotate(-360deg);
+      transform: rotate(360deg);
   }
 }
 
@@ -135,13 +133,13 @@ a {
 
 .hi {
   background-color: $secondaryColour;
-  color: #fff;
-  font-size: 2rem;
+  color: $dark;
   width: 100%;
   border-radius: 5px;
   min-height: 100px;
-  padding: 50px;
+  padding: 25px;
   text-align: center;
+  font-weight: 500;
 }
 
 .bio {
@@ -157,8 +155,8 @@ a {
   border-radius: 50%;
   border: 2px solid $secondaryColour;
   padding: 3px;
-  width: 280px;
-  height: 280px;
+  width: 30vmax;
+  height: 30vmax;
   margin: auto;
 }
 
@@ -173,7 +171,7 @@ a {
 
 .itemName {
   font-size: 1.3rem;
-  color: #fff;
+  color: $dark;
   padding-top: 10px;
 }
 
@@ -217,25 +215,27 @@ a {
 }
 
 .projectModal {
-  background-color: #fff;
+  background-color: $dark;
   width: 100%;
   min-height: 370px;
   margin: 0 auto;
-  padding-left: 180px;
-  border-bottom: 2px solid #2D26C5;
-  background-image: url(../assets/digIll/hiWorld.png);
+  border-bottom: 2px solid #bec534;
   background-repeat: no-repeat;
   background-size: 460px;
   background-position-x: 60%;
   background-position-y: 50%;
   position: relative;
+    img {
+      width: 40%;
+      float: left;
+      padding: 40px 30px 20px 35px;
+    }
 }
 
-.hiWorld {
-  width: 80%;
-  padding: 160px 130px 100px 70px;
+iframe {
+  margin: 0 auto;
+  width: 100%;
 }
-
 
 // Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -251,7 +251,7 @@ a {
 }
 
 .projectBox {
-  background-color: #fff;
+  background-color: $dark;
   padding: 25px 45px 25px 5px;
   // display: none;
 }
@@ -261,7 +261,7 @@ a {
   width: 50%;
   min-width: 230px;
   border-radius: 2px;
-  border: 1px dotted #2e26c550;
+  border: 1px dotted #e4ec4e;
   padding: 5px;
   float: left;
   max-width: 280px;
@@ -294,10 +294,6 @@ a {
   margin: 0 auto;
 }
 
-.designIll {
-  display: flex;
-  justify-content: space-between;
-}
 
 .design,
 .illustration {
@@ -309,7 +305,7 @@ a {
 }
 
 .white {
-  background-color: #fff;
+  background-color: $dark;
   height: 100%;
   border-bottom: 2px solid $secondaryColour;
 }

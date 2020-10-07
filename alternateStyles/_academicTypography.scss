@@ -1,0 +1,372 @@
+// Global Styles
+
+@mixin headingText ($fontSize, $colour) {
+    font-family: 'Roboto Mono', Helvetica;
+    font-size: $fontSize;
+    color: $colour;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a,
+  nav,
+  li,
+  .headBand span,
+  .projectModal button,
+  .dash {
+    @include headingText(3rem, $secondaryColour);
+    font-family: 'Roboto Mono', helvetica, arial;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  p,
+  button,
+  .itemName,
+  .contact span a,
+  .normalizeText,
+  .pBackground a  {
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    text-transform: none;
+    color: $textColour;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    transition: .2s;
+  }
+  
+  
+  .hi span,
+  .contact span a,
+  .pBackground a  {
+    color: $primaryColour;
+    font-weight: 400;
+  }
+  
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  
+  .headBand,
+  .filler {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  
+  .filler {
+    color: $highlightColour;
+    opacity: .4;
+    padding: 40px 0;
+  }
+  
+  h4 {
+    font-size: 3.5rem;
+    padding: 25px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  h5 {
+    font-size: 2rem;
+    color: $secondaryColour;
+    padding-left: 25px;
+    line-height: 1.3;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  // Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  h1 {
+    font-size: 6.5rem;
+    padding-bottom: 50px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  h2,
+  .landingRightColumn span {
+    list-style: none;
+    font-size: 3.3rem;
+    padding-bottom: 3px;
+    line-height: 1.3;
+  }
+  
+  ul {
+    text-align: right;
+    padding-top: 90px;
+    width: 100%;
+  }
+  
+  li, 
+  ul .dash {
+    font-size: 2.5rem;
+    color: $primaryColour;
+    padding: 5px;
+    line-height: 1.1;
+    transition: .2s;
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: $secondaryColour;
+    background: linear-gradient(270deg, #000000, rgba(0, 0, 0, 0));
+    border-radius: 2px;
+  }
+  
+  .top {
+   display: none;
+  }
+  
+  .hamburger {
+    color: $primaryColour;
+    font-size: 5vw;
+    padding: 10px;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 1;
+  }
+  
+  .hamburgerLi li:hover,
+  .hamburgerLi li:focus {
+    background: linear-gradient(270deg, #000000 15%, rgba(255, 255, 255, 0) 60%);
+  }
+  
+  
+  // .mysteryLink i {
+  //   color: rgb(230, 7, 182);
+  //   font-size: 2rem;
+  //   padding: 10px;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 10px;
+  //   transition: ease-out .3s;
+  // }
+  
+  // .mysteryLink i:hover,
+  // .mysteryLink i:focus {
+  //   color: rgb(141, 7, 230);
+  //   transform: rotate(180deg);
+  // }
+  
+  
+  // About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  p, 
+  .contact span a,
+  .pBackground a {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: 500;
+    text-transform: none;
+  }
+  
+  .pBackground {
+    background-color: rgba(20, 20, 20, 0.6);
+    padding: 17px 25px 25px 25px;
+    margin: 4px 0;
+    box-shadow: -2px 1px 1px #0015d375;
+    border-radius: 5px;
+      i,
+      strong {
+        color: $primaryColour;
+        font-size: 2rem;
+    }
+  }
+  
+  
+  .hi strong {
+    color: $lightPrimary;
+  }
+  
+
+
+  .break {
+    display: block;
+    padding: 5px;
+  }
+  
+  
+  
+  // Web Dev ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  .webDevelopment p {
+    color: #000000;
+    padding: 35px;
+  }
+
+  .doctoral {
+    color: $textColour;
+  }
+
+  i {
+    font-size: 4rem;
+    color: #000000;
+  }
+  
+  .pngIcon {
+    height: 40px;
+    width: 43px;
+  }
+  
+  .academiaIcon {
+    height: 37px;
+    width: 37px;
+  }
+  
+  .itemName {
+    color: #000000;
+  }
+  
+  .wp h3 {
+    padding: 25px;
+    color: #000000;
+  }
+  
+  .projectModal {
+    h5 {
+      font-size: 3rem;
+      padding: 5px;
+      color: $secondaryColour;
+      margin: 0 20px 2px 20px;
+      text-align: center;
+    }
+      span,
+      button {
+        font-size: 1.6rem;
+        text-align: left;
+        color: $primaryColour;
+        padding: 15px;
+    }
+    p {
+      // font-size: 2vmin;
+      text-align: left;
+      padding: 7px 0;
+      color: $textColour;
+      padding: 35px;
+    }
+      li i {
+        font-size: 2rem;
+        padding: 10px 10px 10px 40%;
+        text-align: left;
+        color: $primaryColour;
+      }
+      ul {
+        text-align: left;
+        padding: 10px;
+        width: 170px;
+        position: absolute;
+        left: 0;
+      }
+  }
+  
+  .normalizeText {
+    font-size: 1.6rem;
+    color: $primaryColour;
+    padding: 0 3px;
+    border-radius: 1px;
+  }
+  
+  .projectModal button {
+    text-align: left;
+    color: $primaryColour;
+    padding: 8px;
+    background-color: white;
+    border-radius: 2px;
+      &:hover,
+      &:focus {
+        color: #000000;
+        background-color: $secondaryColour;
+      }
+  }
+  
+  .projectTitle i,
+  .pngIconBox {
+    font-size: 2.8rem;
+    color: $primaryColour;
+    padding: 10px 10px 20px 10px;
+    border-radius: 3px;
+  }
+  
+  .click {
+    position: relative;
+  }
+  
+  .arrow {
+    position: absolute;
+    padding: 2.5px 3px 2.3px 3px;
+  }
+  
+  .arrow:hover,
+  .arrow i:hover,
+  .arrow:focus,
+  .arrow i:focus,
+  .normalizeText:hover,
+  .normalizeText:focus {
+    color: $primaryColour;
+  }
+  
+  .box a {
+    font-size: 1.5rem;
+    color: $primaryColour;
+    text-transform: none;
+  }
+  
+  // Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+  
+  .designIll h3 {
+    padding: 30px 25px;
+    color: #000000;
+  }
+  
+  
+  
+  .arrow i,
+  .expandCollapse button,
+  .expandCollapse i {
+    font-size: 1.8rem;
+    color: $secondaryColour;
+    text-transform: none;
+  }
+  
+  
+  .contact p {
+    padding: 20px 0;
+  }
+  
+  .contact h3,
+  .contact p,
+  .contact .headBand span {
+    color: #000000;
+  }
+  
+  footer p {
+    color: #000000;
+    font-size: 1.5rem;
+    padding-left: 5%;
+  }
+  

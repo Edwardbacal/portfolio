@@ -800,7 +800,7 @@ h3 {
 .filler {
   color: #db0e86dc;
   opacity: .4;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 h4 {
@@ -1098,6 +1098,7 @@ i {
 footer p {
   color: #fff;
   font-size: 1.5rem;
+  padding-left: 5%;
 }
 
 @media (max-width: 1187px) {
@@ -1465,7 +1466,7 @@ img {
 
 .index {
   background-image: url(../assets/bg62.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat;
 }
 
