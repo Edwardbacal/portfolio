@@ -36,6 +36,7 @@ button,
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
+  text-decoration: none;
   color: $secondaryColour;
 }
 
@@ -70,7 +71,7 @@ h3 {
 .filler {
   color: $highlightColour;
   opacity: .4;
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 h4 {
@@ -359,7 +360,6 @@ i {
   padding: 30px 25px;
   color: #fff;
 }
-
 
 
 .arrow i,

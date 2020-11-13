@@ -231,10 +231,6 @@ section {
   margin-bottom: 3vh;
 }
 
-.fillerBox {
-  padding: 30px 10px;
-}
-
 a {
   padding: 0;
 }
@@ -759,6 +755,7 @@ button,
   font-family: 'Quicksand';
   font-weight: 500;
   text-transform: none;
+  text-decoration: none;
   color: #251dc4dc;
 }
 
@@ -800,7 +797,7 @@ h3 {
 .filler {
   color: #db0e86dc;
   opacity: .4;
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 h4 {

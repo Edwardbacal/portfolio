@@ -157,6 +157,8 @@ a {
   padding: 3px;
   width: 30vmax;
   height: 30vmax;
+  max-width: 374px;
+  max-height: 374px;
   margin: auto;
 }
 
@@ -226,7 +228,8 @@ a {
   background-position-y: 50%;
   position: relative;
     img {
-      width: 40%;
+      width: 40vmax;
+      // min-width: 400px;
       float: left;
       padding: 40px 30px 20px 35px;
     }
@@ -235,6 +238,7 @@ a {
 iframe {
   margin: 0 auto;
   width: 100%;
+  padding: 1px 0;
 }
 
 // Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -319,15 +323,16 @@ iframe {
 .box {
   border-bottom: 3px dotted $primaryColour;
   margin: 0px 25px 0px 25px;
-  padding: 40px 0 30px 0;
+  padding: 30px 0 20px 0;
     a {
       width: 49.5%;
     }
     p {
-      padding: 0 0;
+      padding: 15px 0 0 0;
       box-shadow: none;
       background-color: transparent;
       margin-bottom: -5px;
+      display: inline-block;
     }
     img {
       border: 1px dotted #2e26c550;
@@ -341,9 +346,7 @@ div .box:last-child {
   border-bottom: none;
 }
 
-
-
-// Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .contact {
   margin-top: 30px;

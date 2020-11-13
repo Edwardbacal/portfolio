@@ -33,7 +33,8 @@
   .itemName,
   .contact span a,
   .normalizeText,
-  .pBackground a  {
+  .pBackground a,
+  .teach li {
     font-family: 'Roboto Mono';
     font-weight: 300;
     text-transform: none;
@@ -71,8 +72,14 @@
   
   .filler {
     color: $highlightColour;
-    opacity: .4;
+    opacity: .4; 
     padding: 40px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
   h4 {
@@ -85,12 +92,17 @@
   h5 {
     font-size: 2rem;
     color: $secondaryColour;
-    padding-left: 25px;
     line-height: 1.3;
+    display: inline;
   }
   
-  em {
+  em,
+  .italic {
     font-style: italic;
+  }
+
+  .strikethrough {
+    text-decoration: line-through;
   }
   
   .underline {
@@ -114,13 +126,13 @@
     line-height: 1.3;
   }
   
-  ul {
+  .contents {
     text-align: right;
     padding-top: 90px;
     width: 100%;
   }
   
-  li, 
+  .contents li, 
   ul .dash {
     font-size: 2.5rem;
     color: $primaryColour;
@@ -156,30 +168,14 @@
   }
   
   
-  // .mysteryLink i {
-  //   color: rgb(230, 7, 182);
-  //   font-size: 2rem;
-  //   padding: 10px;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 10px;
-  //   transition: ease-out .3s;
-  // }
-  
-  // .mysteryLink i:hover,
-  // .mysteryLink i:focus {
-  //   color: rgb(141, 7, 230);
-  //   transform: rotate(180deg);
-  // }
-  
-  
   // About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
   p, 
   .contact span a,
-  .pBackground a {
+  .pBackground a,
+  .teach li {
     font-size: 1.5rem;
-    line-height: 1.7;
+    line-height: 1.6;
     text-align: justify;
     font-weight: 500;
     text-transform: none;
@@ -317,7 +313,6 @@
   }
   
   .arrow {
-    position: absolute;
     padding: 2.5px 3px 2.3px 3px;
   }
   
@@ -334,6 +329,12 @@
     font-size: 1.5rem;
     color: $primaryColour;
     text-transform: none;
+    width: 100%;
+    display: block;
+      i{
+        color: $secondaryColour;
+        font-size: 2rem;
+      }
   }
   
   // Design + Illustration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
@@ -343,14 +344,27 @@
     color: #000000;
   }
   
-  
-  
+
   .arrow i,
   .expandCollapse button,
   .expandCollapse i {
     font-size: 1.8rem;
     color: $secondaryColour;
     text-transform: none;
+  }
+
+  .teach li,
+  .teach p {
+    color: #000000;
+    padding: 5px 35px;
+  }
+
+  .teach p:first-child {
+    padding-top: 35px;
+  }
+
+  .teach li:last-child {
+    padding-bottom: 35px;
   }
   
   
@@ -363,10 +377,19 @@
   .contact .headBand span {
     color: #000000;
   }
+
+  .contact span a,
+  .teach a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-transform: none;
+  }
   
   footer p {
     color: #000000;
     font-size: 1.5rem;
     padding-left: 5%;
   }
+  
   
