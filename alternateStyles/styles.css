@@ -264,6 +264,7 @@ a {
 
 .hamburgerFace {
   width: 45%;
+  margin-bottom: 40px;
 }
 
 .landing {
@@ -877,13 +878,26 @@ ul .dash {
 }
 
 .hamburger {
-  color: #a7e9fd;
+  color: #fff66f;
   font-size: 5vw;
   padding: 10px;
   position: absolute;
   top: 1vw;
   right: 1vw;
   z-index: 1;
+}
+
+.hamburgerLi {
+  text-align: right;
+}
+
+.hamburgerLi li {
+  padding: 10px 0;
+}
+
+.hamburgerLi span {
+  color: #fff66f;
+  padding: 25px 0;
 }
 
 .hamburgerLi li:hover,
@@ -1073,6 +1087,10 @@ i {
 .teach p {
   color: #000000;
   padding: 5px 35px;
+}
+
+.teach li {
+  text-align: left;
 }
 
 .teach p:first-child {

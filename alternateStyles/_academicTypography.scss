@@ -153,13 +153,24 @@
   }
   
   .hamburger {
-    color: $primaryColour;
+    color: $secondaryColour;
     font-size: 5vw;
     padding: 10px;
     position: absolute;
     top: 1vw;
     right: 1vw;
     z-index: 1;
+  }
+
+  .hamburgerLi {
+    text-align: right;
+      li {
+        padding: 10px 0;
+      }
+      span {
+        color: $secondaryColour;
+        padding: 25px 0;
+      }
   }
   
   .hamburgerLi li:hover,
@@ -357,6 +368,10 @@
   .teach p {
     color: #000000;
     padding: 5px 35px;
+  }
+
+  .teach li {
+    text-align: left
   }
 
   .teach p:first-child {
