@@ -46,7 +46,7 @@ a {
   position: fixed;
   top: 5px;
   right: -1500px;
-  background: linear-gradient(-30deg, #cfdcf0, #eeecec);
+  background: linear-gradient(-30deg, #54481a, #000f27);
   border: 1px solid #d0ddf0;
   padding: 25px;
   width: calc(100% - 10px);
@@ -61,9 +61,6 @@ a {
 
 .hamburgerFace {
   width: 45%;
-  position: absolute;
-  top: 25px;
-  left: 25px;
   // animation: spin 30s linear infinite;
 }
 
@@ -73,6 +70,7 @@ a {
 .landing {
   @include flex;
   justify-content: center;
+  align-items: flex-start;
   padding-top: 50px;
   margin-bottom: 13vh;
 }
@@ -108,7 +106,7 @@ a {
   flex-direction: column;
   width: 40%;
   min-width: 345px;
-  margin-top: -7px;
+  margin-top: 15px;
     span {
       display: block;
     }

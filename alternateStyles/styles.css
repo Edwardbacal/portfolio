@@ -248,7 +248,7 @@ a {
   position: fixed;
   top: 5px;
   right: -1500px;
-  background: linear-gradient(-30deg, #cfdcf0, #eeecec);
+  background: linear-gradient(-30deg, #54481a, #000f27);
   border: 1px solid #d0ddf0;
   padding: 25px;
   width: calc(100% - 10px);
@@ -264,9 +264,6 @@ a {
 
 .hamburgerFace {
   width: 45%;
-  position: absolute;
-  top: 25px;
-  left: 25px;
 }
 
 .landing {
@@ -286,6 +283,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 50px;
   margin-bottom: 13vh;
 }
@@ -359,7 +359,7 @@ a {
           flex-direction: column;
   width: 40%;
   min-width: 345px;
-  margin-top: -7px;
+  margin-top: 15px;
 }
 
 .landingRightColumn span {
@@ -1169,11 +1169,11 @@ footer p {
   }
   .roles {
     padding: 35px 0 20px 20px;
-    width: 90%;
+    width: 55%;
     margin: 0 auto;
   }
   .landingRightColumn {
-    width: 47%;
+    width: 50%;
   }
   .landingRightColumn ul {
     display: none;
@@ -1200,10 +1200,6 @@ footer p {
   h4 {
     font-size: 3rem;
   }
-  .projectModal {
-    background-position-x: 85%;
-    background-size: 60%;
-  }
   .designIll {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1222,17 +1218,6 @@ footer p {
   }
 }
 
-@media (max-width: 700px) {
-  .projectBoxImg {
-    width: 100%;
-    max-width: 320px;
-  }
-  .projectModal p {
-    display: inline-block;
-    width: 100%;
-  }
-}
-
 @media (max-width: 550px) {
   .landingLeftColumn img {
     width: 85%;
@@ -1246,65 +1231,8 @@ footer p {
   .vertical {
     display: none;
   }
-  .grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .iconQuarter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 90px;
+  .projectModal img {
     width: 100%;
-    margin: 15px 0;
-  }
-  .icons {
-    padding: 0 25px 25px 25px;
-  }
-  .projectModal {
-    background-position-x: 50%;
-    background-position-y: 90%;
-    background-size: 60%;
-    padding-left: 25px;
-    min-height: 540px;
-  }
-  .projectModal ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 250px;
-    position: static;
-    margin: 0 auto;
-  }
-  .projectBox {
-    text-align: center;
-    padding: 0 25px 25px 0;
-  }
-  .projectBoxImg {
-    margin: 0 0 15px 0;
-    width: 100%;
-    float: none;
-  }
-  .iconMap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .filler {
     font-size: 2rem;
@@ -1319,10 +1247,10 @@ footer p {
   }
   .landingLeftColumn {
     min-width: 0;
-    width: 100%;
+    width: 50%;
   }
   .landingLeftColumn img {
-    width: 75%;
+    width: 100%;
   }
   .roles {
     width: 75%;
@@ -1332,11 +1260,13 @@ footer p {
     font-size: 2.3rem;
   }
   .landingRightColumn {
-    min-width: 0;
-    width: 100%;
+    min-width: 200px;
   }
   .landingRightColumn span {
     font-size: 1.5rem;
+  }
+  .roles {
+    padding-top: 10px;
   }
   .about img {
     width: 80%;
@@ -1369,13 +1299,6 @@ footer p {
   }
   h4 {
     font-size: 2.7rem;
-  }
-  .projectModal {
-    min-height: 510px;
-  }
-  .box a {
-    width: 90%;
-    margin: 10px auto;
   }
   .filler {
     font-size: 1.7rem;
