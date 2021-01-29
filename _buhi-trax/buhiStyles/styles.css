@@ -343,6 +343,14 @@ p {
           filter: drop-shadow(-1px 0px 0px #c637a9);
   text-transform: uppercase;
   text-align: justify;
+  margin: auto;
+}
+
+.cat {
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 45%;
 }
 
 ul {
