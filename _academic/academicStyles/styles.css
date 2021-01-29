@@ -1381,7 +1381,8 @@ img {
 }
 
 .index {
-  background-image: url(../assets/bg62Dark.jpg);
+  background: #212122;
+  background-image: url(../bg62Dark.jpg);
   background-size: cover;
   background-repeat: repeat;
 }

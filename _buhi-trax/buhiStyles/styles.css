@@ -221,7 +221,7 @@ textarea {
   overflow: hidden;
 }
 
-/* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 html {
   font-size: 62.5%;
   margin: 0;
@@ -240,56 +240,48 @@ body {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg);
-            transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg);
+    -webkit-transform: skew(35deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg) scale(0.1);
+            transform: skew(35deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg) scale(0.1);
+  }
+  15% {
+    -webkit-transform: skew(60deg, 0deg) rotate3d(1, 1, 1, 80deg) rotate(210deg) scale(0.6);
+            transform: skew(60deg, 0deg) rotate3d(1, 1, 1, 80deg) rotate(210deg) scale(0.6);
+  }
+  30% {
+    -webkit-transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.8);
+            transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.8);
+  }
+  60% {
+    -webkit-transform: skew(190deg, 0deg) rotate3d(1, 1, 1, 440deg) rotate(540deg) scale(1);
+            transform: skew(190deg, 0deg) rotate3d(1, 1, 1, 440deg) rotate(540deg) scale(1);
   }
   100% {
-    -webkit-transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(180deg);
-            transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(180deg);
-  }
-  100% {
-    -webkit-transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(360deg);
-            transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(360deg);
+    -webkit-transform: skew(395deg, 0deg) rotate3d(1, 1, 1, 720deg) rotate(720deg) scale(0.1);
+            transform: skew(395deg, 0deg) rotate3d(1, 1, 1, 720deg) rotate(720deg) scale(0.1);
   }
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg);
-            transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg);
+    -webkit-transform: skew(35deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg) scale(0.1);
+            transform: skew(35deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(0deg) scale(0.1);
+  }
+  15% {
+    -webkit-transform: skew(60deg, 0deg) rotate3d(1, 1, 1, 80deg) rotate(210deg) scale(0.6);
+            transform: skew(60deg, 0deg) rotate3d(1, 1, 1, 80deg) rotate(210deg) scale(0.6);
+  }
+  30% {
+    -webkit-transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.8);
+            transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.8);
+  }
+  60% {
+    -webkit-transform: skew(190deg, 0deg) rotate3d(1, 1, 1, 440deg) rotate(540deg) scale(1);
+            transform: skew(190deg, 0deg) rotate3d(1, 1, 1, 440deg) rotate(540deg) scale(1);
   }
   100% {
-    -webkit-transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(180deg);
-            transform: skew(95deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(180deg);
+    -webkit-transform: skew(395deg, 0deg) rotate3d(1, 1, 1, 720deg) rotate(720deg) scale(0.1);
+            transform: skew(395deg, 0deg) rotate3d(1, 1, 1, 720deg) rotate(720deg) scale(0.1);
   }
-  100% {
-    -webkit-transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(360deg);
-            transform: skew(45deg, 0deg) rotate3d(1, 1, 1, 0deg) rotate(360deg);
-  }
-}
-
-ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(770px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(770px, 1fr));
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5px;
-}
-
-li {
-  min-height: 50vmin;
-  width: 100%;
-  background: url("./buhiAssets/blkPaper.jpg");
-  background-size: cover;
-  position: relative;
-}
-
-li img {
-  padding: 10%;
-  margin: 0 auto;
 }
 
 .title {
@@ -299,24 +291,22 @@ li img {
   padding-bottom: 100%;
 }
 
-.description {
-  padding-bottom: 100%;
-  height: 0;
-}
-
 h1 {
   color: white;
-  font-size: 8vw;
+  font-size: 8vmax;
   width: 0px;
   margin: 0 auto;
-  font-family: 'Arial Narrow', serif, sans-serif;
+  font-family: 'Barlow Condensed', 'arial narrow', helvetica;
   -webkit-filter: drop-shadow(-6px -7px 0px #c637a9);
           filter: drop-shadow(-6px -7px 0px #c637a9);
-  -webkit-animation: spin linear 20s;
-          animation: spin linear 20s;
+  -webkit-animation: spin linear 30s;
+          animation: spin linear 30s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   padding: 20%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
 }
 
 .desc {
@@ -339,14 +329,50 @@ h1 {
   top: 0;
 }
 
+.description {
+  padding-bottom: 100%;
+  height: 0;
+}
+
 p {
   color: white;
   font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.3vw;
   line-height: 1.4;
-  -webkit-filter: drop-shadow(2px -2px 0px #c637a9);
-          filter: drop-shadow(2px -2px 0px #c637a9);
+  -webkit-filter: drop-shadow(-1px 0px 0px #c637a9);
+          filter: drop-shadow(-1px 0px 0px #c637a9);
   text-transform: uppercase;
+  text-align: justify;
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+li {
+  min-height: 50vmin;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/blkPaper.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+li img {
+  padding: 10%;
+  margin: 0 auto;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
 }
 
 .over {
@@ -354,7 +380,6 @@ p {
   -webkit-transition: .2s;
   transition: .2s;
   position: absolute;
-  text-align: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -363,6 +388,7 @@ p {
   margin: auto;
   -webkit-filter: drop-shadow(-2px 0px 0px #00000071);
           filter: drop-shadow(-2px 0px 0px #00000071);
+  overflow: scroll;
   background: rgba(0, 0, 0, 0.466);
 }
 
@@ -370,49 +396,35 @@ p {
   opacity: 1;
 }
 
-.skewR {
-  -webkit-transform: skew(-30deg);
-          transform: skew(-30deg);
-  text-align: left;
-}
-
-.skewL {
-  -webkit-transform: skew(30deg);
-          transform: skew(30deg);
-  text-align: right;
+.modal {
+  background-image: url(/buhiStyles/buhiAssets/blkPaper.jpg);
 }
 
 @media (max-width: 1440px) {
   ul {
-    -ms-grid-columns: (minmax(477px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(477px, 1fr));
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   p {
     font-size: 2vw;
-    -webkit-filter: drop-shadow(1px -1px 1px #c637a9);
-            filter: drop-shadow(1px -1px 1px #c637a9);
-  }
-}
-
-@media (max-width: 958px) {
-  ul {
-    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
-  p {
-    font-size: 2vw;
+    -webkit-filter: drop-shadow(-2px 0px 1px #c637a9);
+            filter: drop-shadow(-2px 0px 1px #c637a9);
   }
 }
 
 @media (max-width: 644px) {
   .desc {
-    width: 76%;
-    left: 12%;
+    width: 80%;
+    left: 10%;
   }
   p {
-    font-size: 3.8vw;
-    -webkit-filter: drop-shadow(1px -1px 0px #c637a9);
-            filter: drop-shadow(1px -1px 0px #c637a9);
+    font-size: 3.5vw;
+    -webkit-filter: drop-shadow(-1px 0px 0px #c637a9);
+            filter: drop-shadow(-1px 0px 0px #c637a9);
+  }
+  ul {
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
 /*# sourceMappingURL=styles.css.map */
