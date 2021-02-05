@@ -1,0 +1,77 @@
+// $accent: #1403af;
+// $bodyColour: #560858;
+// $highlightColour: #f7a234;
+
+@mixin shadow {
+  filter: drop-shadow(0 2px 3px rgba(100, 46, 15, 0.2));
+}
+
+@mixin bodyText ($fontSize, $lineHeight) {
+  font-family: 'Chakra Petch', Helvetica, Trebuchet;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-decoration: none;
+  // letter-spacing: .1vw;
+}
+
+@mixin displayText ($fontSize) {
+  font-family: 'Nova Mono', Helvetica, Arial;
+  font-size: $fontSize;
+}
+
+body {
+  @include bodyText(20px, 1.5)
+  text-align: justify;
+}
+
+.heading {
+  @include displayText(25vmin);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background: rgba(220, 200, 253, 0.411);
+  filter: drop-shadow(-1px 1px .3px rgb(172, 126, 247));
+}
+
+.subHeading {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));
+  @include bodyText(4.5vmin, auto);
+  text-align: center;
+  background: transparent;
+  filter: drop-shadow(-1px 1px .2px rgb(172, 126, 247));
+    span {
+      border-bottom: 1px solid rgba(172, 126, 247, 0.5);
+    }
+}
+
+p {
+  font-size: 2.5vmin;
+  margin: 3vmin 0;
+  background-color: rgba(251, 247, 244, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 4vmin 6vmin;
+  height: 100%;
+  letter-spacing: -.2px;
+  @include shadow;
+    span {
+      display: block;
+      padding-top: 2vmin;
+    }
+}
+
+h3 {
+  @include displayText(5vmax);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1vmax 0;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 2.2vmin;
+}
+
+.normalize {
+  font-style: normal;
+}

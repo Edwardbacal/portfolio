@@ -1,0 +1,141 @@
+.gallery ul {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 3fr 3fr 5fr 2fr 1fr 1fr 1fr 1fr 3fr 3fr 1fr 2fr 1fr 3fr 3fr 1fr;
+  grid-template-rows: 7fr 2fr 7fr 2fr 3fr 5fr 2fr 3fr 3fr 4fr 3fr 1fr 3fr 5fr 2fr 2fr 5fr 4fr 2fr 4fr 3fr 4fr 2fr 3fr 3fr 2fr 2fr 3fr 2fr 8fr 1fr 2fr 12fr;
+  width: 100%;
+  min-height: 200vh;
+  margin: 75px 0;
+  li {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 1px;
+    border: 3px solid #6633BF;
+    background-size: contain;
+    background-position: center;
+  }
+  // grid area: row start / column start / row span / column span
+  li:first-child{
+    grid-area: 1 / 1 / 1 / 9;
+    background-image: url(../assets/simpson.jpg);
+  }
+  li:nth-child(2) {
+    grid-area: 3 / 1 / 4 / 9;
+    background-image: url(../assets/Gutenberg.jpg);
+  }
+  li:nth-child(3) {
+    grid-area: 1 / 12 / 5 / 15;
+    background-image: url(../assets/holzer.jpg);
+
+  }
+  li:nth-child(4) {
+    grid-area: 1 / 16 / 5 / 20;
+    background-image: url(../assets/score.jpeg);
+  }
+  li:nth-child(5) {
+    grid-area: 5 / 1 / 9 / 4;
+    background-image: url(../assets/somBMA.jpg);
+    background-size: contain;
+  }
+  li:nth-child(6) {
+    grid-area: 5 / 5 / 8 / 9;
+    background-image: url(../assets/sharits.jpg);
+    background-size: cover;
+  }
+  li:nth-child(7) {
+    grid-area: 6 / 11 / 8 / 20;
+    background-image: url(../assets/becher.jpg);
+    
+  }
+  li:nth-child(8) {
+    grid-area: 10 / 2 / 13 / 4;
+    background-image: url(../assets/ledger.jpeg);
+  }
+  li:nth-child(9) {
+    grid-area: 9 / 5 / 13 / 7;
+    background-image: url(../assets/ChicagoStone.jpg);
+    background-size: contain;
+  }
+  li:nth-child(10) {
+    grid-area: 9 / 9 / 16 / 15;
+    background-image: url(../assets/manzoniAchrome.jpg);
+  }
+  li:nth-child(11) {
+    grid-area: 9 / 16 / 12 / 20;
+    background-image: url(../assets/LA.jpg);
+    background-size: cover;
+  }
+  li:nth-child(12) {
+    grid-area: 16 / 2 / 19 / 6;
+    background-image: url(../assets/whiteread.jpg);
+    background-size: cover;
+  }
+  li:nth-child(13) {
+    grid-area: 17 / 7 / 19 / 19;
+    background-image: url(../assets/deMaria.jpg);
+    background-size: cover;
+  }
+  li:nth-child(14) {
+    grid-area: 20 / 16 / 26 / 20;
+    background-image: url(../assets/gallagher.jpg);
+    background-size: contain;
+  }
+  li:nth-child(15) {
+    grid-area: 20 / 1 / 24 / 7;
+    background-image: url(../assets/playtime.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  li:nth-child(16) {
+    grid-area: 21 / 9 / 23 / 15;
+    background-image: url(../assets/excel.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  li:nth-child(17) {
+    grid-area: 25 / 1 / 27 / 7;
+    background-image: url(../assets/araeenChaarYaar.jpg);
+    background-size: contain;
+  }
+  li:nth-child(18) {
+    grid-area: 24 / 8 / 26 / 14;
+    background-image: url(../assets/flavinHaroldJoachim.jpg);
+    background-size: cover;
+  }
+  li:nth-child(19) {
+    grid-area: 29 / 4 / 32 / 2;
+    background-image: url(../assets/martin.jpg);
+    background-size: cover;
+  }
+  li:nth-child(20) {
+    grid-area: 28 / 5 / 32 / 12;
+    background-image: url(../assets/Superstudio.jpg);
+    background-size: cover;
+  }
+  li:nth-child(21) {
+    grid-area: 30 / 13 / 32 / 19;
+    background-image: url(../assets/hesse.jpeg);
+    background-size: contain;
+  }
+  li:nth-child(22) {
+    grid-area: 33 / 1 / 34 / 20;
+    background-image: url(../assets/2001Frame.jpg);
+    background-size: cover;
+    min-height: 400px;
+    background-position: bottom;
+  }
+  li:nth-child(23) {
+    grid-area: 14 / 16 / 15 / 20;
+    background-image: url(../assets/johns.jpg);
+    background-size: contain;
+  }
+  li:nth-child(24) {
+    grid-area: 14 / 1 / 15 / 8;
+    background-image: url(../assets/schoonhoven.jpg);
+    background-size: contain;
+  }
+  li:nth-child(25) {
+    grid-area: 27 / 13 / 29 / 19;
+    background-image: url(../assets/ryman.jpg);
+    background-size: contain;
+  }
+}
