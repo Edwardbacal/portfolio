@@ -11,9 +11,11 @@ li {
   position: relative;
   @include shadow;
   border-radius: 2px;
+  list-style: none;
 }
 
-.overlay, .overlayDark {
+.overlay, 
+.overlayDark {
   background: #fffdfbe0;
   opacity: 0;
   height: 100%;
@@ -44,8 +46,11 @@ li {
   gap: 3vmax;
   margin-bottom: 10vh;
     li {
-      border: 1px solid rgba(92, 92, 92, 0.22);
-      filter: drop-shadow(0 1px 3px rgba(100, 46, 15, 0.1));
+      // border: 1px solid rgba(92, 92, 92, 0.22);
+      filter: drop-shadow(0 1px 3px rgba(100, 46, 15, 0.2));
+      img {
+        height: 100%;
+      }
     }
     .medium {
       margin: auto;
@@ -59,6 +64,7 @@ li {
       justify-items: center;
       grid-template-columns: repeat(3, 1fr);
       gap: 2px;
+      max-height: 20vh;
         p {
           padding: 0;
         }
@@ -77,5 +83,6 @@ li {
 }
 
 iframe {
-  width: 100%
+  width: 100%;
+  min-height: 20vmax;
 }

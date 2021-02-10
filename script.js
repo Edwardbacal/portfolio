@@ -41,6 +41,21 @@ const portfolio = {
     <img src="./assets/responsiveRecs.jpg" class="projectBoxImg" alt="screenshot of Responsive Records page">
     <p>This site is an ongoing design project in which I recreate some of my favourite album covers in the context of a responsive web browser. Here, I experiment with the possibilities and limitations that come with reinterpreting static, fixed-frame images as dynamic, interactive layouts, including animations and functionality via vanilla JavaScript.
     </p>`,
+    
+    "grids": `
+      <div class="projectTitle">
+        <h5>Grids: A Short Introduction</h5>     
+        <div class="iconMap">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-sass"></i>  
+          <a href="grids.html"><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+        <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of Grids page">
+
+        <p>Grids is a "web essay" on the role of the grid in the history of art and visual culture. This project marries my background as an art historian with my work in web design. It demonstrates both a practical exploration of CSS grid as a design tool and an experiment in creative web-publishing, with an emphasis on creating a more engaging user experience in educational content.
+      </p>`,
   "ce": 
     `<div class="projectTitle">
       <h5>CE Art Trace</h5>
@@ -118,8 +133,8 @@ const portfolio = {
                 Developed in collaboration with <a href="https://www.vigyankayastha.com/" class="normalizeText underline">Vigyan Kayastha</a>
               </p>`,
   "production": `<div class="projectTitle">
-              <h5>In Production</h5>     
-            </div>
+                  <h5>In Production</h5>     
+                </div>
                 <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of grids page">
                 <p>
                   Current projects include a "web essay" on the role of the grid in art history and visual culture. This project explores the design possibilities of CSS Grid while communicating my academic knowledge in creative ways. 

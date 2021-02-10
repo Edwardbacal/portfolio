@@ -20,8 +20,13 @@ body {
 }
 
 .wrapper {
-  max-width: 90%;
+  width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+ul {
+  padding: 0;
 }
 
 img {
@@ -105,7 +110,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: 5vw;
-  margin-top: 7vh;
+  margin-top: 7vmin;
   text-transform: uppercase;
   }
 
@@ -185,11 +190,13 @@ header {
 .albertiP {
   grid-column-start: 2;
   grid-column-end: 4;
+  min-height: 10vw;
 }
 
 .durerP {
   grid-column-start: 1;
   grid-column-end: 3;
+  min-height: 10vw;
 }
 
 .durer {
@@ -217,39 +224,53 @@ header {
 }
 
 .mondrian3 {
-  background-image: url(../assets/MondrianComposition.jpg);
+  background-image: url(../assets/mondrian_composition_c.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .SLW {
   background: url(../assets/leWittRed.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .SLW2 {
   background: url(../assets/leWittPatchwork.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .SLW3 {
   background: url(../assets/solLewittCube.jpg);
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fgt{
   background: url(../assets/fgt.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .kim {
   background: url(../assets/kim.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hatoum {
   background: url(../assets/hatoumInterior.jpg);
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bodyTwo {
@@ -273,6 +294,10 @@ header {
     }
 }
 
+.blk {
+  color: #000;
+}
+
 .furtherResources p {
   margin: 0;
   background: transparent;
@@ -289,9 +314,63 @@ footer {
   // padding-top: 10vh;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 768px) {
+  .alberti,
+  .durerP {
+    grid-column-end: 4;
+  }
+  .albertiP,
+  .durer {
+    grid-column-start: 1;
+  }
+  .medium {
+    max-height: 15vh;
+  }
+}
+
+@media (max-width: 860px) {
+  .fra {
+    font-size: 1.5vmin;
+  }
+}
+
+@media (max-width: 510px) {
   .subHeading {
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    // font-size: 3vmin;
   }
+  p {
+    font-size: 3.5vmin;
+    margin: 2vmin 0;
+  }
+
+  .media {
+    gap: 1vmax;
+  }
+
+  // .medium {
+  //   max-height: 10vh;
+  //   span {
+  //     font-size: 1.3vmax;
+  //     padding: .2vw;
+  //  }
+
+  
+  .overlay,
+  .overlayDark {
+    line-height: 1.2;
+    font-size: 3vmin;
+  }
+
+  .gallery ul {
+    grid-template-rows: 7fr 2fr 7fr 2fr 3fr 5fr 2fr 3fr 3fr 4fr 3fr 1fr 3fr 5fr 2fr 2fr 5fr 4fr 2fr 4fr 3fr 4fr 2fr 3fr 3fr 2fr 2fr 3fr 2fr 8fr 1fr 2fr 22fr;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 20vmin;
+  }
+
+  .fra {
+    font-size: 2vmin;
+   }
 }
