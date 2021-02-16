@@ -147,10 +147,9 @@ p {
 }
 
 .centre {
-  grid-column-start: 1;
-  grid-column-end: 6;
   position: fixed;
   top: 20vh;
+  left: calc(25vw + 7.5%);
   z-index: 6;
 }
 
