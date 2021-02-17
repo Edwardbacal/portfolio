@@ -66,7 +66,7 @@ const letter = {
   "a": `Osprey ardently appreciates Afghan artisanry.`,
   "b": `Between Belgium’s bicycles and beer, Osprey bets on what’s best.`,
   "c": `Clearly, Osprey clamours for Colombian coffee.`,
-  "d": `Osprey decidedly delights in Danish design,`,
+  "d": `Osprey decidedly delights in Danish design.`,
   "e": `Osprey evidently enjoys Ethiopian and Eritrean eats.`,
   "f": `Osprey is a formidable fan of French philosophy.`,
   "g": `Osprey gets that Ghanaian garb is gorgeous.`,

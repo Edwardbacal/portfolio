@@ -149,7 +149,7 @@ p {
 .centre {
   position: fixed;
   top: 20vh;
-  left: calc(25vw + 7.5%);
+  left: calc(50vw - 25vmin);
   z-index: 6;
 }
 
@@ -172,7 +172,8 @@ p {
   z-index: 2;
 }
 
-.over:hover {
+.over:hover,
+.over:focus {
   opacity: 0;
   cursor: pointer;
 }
@@ -291,4 +292,65 @@ img {
 #y {
   background-image: url(assets/y.jpg);
   grid-area: 9 / 1 / 10 / 6;
+}
+
+
+footer {
+  padding-top: 15vh;
+  font-size: 3vmin;
+  text-align: center;
+  font-family: "Big Shoulders Inline Text", Helvetica, sans-serif;
+}
+
+@media (max-width: 850px){
+  header{
+    background-position: -10vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .centre {
+    top: auto;
+    bottom: 10vh;
+    left: 12.5%;
+  }
+  .open {
+    width: 75vw;
+    height: 105vw;
+  }
+  .textBox {
+    width: 100%;
+    top: 0px;
+    border-radius: 0;
+  }
+  p {
+    font-size: 3.8vw;
+  }
+}
+
+@media (max-width: 500px){
+  header{
+    background-position: -110px;
+  }
+}
+
+@media (max-width: 400px) {
+  .centre {
+    left: 5%;
+  }
+  .open {
+    width: 90vw;
+    height: 126vw;
+  }
+  .textBox {
+    width: 100%;
+    top: 0px;
+    border-radius: 0;
+  }
+  p {
+    font-size: 3.6vw;
+  }
+  footer {
+    padding-top: 25vh;
+  }
 }
