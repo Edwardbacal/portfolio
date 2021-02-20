@@ -56,6 +56,25 @@ const portfolio = {
 
         <p>Grids is a "web essay" on the role of the grid in the history of art and visual culture. This project marries my background as an art historian with my work in web design. It demonstrates both a practical exploration of CSS grid as a design tool and an experiment in creative web-publishing, with an emphasis on creating a more engaging user experience in educational content.
       </p>`,
+
+"osprey": `
+      <div class="projectTitle">
+      <h5>Osprey: Online Edition</h5>     
+      <div class="iconMap">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-sass"></i>
+        <div class="pngIconBox">
+          <img src="./assets/icons/jqueryOrange.png" alt="jquery">
+        </div>
+        <a href="osprey.html"><p class="visuallyHidden">external link to live site</p><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+      <img src="./assets/osprey.jpg" class="projectBoxImg" alt="screenshot of Osprey page">
+
+      <p>This page hosts the web version version of an illustrated children's book I made between 2019 and 2021. While the book also exists in a conventional form, the online edition is formatted to engage users through interactive functions, a centralized layout, and light animations. Because the book doesn't follow a linear structure, the site eschews a page-to-page layout, instead inviting users click on different sections in any order.
+    </p>`,
+
   "ce": 
     `<div class="projectTitle">
       <h5>CE Art Trace</h5>
@@ -80,6 +99,7 @@ const portfolio = {
       NB: I am currently expanding this app to allow users to search according to criteria and region in addition to
       medium.
     </p>`,
+
   "bulldog":`<div class="projectTitle">
               <h5>Bulldog Book Club</h5>
               <div class="iconMap">
@@ -116,7 +136,7 @@ const portfolio = {
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-sass"></i>
                 <div class="pngIconBox">
-                  <img src="./assets/icons/jqueryOrange.png" alt="API">
+                  <img src="./assets/icons/jqueryOrange.png" alt="jQuery">
                 </div>
                 <div class="pngIconBox">
                   <img src="./assets/icons/apiOrange.png" alt="API">
@@ -132,15 +152,14 @@ const portfolio = {
               <p>
                 Developed in collaboration with <a href="https://www.vigyankayastha.com/" class="normalizeText underline">Vigyan Kayastha</a>
               </p>`,
-  "production": `<div class="projectTitle">
-                  <h5>In Production</h5>     
-                </div>
-                <img src="./assets/grids.jpg" class="projectBoxImg" alt="screenshot of grids page">
-                <p>
-                  Current projects include a "web essay" on the role of the grid in art history and visual culture. This project explores the design possibilities of CSS Grid while communicating my academic knowledge in creative ways. 
-                </p>
-                <p>I am also working on a dark-mode version of my portfolio with an entirely different UI.   
-              `
+  // "production": `<div class="projectTitle">
+  //                 <h5>In Production</h5>     
+  //               </div>
+  //               <img src=" ... ">
+  //               <p>
+  //                 ...
+  //               </p>  
+  //               `
   };
 
 // Project display

@@ -311,7 +311,7 @@ footer {
 @media (max-width: 800px) {
   .centre {
     top: auto;
-    bottom: 10vh;
+    bottom: 5vh;
     left: 12.5%;
   }
   .open {

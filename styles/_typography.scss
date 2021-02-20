@@ -289,7 +289,7 @@ i {
   }
     li i {
       font-size: 2rem;
-      padding: 10px 10px 10px 40%;
+      padding: 8px 10px 2px 40%;
       text-align: left;
       color: $primaryColour;
     }
@@ -312,7 +312,7 @@ i {
 .projectModal button {
   text-align: left;
   color: $primaryColour;
-  padding: 8px;
+  padding: 6px 8px;
   background-color: white;
   border-radius: 2px;
     &:hover,
