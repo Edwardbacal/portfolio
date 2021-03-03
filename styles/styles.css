@@ -559,7 +559,7 @@ a {
 }
 
 .projectBox {
-  background-color: #fff;
+  background-color: transparent;
   padding: 25px 45px 25px 5px;
 }
 
@@ -1012,9 +1012,15 @@ i {
 .projectModal ul {
   text-align: left;
   padding: 10px;
-  width: 170px;
+  width: 190px;
   position: absolute;
   left: 0;
+}
+
+.client {
+  font-size: 1rem;
+  color: #251dc4dc;
+  margin-left: 9px;
 }
 
 .normalizeText {
