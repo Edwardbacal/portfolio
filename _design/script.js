@@ -12,28 +12,30 @@ console.log('hi');
 
 
 
-
-
-
 $(".box").on("click", function () {
   $(this).prev('div').toggleClass("show");
-  $('#info').toggleClass("hide");
+  $('.desc').removeClass("hide");
 });
+
+$(".over").on("click", function () {
+  $(this).removeClass("show");
+});
+
 
 $("i").on("click", function () {
-  console.log('heeeey');
-  $(this).next('div').toggleClass("show");
-  $('#info').toggleClass("hide");
+  $(this).parent('div').toggleClass("show");
+  $(this).next('p').removeClass("hide");
 });
 
+$("#info").on("click", function () {
+  $(this).next('div').toggleClass("show");
+  $('#info').toggleClass("hide");
+  $('.desc').removeClass("hide");
+});
 
-
-// // Email obfuscation (thanks, Robert Duhig!)
-
-//   $("#gmoil").on("click", function (e) {
-//     e.preventDefault();
-//     window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
-//   });
-
+$("#gmoil").on("click", function (e) {
+  e.preventDefault();
+  window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
+});
 
 

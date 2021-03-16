@@ -252,13 +252,13 @@ body {
     -webkit-transform: skew(20deg, 0deg) rotate3d(1, 1, 1, 30deg) rotate(80deg) scale(0.8);
             transform: skew(20deg, 0deg) rotate3d(1, 1, 1, 30deg) rotate(80deg) scale(0.8);
   }
-  95% {
-    -webkit-transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.1);
-            transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.1);
+  90% {
+    -webkit-transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.3);
+            transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.3);
   }
   100% {
-    -webkit-transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.1);
-            transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.1);
+    -webkit-transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.2);
+            transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.2);
   }
 }
 
@@ -271,13 +271,13 @@ body {
     -webkit-transform: skew(20deg, 0deg) rotate3d(1, 1, 1, 30deg) rotate(80deg) scale(0.8);
             transform: skew(20deg, 0deg) rotate3d(1, 1, 1, 30deg) rotate(80deg) scale(0.8);
   }
-  95% {
-    -webkit-transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.1);
-            transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.1);
+  90% {
+    -webkit-transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.3);
+            transform: skew(90deg, 0deg) rotate3d(1, 1, 1, 90deg) rotate(360deg) scale(0.3);
   }
   100% {
-    -webkit-transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.1);
-            transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.1);
+    -webkit-transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.2);
+            transform: skew(5deg, 0deg) rotate3d(1, 1, 1, 360deg) rotate(360deg) scale(0.2);
   }
 }
 
@@ -333,6 +333,36 @@ body {
   }
 }
 
+@-webkit-keyframes rise {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+  50% {
+    -webkit-transform: skew(-3deg, -3deg);
+            transform: skew(-3deg, -3deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes rise {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+  50% {
+    -webkit-transform: skew(-3deg, -3deg);
+            transform: skew(-3deg, -3deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+}
+
 .face {
   -webkit-animation: face 30s linear infinite;
           animation: face 30s linear infinite;
@@ -368,12 +398,29 @@ h2 {
 }
 
 h2 {
+  left: 0px;
+}
+
+.tilt {
   -webkit-animation: tilt ease-in-out 5s infinite;
           animation: tilt ease-in-out 5s infinite;
 }
 
+.rise {
+  -webkit-animation: rise ease-in-out 5s infinite;
+          animation: rise ease-in-out 5s infinite;
+}
+
 .desc {
   color: #f2f1ef;
+  -webkit-transition: .5s .1s;
+  transition: .5s .1s;
+}
+
+.foot {
+  color: #f2f1ef;
+  font-size: 1.14vw;
+  padding: 3.5vh;
 }
 
 .description {
@@ -389,6 +436,13 @@ p, h3 {
   text-transform: uppercase;
   text-align: justify;
   margin: auto;
+}
+
+span {
+  font-size: 1vw;
+  line-height: 1.2;
+  display: block;
+  text-transform: none;
 }
 
 i {
@@ -413,7 +467,9 @@ i {
 }
 
 a {
-  color: #FF6B00;
+  color: #ffaf38;
+  -webkit-filter: drop-shadow(-2px 0px 0px #3a025365);
+          filter: drop-shadow(-2px 0px 0px #3a025365);
 }
 
 .cat {
@@ -512,7 +568,7 @@ iframe {
   padding: 0;
 }
 
-.over {
+.over, .overA {
   color: #f2f1ef;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -529,6 +585,12 @@ iframe {
   z-index: 3;
 }
 
+.over img, .overA img {
+  padding: 0%;
+  margin: 5%;
+  width: 90%;
+}
+
 .circleImg {
   height: 100%;
 }
@@ -538,6 +600,11 @@ iframe {
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
   padding: 10%;
+}
+
+footer {
+  background: #0a2b8f;
+  height: 10vh;
 }
 
 @media (max-width: 1440px) {
