@@ -1,0 +1,156 @@
+$primaryDark: #1d1d1d;
+$primaryAccent: #1742C2;
+
+
+
+// Global Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+main {
+  margin-left: 40vmin;
+}
+
+body {
+  position: relative;
+}
+
+
+
+// NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.979);
+  z-index: 10;
+  overflow: scroll;
+    img {
+      width: 66%;
+      margin: 15% 0 10px 0;
+      animation: spin 60s linear infinite;
+    }
+    ul {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+      li {
+        margin: 1vmin;
+      }
+    span {
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(to left, #e4e4e4, #e7e7e7);
+      margin: 20px 0 15px 0;
+    }
+  }
+
+
+
+h1 {
+  color: $primaryAccent;
+  font-size: 2vmax;
+  font-weight: 600;
+  margin: 10px 0 30px 0;
+}
+
+li a {
+  color: $primaryDark;
+  font-weight: 400;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  padding: 20px 2px 20px 10px;
+  &:hover {
+    text-transform: uppercase;
+  }
+}
+
+
+// sections ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+header {
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 2;
+  @include flex;
+  div {
+    width: 40vmin;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  img {
+    height: 40vmin;
+    border-radius: 3px;
+  }
+}
+
+
+// BIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.wave {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  margin-left: 40vmin;
+  background-image: url(../assets/wave.jpg);
+  animation: scale 180s ease-out alternate infinite, colour 10s ease-out alternate infinite;
+  transform: skew(14deg, 14deg);
+}
+
+.sec {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  margin-left: 40vmin;
+  z-index: 2;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+h2 {
+  background: #fff;
+  padding: 30px;
+  margin: 30px;
+}
+
+.test {
+  height: 150vh;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.design {
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+
+  
+main {
+  position: relative;
+  top: 120vh;
+}
+  
+
+
+
+
+
+
+
+

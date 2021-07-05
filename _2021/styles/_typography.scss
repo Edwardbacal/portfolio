@@ -1,0 +1,25 @@
+// Global Styles
+$primaryDark: #1d1d1d;
+$primaryAccent: #1742C2;
+
+
+html {
+  font-family: 'Barlow', Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  transition: .2s;
+}
+
+p {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+
+
