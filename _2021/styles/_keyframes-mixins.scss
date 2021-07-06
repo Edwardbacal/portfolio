@@ -44,7 +44,9 @@
 
 
 .expand {
+  padding: 25px 0;
   text-transform: uppercase;
+  transition: .2s;
 }
 
 // @mixin headingText ($fontSize) {

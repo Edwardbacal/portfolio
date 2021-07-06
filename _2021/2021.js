@@ -1,29 +1,44 @@
 $(window).scroll(function() {
-   const hT = $('#bio').offset().top,
-       hH = $('#bio').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       console.log('H1 on the view!');
-       $(".bio").addClass("expand");
-   }
-       else {
-        $(".bio").removeClass("expand");
-   }
+    const bioTop = $('#bio').offset().top,
+        bioHeight = $('#bio').outerHeight(),
+        resTop = $('#res').offset().top,
+        resHeight = $('#res').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        if (wS > (bioTop+bioHeight-wH - 300)){
+            $(".bio").addClass("expand");
+        }
+            else {
+            $(".bio").removeClass("expand");
+        }
+            if (wS > (resTop+resHeight-wH - 500)){
+            $(".res").addClass("expand");
+            $(".bio").removeClass("expand");
+        }
+            else {
+            $(".res").removeClass("expand");
+        }
 });
 
 
 
 
 
-
-// $(window).scroll(function() {
-//   const hT = $('#header').offset().top,
-//       hH = $('#header').outerHeight(),
-//       wH = $(window).height(),
-//       wS = $(this).scrollTop();
-//   if (wS > (hT+hH-wH)){
-//       console.log('Header on the view!');
-//       $(".bio").removeClass("expand");
-//   }
-// });
+//  $(window).scroll(function() {
+    //     const wS = $(this).scrollTop(),
+    //     bio = 600,
+    //     res = 1400;
+    //     if (wS > (bio)){
+    //        $(".bio").addClass("expand");
+    //    }
+    //        else {
+    //         $(".bio").removeClass("expand");
+    //    }
+    //    if (wS > (res)){
+    //     $(".res").addClass("expand");
+    //     $(".bio").removeClass("expand");
+    // }
+    //     else {
+    //      $(".res").removeClass("expand");
+    // }
+    // });

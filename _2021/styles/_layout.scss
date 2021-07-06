@@ -59,8 +59,6 @@ nav {
     }
   }
 
-
-
 h1 {
   color: $primaryAccent;
   font-size: 2vmax;
@@ -81,6 +79,7 @@ li a {
 
 
 // sections ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 header {
   height: 100vh;
@@ -113,40 +112,59 @@ header {
   transform: skew(14deg, 14deg);
 }
 
-.sec {
-  position: absolute;
-  top: 100vh;
-  height: 100vh;
+.biography {
+  position: relative;
   margin-left: 40vmin;
   z-index: 2;
+  padding: 100px 0 100px 20px;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-h2 {
-  background: #fff;
-  padding: 30px;
-  margin: 30px;
-}
 
-.test {
+.resume {
   height: 150vh;
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 
 .design {
   height: 100vh;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
 }
 
 
   
 main {
   position: relative;
-  top: 120vh;
 }
   
-
+.options {
+  width: 100%;
+  ul {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  margin: 2%;
+  min-height: 80px;
+  li {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    background: #fff;
+    font-size: 1.9rem;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    transition: .2s;
+    &:hover {
+      background: black;
+      color: #fff;
+    }
+  }
+  }
+}
 
 
 
