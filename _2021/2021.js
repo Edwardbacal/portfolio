@@ -5,7 +5,7 @@ $(window).scroll(function() {
         resHeight = $('#res').outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
-        if (wS > (bioTop+bioHeight-wH - 300)){
+        if (wS > (bioTop+bioHeight-wH - 500)){
             $(".bio").addClass("expand");
         }
             else {
@@ -19,7 +19,6 @@ $(window).scroll(function() {
             $(".res").removeClass("expand");
         }
 });
-
 
 
 

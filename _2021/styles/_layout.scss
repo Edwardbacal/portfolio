@@ -21,7 +21,6 @@ body {
 }
 
 
-
 // NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 nav {
@@ -47,9 +46,9 @@ nav {
       flex-direction: column;
       justify-content: space-between;
     }
-      li {
-        margin: 1vmin;
-      }
+    li {
+      margin: 1vmin;
+    }
     span {
       display: inline-block;
       height: 1px;
@@ -59,12 +58,7 @@ nav {
     }
   }
 
-h1 {
-  color: $primaryAccent;
-  font-size: 2vmax;
-  font-weight: 600;
-  margin: 10px 0 30px 0;
-}
+
 
 li a {
   color: $primaryDark;
@@ -98,6 +92,10 @@ header {
   }
 }
 
+section {
+  padding: 100px 0 200px 40px;
+}
+
 
 // BIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -108,56 +106,59 @@ header {
   width: 100%;
   margin-left: 40vmin;
   background-image: url(../assets/wave.jpg);
-  animation: scale 180s ease-out alternate infinite, colour 10s ease-out alternate infinite;
-  transform: skew(14deg, 14deg);
+  animation: scale 120s ease-out alternate infinite, colour 10s ease-out alternate infinite;
 }
 
 .biography {
   position: relative;
   margin-left: 40vmin;
   z-index: 2;
-  padding: 100px 0 100px 20px;
+  // background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+
 }
+
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .resume {
-  height: 150vh;
-  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  // height: 150vh;
+  // background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  background: $primaryAccent;
 }
 
 .design {
   height: 100vh;
   background: #fff;
 }
-
-
   
 main {
   position: relative;
 }
   
 .options {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   ul {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2%;
-  margin: 2%;
-  min-height: 80px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    // margin: 2%;
+    min-height: 80px;
   li {
     text-align: center;
     align-items: center;
     display: grid;
-    background: #fff;
+    background: $primaryAccent;
     font-size: 1.9rem;
     height: 100%;
     width: 100%;
     padding: 20px;
     transition: .2s;
+    border: 2px solid #fff;
+    color: #fff;
     &:hover {
       background: black;
       color: #fff;
@@ -166,7 +167,100 @@ main {
   }
 }
 
+.block { 
+  background: #fff;
+  padding: 20px 40px 20px 20px;
+  margin: 20px 0px 20px 20px;
+  margin-right: 0px;
+}
 
+.innerBlock {
+  display: flex;
+  width: 100%;
+}
+
+.year,
+.name,
+.year3 {
+    color: #fff;
+    background: #000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.year3 {
+  color: #000;
+  background: #fff;
+}
+
+
+.year1 {
+  margin-right: 50px;
+}
+
+.name {
+  width: 400px;
+}
+
+
+
+.bioBlock,
+.resBlock {
+  padding: 0;
+  background: white;
+  margin: 20px 20px 20px 0px;
+  p {
+    padding: 20px;
+  }
+}
+
+
+
+.resBlock {
+  background: $primaryAccent;
+  color: #fff;
+  display: flex;
+  margin: 50px 20px 30px 0px;
+  p {
+    width: 70%;
+    padding: 0 0 0 3.3%;
+    text-align: justify;
+  }
+}
+
+
+.bioBlock2,
+.resBlock2 {
+  padding: 0;
+  background: #000;
+  p {
+    padding: 20px;
+    color: #fff;
+  }
+}
+
+.bioBlock2 .year,
+.bioBlock2 {
+  color: #fff;
+  background: $primaryAccent;
+  margin: 0;
+  padding: 25px;
+}
+
+
+
+.bioBlock2 {
+  margin-bottom: 75px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+
+
+.year3 {
+  width: 33%;
+}
 
 
 

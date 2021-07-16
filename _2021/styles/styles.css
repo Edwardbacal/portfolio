@@ -307,6 +307,7 @@ textarea {
 
 .expand {
   padding: 25px 0;
+  font-weight: 600;
   text-transform: uppercase;
   -webkit-transition: .2s;
   transition: .2s;
@@ -382,13 +383,6 @@ nav span {
   margin: 20px 0 15px 0;
 }
 
-h1 {
-  color: #1742C2;
-  font-size: 2vmax;
-  font-weight: 600;
-  margin: 10px 0 30px 0;
-}
-
 li a {
   color: #1d1d1d;
   font-weight: 400;
@@ -433,6 +427,10 @@ header img {
   border-radius: 3px;
 }
 
+section {
+  padding: 100px 0 200px 40px;
+}
+
 .wave {
   position: fixed;
   top: 0px;
@@ -440,23 +438,18 @@ header img {
   width: 100%;
   margin-left: 40vmin;
   background-image: url(../assets/wave.jpg);
-  -webkit-animation: scale 180s ease-out alternate infinite, colour 10s ease-out alternate infinite;
-          animation: scale 180s ease-out alternate infinite, colour 10s ease-out alternate infinite;
-  -webkit-transform: skew(14deg, 14deg);
-          transform: skew(14deg, 14deg);
+  -webkit-animation: scale 120s ease-out alternate infinite, colour 10s ease-out alternate infinite;
+          animation: scale 120s ease-out alternate infinite, colour 10s ease-out alternate infinite;
 }
 
 .biography {
   position: relative;
   margin-left: 40vmin;
   z-index: 2;
-  padding: 100px 0 100px 20px;
 }
 
 .resume {
-  height: 150vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+  background: #1742C2;
 }
 
 .design {
@@ -469,7 +462,8 @@ main {
 }
 
 .options {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .options ul {
@@ -481,8 +475,7 @@ main {
   justify-items: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 2%;
-  margin: 2%;
+  gap: 3%;
   min-height: 80px;
 }
 
@@ -493,18 +486,118 @@ main {
           align-items: center;
   display: -ms-grid;
   display: grid;
-  background: #fff;
+  background: #1742C2;
   font-size: 1.9rem;
   height: 100%;
   width: 100%;
   padding: 20px;
   -webkit-transition: .2s;
   transition: .2s;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .options ul li:hover {
   background: black;
   color: #fff;
+}
+
+.block {
+  background: #fff;
+  padding: 20px 40px 20px 20px;
+  margin: 20px 0px 20px 20px;
+  margin-right: 0px;
+}
+
+.innerBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.year,
+.name,
+.year3 {
+  color: #fff;
+  background: #000;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.year3 {
+  color: #000;
+  background: #fff;
+}
+
+.year1 {
+  margin-right: 50px;
+}
+
+.name {
+  width: 400px;
+}
+
+.bioBlock,
+.resBlock {
+  padding: 0;
+  background: white;
+  margin: 20px 20px 20px 0px;
+}
+
+.bioBlock p,
+.resBlock p {
+  padding: 20px;
+}
+
+.resBlock {
+  background: #1742C2;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 20px 30px 0px;
+}
+
+.resBlock p {
+  width: 70%;
+  padding: 0 0 0 3.3%;
+  text-align: justify;
+}
+
+.bioBlock2,
+.resBlock2 {
+  padding: 0;
+  background: #000;
+}
+
+.bioBlock2 p,
+.resBlock2 p {
+  padding: 20px;
+  color: #fff;
+}
+
+.bioBlock2 .year,
+.bioBlock2 {
+  color: #fff;
+  background: #1742C2;
+  margin: 0;
+  padding: 25px;
+}
+
+.bioBlock2 {
+  margin-bottom: 75px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.year3 {
+  width: 33%;
 }
 
 html {
@@ -519,22 +612,30 @@ button {
   transition: .2s;
 }
 
-p {
-  background: #fff;
-  padding: 20px 40px 20px 20px;
-  margin: 20px 0px 20px 20px;
-  margin-right: 0px;
+h1 {
+  color: #1742C2;
+  font-size: 2vmax;
+  font-weight: 600;
+  margin: 10px 0 30px 0;
+}
+
+.block,
+.resBlock,
+.resBlock2,
+.bioBlock,
+.bioBlock2 {
   font-size: 1.7rem;
   line-height: 1.3;
   display: inline-block;
-  text-transform: lowercase;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
-p span {
-  color: #fff;
-  background: #000;
-  padding: 2px 6px;
-  margin-right: 4px;
+.resBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h2 {
@@ -542,6 +643,10 @@ h2 {
   margin: 10px 0;
   line-height: 1.2;
   text-align: justify;
+}
+
+.top {
+  padding-top: 100px;
 }
 
 /* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
