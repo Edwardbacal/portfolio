@@ -43,6 +43,7 @@ h2 {
   margin: 10px 0;
   line-height: 1.2;
   text-align: justify;
+  color: $primaryAccent;
 }
 
 .top {
@@ -50,3 +51,6 @@ h2 {
 }
 
 
+.capital {
+  text-transform: uppercase;
+}

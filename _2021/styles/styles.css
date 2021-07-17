@@ -313,12 +313,6 @@ textarea {
   transition: .2s;
 }
 
-.wrapper {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 header,
 main {
   margin-left: 40vmin;
@@ -326,6 +320,10 @@ main {
 
 body {
   position: relative;
+}
+
+section {
+  padding: 100px 25px 200px 50px;
 }
 
 nav {
@@ -427,10 +425,6 @@ header img {
   border-radius: 3px;
 }
 
-section {
-  padding: 100px 0 200px 40px;
-}
-
 .wave {
   position: fixed;
   top: 0px;
@@ -461,12 +455,13 @@ main {
   position: relative;
 }
 
-.options {
-  width: 90%;
+.wrapper {
+  width: 96%;
   margin: 0 auto;
+  padding-right: 2%;
 }
 
-.options ul {
+.wrapper ul {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -479,7 +474,7 @@ main {
   min-height: 80px;
 }
 
-.options ul li {
+.wrapper ul li {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -497,9 +492,9 @@ main {
   color: #fff;
 }
 
-.options ul li:hover {
-  background: black;
-  color: #fff;
+.wrapper ul li:hover {
+  background: #fff;
+  color: #000;
 }
 
 .block {
@@ -520,7 +515,7 @@ main {
 .name,
 .year3 {
   color: #fff;
-  background: #000;
+  background: #1742C2;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,10 +638,15 @@ h2 {
   margin: 10px 0;
   line-height: 1.2;
   text-align: justify;
+  color: #1742C2;
 }
 
 .top {
   padding-top: 100px;
+}
+
+.capital {
+  text-transform: uppercase;
 }
 
 /* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

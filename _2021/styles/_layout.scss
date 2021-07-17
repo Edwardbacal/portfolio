@@ -5,11 +5,6 @@ $primaryAccent: #1742C2;
 
 // Global Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.wrapper {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 header,
 main {
@@ -20,6 +15,9 @@ body {
   position: relative;
 }
 
+section {
+  padding: 100px 25px 200px 50px
+}
 
 // NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -92,9 +90,7 @@ header {
   }
 }
 
-section {
-  padding: 100px 0 200px 40px;
-}
+
 
 
 // BIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -136,9 +132,10 @@ main {
   position: relative;
 }
   
-.options {
-  width: 90%;
+.wrapper {
+  width: 96%;
   margin: 0 auto;
+  padding-right: 2%;
   ul {
     display: grid;
     align-items: center;
@@ -160,8 +157,8 @@ main {
     border: 2px solid #fff;
     color: #fff;
     &:hover {
-      background: black;
-      color: #fff;
+      background: #fff;
+      color: #000;
     }
   }
   }
@@ -183,7 +180,7 @@ main {
 .name,
 .year3 {
     color: #fff;
-    background: #000;
+    background: $primaryAccent;
     padding: 20px;
     display: flex;
     align-items: center;
