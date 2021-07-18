@@ -34,6 +34,15 @@
   }
 }
 
+@keyframes right {
+  0% {
+    padding: 22px 22px 22px 22px;
+  }
+  100% {
+    padding: 22px 17px 22px 27px;
+  }
+}
+
 @mixin flex {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +57,10 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: .2s;
+}
+
+.capital {
+  text-transform: uppercase;
 }
 
 // @mixin headingText ($fontSize) {
