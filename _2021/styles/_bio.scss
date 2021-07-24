@@ -17,7 +17,7 @@ $primaryAccent: #1742C2;
   position: relative;
   margin-left: 40vmin;
   z-index: 2;
-  height: 90vh;
+  // height: 90vh;
 }
 
 
@@ -32,7 +32,6 @@ $primaryAccent: #1742C2;
 
 .scrollBlock {
   background: transparent;
-  margin: 20px 20px 20px 0px;
   color: $primaryAccent;
   i {
     padding: 22px;
@@ -47,14 +46,6 @@ $primaryAccent: #1742C2;
 }
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-.design,
-.writing {
-  height: 100vh;
-  background: #fff;
-}
-  
 
 .bioBlock,
 .scrollBlock {
@@ -93,8 +84,6 @@ $primaryAccent: #1742C2;
   min-width: 140px;
 }
 
-
-
 .horiz {
   height: 120px;
   border-bottom: 5px solid #fff;
@@ -102,7 +91,7 @@ $primaryAccent: #1742C2;
 }
 
 .innerH {
-  width: 7500px;
+  width: 7300px;
 }
 
 

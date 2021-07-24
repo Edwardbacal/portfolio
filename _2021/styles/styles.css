@@ -351,7 +351,6 @@ textarea {
   position: relative;
   margin-left: 40vmin;
   z-index: 2;
-  height: 90vh;
 }
 
 .bioBlock {
@@ -366,7 +365,6 @@ textarea {
 
 .scrollBlock {
   background: transparent;
-  margin: 20px 20px 20px 0px;
   color: #1742C2;
 }
 
@@ -383,12 +381,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.design,
-.writing {
-  height: 100vh;
-  background: #fff;
 }
 
 .bioBlock,
@@ -435,7 +427,7 @@ textarea {
 }
 
 .innerH {
-  width: 7500px;
+  width: 7300px;
 }
 
 main {
@@ -444,6 +436,7 @@ main {
 
 .resume {
   background: #1742C2;
+  padding-bottom: 100px;
 }
 
 .resOptions {
@@ -467,6 +460,10 @@ main {
   text-align: justify;
 }
 
+.trainBlock .innerBlock {
+  background: #1742C2;
+}
+
 .trainBlock,
 .skillBlock {
   width: 100%;
@@ -484,7 +481,7 @@ main {
 .skillBlock p {
   width: 50%;
   text-align: right;
-  padding: 20px;
+  padding: 0 20px;
   background: #1742C2;
   color: #fff;
 }
@@ -527,21 +524,6 @@ h4 {
   width: 100%;
   border: 2px solid #fff;
   color: #fff;
-}
-
-button {
-  background: none;
-  border: none;
-  -webkit-transition: .2s;
-  transition: .2s;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-}
-
-button:hover {
-  background: #fff;
-  color: #000;
 }
 
 .resBody {
@@ -606,6 +588,199 @@ button:hover {
   height: 100%;
 }
 
+.skills {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.writing {
+  position: relative;
+  min-height: 1600px;
+  background-color: #000;
+}
+
+.dots {
+  background-image: url(../assets/dots.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 0;
+}
+
+.writingBlock,
+.writingBlock2,
+.designBlock2 {
+  background: #1742C2;
+  background: #0A100EEB;
+  width: 70%;
+  margin: 0 auto 4vw auto;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.writingBlock a, .writingBlock i,
+.writingBlock2 a,
+.writingBlock2 i,
+.designBlock2 a,
+.designBlock2 i {
+  color: #fff;
+  -webkit-transition: .15s ease-in;
+  transition: .15s ease-in;
+}
+
+.writingBlock a:hover, .writingBlock i:hover,
+.writingBlock2 a:hover,
+.writingBlock2 i:hover,
+.designBlock2 a:hover,
+.designBlock2 i:hover {
+  color: #5eee3a;
+}
+
+.writingBlock i,
+.writingBlock2 i,
+.designBlock2 i {
+  font-size: 1.7rem;
+  padding: 0;
+  background: transparent;
+}
+
+.writingBlock .year,
+.writingBlock2 .year,
+.designBlock2 .year {
+  background-color: transparent;
+  padding: 40px 40px 40px 0;
+}
+
+.writingBlock2 {
+  padding: 25px;
+  margin-top: 250px;
+}
+
+.i {
+  font-style: italic;
+}
+
+h5 {
+  font-style: italic;
+}
+
+.writingBlock {
+  padding: 15px;
+  text-align: center;
+}
+
+.pub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5px;
+}
+
+.pub p {
+  padding-right: 15px;
+}
+
+.design {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0A100E), to(#01536c));
+  background: linear-gradient(to bottom, #0A100E 50%, #01536c);
+  padding: 200px 0;
+}
+
+.design ul {
+  width: 85%;
+  margin: 0 auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.design ul li {
+  border-bottom: 1px solid #043644;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+  margin-top: 64px;
+  background-color: #0A100E;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+  position: relative;
+}
+
+.design ul li:hover {
+  background-color: #043948;
+  color: #000;
+}
+
+.design h4 {
+  padding: 0;
+}
+
+.contentBox {
+  width: 100%;
+}
+
+.contentBox {
+  display: none;
+  overflow: scroll;
+}
+
+.g3 {
+  width: 500vw;
+}
+
+.g4 {
+  width: 370vmax;
+}
+
+.grid {
+  height: 40vw;
+  padding: 20px;
+}
+
+.grid img {
+  height: 100%;
+  display: inline-block;
+  padding: 40px 80px;
+  background-image: url(../assets/diagonal.png);
+  background-size: 25vmax;
+}
+
+.start {
+  background-image: url(../assets/diagonal.png);
+  height: 90px;
+  width: 100px;
+  display: inline-block;
+  padding: 34px 31px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.fa-plus,
+.fa-minus {
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  background: transparent;
+  font-size: 2rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #498091;
+}
+
 /* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 html {
   font-size: 62.5%;
@@ -616,14 +791,11 @@ html {
   text-decoration: none;
 }
 
-.block,
-.resBlock,
+*,
 .bioBlock,
-.scrollBlock,
 .bioBlock2,
-.trainBlock,
-.skillBlock,
-.skills {
+.icon,
+.scrollBlock {
   font-size: 1.7rem;
   line-height: 1.3;
   -webkit-box-align: start;
@@ -644,6 +816,22 @@ section {
   padding: 100px 25px 200px 50px;
 }
 
+button {
+  background: none;
+  border: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: 'Barlow';
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
 .block {
   background: #fff;
   padding: 20px 40px 20px 20px;
@@ -656,6 +844,9 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .year,
@@ -684,7 +875,7 @@ i {
 
 h1 {
   color: #1742C2;
-  font-size: 2vmax;
+  font-size: 2.5rem;
   font-weight: 600;
   margin: 10px 0 30px 0;
 }
@@ -715,12 +906,14 @@ nav {
           align-items: center;
   background: rgba(255, 255, 255, 0.979);
   z-index: 10;
-  overflow: scroll;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav img {
-  width: 66%;
-  margin: 15% 0 10px 0;
+  width: 60%;
+  margin: 0 0 25px 0;
   -webkit-animation: spin 60s linear infinite;
           animation: spin 60s linear infinite;
 }
@@ -755,7 +948,7 @@ nav span {
 li a {
   color: #1d1d1d;
   font-weight: 400;
-  font-size: 1.5vmax;
+  font-size: 2rem;
   text-decoration: none;
   padding: 20px 2px 20px 10px;
 }
@@ -789,10 +982,171 @@ header div {
   opacity: 0;
   -webkit-animation: fadeIn 1.5s ease-in forwards;
           animation: fadeIn 1.5s ease-in forwards;
+  padding-top: 10vmin;
 }
 
 header img {
-  height: 40vmin;
+  width: 100%;
   border-radius: 3px;
+}
+
+p {
+  widows: 3;
+}
+
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 12.5%;
+    height: 100vh;
+  }
+  nav li a {
+    text-decoration: none;
+    padding: 15px 2px 15px 10px;
+  }
+  header div {
+    width: 60vmin;
+    padding-top: 0;
+    padding-bottom: 10vmin;
+  }
+  header,
+  main,
+  section,
+  .biography,
+  .wave {
+    margin-left: 0;
+  }
+  section {
+    padding: 50px 15px 100px 25px;
+  }
+  .wave {
+    background-size: 100%;
+  }
+  .innerBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bioBlock .innerBlock,
+  .scrollBlock .innerBlock {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bioBlock2 .innerBlock {
+    padding: 15px;
+  }
+  .bioBlock2 .innerBlock p {
+    padding: 0 5px;
+  }
+  .year3,
+  .degree {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .degree {
+    margin: 5px 0;
+  }
+  .scrollBlock .innerBlock {
+    padding: 10px;
+  }
+  .innerH {
+    width: 6500px;
+  }
+  *,
+  .bioBlock,
+  .bioBlock2,
+  .icon,
+  .scrollBlock {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h3,
+  h4,
+  .right {
+    text-align: center;
+    width: auto;
+    text-align: center;
+  }
+  .right {
+    margin-top: 15px;
+  }
+  .resBlock {
+    margin: 20px 0;
+  }
+  .resBlock p {
+    width: 100%;
+    padding: 5px 0 0 0;
+    text-align: left;
+  }
+  .resOptions li {
+    font-size: 1.5rem;
+  }
+  .name,
+  .year3,
+  .degree,
+  .training,
+  i {
+    padding: 10px;
+  }
+  .trainBlock,
+  .skillBlock {
+    margin: 20px 0;
+  }
+  .trainBlock span,
+  .skillBlock span {
+    width: 100%;
+  }
+  .trainBlock p,
+  .skillBlock p {
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+    background: #1742C2;
+    color: #fff;
+  }
+  .trainBlock p {
+    padding: 10px 0px 10px 0%;
+  }
+  .writingBlock,
+  .writingBlock2 {
+    width: 80%;
+  }
+  .designBlock2 {
+    width: 90%;
+  }
+  .writingBlock2 .year,
+  .designBlock2 .year {
+    padding: 20px 0;
+  }
+  .design {
+    padding: 50px 0;
+  }
+  .design ul {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .design ul li {
+    width: 95%;
+    margin: 64px auto 0 auto;
+  }
+  .design .grid {
+    height: 50vh;
+  }
+  .design .grid img {
+    padding: 15px 30px;
+  }
+  .design .g4 {
+    width: 440vmax;
+  }
+  .design a .h {
+    padding: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,72 @@
+.writing {
+  position: relative;
+  min-height: 1600px;
+  background-color: #000;
+}
+
+.dots {
+  background-image: url(../assets/dots.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 0;
+}
+
+.writingBlock,
+.writingBlock2,
+.designBlock2 {
+  background: $primaryAccent;
+  background: #0A100EEB;
+  width: 70%;
+  margin: 0 auto 4vw auto;
+  padding: 10px 20px;
+  color: #fff;
+  a, i {
+    color: #fff;
+    transition: .15s ease-in;
+    &:hover {
+      color: #5eee3a;
+    }
+  }
+  i {
+    font-size: 1.7rem;
+    padding: 0;
+    background: transparent;
+  }
+  .year {
+    background-color: transparent;
+    padding: 40px 40px 40px 0;
+  }
+}
+
+.writingBlock2 {
+  padding: 25px;
+  margin-top: 250px;
+}
+
+.i {
+  font-style: italic;
+}
+
+h5 {
+  font-style: italic;
+}
+
+.writingBlock {
+  padding: 15px;
+  text-align: center;
+}
+
+.pub {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  p {
+    padding-right: 15px;
+  }
+}

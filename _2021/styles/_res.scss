@@ -6,6 +6,7 @@ main {
 
 .resume {
   background: $primaryAccent;
+  padding-bottom: 100px;
 }
 
 .resOptions {
@@ -21,12 +22,16 @@ main {
   margin: 40px 20px 40px 0px;
 }
 
+
 .resBlock p {
   width: 70%;
   padding: 0 0 0 3.3%;
   text-align: justify;
 }
 
+.trainBlock .innerBlock {
+  background: $primaryAccent;
+}
 .trainBlock,
 .skillBlock {
   width: 100%;
@@ -39,7 +44,7 @@ main {
   p {
     width: 50%;
     text-align: right;
-    padding: 20px;
+    padding: 0 20px;
     background: $primaryAccent;
     color: #fff;
   }
@@ -78,18 +83,6 @@ li {
   }
 }
 
-button {
-  background: none;
-  border: none;
-  transition: .2s;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  &:hover {
-    background: #fff;
-    color: #000;
-  }
-}
 
 .resBody {
   opacity: 0;
@@ -146,3 +139,10 @@ transition: .5s;
     height: 100%;
   }
 }
+
+  .skills {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  }
+
+ 
