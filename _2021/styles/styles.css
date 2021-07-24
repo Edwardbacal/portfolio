@@ -766,6 +766,7 @@ h5 {
   padding: 34px 31px;
   color: #fff;
   margin-left: 30px;
+  text-align: center;
 }
 
 .fa-plus,
@@ -934,6 +935,8 @@ nav ul {
 
 nav li {
   margin: 1vmin;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 nav span {
@@ -1043,6 +1046,9 @@ p {
   .bioBlock2 .innerBlock p {
     padding: 0 5px;
   }
+  .bioBlock2 .innerBlock h3 {
+    padding: 10px 0 20px 0;
+  }
   .year3,
   .degree {
     width: 100%;
@@ -1123,7 +1129,7 @@ p {
   }
   .writingBlock2 .year,
   .designBlock2 .year {
-    padding: 20px 0;
+    padding: 10px 0 20px 0;
   }
   .design {
     padding: 50px 0;
