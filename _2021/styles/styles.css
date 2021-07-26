@@ -429,7 +429,7 @@ textarea {
 }
 
 .innerH {
-  width: 7300px;
+  width: 7400px;
 }
 
 main {
@@ -957,7 +957,7 @@ nav span {
 }
 
 li a {
-  color: #1d1d1d;
+  color: #000;
   font-weight: 400;
   font-size: 2rem;
   text-decoration: none;
@@ -1013,9 +1013,15 @@ p {
     padding: 12.5%;
     height: 95vh;
   }
+  nav li {
+    margin: .5vmin;
+  }
   nav li a {
     text-decoration: none;
     padding: 15px 2px 15px 10px;
+  }
+  nav img {
+    margin-bottom: 15px;
   }
   h2 {
     font-size: 1.8rem;
@@ -1060,7 +1066,10 @@ p {
     text-align: justify;
   }
   .bioBlock2 .innerBlock h3 {
-    padding: 30px 0 10px 0;
+    padding: 50px 0 20px 0;
+  }
+  .resBlock2 .year {
+    padding: 0 0 40px 0;
   }
   .resBlock2 p {
     padding: 0;
@@ -1079,7 +1088,7 @@ p {
     padding: 10px;
   }
   .innerH {
-    width: 6500px;
+    width: 6760px;
   }
   *,
   .bioBlock,
@@ -1139,29 +1148,29 @@ p {
     width: 100%;
     text-align: right;
     padding: 10px 0;
-    background: #1742C2;
+    background: #1840B7;
     color: #fff;
   }
   .trainBlock p {
     padding: 10px 0px 10px 0%;
   }
   .dots {
-    background-size: 184%;
+    background-size: 154%;
   }
   .writing {
     min-height: 1350px;
   }
   .writingBlock,
   .writingBlock2 {
-    width: 80%;
+    width: 88%;
   }
   .writingBlock {
     padding: 20px 14px;
-    font-size: 1.3rem;
+    widows: 4;
+    border-bottom: 1px solid #071738;
   }
   .writingBlock2 {
-    margin-top: 370px;
-    margin-bottom: 80px;
+    margin-top: 180px;
   }
   .writingBlock2 p {
     text-align: justify;
@@ -1173,10 +1182,10 @@ p {
   }
   .writingBlock2 .year,
   .designBlock2 .year {
-    padding: 10px 0 20px 0;
+    padding: 30px 0 40px 0;
   }
   .design {
-    padding: 100px 50px 0;
+    padding: 200px 0 50px 0;
   }
   .design ul {
     width: 98%;

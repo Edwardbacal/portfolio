@@ -1,3 +1,5 @@
+$primaryAccent: #1840B7;
+
 @media(max-width: 500px) {
  
   nav {
@@ -6,10 +8,16 @@
     top: 0;
     padding: 12.5%;
     height: 95vh;
+    li{
+      margin: .5vmin;
+    }
     li a {
       text-decoration: none;
       padding: 15px 2px 15px 10px;
 
+    }
+    img {
+      margin-bottom: 15px;
     }
   }
 
@@ -58,15 +66,20 @@
       text-align: justify;
     }
     h3 {
-      padding: 30px 0 10px 0;
+      padding: 50px 0 20px 0;
     }
   }
 
-.resBlock2 p {
+.resBlock2{
+  .year {
+    padding: 0 0 40px 0;
+  }
+ p {
     padding: 0;
     width: 95%;
     text-align: justify;
   }
+}
 
   .year3,
   .degree {
@@ -83,7 +96,7 @@
   }
 
   .innerH {
-    width: 6500px;
+    width: 6760px;
   }
 
   *,
@@ -157,7 +170,7 @@ i {
 }
 
 .dots {
-  background-size: 184%;
+  background-size: 154%;
 }
 
 .writing {
@@ -166,17 +179,17 @@ i {
 
 .writingBlock,
 .writingBlock2 {
-  width: 80%;
+  width: 88%;
 }
 
 .writingBlock {
   padding: 20px 14px;
-  font-size: 1.3rem;
+  widows: 4;
+  border-bottom: 1px solid #071738;
 }
 
 .writingBlock2 {
-  margin-top: 370px;
-  margin-bottom: 80px;
+  margin-top: 180px;
   p {
     text-align: justify;
   }
@@ -189,11 +202,11 @@ i {
 }
 .writingBlock2 .year, 
 .designBlock2 .year {
-  padding: 10px 0 20px 0;
+  padding: 30px 0 40px 0;
 }
 
 .design {
-  padding: 100px 50px 0;
+  padding: 200px 0 50px 0;
   ul {
     width: 98%;
     margin: 0 auto;
