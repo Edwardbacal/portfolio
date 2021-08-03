@@ -1,0 +1,58 @@
+@media(max-width: 800px) {
+
+  *,
+  .bioBlock,
+  .bioBlock2,
+  .icon,
+  .scrollBlock {
+  font-size: 1.6rem;
+  }
+
+  nav {
+    width: 28vmin;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .wave,
+  .biography,
+  header,
+  main {
+    margin-left: 28vmin;
+  }
+
+  section {
+    padding: 100px 25px 200px 25px;
+}
+
+.resBlock,
+.trainBlock {
+  margin: 20px 20px 20px 0px;
+}
+
+.writingBlocks {
+  // height: 150vmax;
+}
+
+.writingBlock,
+.writingBlock2 {
+  width: 83%;
+}
+
+.flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.g1 {
+  width: 370vw;
+}
+
+.col {
+  width: 50vw;
+  margin: 20px 0 0 0;
+}
+
+}

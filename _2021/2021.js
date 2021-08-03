@@ -4,6 +4,7 @@ $(window).scroll(function() {
           resTop = $('#res').offset().top;
           writTop = $('#writing').offset().top;
           desTop = $('#design').offset().top;
+          moreTop = $('#more').offset().top;
       if (wS > bioTop){
           $(".bio").addClass("expand");
       }
@@ -31,6 +32,13 @@ $(window).scroll(function() {
           else {
           $(".des").removeClass("expand");
       }
+        if (wS > moreTop){
+        $(".more").addClass("expand");
+        $(".des").removeClass("expand");
+    }
+        else {
+        $(".more").removeClass("expand");
+    }
 });
 
 const resume = { 
@@ -150,4 +158,9 @@ $(".resButton").on("click", function () {
   $(".desRow li").on("click", function () {
     $(this).next('div').slideToggle().css("display", "grid");
     $(this).find(".fa-plus").slideToggle("fast");
+  });
+
+  $("#gmoil").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
   });

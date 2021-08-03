@@ -4,6 +4,7 @@
 @import 'res';
 @import 'writing';
 @import 'design';
+@import 'more';
 
 
 /* Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -22,7 +23,8 @@ html {
 .bioBlock,
 .bioBlock2,
 .icon,
-.scrollBlock {
+.scrollBlock,
+.moreBlock {
   font-size: 1.7rem;
   line-height: 1.3;
   align-items: start;
@@ -176,4 +178,10 @@ nav {
     widows: 3;
   }
 
-  @import 'mediaQueries';
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @import '800px';
+  @import '500px';

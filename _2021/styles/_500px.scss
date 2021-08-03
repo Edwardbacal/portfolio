@@ -217,24 +217,45 @@ i {
 }
 
   .grid {
-    height: 50vh;
-    img {
-      padding: 15px 30px;
-    }
+    height: 102vw;
+  }
+  
+  .g1 {
+    height: 100%;
+    width: 610vw;
+  }
+
+  .proj img {
+    height: 70vw;
+  }
+
+  .g2 {
+    width: 1540vw;
   }
 
   .g3 {
-    width: 570vmax;
+    width: 1110vw;
   }
 
-  
   .g4 {
-    width: 440vmax;
+    width: 900vw;
   }
 
   a .h {
-    padding: 50px;
+    padding: 1.2%;
   }
 
+  a .h2 {
+    padding: 30px;
+  }
+
+  .col {
+    width: 80vw;
+  }
+
+  // .proj img {
+  //   height: 86.5vw;
+  // }
 }
 }
+
