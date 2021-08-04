@@ -170,7 +170,7 @@ i {
 }
 
 .dots {
-  background-size: 154%;
+  background-size: 100%;
 }
 
 .writing {
@@ -252,10 +252,10 @@ i {
   .col {
     width: 80vw;
   }
-
-  // .proj img {
-  //   height: 86.5vw;
-  // }
-}
 }
 
+  .links a {
+      width: 20vw;
+      height: 20vw;
+  }
+}

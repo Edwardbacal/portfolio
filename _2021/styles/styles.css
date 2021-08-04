@@ -1550,7 +1550,7 @@ p {
     padding: 10px 0px 10px 0%;
   }
   .dots {
-    background-size: 154%;
+    background-size: 100%;
   }
   .writing {
     min-height: 1350px;
@@ -1617,6 +1617,10 @@ p {
   }
   .design .col {
     width: 80vw;
+  }
+  .links a {
+    width: 20vw;
+    height: 20vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
