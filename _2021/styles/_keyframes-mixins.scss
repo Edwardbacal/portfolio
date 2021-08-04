@@ -16,6 +16,24 @@
   }
 }
 
+@keyframes twist {
+  0% {
+    grid-template-rows: 1.5fr 2fr 2.5fr 3.5fr 5fr 6fr 8fr 11fr 14fr 18fr 22fr 27fr 33fr 39fr 29fr;
+  }
+  100% {
+    grid-template-rows:  39fr 33fr 29fr 27fr 22fr 18fr 14fr 11fr 8fr 6fr 5fr 3.5fr 2.5fr 2fr 14fr;
+  }
+}
+
+@keyframes glim {
+  100% {
+  opacity: 0;
+}
+0% {
+  opacity: 1;
+}
+}
+
 @keyframes colour {
   0% {
     filter: hue-rotate(0deg);

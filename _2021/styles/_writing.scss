@@ -90,80 +90,87 @@ h5 {
   }
 }
 
-.lines {
-  display: grid;
-  margin: 0 auto;
-  grid-template-rows: 1.5fr 2fr 2.5fr 3.5fr 5fr 6fr 8fr 11fr 14fr 18fr 22fr 27fr 33fr 39fr 29fr;
-  height: 60vw;
-  transform: rotate(180deg);
+.glimmer {
   span {
     border-bottom: 1px solid #9de22d;
     display: block;
     margin: 0 auto;
-  }
-  span:first-child {
-    opacity: .5;
-    border-bottom: 1px solid #ffe2c1;
-    width: 84%;
-  }
-  span:nth-child(2) {
-    opacity: .6;
-    border-bottom: 1px solid #ffe2c1;
-    width: 83%;
-  }
-  span:nth-child(3) {
-    opacity: .7;
-    border-bottom: 1px solid #efffa7;
-    width: 82%;
-  }
-  span:nth-child(4) {
-    opacity: .8;
-    border-bottom: 1px solid #bdffa9;
-    width: 81%;
-  }
-  span:nth-child(5) {
-    opacity: .9;
-    border-bottom: 1px solid #95ffb5;
-    width: 80%;
-  }
-  span:nth-child(6) {
-    border-bottom: 1px solid #82ffd9;
-    width: 79%;
-  }
-  span:nth-child(7) {
-    border-bottom: 1px solid #e26f2d;
-    width: 78%;
-  }
-  span:nth-child(8) {
-    border-bottom: 1px solid #e22d2d;
-    width: 77%;
-  }
-  span:nth-child(9) {
-    border-bottom: 1px solid #e22d54;
-    width: 76%;
-  }
-  span:nth-child(10) {
-    border-bottom: 1px solid #e22dca;
-    width: 75%;
-  }
-  span:nth-child(11) {
-    border-bottom: 1px solid #7b2de2;
-    width: 74%;
-  }
-  span:nth-child(12) {
-    border-bottom: 1px solid #2d4ee2;
-    width: 73%;
-  }
-  span:nth-child(13) {
-    border-bottom: 1px solid #2de2d3;
-    width: 72%;
-  }
-  span:nth-child(14) {
-    border-bottom: 1px solid #2de278;
-    width: 71%;
-  }
-  span:nth-child(15) {
-    border-bottom: 1px solid #2de254;
     width: 70%;
   }
+  span:first-child {
+    opacity: .3;
+    // border-bottom: 1px solid #ffe2c1;
+    animation: glim 3s ease-out 1s alternate-reverse infinite;
+  }
+  span:nth-child(2) {
+    opacity: .4;
+    // border-bottom: 1px solid #ffe2c1;
+    animation: glim 2.9s ease-out 1.1s alternate-reverse infinite;
+  }
+  span:nth-child(3) {
+    opacity: .5;
+    // border-bottom: 1px solid #efffa7;
+    animation: glim 2.8s ease-out 1.2s alternate-reverse infinite;
+  }
+  span:nth-child(4) {
+    opacity: .6;
+    // border-bottom: 1px solid #bdffa9;
+    animation: glim 2.7s ease-out 1.3s alternate-reverse infinite;
+  }
+  span:nth-child(5) {
+    opacity: .7;
+    // border-bottom: 1px solid #95ffb5;
+    animation: glim 2.6s ease-out 1.4s alternate-reverse infinite;
+  }
+  span:nth-child(6) {
+    opacity: .8;
+    // border-bottom: 1px solid #82ffd9;
+    animation: glim 2.5s ease-out 1.5s alternate-reverse infinite;
+  }
+  span:nth-child(7) {
+    opacity: .9;
+    // border-bottom: 1px solid #e26f2d;
+    animation: glim 2.4s ease-out 1.6s alternate-reverse infinite;
+  }
+  span:nth-child(8) {
+    // border-bottom: 1px solid #e22d2d;
+    animation: glim 2.3s ease-out 1.7s alternate-reverse infinite;
+  }
+  span:nth-child(9) {
+    // border-bottom: 1px solid #e22d54;
+    animation: glim 2.2s ease-out 1.8s alternate-reverse infinite;
+  }
+  span:nth-child(10) {
+    // border-bottom: 1px solid #e22dca;
+    animation: glim 2.1s ease-out 1.9s alternate-reverse infinite;
+  }
+  span:nth-child(11) {
+    // border-bottom: 1px solid #7b2de2;
+    animation: glim 2s ease-out 2s alternate-reverse infinite;
+  }
+  span:nth-child(12) {
+    // border-bottom: 1px solid #2d4ee2;
+    animation: glim 1.9s ease-out 2.1s alternate-reverse infinite;
+  }
+  span:nth-child(13) {
+    // border-bottom: 1px solid #2de2d3;
+    animation: glim 1.8s ease-out 2.2s alternate-reverse infinite;
+  }
+  span:nth-child(14) {
+    // border-bottom: 1px solid #2de278;
+    animation: glim 1.7s ease-out 2.3s alternate-reverse infinite;
+  }
+  span:nth-child(15) {
+    // border-bottom: 1px solid #2de254;
+    animation: glim 1.6s ease-out 2.4s infinite alternate-reverse;
+  }
+}
+
+.lines {
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 1.5fr 2fr 2.5fr 3.5fr 5fr 6fr 8fr 11fr 14fr 18fr 22fr 27fr 33fr 39fr 29fr;
+  height: 70vh;
+  transform: rotate(180deg);
+  // animation: colour 4s ease-out infinite;
 }

@@ -41,6 +41,17 @@ $(window).scroll(function() {
     }
 });
 
+$(window).scroll(function() {
+  const   wS = $(window).scrollTop() + ($(window).height() / 2);
+          linesTop = $('#lines').offset().top;
+      if (wS > linesTop){
+          $(".lines").addClass("glimmer");
+      }
+          else {
+          $(".lines").removeClass("glimmer");
+      }
+});
+
 const resume = { 
   experience: `
     <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — pres <br>mrm: digital production developer </span><p>I work on the creative team of a global marketing agency, where I create websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
