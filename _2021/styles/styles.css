@@ -402,8 +402,10 @@ textarea {
 }
 
 .scrollBlock {
-  background: transparent;
+  background: #fff;
   color: #1742C2;
+  padding: 0px 0px 1px 20px;
+  margin-right: 15px;
 }
 
 .scrollBlock i {
@@ -424,6 +426,10 @@ textarea {
 .bioBlock,
 .scrollBlock {
   display: inline-block;
+}
+
+.bioBlock button {
+  padding: 0;
 }
 
 .bioBlock2 {
@@ -753,72 +759,89 @@ h5 {
   display: block;
   margin: 0 auto;
   width: 70%;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .glimmer span:first-child {
   opacity: .3;
+  border-bottom: 1px solid #ffe2c1;
   animation: glim 3s ease-out 1s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(2) {
   opacity: .4;
+  border-bottom: 1px solid #ffe2c1;
   animation: glim 2.9s ease-out 1.1s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(3) {
   opacity: .5;
+  border-bottom: 1px solid #fdd4a5;
   animation: glim 2.8s ease-out 1.2s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(4) {
   opacity: .6;
+  border-bottom: 1px solid #fdc98e;
   animation: glim 2.7s ease-out 1.3s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(5) {
   opacity: .7;
+  border-bottom: 1px solid #ffba6c;
   animation: glim 2.6s ease-out 1.4s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(6) {
   opacity: .8;
+  border-bottom: 1px solid #ebb644;
   animation: glim 2.5s ease-out 1.5s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(7) {
   opacity: .9;
+  border-bottom: 1px solid #e2b82d;
   animation: glim 2.4s ease-out 1.6s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(8) {
+  border-bottom: 1px solid #e2d02d;
   animation: glim 2.3s ease-out 1.7s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(9) {
+  border-bottom: 1px solid #dfe22d;
   animation: glim 2.2s ease-out 1.8s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(10) {
+  border-bottom: 1px solid #d0e22d;
   animation: glim 2.1s ease-out 1.9s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(11) {
+  border-bottom: 1px solid #c1e22d;
   animation: glim 2s ease-out 2s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(12) {
+  border-bottom: 1px solid #ace22d;
   animation: glim 1.9s ease-out 2.1s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(13) {
+  border-bottom: 1px solid #a3e22d;
   animation: glim 1.8s ease-out 2.2s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(14) {
+  border-bottom: 1px solid #94e22d;
   animation: glim 1.7s ease-out 2.3s alternate-reverse infinite;
 }
 
 .glimmer span:nth-child(15) {
+  border-bottom: 1px solid #73e22d;
   animation: glim 1.6s ease-out 2.4s infinite alternate-reverse;
 }
 
@@ -1047,6 +1070,10 @@ footer {
   margin-bottom: 50px;
 }
 
+.moreBlock p {
+  margin-top: 15px;
+}
+
 footer .innerBlock {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1219,6 +1246,7 @@ h2 {
   line-height: 1.2;
   text-align: justify;
   color: #1742C2;
+  font-weight: 600;
 }
 
 nav {
@@ -1562,7 +1590,6 @@ p {
   .writingBlock {
     padding: 20px 14px;
     widows: 4;
-    border-bottom: 1px solid #071738;
   }
   .writingBlock2 {
     margin-top: 180px;

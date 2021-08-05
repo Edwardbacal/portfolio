@@ -30,8 +30,10 @@ $primaryAccent: #1742C2;
 }
 
 .scrollBlock {
-  background: transparent;
+  background: #fff;
   color: $primaryAccent;
+  padding: 0px 0px 1px 20px;
+  margin-right: 15px;
   i {
     padding: 22px;
     background: transparent;
@@ -51,6 +53,9 @@ $primaryAccent: #1742C2;
   display: inline-block;
 }
 
+.bioBlock button {
+  padding: 0;
+}
 
 .bioBlock2 {
   padding: 0;

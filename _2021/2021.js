@@ -175,3 +175,26 @@ $(".resButton").on("click", function () {
     e.preventDefault();
     window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
   });
+
+
+  document.getElementById("bioEnd").addEventListener("click", function() {
+    document.getElementById("bioStart").scrollLeft = 0;
+  }); 
+
+document.getElementById("gi").addEventListener("click", function() {
+  document.getElementById("G1").scrollLeft = 0;
+}); 
+
+document.getElementById("gii").addEventListener("click", function() {
+  document.getElementById("G2").scrollLeft = 0;
+}); 
+
+document.getElementById("giii").addEventListener("click", function() {
+  document.getElementById("G3").scrollLeft = 0;
+}); 
+
+document.getElementById("giv").addEventListener("click", function() {
+  document.getElementById("G4").scrollLeft = 0;
+}); 
+
+

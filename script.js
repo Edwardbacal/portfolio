@@ -185,8 +185,6 @@ $(".projectButton").on("click", function () {
   });
 
 
-
-
 // $(".box img").on("mouseenter", function () {
 //   $(this).css("width", "100%");
 //   $(this).css("display", "block");
