@@ -23,6 +23,10 @@
     margin-left: 28vmin;
   }
 
+  .innerH{
+    width: 7720px;
+  }
+  
   section {
     padding: 100px 25px 200px 25px;
 }
@@ -48,15 +52,15 @@
 }
 
 .g2 {
-  width: 596vw;
+  width: 600vw;
 }
 
 .g3 {
-  width: 440vw;
+  width: 443vw;
 }
 
 .g4 {
-width: 370vw;
+width: 380vw;
 }
 
 .col {
@@ -64,8 +68,13 @@ width: 370vw;
   margin: 20px 0 0 0;
 }
 
-
 .lines span {
     width: 83%;
   }
+
+  .links {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+
 }

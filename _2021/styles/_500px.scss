@@ -2,259 +2,262 @@ $primaryAccent: #1840B7;
 
 @media(max-width: 500px) {
  
-  nav {
-    width: 100%;
-    position: relative;
-    top: 0;
-    padding: 12.5%;
-    height: 95vh;
-    li{
-      margin: .5vmin;
+    nav {
+      width: 100%;
+      position: relative;
+      top: 0;
+      padding: 12.5%;
+      height: 95vh;
+      li{
+        margin: .5vmin;
+      }
+      li a {
+        text-decoration: none;
+        padding: 15px 2px 15px 10px;
+
+      }
+      img {
+        margin-bottom: 15px;
+      }
     }
-    li a {
-      text-decoration: none;
-      padding: 15px 2px 15px 10px;
 
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.3;
     }
-    img {
-      margin-bottom: 15px;
+
+    header {
+      div {
+        width: 60vmin;
+        padding-top: 0;
+        padding-bottom: 10vmin;
+      }
     }
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-
-  header {
-    div {
-      width: 60vmin;
-      padding-top: 0;
-      padding-bottom: 10vmin;
+  
+    header,
+    main,
+    section,
+    .biography,
+    .wave {
+    margin-left: 0;
     }
-  }
- 
-  header,
-  main,
-  section,
-  .biography,
-  .wave {
-  margin-left: 0;
-  }
 
-  section {
-    padding: 50px 15px 100px 25px;
-  }
+    section {
+      padding: 50px 15px 100px 25px;
+    }
 
-  .wave {
-    background-size: 100%;
-  }
+    .wave {
+      background-size: 100%;
+    }
 
-  .innerBlock {
-    flex-direction: column;
-  }
+    .innerBlock {
+      flex-direction: column;
+    }
 
-  .bioBlock .innerBlock,
-  .scrollBlock .innerBlock {
-    flex-direction: row;
-  }
+    .bioBlock .innerBlock,
+    .scrollBlock .innerBlock {
+      flex-direction: row;
+    }
 
-  .bioBlock2 .innerBlock {
-    padding: 0;
+    .bioBlock2 .innerBlock {
+      padding: 0;
+      p {
+        padding: 20px 40px;
+        text-align: justify;
+      }
+      h3 {
+        padding: 50px 0 20px 0;
+      }
+    }
+
+    .resBlock2{
+      .year {
+        padding: 0 0 40px 0;
+      }
     p {
-      padding: 20px 40px;
+        padding: 0;
+        width: 95%;
+        text-align: justify;
+      }
+    }
+
+      .year3,
+      .degree {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .degree {
+        margin: 5px 0;
+      }
+
+      .innerH {
+        width: 7390px;
+      }
+
+      *,
+      .bioBlock,
+      .bioBlock2,
+      .icon,
+      .scrollBlock {
+      font-size: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      h3,
+      h4,
+      .right {
+        text-align: center;
+        width: auto;
+        text-align: center;
+      }
+
+      .right {
+        margin-top: 15px;
+      }
+
+    .resBlock {
+      margin: 20px 0;
+      p {
+        width: 100%;
+        padding: 5px 0 0 0;
+        text-align: left;
+      }
+    }
+
+    .resOptions {
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 50px 50px;
+      gap: 15px;
+      li {
+        font-size: 1.5rem;
+      }
+    }
+
+    .name,
+    .year3,
+    .degree,
+    .training,
+    i {
+      // width: 100%;
+      padding: 10px;
+    }
+
+    .trainBlock,
+    .skillBlock {
+      margin: 20px 0;
+      span {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+        text-align: right;
+        padding: 10px 0;
+        background: $primaryAccent;
+        color: #fff;
+      }
+    }
+
+    .trainBlock p {
+      padding: 10px 0px 10px 0%;
+    }
+
+    .dots {
+      background-size: 100%;
+    }
+
+    .writing {
+      min-height: 1350px;
+    }
+
+    .writingBlock,
+    .writingBlock2 {
+      width: 88%;
+    }
+
+    .writingBlock {
+      padding: 20px 14px;
+      widows: 4;
+    }
+
+    .writingBlock2 {
+      margin-top: 180px;
+      p {
+        text-align: justify;
+      }
+    }
+
+    .designBlock2 {
+      width: 87%;
+      padding: 10px 0;
       text-align: justify;
     }
-    h3 {
-      padding: 50px 0 20px 0;
+    .writingBlock2 .year, 
+    .designBlock2 .year {
+      padding: 30px 0 40px 0;
+    }
+
+    .design {
+      padding: 10vwpx 0 50px 0;
+      ul {
+        width: 98%;
+        margin: 0 auto;
+        li {
+          width: 95%;
+          margin: 64px auto 0 auto;
+      }
+    }
+
+    .grid {
+      height: 102vw;
+    }
+    
+    .g1 {
+      height: 100%;
+      width: 610vw;
+    }
+
+    .proj img {
+      height: 70vw;
+    }
+
+    .g2 {
+      width: 1490vw;
+    }
+
+    .g3 {
+      width: 1096vw;
+    }
+
+    .g4 {
+      width: 934vw;
+    }
+
+    a .h {
+      padding: 1.2%;
+    }
+
+    a .h2 {
+      padding: 30px;
+    }
+
+    .col {
+      width: 80vw;
     }
   }
 
-.resBlock2{
-  .year {
-    padding: 0 0 40px 0;
-  }
- p {
-    padding: 0;
-    width: 95%;
-    text-align: justify;
-  }
-}
+    .links a {
+        width: 20vw;
+        height: 20vw;
+    }
 
-  .year3,
-  .degree {
-    width: 100%;
-    margin: 10px 0;
-  }
+    .moreBlock p {
+        margin:15px 0 0 10px;
+      }
 
-  .degree {
-    margin: 5px 0;
-  }
 
-  .scrollBlock .innerBlock {
-    padding: 10px;
-  }
 
-  .innerH {
-    width: 6760px;
-  }
-
-  *,
-  .bioBlock,
-  .bioBlock2,
-  .icon,
-  .scrollBlock {
-  font-size: 1.5rem;
-  }
-
-  h1 {
-    font-size: 1.7rem;
-  }
-
-  h3,
-  h4,
-  .right {
-    text-align: center;
-    width: auto;
-    text-align: center;
-  }
-
-  .right {
-    margin-top: 15px;
-  }
-
-.resBlock {
-  margin: 20px 0;
-  p {
-    width: 100%;
-    padding: 5px 0 0 0;
-    text-align: left;
-  }
-}
-
-.resOptions {
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 50px 50px;
-  gap: 15px;
-  li {
-    font-size: 1.5rem;
-  }
-}
-
-.name,
-.year3,
-.degree,
-.training,
-i {
-  // width: 100%;
-  padding: 10px;
-}
-
-.trainBlock,
-.skillBlock {
-  margin: 20px 0;
-  span {
-    width: 100%;
-  }
-  p {
-    width: 100%;
-    text-align: right;
-    padding: 10px 0;
-    background: $primaryAccent;
-    color: #fff;
-  }
-}
-
-.trainBlock p {
-  padding: 10px 0px 10px 0%;
-}
-
-.dots {
-  background-size: 100%;
-}
-
-.writing {
-  min-height: 1350px;
-}
-
-.writingBlock,
-.writingBlock2 {
-  width: 88%;
-}
-
-.writingBlock {
-  padding: 20px 14px;
-  widows: 4;
-}
-
-.writingBlock2 {
-  margin-top: 180px;
-  p {
-    text-align: justify;
-  }
-}
-
-.designBlock2 {
-  width: 87%;
-  padding: 10px 0;
-  text-align: justify;
-}
-.writingBlock2 .year, 
-.designBlock2 .year {
-  padding: 30px 0 40px 0;
-}
-
-.design {
-  padding: 10vwpx 0 50px 0;
-  ul {
-    width: 98%;
-    margin: 0 auto;
-    li {
-      width: 95%;
-      margin: 64px auto 0 auto;
-  }
-}
-
-  .grid {
-    height: 102vw;
-  }
-  
-  .g1 {
-    height: 100%;
-    width: 610vw;
-  }
-
-  .proj img {
-    height: 70vw;
-  }
-
-  .g2 {
-    width: 1540vw;
-  }
-
-  .g3 {
-    width: 1110vw;
-  }
-
-  .g4 {
-    width: 900vw;
-  }
-
-  a .h {
-    padding: 1.2%;
-  }
-
-  a .h2 {
-    padding: 30px;
-  }
-
-  .col {
-    width: 80vw;
-  }
-}
-
-  .links a {
-      width: 20vw;
-      height: 20vw;
-  }
-}
+} 

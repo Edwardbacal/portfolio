@@ -1,3 +1,5 @@
+// nav actions
+
 $(window).scroll(function() {
   const   wS = $(window).scrollTop() + ($(window).height() / 2);
           bioTop = $('#bio').offset().top,
@@ -41,6 +43,8 @@ $(window).scroll(function() {
     }
 });
 
+// design animation
+
 $(window).scroll(function() {
   const   wS = $(window).scrollTop() + ($(window).height() / 2);
           linesTop = $('#lines').offset().top;
@@ -51,6 +55,8 @@ $(window).scroll(function() {
           $(".lines").removeClass("glimmer");
       }
 });
+
+// resume content
 
 const resume = { 
   experience: `
@@ -82,6 +88,8 @@ const resume = {
     </p></div></div>
 
     <h4 class="right">professional training</h4>
+
+    <div class="trainBlock"><div class="innerBlock"><p>university of toronto<br>school of continuing studies<br>(anticipated completion 2021)</p><span class="training">foundations of digital communications strategy & social media</span></div></div>
 
     <div class="trainBlock"><div class="innerBlock"><p>juno college of technology<br>2020</p><span class="training">front-end development bootcamp<br>(certificate)</span></div></div>
 
@@ -126,7 +134,7 @@ const resume = {
         <li>css3 / scss</li>
         <li>javascript / jQuery</li>
         <li>wordpress</li>
-        <li>wcag / aoda <br>web accessibility standards</li>
+        <li>wcag / aoda <br>web accessibility</li>
         <li>responsive design</li>
         <li>user experience theory</li>
         <li>social media</li>
@@ -144,6 +152,8 @@ const resume = {
   </div>
     `
 }
+
+// resume actions
 
 $(".resButton").on("click", function () {
     const category = $(this).attr("id");
@@ -164,7 +174,6 @@ $(".resButton").on("click", function () {
       });
     $(this).addClass("capital");
   });
-
     
   $(".desRow li").on("click", function () {
     $(this).next('div').slideToggle().css("display", "grid");
@@ -176,25 +185,26 @@ $(".resButton").on("click", function () {
     window.location.href = $(this).attr("href").replace("xgmoil", "@gmail");
   });
 
+  // back buttons
 
   document.getElementById("bioEnd").addEventListener("click", function() {
     document.getElementById("bioStart").scrollLeft = 0;
   }); 
 
-document.getElementById("gi").addEventListener("click", function() {
-  document.getElementById("G1").scrollLeft = 0;
-}); 
+  document.getElementById("gi").addEventListener("click", function() {
+    document.getElementById("G1").scrollLeft = 0;
+  }); 
 
-document.getElementById("gii").addEventListener("click", function() {
-  document.getElementById("G2").scrollLeft = 0;
-}); 
+  document.getElementById("gii").addEventListener("click", function() {
+    document.getElementById("G2").scrollLeft = 0;
+  }); 
 
-document.getElementById("giii").addEventListener("click", function() {
-  document.getElementById("G3").scrollLeft = 0;
-}); 
+  document.getElementById("giii").addEventListener("click", function() {
+    document.getElementById("G3").scrollLeft = 0;
+  }); 
 
-document.getElementById("giv").addEventListener("click", function() {
-  document.getElementById("G4").scrollLeft = 0;
+  document.getElementById("giv").addEventListener("click", function() {
+    document.getElementById("G4").scrollLeft = 0;
 }); 
 
 
