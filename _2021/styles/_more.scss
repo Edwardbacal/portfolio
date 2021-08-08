@@ -36,21 +36,7 @@ footer .innerBlock {
  gap: 3vw 1vw;
  justify-content: center;
  justify-items: center;
- a {
-   width: 10vmax;
-   height: 10vmax;
-   max-width: 150px;
-   max-height: 150px;
-   text-decoration: none;
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-i {
-    font-size: 4vmax;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
+ 
   p {
     padding: 0 15px;
     font-size: 1.4rem;
@@ -72,6 +58,32 @@ i {
   }
 }
  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vmax;
+  color: #fff;
+  a {
+    width: 100%;
+    height: 10vmax;
+    max-width: 150px;
+    max-height: 150px;
+    text-decoration: none;
+ i {
+     font-size: 4vmax;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+   }
+  p {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
 
 .hidden {

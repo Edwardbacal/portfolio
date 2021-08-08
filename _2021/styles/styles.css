@@ -1097,7 +1097,7 @@ footer .innerBlock {
 }
 
 .links a {
-  width: 10vmax;
+  width: 100%;
   height: 10vmax;
   max-width: 150px;
   max-height: 150px;
@@ -1139,6 +1139,31 @@ footer .innerBlock {
   -webkit-animation: colour 2s ease-out infinite;
           animation: colour 2s ease-out infinite;
   background-color: #fff;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10vmax;
+}
+
+.link a i {
+  color: #fff;
+}
+
+.link p {
+  padding: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .hidden {

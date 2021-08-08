@@ -89,7 +89,9 @@ const resume = {
 
     <h4 class="right">professional training</h4>
 
-    <div class="trainBlock"><div class="innerBlock"><p>university of toronto<br>school of continuing studies<br>(anticipated completion 2021)</p><span class="training">foundations of digital communications strategy & social media</span></div></div>
+    <div class="trainBlock"><div class="innerBlock"><p>university of toronto<br>school of continuing studies<br>(anticipated completion in December 2021)</p><span class="training">foundations of digital communications strategy & social media</span></div></div>
+
+    <div class="trainBlock"><div class="innerBlock"><p>juno college of technology<br>2020</p><span class="training">WordPress & Shopify Development<br>(Course Completion)</span></div></div>
 
     <div class="trainBlock"><div class="innerBlock"><p>juno college of technology<br>2020</p><span class="training">front-end development bootcamp<br>(certificate)</span></div></div>
 
@@ -134,6 +136,7 @@ const resume = {
         <li>css3 / scss</li>
         <li>javascript / jQuery</li>
         <li>wordpress</li>
+        <li>shopify</li>
         <li>wcag / aoda <br>web accessibility</li>
         <li>responsive design</li>
         <li>user experience theory</li>
