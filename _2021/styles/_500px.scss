@@ -190,6 +190,10 @@ $primaryAccent: #1742c2;
       }
     }
 
+    .lines span {
+      width: 88%;
+    }
+
     .designBlock2 {
       width: 87%;
       padding: 10px 0;
@@ -254,10 +258,12 @@ $primaryAccent: #1742c2;
         height: 20vw;
     }
 
+    .links p {
+      padding: 10px;
+    }
+
     .moreBlock p {
         margin:15px 0 0 10px;
       }
-
-
 
 } 

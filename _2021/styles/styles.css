@@ -403,7 +403,7 @@ textarea {
 
 .scrollBlock {
   background: #fff;
-  color: #1742C2;
+  color: #1742c2;
   padding: 0px 0px 1px 20px;
   margin-right: 15px;
 }
@@ -411,7 +411,7 @@ textarea {
 .scrollBlock i {
   padding: 22px;
   background: transparent;
-  color: #1742C2;
+  color: #1742c2;
 }
 
 .icon {
@@ -446,7 +446,7 @@ textarea {
 .bioBlock2,
 .resBlock2 {
   color: #fff;
-  background: #1742C2;
+  background: #1742c2;
   margin: 0;
   padding: 25px;
 }
@@ -481,7 +481,7 @@ main {
 }
 
 .resume {
-  background: #1742C2;
+  background: #1742c2;
   padding-bottom: 1px;
 }
 
@@ -492,7 +492,7 @@ main {
 .resBlock,
 .trainBlock {
   padding: 0;
-  background: #1742C2;
+  background: #1742c2;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +511,7 @@ main {
 }
 
 .trainBlock .innerBlock {
-  background: #1742C2;
+  background: #1742c2;
 }
 
 .trainBlock,
@@ -532,7 +532,6 @@ main {
   width: 50%;
   text-align: right;
   padding: 0 20px;
-  background: #1742C2;
   color: #fff;
 }
 
@@ -568,7 +567,7 @@ h4 {
           align-items: center;
   display: -ms-grid;
   display: grid;
-  background: #1742C2;
+  background: #1742c2;
   font-size: 1.7rem;
   height: 100%;
   width: 100%;
@@ -610,7 +609,7 @@ h4 {
 }
 
 .skill {
-  color: #1742C2;
+  color: #1742c2;
   background: #fff;
   padding: 10px 20px;
   margin-top: 50px;
@@ -1066,7 +1065,7 @@ footer {
   width: 61.2%;
   margin: 0 auto;
   padding: 25px;
-  color: #1742C2;
+  color: #1742c2;
   margin-bottom: 50px;
 }
 
@@ -1096,30 +1095,10 @@ footer .innerBlock {
   justify-items: center;
 }
 
-.links a {
-  width: 100%;
-  height: 10vmax;
-  max-width: 150px;
-  max-height: 150px;
-  text-decoration: none;
-}
-
-.links a i {
-  font-size: 4vmax;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.links a p {
-  padding: 0 15px;
-  font-size: 1.4rem;
-}
-
-.links a i, .links a p {
+.links i, .links p {
   text-decoration: none;
   text-align: center;
-  background: #1742C2;
+  background: #1742c2;
   color: #fff;
   width: 100%;
   height: 100%;
@@ -1134,7 +1113,13 @@ footer .innerBlock {
           align-items: center;
 }
 
-.links a i:hover, .links a p:hover {
+.links p {
+  padding: 15px;
+  font-size: 1.4rem;
+  background: transparent;
+}
+
+.links i:hover {
   color: #47b347;
   -webkit-animation: colour 2s ease-out infinite;
           animation: colour 2s ease-out infinite;
@@ -1153,13 +1138,25 @@ footer .innerBlock {
       -ms-flex-align: center;
           align-items: center;
   width: 10vmax;
-}
-
-.link a i {
   color: #fff;
 }
 
-.link p {
+.link a {
+  width: 100%;
+  height: 10vmax;
+  max-width: 150px;
+  max-height: 150px;
+  text-decoration: none;
+}
+
+.link a i {
+  font-size: 4vmax;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link a p {
   padding: 10px;
   color: #fff;
   font-size: 1.4rem;
@@ -1246,7 +1243,7 @@ button:hover {
 .training,
 i {
   color: #fff;
-  background: #1742C2;
+  background: #1742c2;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1264,7 +1261,7 @@ i {
 }
 
 h1 {
-  color: #1742C2;
+  color: #1742c2;
   font-size: 2.5rem;
   font-weight: 600;
   margin: 10px 0 30px 0;
@@ -1276,7 +1273,7 @@ h2 {
   margin: 10px 0;
   line-height: 1.2;
   text-align: justify;
-  color: #1742C2;
+  color: #1742c2;
   font-weight: 600;
 }
 
@@ -1606,7 +1603,7 @@ p {
     width: 100%;
     text-align: right;
     padding: 10px 0;
-    background: #1840B7;
+    background: #1742c2;
     color: #fff;
   }
   .trainBlock p {
@@ -1631,6 +1628,9 @@ p {
   }
   .writingBlock2 p {
     text-align: justify;
+  }
+  .lines span {
+    width: 88%;
   }
   .designBlock2 {
     width: 87%;
@@ -1683,6 +1683,9 @@ p {
   .links a {
     width: 20vw;
     height: 20vw;
+  }
+  .links p {
+    padding: 10px;
   }
   .moreBlock p {
     margin: 15px 0 0 10px;

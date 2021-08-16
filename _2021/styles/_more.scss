@@ -1,10 +1,8 @@
-
-
 footer {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, #d6d7d8, #6e76e2);
-  
 }
+
 .momo {
   height: 100%;
   padding: 20vh 0;
@@ -36,11 +34,6 @@ footer .innerBlock {
  gap: 3vw 1vw;
  justify-content: center;
  justify-items: center;
- 
-  p {
-    padding: 0 15px;
-    font-size: 1.4rem;
-  }
   i, p {
     text-decoration: none;
     text-align: center;
@@ -51,14 +44,20 @@ footer .innerBlock {
     display: flex;
     justify-content: center;
     align-items: center;
-  &:hover {
+  }
+  p {
+    padding: 15px;
+    font-size: 1.4rem;
+    background: transparent;
+  }
+ }
+
+ .links i:hover {
     color: rgb(71, 179, 71);
     animation: colour 2s ease-out infinite;
     background-color: #fff;
   }
-}
- }
-}
+ 
 
 .link {
   display: flex;
@@ -83,6 +82,7 @@ footer .innerBlock {
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
+  }
   }
 }
 
