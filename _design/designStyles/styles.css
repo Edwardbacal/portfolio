@@ -435,12 +435,11 @@ p, h3 {
   font-size: 1.14vw;
   line-height: 1.4;
   text-transform: uppercase;
-  text-align: justify;
   margin: auto;
 }
 
 span {
-  font-size: 1vw;
+  font-size: .7vw;
   line-height: 1.2;
   display: block;
   text-transform: none;
@@ -455,6 +454,12 @@ i {
   top: 0px;
   right: 0px;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+i:hover {
+  color: #d16602;
 }
 
 .hide {
@@ -518,8 +523,8 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .2s;
+  transition: .2s;
   z-index: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -528,17 +533,20 @@ a {
 }
 
 .blue:hover {
-  background: #af750a;
+  background: #d16602;
 }
 
 h3 {
   color: #f2f1ef;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: 1 / 1;
   z-index: 2;
   text-align: center;
+  pointer-events: none;
+  width: 95%;
+  margin: auto;
 }
 
 ul {
