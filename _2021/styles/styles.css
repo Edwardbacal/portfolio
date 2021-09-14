@@ -646,7 +646,7 @@ h4 {
 .writing {
   position: relative;
   background-color: #071841;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .writingBlocks {
@@ -673,7 +673,7 @@ h4 {
 .writingBlock2,
 .designBlock2 {
   width: 70%;
-  margin: 0 auto 3vw auto;
+  margin: 1vw auto 0 auto;
   padding: 10px 20px;
   color: #fff;
   border-bottom: 1px solid #73E22D;
@@ -721,12 +721,12 @@ h5 {
 }
 
 .writingBlock {
-  padding: 0vw 5px 2vw 5px;
+  padding: 0px;
   text-align: center;
 }
 
 .writingBlock .pub {
-  padding: 1vw;
+  padding: 1vw 1vw 2vw 1vw;
   background: #071840EB;
   display: -webkit-box;
   display: -ms-flexbox;

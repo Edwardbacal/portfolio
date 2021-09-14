@@ -536,6 +536,12 @@ a {
   background: #d16602;
 }
 
+.email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 h3 {
   color: #f2f1ef;
   font-size: 1.5vmax;
