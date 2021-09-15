@@ -1395,6 +1395,11 @@ p {
           flex-direction: row;
 }
 
+.foot {
+  width: 100%;
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   *,
   .bioBlock,
