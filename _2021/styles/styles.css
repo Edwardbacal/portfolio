@@ -651,7 +651,8 @@ h4 {
 
 .writingBlocks {
   position: relative;
-  top: 56vw;
+  top: 30vw;
+  padding-top: 10vw;
 }
 
 .dots {

@@ -158,7 +158,7 @@ const resume = {
 
 // resume actions
 
-$(".resButton").on("click", function () {
+$(".item").on("click", function () {
     const category = $(this).attr("id");
     console.log(category);
     $('.resBody').empty();
