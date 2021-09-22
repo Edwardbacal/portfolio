@@ -13,23 +13,22 @@ html {
 header {
   background-size: 20%;
   padding: 20px;
-  margin: 2% 0% 0 4%;
-  width: 87%;
-  height: 20vh;
+  margin: 3% 0% 0 0%;
+  width: 90%;
   display: flex;
   z-index: 2;
+  position: relative;
   background: url(../assets/diag.png);
 }
 
 h1, h2 {
   background: #fff;
-  display: inline-block;
 }
 
 h1 {
   font-size: 3rem;
   padding: 15px 10px 20px 30px;
-  margin: 10px 0;
+  margin: 10px 0 0 10%;
   letter-spacing: 34px;
   span {
     display: block;
@@ -42,7 +41,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   align-self: flex-end;
-  padding: 6px 7px 10px 30px;
+  padding: 9px 7px 14px 30px;
   width: 260px;
   line-height: 1.7;
   margin: 10px 0 10px 20px;
@@ -58,31 +57,23 @@ h2 {
   z-index: 0;
 }
 
-main {
-  background: linear-gradient(-6deg, #d025254f, #ea67e861, #a094f4), url(../assets/diagonal.png);
-  position: absolute;
-  width: 100%;
-  padding-bottom: 30vh;
-}
-
-.scroll {
-  position: fixed;
-  right: 0;
-  height: 100%;
-  top: 0;
-  width: 7%;
-  z-index: 1;
-  background: url(../assets/diag.png);
-}
-
+// .scroll {
+//   position: fixed;
+//   right: 0;
+//   height: 100%;
+//   top: 0;
+//   width: 7%;
+//   z-index: 1;
+//   background: url(../assets/diag.png);
+// }
 
 ul {
   display: grid;
-  width: 90%;
-  margin: 4% 0 4% 1%;
-  -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
+  width: 80%;
+  // padding: 4% 0 30vh 1%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
+  margin: 4% auto;
 }
 
 
@@ -95,8 +86,8 @@ li {
   overflow: scroll;
   position: relative;
   cursor: pointer;
-  transition: .3s;
-  filter: saturate(.3);
+  transition: .25s;
+  filter: saturate(.4);
   span {
     height: 200%;
     width: 100%;
@@ -104,12 +95,14 @@ li {
     top: 0px;
     left: 0px;
     transition: .25s;
+    mix-blend-mode: exclusion;
+    opacity: .7;
+  
     }
   &:hover {
     filter: saturate(1);
   }
 }
-
 
 .header {
   width: 100%;
@@ -264,12 +257,39 @@ article {
   }
 }
 
+main {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.background {
+  background: linear-gradient(-6deg, #ffa70082, #eae86738 50%, #ff000070 100%), url(../assets/diagonal.png);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  animation: colour 3s alternate infinite;
+  position: absolute;
+  z-index: 0;
+  height: calc(100% + 200px);
+  top: -200px;
+}
+
+@keyframes colour {
+  0% {
+    filter: hue-rotate(-20deg);
+  }
+  100% {
+    filter: hue-rotate(20deg);
+  }
+}
 
 .show {
   opacity: 1;
   pointer-events: all;
   transition: .4s ease-in;
 }
+
 
 // a {
 //   position: absolute;
