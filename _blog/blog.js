@@ -18,8 +18,8 @@ $("li").on({
     $(this).find('span').css({opacity: "0"});
   },
   mouseleave: function () {
-    $('span').css({opacity: ".7"});
-    $('li').animate({scrollTop:0}, 300);;
+    $('span').css({opacity: ".5"});
+    $('li').animate({scrollTop:0}, 300);
   }
 });
 
