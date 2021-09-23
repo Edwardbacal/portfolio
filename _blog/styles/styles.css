@@ -266,6 +266,10 @@ html {
   text-decoration: none;
 }
 
+body {
+  background: #fff;
+}
+
 header {
   background-size: 20%;
   padding: 20px;
@@ -305,6 +309,17 @@ h2 {
   width: 260px;
   line-height: 1.7;
   margin: 10px 0 10px 20px;
+}
+
+.scroll {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  top: 0;
+  width: 15px;
+  z-index: 1;
+  background: url(../assets/diag.png);
+  mix-blend-mode: saturation;
 }
 
 ul {
@@ -381,19 +396,23 @@ h3 {
 }
 
 .modal h3 {
-  padding: 10px 0 0 14%;
+  padding: 10px 0 0 0%;
   margin: 0;
   background: transparent;
   font-size: 2rem;
 }
 
-.content {
-  margin-top: 60px;
+.modal p:first-child {
+  font-weight: 600;
+  margin-top: 57px;
 }
 
 .column {
-  width: 38%;
-  height: calc(100vh - 51px);
+  width: 40%;
+  height: calc(100vh - 30px);
+  padding-bottom: 7%;
+  margin: 0 4% 20px 0;
+  padding: 3% 0% 7% 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,9 +420,17 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 7%;
-  margin-right: 7%;
   float: left;
+  background-image: url("../assets/diagonal2.png");
+}
+
+.colImg {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.title {
+  margin-right: 5%;
 }
 
 nav {
@@ -457,6 +484,8 @@ button,
   position: absolute;
   left: 0;
   z-index: 15;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 button:hover, button:focus,
@@ -466,7 +495,7 @@ button:hover, button:focus,
 }
 
 .bb {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
   width: 40%;
   height: 1.7rem;
   padding: 20px 0;
@@ -474,6 +503,7 @@ button:hover, button:focus,
   left: 0;
   z-index: 14;
   top: 21px;
+  margin-left: 3%;
 }
 
 .chevrons {
@@ -486,7 +516,7 @@ button:hover, button:focus,
 }
 
 article {
-  font-family: 'PT Serif';
+  font-family: 'Roboto Slab';
 }
 
 article span {
@@ -494,13 +524,38 @@ article span {
 }
 
 article p {
-  display: inline;
+  margin-bottom: 12px;
+  font-weight: 400;
 }
 
 .img {
-  width: 86%;
-  margin-left: 14%;
-  margin-top: 8%;
+  height: 30vmax;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../assets/diagonal2.png");
+  float: right;
+  margin: 10px -8% 10px 4%;
+}
+
+.img img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.img p {
+  font-family: 'Barlow';
+  font-size: 1.2rem;
+  padding: 6px 12px;
+  margin: 0;
+  background: #f9f9f9;
+  color: #919191;
 }
 
 img {
