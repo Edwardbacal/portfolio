@@ -59,7 +59,7 @@ $(window).scroll(function() {
 // resume content
 
 const resume = { 
-  experience: `
+  experience:`
     <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — pres <br>mrm: digital production developer </span><p>I work on the creative team of a global marketing agency, where I create websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
 
     <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2020 <br>university of toronto: course instructor</span><p>I independently led undergraduate courses in art history. I designed and delivered original curricula, managed course operations, oversaw class-wide communications (including online content and course sites), and reported on student outcomes.
@@ -69,6 +69,9 @@ const resume = {
     </p></div></div>
 
     <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — present <br>freelance / volunteer designer</span><p>I design and edit websites, visual reports, social media content, and logos for independent clients.
+    </p></div></div>
+
+    <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — present <br>independent writing / research</span><p>I have published twelve articles for print and online venues, presented twenty academic papers at insitutions across North America and Europe, and chaired research panels at conventions for the Universities Arts Association of Canada and the Association for Art History (UK).
     </p></div></div>
 
     <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — 2017 <br>graduate union of students of art: president</span><p>In the university of toronto’s art history department, I led the graduate union’s direction, programming, communications, and strategy; advocated for student interests; led meetings; and liaised with students, faculty, and staff.
@@ -158,7 +161,7 @@ const resume = {
 
 // resume actions
 
-$(".item").on("click", function () {
+$(".resButton").on("click", function () {
     const category = $(this).attr("id");
     console.log(category);
     $('.resBody').empty();

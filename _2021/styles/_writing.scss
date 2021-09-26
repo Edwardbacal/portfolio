@@ -4,6 +4,36 @@
   padding: 40px 0;
 }
 
+.blog {
+  background: #fff;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 15vmax;
+  left: calc(50% - 100px);
+  filter: drop-shadow(0px 2px 9px #3a3a3a7e);
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #1742c2;
+  transition: .2s ease-out;
+    &:hover, &:focus {
+      background: #73E22D;
+    }
+  p:first-child{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    width: 150px;
+  }
+}
+
 .writingBlocks{
   position: relative;
   top: 30vw;

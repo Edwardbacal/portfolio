@@ -289,7 +289,7 @@ h1, h2 {
 
 h1 {
   font-size: 3rem;
-  padding: 15px 10px 20px 30px;
+  padding: 15px 0px 20px 30px;
   margin: 10px 0 10px 9%;
   letter-spacing: 34px;
 }
@@ -627,7 +627,6 @@ main {
 }
 
 footer {
-  height: 20vh;
   background: url("../assets/diag.png");
   position: absolute;
   bottom: 0px;
@@ -641,9 +640,9 @@ footer p {
   background: #fff;
 }
 
-footer p:last-child {
-  margin-left: 20px;
+footer .end {
   display: inline-block;
+  margin: 0px 20px 20px 20px;
 }
 
 .mr {
@@ -654,7 +653,34 @@ footer i {
   font-size: 3rem;
   padding: 8.5px;
   background: #fff;
-  margin-left: 20px;
+}
+
+.lm {
+  width: 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.lm p {
+  margin-right: 20px;
+}
+
+.sm i {
+  margin: 20px 20px 20px 0;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links p {
+  margin: 20px 20px 20px 0;
 }
 
 .line {
@@ -664,7 +690,7 @@ footer i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  margin: 0 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -684,5 +710,103 @@ a i:hover,
 a i:focus {
   background: #002fff;
   color: #fff;
+}
+
+@media (max-width: 1008px) {
+  .lm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+  button,
+  .chevrons {
+    width: 320px;
+  }
+  .bb {
+    width: 94%;
+  }
+  article {
+    font-size: 1.5rem;
+  }
+  main {
+    padding-bottom: 40vmax;
+  }
+  ul {
+    width: 90%;
+    -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  li {
+    overflow: hidden;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 30px auto 0px auto;
+  }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    width: 100%;
+    padding: 9px 14px 14px 30px;
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  .scroll {
+    width: 10px;
+  }
+}
+
+@media (max-width: 674px) {
+  .sm i {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 649px) {
+  article {
+    font-size: 1.4rem;
+  }
+  .img {
+    width: 108%;
+  }
+  main {
+    padding-bottom: 60vmax;
+  }
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4vw;
+  }
+  h1 span {
+    font-size: 3.5vw;
+  }
+  h2 {
+    width: 100%;
+    padding: 9px 14px 14px 30px;
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  .scroll {
+    width: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  article {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

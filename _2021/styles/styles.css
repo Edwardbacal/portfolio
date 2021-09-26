@@ -649,6 +649,50 @@ h4 {
   padding: 40px 0;
 }
 
+.blog {
+  background: #fff;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 15vmax;
+  left: calc(50% - 100px);
+  -webkit-filter: drop-shadow(0px 2px 9px #3a3a3a7e);
+          filter: drop-shadow(0px 2px 9px #3a3a3a7e);
+  pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #1742c2;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.blog:hover, .blog:focus {
+  background: #73E22D;
+}
+
+.blog p:first-child {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.blog p {
+  text-align: center;
+  width: 150px;
+}
+
 .writingBlocks {
   position: relative;
   top: 30vw;
@@ -1431,6 +1475,12 @@ p {
   .trainBlock {
     margin: 20px 20px 20px 0px;
   }
+  .blog {
+    top: 9vmax;
+    height: 170px;
+    width: 170px;
+    left: calc(50% - 85px);
+  }
   .writingBlock,
   .writingBlock2 {
     width: 83%;
@@ -1617,6 +1667,12 @@ p {
   }
   .dots {
     background-size: 100%;
+  }
+  .blog {
+    top: 25vw;
+    height: 170px;
+    width: 170px;
+    left: calc(50% - 85px);
   }
   .writing {
     min-height: 1350px;
