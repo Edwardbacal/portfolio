@@ -2,6 +2,14 @@
  .lm {
    width: 100%;
  }
+ .imgL,
+.imgR,
+.imgH,
+.img {
+  p {
+    font-size: 1rem;
+  }
+}
 }
 
 @media(max-width: 800px) {
@@ -18,6 +26,9 @@
   }
   article {
     font-size: 1.5rem;
+    P {
+      width: 100%;
+    }
   }
   main {
     padding-bottom: 40vmax;
@@ -48,6 +59,12 @@
   .scroll {
     width: 10px;
   }
+  .imgH {
+    width: 100%;
+  }
+  .imgL p {
+    padding-left: 12%;
+  }
 }
 
 @media(max-width: 674px) {
@@ -61,7 +78,7 @@
     font-size: 1.4rem;
   }
   .img {
-    width: 108%;
+    width: 100%;
   }
   main {
     padding-bottom: 60vmax;
