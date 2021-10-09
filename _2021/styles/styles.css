@@ -677,6 +677,7 @@ h4 {
   color: #1742c2;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
+  z-index: 10;
 }
 
 .blog:hover, .blog:focus {
@@ -691,6 +692,7 @@ h4 {
 .blog p {
   text-align: center;
   width: 150px;
+  pointer-events: none;
 }
 
 .writingBlocks {
@@ -1480,6 +1482,7 @@ p {
     height: 170px;
     width: 170px;
     left: calc(50% - 85px);
+    padding: 17%;
   }
   .writingBlock,
   .writingBlock2 {
@@ -1673,6 +1676,7 @@ p {
     height: 170px;
     width: 170px;
     left: calc(50% - 85px);
+    padding: 20%;
   }
   .writing {
     min-height: 1350px;

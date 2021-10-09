@@ -514,7 +514,7 @@ button:hover, button:focus,
 }
 
 .bb {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.99);
   width: 40%;
   height: 1.7rem;
   padding: 20px 0;
@@ -833,10 +833,12 @@ a i:focus {
   }
   button,
   .chevrons {
-    width: 320px;
+    width: 100%;
+    padding-left: 10%;
   }
   .bb {
-    width: 94%;
+    width: 93%;
+    margin-left: 7%;
   }
   article {
     font-size: 1.5rem;
@@ -877,8 +879,12 @@ a i:focus {
   .scroll {
     width: 10px;
   }
-  .imgH {
+  .imgL,
+  .imgR,
+  .imgH,
+  .img {
     width: 100%;
+    margin: 20px auto;
   }
   .imgL p {
     padding-left: 12%;
@@ -897,6 +903,9 @@ a i:focus {
     height: calc(100% - 16px);
     left: 8px;
     top: 8px;
+  }
+  nav {
+    width: calc(100% - 16px);
   }
   article {
     font-size: 1.4rem;
@@ -924,6 +933,13 @@ a i:focus {
   }
   .scroll {
     width: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  article {
+    font-size: 1.3rem;
+    line-height: 1.6;
   }
 }
 /*# sourceMappingURL=styles.css.map */
