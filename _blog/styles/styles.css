@@ -829,6 +829,7 @@ a i:focus {
   .column {
     width: 100%;
     height: auto;
+    padding-left: 7%;
   }
   button,
   .chevrons {
@@ -891,6 +892,12 @@ a i:focus {
 }
 
 @media (max-width: 649px) {
+  .modal {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    left: 8px;
+    top: 8px;
+  }
   article {
     font-size: 1.4rem;
   }
@@ -917,12 +924,6 @@ a i:focus {
   }
   .scroll {
     width: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  article {
-    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
