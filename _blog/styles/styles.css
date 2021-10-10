@@ -515,7 +515,7 @@ button:hover, button:focus,
 
 .bb {
   background: rgba(255, 255, 255, 0.99);
-  width: 40%;
+  width: 90%;
   height: 1.7rem;
   padding: 20px 0;
   position: absolute;
@@ -567,6 +567,7 @@ em {
 .imgH,
 .img {
   height: 30vmax;
+  max-height: 50vmax;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,24 +607,34 @@ em {
 
 sup {
   padding: 0 4px;
-  font-size: 75%;
+  font-size: 90%;
   background: #f6f6f6;
   cursor: pointer;
   position: relative;
   text-align: left;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+sup:hover, sup:focus {
+  background: #b3d4fc;
 }
 
 .footnote {
   position: absolute;
-  background: #f6f6f6;
+  background: #fff;
+  border: 1px solid #0004ff;
   padding: 12px;
   color: #2b2b2b;
-  top: 0;
-  left: calc(100% + 4px);
+  top: 20px;
   opacity: 1;
   display: none;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+.block {
+  display: block;
 }
 
 .imgR {
@@ -811,6 +822,8 @@ a i:focus {
 .none {
   pointer-events: none;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (max-width: 1008px) {
@@ -885,9 +898,12 @@ a i:focus {
   .img {
     width: 100%;
     margin: 20px auto;
+    height: 100%;
+    background-size: 60%;
   }
   .imgL p {
-    padding-left: 12%;
+    padding-left: 12px;
+    text-align: center;
   }
 }
 

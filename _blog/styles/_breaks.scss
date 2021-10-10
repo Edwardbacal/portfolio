@@ -69,10 +69,13 @@
   .img {
       width: 100%;
       margin: 20px auto;
+      height: 100%;
+      background-size: 60%;
   }
 
   .imgL p {
-    padding-left: 12%;
+    padding-left: 12px;
+    text-align: center;
   }
 }
 

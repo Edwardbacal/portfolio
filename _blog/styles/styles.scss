@@ -227,7 +227,7 @@ button,
 
 .bb {
   background: rgba(255, 255, 255, 0.99);
-  width: 40%;
+  width: 90%;
   height: 1.7rem;
   padding: 20px 0;
   position: absolute;
@@ -277,6 +277,7 @@ em {
 .imgH,
 .img {
   height: 30vmax;
+  max-height: 50vmax;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -303,24 +304,32 @@ em {
 
 sup {
   padding: 0 4px;
-  font-size: 75%;
+  font-size: 90%;
   background: #f6f6f6;
   cursor: pointer;
   position: relative;
   text-align: left;
+  transition: .1s;
+  &:hover, &:focus {
+    background: #b3d4fc;
+  }
 }
 
 
 .footnote {
   position: absolute;
-  background: #f6f6f6;
+  background: #fff;
+  border: 1px solid rgb(0, 4, 255);
   padding: 12px;
   color: rgb(43, 43, 43);
-  top: 0;
-  left: calc(100% + 4px);
+  top: 20px;
   opacity: 1;
   display: none;
   transition: .1s;
+}
+
+.block {
+  display: block;
 }
 
 .imgR{
@@ -473,6 +482,7 @@ a {
   .none {
     pointer-events: none;
     opacity: 0;
+    transition: 1s;
   }
 
 

@@ -6,6 +6,7 @@ $(".item").on("click", function () {
 });
 
 //  Append Article
+
 $(".item").on("click", function () {
   const article = $(this).attr("id");
   for (let articleTitle in articleList) {
@@ -20,6 +21,7 @@ $(".item").on("click", function () {
 
 
 // Go Back
+
 $(".back").on("click", function () {
   $('.modal').removeClass('show');
   $('ul').removeClass('none')
@@ -36,7 +38,6 @@ $(".back").on({
   }
 });
 
-
 $("li").on({
   mouseenter: function () {
     $(this).find('span').css({opacity: "0"});
@@ -50,7 +51,7 @@ $("li").on({
 // footnotes
 
 $('body').on('click', 'sup', function () {
-  $(this).children('.footnote').toggle();
+  $(this).children('.footnote').toggleClass("block");
 });
 
 $("#gmoil").on("click", function (e) {
