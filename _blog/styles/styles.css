@@ -657,15 +657,18 @@ sup:hover, sup:focus {
   width: calc(50% - 2px);
   margin: 30px 1px;
   float: left;
+  height: auto;
 }
 
 .img {
   width: 100%;
   margin: 30px auto;
+  height: auto;
 }
 
 img {
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   width: 100%;
 }
 
@@ -897,7 +900,7 @@ a i:focus {
   .img {
     width: 100%;
     margin: 20px auto;
-    height: 100%;
+    height: auto;
     background-size: 60%;
   }
   .imgL p {
