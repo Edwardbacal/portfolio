@@ -250,13 +250,16 @@ article {
   span {
     display: inline;
   }
-  p {
+  p, h4 {
     margin-bottom: 12px;
     font-weight: 400;
     width: 90%;
     margin: auto;
     max-width: 1200px;
     padding-bottom: 12px;
+  }
+  h4 {
+    font-weight: 600;
   }
 }
 
@@ -272,6 +275,7 @@ em {
   font-style: italic;
 }
 
+
 .imgL,
 .imgR,
 .imgH,
@@ -282,12 +286,13 @@ em {
   display: flex;
   flex-direction: column;
   background-image: url('../assets/diagonal2.png');
-  background-size: contain;
+  background-size: 30%;
   margin: 40px -8% 40px 4%;
   img {
     max-width: 100%;
     width: auto;
     margin: 0 auto;
+    height: 100%;
   }
   p {
     font-family: 'Barlow';
@@ -299,6 +304,11 @@ em {
     color: rgb(145, 145, 145);
     text-align: center;
   }
+}
+
+.imgL,
+.imgR {
+  background-size: 50%;
 }
 
 sup {
@@ -349,14 +359,11 @@ sup {
   width: calc(50% - 2px);
   margin: 30px 1px;
   float: left;
-  height: auto;
-
 }
 
 .img {
   width: 100%;
   margin: 30px auto;
-  height: auto;
 }
 
 img { 

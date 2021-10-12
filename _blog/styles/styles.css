@@ -541,13 +541,17 @@ article span {
   display: inline;
 }
 
-article p {
+article p, article h4 {
   margin-bottom: 12px;
   font-weight: 400;
   width: 90%;
   margin: auto;
   max-width: 1200px;
   padding-bottom: 12px;
+}
+
+article h4 {
+  font-weight: 600;
 }
 
 .name {
@@ -577,7 +581,7 @@ em {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("../assets/diagonal2.png");
-  background-size: contain;
+  background-size: 30%;
   margin: 40px -8% 40px 4%;
 }
 
@@ -588,6 +592,7 @@ em {
   max-width: 100%;
   width: auto;
   margin: 0 auto;
+  height: 100%;
 }
 
 .imgL p,
@@ -602,6 +607,11 @@ em {
   background: #f9f9f9;
   color: #919191;
   text-align: center;
+}
+
+.imgL,
+.imgR {
+  background-size: 50%;
 }
 
 sup {
@@ -657,13 +667,11 @@ sup:hover, sup:focus {
   width: calc(50% - 2px);
   margin: 30px 1px;
   float: left;
-  height: auto;
 }
 
 .img {
   width: 100%;
   margin: 30px auto;
-  height: auto;
 }
 
 img {
@@ -900,7 +908,6 @@ a i:focus {
   .img {
     width: 100%;
     margin: 20px auto;
-    height: auto;
     background-size: 60%;
   }
   .imgL p {

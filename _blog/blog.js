@@ -5,22 +5,7 @@ $(".item").on("click", function () {
   $('ul').addClass('none');
 });
 
-//  Append Article
-
-$(".item").on("click", function () {
-  const article = $(this).attr("id");
-  for (let articleTitle in articleList) {
-    if (article === articleTitle) {
-      $('.content').empty();
-      setTimeout(function () {
-        $(articleList[articleTitle]).hide().appendTo('.content').fadeIn(500)
-      }, 400);
-    }
-  }
-});
-
-
-// Go Back
+// Back button
 
 $(".back").on("click", function () {
   $('.modal').removeClass('show');
@@ -54,12 +39,26 @@ $('body').on('click', 'sup', function () {
   $(this).children('.footnote').toggleClass("block");
 });
 
+// email obfuscation
+
 $("#gmoil").on("click", function (e) {
   e.preventDefault();
   window.location.href = $(this).attr("href").replace("gmoil", "edwarddbacal@gmail");
 });
 
+//  Append Article
 
+$(".item").on("click", function () {
+  const article = $(this).attr("id");
+  for (let articleTitle in articleList) {
+    if (article === articleTitle) {
+      $('.content').empty();
+      setTimeout(function () {
+        $(articleList[articleTitle]).hide().appendTo('.content').fadeIn(500)
+      }, 400);
+    }
+  }
+});
 
 // Content
 
@@ -123,13 +122,14 @@ const articleList = {
         <img src="_blog/assets/001-johnswindow.jpg" alt="Shadow Window">
         <p>Shadow Window, photo from https://fonderiedarling.org, Simon Belleau, 2021</p>
       </div>
+      
       <div class="img">
         <img src="_blog/assets/001-johns.jpg" alt="Folded Curtain">
         <p>Folded Curtain, photo from https://fonderiedarling.org, Simon Belleau, 2021</p>
       </div>
       
       <p>
-        While most of John's works are conventionally hung parallel to the wall, there are two notable exceptions: <em>Folded Curtain</em> and <em>Shadow Stairs Reflected</em> give textiles depth and volume by folding them over brass, wall-mounted bars, forming triangular shapes that jut into the viewer's space. These textiles avoid their implicit flatness, presenting themselves as material that's formed by, and works around, its physical supports. In the more dynamic of the two, <em>Shadow Stairs Reflected</em>, a long rectangular panel wrap through a series of bars that, given their uneven spacing and height, results in a zig-zagging waveform that  resembles a printing press as well as a loom. These associations are not incidental, as Johns' work reflects on the format, processes, and structure of image-making technologies. By invoking the mechanics of such devices, the artist draws on their creative properties to play with the values and associations they carry.
+        While most of John's works are conventionally hung parallel to the wall, there are two notable exceptions: <em>Folded Curtain</em> and <em>Shadow Stairs Reflected</em> give textiles depth and volume by folding over brass, wall-mounted bars, forming triangular shapes that jut into the viewer's space. These textiles avoid their implicit flatness, presenting themselves as material that's formed by, and works around, its physical supports. In the more dynamic of the two, <em>Shadow Stairs Reflected</em>, a long rectangular panel wraps over and under a series of bars, whose uneven spacing and height results in a zig-zagging waveform that resembles a printing press as well as a loom. These associations are not incidental, as Johns' work reflects on the format, processes, and structure of image-making technologies. By invoking the mechanics of such devices, the artist draws on their creative properties to play with the values and associations they carry.
       </p>
       
       <p>
