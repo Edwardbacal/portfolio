@@ -364,12 +364,14 @@ sup {
 .img {
   width: 100%;
   margin: 30px auto;
+  max-width: 100%;
 }
 
 img { 
   height: auto;
   max-height: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 article {
