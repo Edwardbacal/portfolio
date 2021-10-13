@@ -570,8 +570,7 @@ em {
 .imgR,
 .imgH,
 .img {
-  height: 30vmax;
-  max-height: 50vmax;
+  max-height: 540px;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,6 +840,12 @@ a i:focus {
 @media (max-width: 1008px) {
   .lm {
     width: 100%;
+  }
+  .imgL,
+  .imgR,
+  .imgH,
+  .img {
+    max-height: 480px;
   }
   .imgL p,
   .imgR p,
