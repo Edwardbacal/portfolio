@@ -515,7 +515,7 @@ button:hover, button:focus,
 
 .bb {
   background: rgba(255, 255, 255, 0.99);
-  width: 90%;
+  width: 97%;
   height: 1.7rem;
   padding: 20px 0;
   position: absolute;
@@ -570,7 +570,7 @@ em {
 .imgR,
 .imgH,
 .img {
-  max-height: 540px;
+  max-height: 480px;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
