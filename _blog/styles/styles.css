@@ -229,6 +229,14 @@ textarea {
   background: #97c286;
 }
 
+#blockbuster {
+  background-image: url("../assets/002-warhol1.jpeg");
+}
+
+#blockbuster span {
+  background: #cde448;
+}
+
 #munich {
   background-image: url("../assets/munich.jpg");
 }
@@ -339,6 +347,7 @@ li {
   overflow: scroll;
   border-radius: 2px;
   background-size: cover;
+  background-position: center;
   overflow: scroll;
   position: relative;
   cursor: pointer;
@@ -378,7 +387,11 @@ h3 {
   text-transform: uppercase;
 }
 
-h3:last-child {
+.uc {
+  text-transform: uppercase;
+}
+
+.lc {
   text-transform: lowercase;
 }
 
@@ -552,6 +565,8 @@ article p, article h4 {
 
 article h4 {
   font-weight: 600;
+  margin-top: 40px;
+  width: 100%;
 }
 
 .name {
@@ -581,7 +596,7 @@ em {
           flex-direction: column;
   background-image: url("../assets/diagonal2.png");
   background-size: 30%;
-  margin: 40px -8% 40px 4%;
+  margin: 40px -8.1% 40px 4%;
 }
 
 .imgL img,
@@ -650,7 +665,7 @@ sup:hover, sup:focus {
 }
 
 .imgL {
-  margin: 30px 4% 30px -8%;
+  margin: 30px 4% 30px -8.1%;
   float: left;
   -webkit-box-align: start;
       -ms-flex-align: start;
