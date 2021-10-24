@@ -596,7 +596,7 @@ em {
           flex-direction: column;
   background-image: url("../assets/diagonal2.png");
   background-size: 30%;
-  margin: 40px -8.1% 40px 4%;
+  margin: 40px -8.3% 40px 4%;
 }
 
 .imgL img,
@@ -665,7 +665,7 @@ sup:hover, sup:focus {
 }
 
 .imgL {
-  margin: 30px 4% 30px -8.1%;
+  margin: 30px 4% 30px -8.3%;
   float: left;
   -webkit-box-align: start;
       -ms-flex-align: start;
