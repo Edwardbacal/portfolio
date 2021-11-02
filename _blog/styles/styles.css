@@ -237,6 +237,14 @@ textarea {
   background: #cde448;
 }
 
+#plastic {
+  background-image: url("../assets/003-plastic.jpeg");
+}
+
+#plastic span {
+  background: #48e4cf;
+}
+
 #munich {
   background-image: url("../assets/munich.jpg");
 }
@@ -585,7 +593,6 @@ em {
 .imgR,
 .imgH,
 .img {
-  max-height: 480px;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,7 +603,7 @@ em {
           flex-direction: column;
   background-image: url("../assets/diagonal2.png");
   background-size: 30%;
-  margin: 40px -8.3% 40px 4%;
+  margin: 40px calc(-8% - 1px) 40px 4%;
 }
 
 .imgL img,
@@ -665,7 +672,7 @@ sup:hover, sup:focus {
 }
 
 .imgL {
-  margin: 30px 4% 30px -8.3%;
+  margin: 30px 4% 30px calc(-8% - 1px);
   float: left;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -684,9 +691,13 @@ sup:hover, sup:focus {
 }
 
 .img {
-  width: 100%;
+  width: 90%;
   margin: 30px auto;
   max-width: 100%;
+}
+
+.img img {
+  padding: 0 5%;
 }
 
 img {

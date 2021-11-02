@@ -240,5 +240,73 @@ const articleList = {
         
   <a href="#top"><button class="top">RETURN TO TOP</button></a>
 
-  </article>`
+  </article>`,
+
+  "plastic":`
+  <div class="column">
+  <div class="colImg"><img src="_blog/assets/003-plastic.jpeg" alt="sheet of plastic with the word plastic on it - iain baxter's work still life. "></div>
+  <div class="title">
+    <h3 class="uc">Plastic Heart: Surface All the Way Through</h3>
+    <h3 class="lc">Art Museum at University of Toronto</h3>
+    <h3 class="lc">September 8, 2021–November 20, 2021</h3>
+  </div>
+</div>
+
+<article id="top">
+  <p>
+  At the Art Museum of Toronto, <em>Plastic Heart</em> surveys the many different aesthetic, physical, and social forms that plastics take, examining the possibilities and myraid problems of a ubiquitous substance.
+  </p>
+  
+  <p>
+  <em>Plastic Heart</em>, on view at UTAC, is an extensive group show that confronts the environmental and social crises related to plastic production and waste. As a gallery show, it also addresses the ecological problems that conventional exhibition formats entail, demonstrating less resource intensive approaches to displaying art. The result is “an experimental exhibition that examines plastic as art material, cultural object, geologic process, petrochemical product, and a synthetic substance fully entangled with the human body.” In other words, the exhibition surveys the manifold practical and symbolic applications of plastic, charting the material’s inextricability with our experience of simply living in this world. <em>Plastic Heart</em> is therefore broad in scope, matching the mandate of its organizer, <a href=“https://syntheticcollective.org/“>The Synthetic Collective</a>, “an interdisciplinary collaboration between visual artists, cultural workers and scientists [… who] sample, map, understand, and visualize the complexities of plastics and micro-plastics pollution in the Great Lakes Region.” By examining the many forms and functions plastic takes, the exhibition works to denaturalize the material’s ubiquity in almost all aspects of life and, in doing so, to divest our reliance on it.
+  </p>
+    
+  <p>
+  In its curatorial scope, <em>Plastic Heart</em> features a wide variety of media that incorporate plastic in its many different forms. Featured works include industrially fabricated sculptures, videos portraying plastics, images printed on curtains, immersive installations, and compositions of readymade objects. These works also range from didactic research projects to formalist experiments, but mostly combine attention to the materiality and aesthetics of plastic with a concern for its social and ecological consequences. For instance, in Meghan Price’s relief, <em>New Balance</em>, the artist cuts up and glues together sneaker soles to form quasi-geologic strata of flowing shapes and colours. She recycles the refuse of a consumer economy built on unsustainable resources and, in doing so, points to the topographic scale of waste comprising landfills and trash flotillas. 
+  </p>
+
+  <div class="img">
+    <img src="_blog/assets/003-newBal.jpg" alt="Andy Warhol Exhibition Review">
+    <p>
+      Meghan Price, <em>New Balance</em>, 2020.
+    </p>
+  </div>
+
+  <p>
+  Other works are, on one hand, more direct in addressing similar issues. For example, Skye Morét’s <em>Thank You to our Industrial Partners</em> uses common, non-recyclable materials to create a diagrammatic map of plastic pollution throughout the Great Lakes, emphasizing the banality of single-use plastics while charting the impact of their cumulative waste. On the other hand, certain pieces are overtly formal, demonstrating the innovative qualities plastic has enabled in art, as well as the challenges of preserving those qualities. Most notably, Naum Gabo’s 1936 sculpture, <em>Construction of Space: ‘Two Cones’</em> (reconstructed in 1968), points to how the modernness of plastic influenced the development of avant-garde abstraction. While Gabo experiments with plastic’s transparency, malleability, and uniform surface, his work also reveals the material’s liability to decompose. <em>Two Cones</em>, along with a selection of Hannah Wilke’s famously decaying works, reminds us that plastic is impermanent, contrary to appearances and conservation efforts. We get a sense of plastic, then, not as a timeless, infinite resource, but as a highly tenuous product.
+  </p>
+    
+
+  <div class="imgR">
+    <img src="_blog/assets/003-gabo.jpg" alt="Naum Gabo two cones exhibtion view">
+    <p>
+      Photo of Naum Gabo, <em>Construction of Space: ‘Two Cones’</em> 1936. Exhibition view. Photo via <a href="https://twitter.com/artmuseumuoft/status/1451215941375860740/photo/1">@artmuseumuoft</a>
+    </p>
+  </div>
+
+  <p>
+  While most works on display are fairly contemporary, made in awareness of current ecological crises, the pieces that stuck with me were from the generation of Canadian conceptual art of the 1960s and 70s. Works by IAIN BAXTER&, Les Levine, Joyce Weiland, and General Idea approach plastic in ways that are witty and conceptually inventive. Given plastic’s novel ubiquity in post-WWII consumer culture, these artists adopt industrial plastics as both the symbolic and material substance of artistic creation. For example, IAIN BAXTER&’s 1965 <em>Still Life</em>’s (see title image) embodies plasticity in both form and concept, as if to literalize the conventional notion of "plastic arts.” Here, the word PLASTIC is molded into a sheet of transparent plastic, fusing linguistic sign with its formal referent. As a self-referential presentation of plastic rendered in plastic, it functions as both a diagram of the object and a description of its inherent qualities: the panel’s curving edges, the transparent and translucent surface that casts shadows on the rear wall, and the malleability with which the word plastic is itself moulded. In playing with the concept of plastic itself, BAXTER& et al. touch on both the plainness and strangeness of the material itself. They embrace its most synthetic qualities at a time when "plastic" connoted mass-produced conformity—the age of tupperware and Gil Scott Heron singing about "plastic people with plastic minds [...] on their way to plastic homes." Looking at these works now, the low-aesthetic pop-appeal of plastic is no longer very fresh, but helps to historicize plastic's spread into the everyday on both industrial and symbolic levels.     
+  </p>
+
+
+  </p>
+  What feels like the exhibition's most important component is not the work but the infrastructure, which demonstrates the ways it seeks to limit its ecological footprint. Some of these methods are concrete, like incorporating solar panels to power video monitors, while others feel more symbolic, like using natural, locally-sourced ink for all wall text, which is also laboriously handwritten. Others methods are, I think, more interesting in altering the typically unseen logistics of exhibition preparation, including the resources involved in shipping, storing, and installing works, down to cleaning and climatizing the gallery. Among the art on display are bags containing all the plastic waste used in the process of installing the exhibition. Likewise, the architectural layout of the previous exhibition remains unchanged, such that a wall painting from the prior exhibition is still visible. I'm all for these gestures, though they often feel more cute than critical; in any case, I think that making these processes and structures more transparent is generally a welcome move, with potential for greater integration into curatorial practice.   
+  <p>
+
+    <div class="imgL">
+      <img src="_blog/assets/003-card.jpeg" alt="exhibition card reading "these ipads are running on portable batteries designed to be powered by modular solar panels. due to the construction underway, the panels are not currently in operation, and the batteries are charged by grid power.">
+      <p>
+        wall card, exhibition view.
+      </p>
+    </div>
+  
+
+<p>
+  My feeling in taking in this exhibition is that it’s challenging to address the catastrophic scale of plastic production and disposal head on, not for a lack of things to say and do, but because it’s difficult to square my passive engagement as a gallery viewer with the anxiety and rage the subject produces. I don’t feel like I left the gallery having necessarily gained or learned all that much, beyond an increased sense of the destructive and violent hubris of neo-colonial corporate extractivism, mass consumerism, and corresponding radical social inequities and environmental destruction. Nonetheless, I think <em>Plastic Heart</em> is valuable as a model of applicable strategies to limit the ecological footprint of artistic production and exhibition practices, while recognizing that the most practical measures still don’t approach the scale of collective transformation required to simply change our dependance on plastics. It models these strategies in ways that feel more creative than prescriptive, building them into the curatorial process itself; however, I also left feeling like I had thought more about the framework of the exhibition than engaging with the work. At times it felt like the exhibition could undermine itself, as if it were pointing to something radically different from a gallery exhibition, but from the vantage of a gallery exhibition. 
+  <p>
+
+  <p class="name">edward bacal. november 2, 2021</p>
+        
+  <a href="#top"><button class="top">RETURN TO TOP</button></a>
+</article>`,
   };

@@ -294,7 +294,7 @@ em {
   flex-direction: column;
   background-image: url('../assets/diagonal2.png');
   background-size: 30%;
-  margin: 40px -8.3% 40px 4%;
+  margin: 40px calc(-8% - 1px) 40px 4%;
   img {
     max-width: 100%;
     width: auto;
@@ -352,7 +352,7 @@ sup {
 }
 
 .imgL{
-  margin: 30px 4% 30px -8.3%;
+  margin: 30px 4% 30px calc(-8% - 1px);
   float: left;
   align-items: flex-start;
   p {
@@ -368,7 +368,7 @@ sup {
 }
 
 .img {
-  width: 100%;
+  width: 90%;
   margin: 30px auto;
   max-width: 100%;
   img {
