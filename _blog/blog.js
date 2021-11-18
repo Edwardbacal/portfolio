@@ -309,4 +309,63 @@ const articleList = {
         
   <a href="#top"><button class="top">RETURN TO TOP</button></a>
 </article>`,
+
+  "tvtv": `
+  <div class="column">
+  <div class="colImg"><img src="_blog/assets/004-cover.jpg" alt="Alternate Convention, exhibition view"></div>
+  <div class="title">
+    <h3 class="uc">Alternative Convention: Top Value Television’s Four More Years</h3>
+    <h3 class="lc">Art Museum at University of Toronto</h3>
+    <h3 class="lc">September 7, 2021–October 9, 2021</h3>
+  </div>
+</div>
+
+<article id="top">
+<p>
+<em>Alternative Convention</em> exhibits a selection of videos and related documents by countercultural video group Top Value Television. Centred around the quasi-documentary <em>Four More Years</em>, the exhibition records the intersections of media, technology, and politics in the early-70s.
+</p>
+
+<p>
+Earlier this fall at U of T Art Museum, one could find a pair of vintage TV sets filling the room with televisual cacophony. Footage of the 1972 Republican National Convention, punctuated by ordinary commercials and, less ordinarily, interviews with antiwar protestors, volleyed between the opposite-facing TVs. As official network news, commercial advertising, and point-and-shoot video competed for attention, they illustrated the points of fracture underlying the 1970s American media landscape. This mix of content comprises <em>Four More Years</em> by Top Value Television (TVTV), a loose collective of young filmmakers taking creative advantage of video technology that had become newly accessible to non-professionals. A work of tactical filmmaking<sup>*<span class="footnote">I’m using tactical in place of “guerrilla", an overstated metaphor that, to me, is a trite bastardization of its referent.</span></sup>, it presents an alternate to official coverage of the convention, aiming away from the main event to focus on the wider spectacle, including elements of the media machine within it and of protesters on its outer fringes. In short, <em>Four More Years</em> is a kind of sociological portrait of the American political establishment in the Vietnam Era, where power, capital, and war coalesce in dominant popular media. At the same time, it is also a document of creative opposition to conservative media hegemony, providing an object lesson on how power and resistance cycle through the evolution of information technology.
+</p>
+
+<div class="imgR">
+<img src="_blog/assets/004-still.jpg" alt="Four More Years still">
+<p>
+  TVTV <em>Four More Years</em> still, 1972. Courtesy Electronic Arts Intermix.
+</p>
+</div>
+
+<p>
+In addition to <em>Four More Years</em>, the gallery features reproductions of TVTV’s <em>Four More Years</em> scrapbook, an eclectic collage of newspaper clippings overlain with scattered notes and photos. These combine vaguely Rauschenberg collage aesthetic with a manic survey of pop culture and political imagery, which accents TVTV's cheeky aesthetic and attitude. Given its slapdash style, the notebooks and videos signal an emphasis on non-professional and unpolished creativity, in contradistinction to the kinds of high-end production reserved for corporate media. A core aspect of TVTV's work, evidently, is this impulse to explode the solidified aesthetics of hegemonic media to create something different from the rubble. Meanwhile, on the other side of the gallery, a range of additional video and print documents flesh out the wider story around TVTV's work. These items—more serious than slapdash–include films TVTV members would go on to make, along with pieces from adjacent groups, such as the Radical Software manual, a kind of high-tech cousin of the Whole Earth Catalog. These items situate TVTV within a wider world of technologically savvy 70s counterculture groups interested in exploring the emerging aesthetics and social functions of video. 
+</p>
+
+<p>
+My sense is that these pieces comprise an exhibition of artifacts from a time that has recently become “old” in new ways. The exhibition feels very much like a time capsule, capturing the styles, conflicts, and technologies of the mid-70s, along with the new possibilities for creative production TVTV was exploring. As much as this exhibition is about the practical novelties of the Portapak camera and the visual rhetoric of broadcasting in the McLuhan age, it portrays a horizontally-organized collective working against dominant institutions. This was a time when the dematerialization of the art object and the exploration of non-traditional media coincided with new methods of production, eschewing authorial individuality in favour of collectivity and collaboration. Many of these groups have been subsumed back into art history (for instance, I think of recent interest in Food, the restaurant/gallery/studio associated with Gordon Matta-Clark), so it makes sense to see this exhibition today, within a gallery setting. The exhibition feels timely, then, in that the work outlines cultural tendencies that run through the present, but we can see more clearly with the benefit of historical oversight. 
+</p>
+
+<div class="img">
+<img src="_blog/assets/004-journal.jpg" alt="Four More Years Scrapbook">
+<p>
+  TVTV <em>Four More Years</em> scrapbook, 1972. Courtesy Berkeley Art Museum Pacific Film Archive.
+</p>
+</div>
+
+<div class="imgL">
+<img src="_blog/assets/004-radicalsoftware.jpeg" alt="Cover of Radical Software">
+<p>
+  Cover of Radical Software.
+</p>
+</div>
+
+<p>
+In the last ten years, production and dissemination of video has become only more streamlined, and video’s role as an politically and ideologically active medium is much more imbricated. I visited the gallery shortly in mid-September, just after the twentieth anniversary of the September 11th attacks and the withdrawal of US troops in Afghanistan. It’s hard to not to view these documents in the wake of this twenty-year span, which began with the hyper-televised representation of the twin towers and the invasions of Iraq and Afghanistan. Within twenty years, network news would cede its hegemony to digital media while electoral politics would become only more insidious, exploiting the fault lines of social media and smart technologies. Today, TV coverage of the 1975 RNC looks relatively quaint, while 2010s talk about the ostensible "democratization" of media looks increasingly naive. The clarity of historical distance shows how the cycle of resistance and recuperation that comes with new media forms are only accelerating, and the distinctions between power and subjects is increasingly diffuse. In my own experience of learning more about digital content strategy and web media, I feel like there's shrinking room for critical engagement; instead, there is simply better ways of creating an illusion of agency from the top down. I personally feel more trapped than ever, knowing that whatever visual content I may produce and share, even if explicitly critical, will most like vanish into an oversaturated mediasphere run on the commodification of data and curated selfhood. From this trap, it's easy to be nostalgic for the milieu of TVTV, when there was more room for critical engagement through collaborative production of visual media. Hopefully that nostalgia might motivate contemporary energy for critical, creative production strategies.
+</p>
+  
+<p class="name">edward bacal. november 17, 2021</p>
+      
+<a href="#top"><button class="top">RETURN TO TOP</button></a>
+</article>
+`,
+
   };

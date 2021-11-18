@@ -245,6 +245,14 @@ textarea {
   background: #48e4cf;
 }
 
+#tvtv {
+  background-image: url("../assets/004-cover.jpg");
+}
+
+#tvtv span {
+  background: #8448e4;
+}
+
 #munich {
   background-image: url("../assets/munich.jpg");
 }
@@ -567,7 +575,6 @@ article p, article h4 {
   font-weight: 400;
   width: 90%;
   margin: auto;
-  max-width: 1200px;
   padding-bottom: 12px;
 }
 
