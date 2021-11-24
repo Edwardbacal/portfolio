@@ -174,6 +174,12 @@ h3 {
   margin-top: 60px;
 }
 
+.colImgV {
+  width: 100%;
+  max-height: 60vh;
+  margin-top: 60px;
+}
+
 .title {
   margin-right: 5%;
 }
@@ -287,8 +293,8 @@ em {
 .imgL,
 .imgR,
 .imgH,
+.imgS,
 .img {
-  // max-height: 480px;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -311,6 +317,11 @@ em {
     color: rgb(145, 145, 145);
     text-align: center;
   }
+}
+
+.imgS{
+    max-height: 400px;
+    margin: 30px auto;
 }
 
 .imgL,
@@ -365,6 +376,7 @@ sup {
   width: calc(50% - 2px);
   margin: 30px 1px;
   float: left;
+  max-height: 400px;
 }
 
 .img {

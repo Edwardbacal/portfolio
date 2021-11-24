@@ -253,6 +253,14 @@ textarea {
   background: #8448e4;
 }
 
+#ESA {
+  background-image: url("../assets/005-cover.png");
+}
+
+#ESA span {
+  background: #e44848;
+}
+
 #munich {
   background-image: url("../assets/munich.jpg");
 }
@@ -464,6 +472,12 @@ h3 {
   margin-top: 60px;
 }
 
+.colImgV {
+  width: 100%;
+  max-height: 60vh;
+  margin-top: 60px;
+}
+
 .title {
   margin-right: 5%;
 }
@@ -599,6 +613,7 @@ em {
 .imgL,
 .imgR,
 .imgH,
+.imgS,
 .img {
   width: 65%;
   display: -webkit-box;
@@ -616,6 +631,7 @@ em {
 .imgL img,
 .imgR img,
 .imgH img,
+.imgS img,
 .img img {
   max-width: 100%;
   width: auto;
@@ -626,6 +642,7 @@ em {
 .imgL p,
 .imgR p,
 .imgH p,
+.imgS p,
 .img p {
   font-family: 'Barlow';
   width: 100%;
@@ -635,6 +652,11 @@ em {
   background: #f9f9f9;
   color: #919191;
   text-align: center;
+}
+
+.imgS {
+  max-height: 400px;
+  margin: 30px auto;
 }
 
 .imgL,
@@ -695,6 +717,7 @@ sup:hover, sup:focus {
   width: calc(50% - 2px);
   margin: 30px 1px;
   float: left;
+  max-height: 400px;
 }
 
 .img {

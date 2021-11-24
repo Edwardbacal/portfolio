@@ -367,5 +367,82 @@ In the last ten years, production and dissemination of video has become only mor
 <a href="#top"><button class="top">RETURN TO TOP</button></a>
 </article>
 `,
+  "ESA":`
+  <div class="column">
+  <div class="colImgV"><img src="_blog/assets/005-cover.png" alt="ersatz sculpture"></div>
+  <div class="title">
+    <h3 class="uc">Notes on Ersatz sculpture</h3>
+    <h3 class="lc">part 1 of 4</h3>
+    <h3 class="lc">introduction</h3>
+  </div>
+</div>
+
+<article id="top">
+  <p>
+  Art & Non-Art
+  </p>
+
+  <p>
+    I’ve become interested in what I’m tentatively calling “ersatz sculpture”: public structures that are neither art nor architecture, nor even landscape or monument, but forms that share characteristics of <em>art-qua-art</em>. These are structures that are not engaged with, or by, art discourse, but merit attention from an art historical perspective, given the ways they converge with particular aesthetic strategies. As someone with a specific focus on minimal and post-minimal art, I often see a substantial overlap between sculpture and these unremarkable structures, between art objects and <em>just</em> objects. I’m interested in exploring this Venn diagram of, on one side, art that blends into public space or the surrounding landscape and, on the other, the forms and structures that resemble them.
+  </p>
+
+  <p>
+  While works of art and architecture are routinely read through their (deliberate, superficial, accidental) resemblance to “real world” things, the opposite is less common.  It can be hard to make a case for close readings of what is indifferent to the methods of displaying and categorizing art object, while still relying on that methodological vocabulary. This often means shoring up art/non-art distinctions that, in my opinion, make for very uninteresting thinking, not to mention questionable frameworks for understanding the aesthetic. Moreover, this approach often risks falling into irony, becoming a gimmick in treating ordinary items in specialized art terms. With those concerns in mind, I want to consider these “ordinary” structures because, simply, aesthetic decisions matter outside the institutional and discursive environments that distinguish them as valuable. Another hurdle is the fact that an artwork can look like anything, so it begs the question to say that something resembles art (it looks like art because it looks like anything). As such, I intend to focus on key criteria to draw meaningful comparisons between things that are created, defined, presented, and treated as art and things that aren’t. I am specifically interested in the following:
+  </p>
+
+  <p>
+  i) Works of abstract sculpture that, in using materials and forms that are shared in industrial production and civic infrastructure, appear “unremarkable.”
+  </p>
+  <p>
+  ii) Non-art structures and forms that play a functional role in public space, whether symbolic or practical. These are not defined as works of art, in the loose sense of serving aesthetic contemplation, institutional recognition, or analysis in terms typically reserved for artworks, including public sculptures, installations, monuments, and works of architecture.
+  </p>
+  <p>
+  iii) Structures and forms whose production, display, or effects overlap with deliberate artist strategies, often to different ends. I am especially interested in how  “good” artistic strategies (formally or conceptually innovative techniques that correspond to critical aesthetic or social positions) can be “bad” (socially repressive or regressive) in non-art contexts. 
+  </p>
+  <p>
+  iv) Instances of what might count as art, architecture, etc., but for certain contextual reasons are displaced from those categories. 
+  </p>
+
+  <p>
+  In looking at examples of these criteria, I believe we can not only better understand and illuminate instances of “ersatz sculpture,” we can also learn a lot about art history through an expanded look at its aesthetic manifestations.
+  </p>
+
+  <p>
+  I have three main examples I plan to write about:
+  </p>
+
+  <p>
+  1. A decommissioned flagpole outside the Haus Der Kunst in Munich, which resembles Brian Jungen’s Upside Down Flagpole outside the Polygon museum in Vancouver.
+  <br>
+  2. A set of concrete barriers temporarily installed in front of then-illegal Cannabis shop Cafe, which corresponds to a number works in the history of minimal art that, by accident or design, block entrances.
+  <br>
+  3. The infamous gender-reveal bomb that, in caused the 2019 wildfire in California, which echoes Judy Chicago's smoke bomb works from the 1970s, which had intended to disrupt the masculinist gendering of land art.
+  </p>
+
+
+  <div class="img">
+  <img src="_blog/assets/005A-munich.jpg" alt="flagpole in munich">
+  <p></p>
+  </div>
+
+  <div class="imgS">
+  <img src="_blog/assets/005A-cafe.jpg" alt="photo of barricaded cafe">
+  <p></p>
+  </div>
+
+  <div class="imgS">
+  <img src="_blog/assets/005A-fire.jpeg" alt="photo of california wildfire">
+  <p>
+    Photo: Ringo H.W. Chiu:Associated Press
+  </p>
+  </div>
+
+
+    
+  <p class="name">edward bacal. november 20, 2021</p>
+        
+  <a href="#top"><button class="top">RETURN TO TOP</button></a>
+</article>
+  `
 
   };
