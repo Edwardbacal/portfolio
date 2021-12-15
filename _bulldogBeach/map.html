@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Fun On Bulldog Beach: Chapter 1</title>
+  <link rel="stylesheet" href="styles/scss/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body class="mapPage">
+
+  <div class="map">
+   <img src="img/ma.jpg" alt="">
+   <div class="spots">
+   <img src="img/beach.png" class="beach mapIcon" id="beach" alt="">
+   <img src="img/box.png" class="bocks mapIcon" id="box" alt="">
+   <img src="img/home.png" class="home mapIcon" id="home" alt="">
+   <img src="img/sea.png" class="sea mapIcon" id="sea" alt="">
+   <img src="img/uni.png" class="uni mapIcon" id="uni" alt="">
+   <img src="img/volc.png" class="volc mapIcon" id="volc" alt="">
+  </div>
+
+  <div class="darkModal hidden" id="dm">
+    <div class="wrapped hidden" id="vid">
+      <div class="frame-container">
+      </div> 
+    </div>
+  </div>
+    
+  
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  
+  <script>
+  
+  const hideC = document.getElementById('vid');
+  const hideMod = document.getElementById('dm');
+  document.querySelectorAll('.mapIcon').forEach(item => {
+    item.addEventListener('click', event => {
+      hideC.classList.remove('hidden');
+      hideC.classList.add('show');
+      hideMod.classList.remove('hidden');
+      hideMod.classList.add('show');
+    })
+  });
+
+
+
+  const videoList = {
+    "beach": `<iframe width="720" height="720" src="https://www.youtube.com/embed/QG_Vss4J8OQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+
+    "box": `<iframe width="720" height="720" src="https://www.youtube.com/embed/iOh0_SKZVjw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+
+    "home": `<iframe width="720" height="720" src="https://www.youtube.com/embed/jp1mlVad8pU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+    
+    "uni": ` <iframe width="720" height="720" src="https://www.youtube.com/embed/5I0iW_mODyU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+
+    "sea": `<iframe width="720" height="720" src="https://www.youtube.com/embed/e7Sn5U57ISU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+    
+    "volc": `<iframe width="720" height="720" src="https://www.youtube.com/embed/yZu9kmC0vl8?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>`,
+  };
+
+  hideMod.addEventListener('click', event => {
+      hideC.classList.add('hidden');
+      hideC.classList.remove('show');
+      hideMod.classList.add('hidden');
+      hideMod.classList.remove('show');
+      $('.frame-container').empty();
+  });
+
+
+  $(".mapIcon").on("click", function () {
+  const video = $(this).attr("id");
+  for (let videoTitle in videoList) {
+    if (video === videoTitle) {
+      $('.frame-container').empty();
+      setTimeout(function () {
+        $(videoList[videoTitle]).hide().appendTo(".frame-container").fadeIn(500)
+      }, 400);
+    }
+  }
+});
+
+
+
+  </script>
+</body>
+</html>

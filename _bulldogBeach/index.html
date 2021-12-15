@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Fun on Bulldog Beach</title>
+  <link rel="stylesheet" href="styles/scss/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+  <div class="cover"><p>please expand your browser for an optimal user experience :)</p></div>
+  <main>
+    <div class="dog"></div>
+
+    <div class="wrap">
+      <h1 id="hide">Big fun on Bulldog Beach</h1>
+      <button id="start" class="buttonFade">start</button>
+    </div>
+  
+    <div class="wrapped hidden" id="vid">
+      <div class="frame-container">
+      <iframe width="720" height="720" src="https://www.youtube.com/embed/JBA690ka3qc?rel=0 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>
+      </div> 
+    </div>
+
+      <a href="suds.html" class="suds"></a>
+
+  </main>
+  <script>
+      document.getElementById("start").addEventListener('click', function(){
+      const hide = document.getElementById('hide');
+      hide.classList.add('hidden');
+      const hideB = document.getElementById('start');
+      hideB.classList.add('hidden');
+      const hideC = document.getElementById('vid');
+      hideC.classList.remove('hidden');
+      hideC.classList.add('show');
+  });
+  </script>
+</body>
+</html>

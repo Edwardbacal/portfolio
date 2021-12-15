@@ -1,0 +1,128 @@
+@mixin bodyText ($fontSize) {
+  font-family: 'Quicksand', Helvetica, Trebuchet;
+  font-size: $fontSize;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: #0E010D;
+  max-height: 100vh;
+  background-size: cover;
+}
+
+
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  // display: none;
+}
+
+.dog {
+  background: url(dog.png);
+  height: 100vh;
+  background-attachment: fixed;
+  animation: hue 4s;
+  z-index: 1;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.suds {
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+h1 {
+  @include bodyText(16vmin);
+  padding: 6vmax 16vmax;
+  top: 0;
+  margin: 0 auto;
+  filter: drop-shadow(-7px 0px 1px #dd4f24);
+  animation: title 1.2s ease-in,
+  fade-in 1.5s ease-in,
+  shadow 1.8s;
+  animation-timing-function: ease-in-out;
+}
+
+.wrap {
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+
+}
+
+button {
+  background: #0e010d;
+  padding: 20px 0px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 5px 2px #5e5a5a);
+  color: white;
+  font-family: 'quicksand', helvetica;
+  animation: fade-in 2s ease-in;
+  transition: all .2s;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+    &:hover {
+      background: rgb(151, 0, 144);
+    }
+}
+
+.wrapped {
+  // overflow: hidden;
+  // max-width: 75%;
+  // top: 5%;
+  // width: 75%;
+  // left: 12.5%;
+  overflow: hidden;
+  max-width: 720px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 20;
+  width: 87%;
+  left: calc(50% - 360px);
+  transition: 1s ease-in;
+}
+
+
+
+.frame-container {
+  // position: fixed;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */  
+  padding-top: 25px;
+  width: 300%; /* enlarge beyond browser width */
+  left: -100%; /* center */   
+  margin: 0 auto;
+  z-index: 12;
+  iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+  }
+}
+

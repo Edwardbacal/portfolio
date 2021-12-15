@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Fun On Bulldog Beach</title>
+  <link rel="stylesheet" href="styles/scss/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body class="white">
+  <button class="tell" id="tell">
+    TELL ME MORE!
+  </button>
+<div class="dog"></div>
+
+<div class="cover"><p>please expand your browser for an optimal user experience :)</p></div>
+
+  <div class="modal hideHeight" id="modal">
+    <li class="li">
+      <div class="sud"><img src="img/suds.png" alt=""></div>
+      <h3>What is Bulldog Beach?</h3>
+      <p>
+        Bulldog Beach is a place we dogs go to play. After a serious day of snacking and snoozing, we like to let loose and live a little. This paradise is the perfect place to play.
+      </p>
+      <div></div>
+    </li>
+    <li>
+      <h3>Where is Bulldog Beach?</h3>
+        <p>
+          Bulldog Beach is on the coast of Bulldog Island, located on Planet Buhi in the snarfle galaxy. To travel there, one must take a spaceship to the other side of space - fortunately I have a ship that can get there in a matter of minutes. 
+        </p>
+        <div class="sud"><img src="img/s2.png" alt=""></div>
+    </li>
+    <li>
+      <div class="sud"><img src="img/s4.png" alt=""></div>
+      <h3>Are there other sights to see on Planet Buhi?</h3>
+      <p>
+       Of course! It's a lively locale, known for its nature and commended for its culture. You can scuba in the sea, take a hike through Mount Bullzuvius, contemplate questions at Bulldog University and Cultural Institute, or discover what's in the mystery box. When you're done for the day, you can head home from the Bulldog Island spaceport. 
+      </p>
+    </li>
+    <li>
+      <h3>Can you take me to Bulldog Beach?</h3>
+      <div class="horiz">
+        <button id="go">LET'S GO!</button>
+        <div class="sud"><img src="img/s3.png" alt=""></div>
+      </div>
+    </li>
+  </div>
+
+  <div class="wrapper">
+    <img src="img/suds.png" class="sudsy" alt="Suds the bulldog">
+    <div class="box">
+      <img src="img/wordBubble.png" class="bubble" alt="word bubble">
+      <p class="intro introA">Hey there! The name's suds.</p>
+      <p class="intro introB">I'm the bartender at the beach, where belching bulldogs beseech me for Belgian beers.</p>
+      <p class="intro introC">I can get you a lift to this beguiling bastion, but first, let's learn  about this peculiar place!</p>
+    </div>
+  </div>
+
+  <div class="wrapped hidden" id="vid">
+    <div class="frame-container">
+    <iframe width="720" height="720" src="https://www.youtube.com/embed/RfTHtvit6Eg?rel=0 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" ></iframe>
+    </div> 
+  </div>
+  <a href="map.html" class="ship top"><img src="img/ship.png" alt=""></a>
+
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script>
+    const more = document.getElementById('modal');
+    document.getElementById("tell").addEventListener('click', function(){
+      more.classList.remove('hideHeight');
+      $('.sud').fadeIn(1000);
+  });
+
+  
+
+  document.getElementById("go").addEventListener('click', function(){
+      const video = document.getElementById('vid');
+      $('#modal').addClass('hideHeight');
+      $('.wrapper').fadeOut();
+      $('#vid').delay(1000).removeClass('hidden').fadeIn(1200);
+      $('.ship').removeClass('top').fadeIn(500);
+
+    });
+        
+
+
+
+  </script>
+</body>
+</html>

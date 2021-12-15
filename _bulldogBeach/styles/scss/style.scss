@@ -1,0 +1,46 @@
+@import 'setup';
+@import 'landingPage';
+@import 'suds';
+@import 'keyframes';
+
+@import 'map';
+
+
+h3 {
+  @include bodyText(40px);
+}
+
+p {
+  @include bodyText(25px);
+}
+
+@media(max-width: 1000px){
+  .introC {
+    max-width: 380px;
+    margin-bottom: 20%;
+  }
+  .introB {
+    margin-bottom: 20%;
+    max-width: 400px;
+  }
+}
+
+.cover {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  p {
+    width: 60%;
+  }
+}
+
+@import 'mediaqueries';

@@ -1,0 +1,180 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.sudsy {
+  height: 50vmin;
+  position: absolute;
+  left: 30vw;
+  bottom: -50vh;
+    animation: suds 1s ease-out 1s forwards;
+}
+
+.bubble {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  grid-area: 1 / 1 / 2 / 2;
+  // max-width: 500px;
+
+}
+
+.intro {
+  color: black;
+  font-size: 6vmin;
+  grid-area: 1 / 1 / 2 / 2;
+  margin-bottom: 18%;
+  padding: 5% 5%;
+}
+
+.introA {
+  opacity: 0;
+  animation: fadeIn .7s ease-in 1.7s forwards, fadeOut .6s ease-in 5s forwards;
+  padding: 5% 11%;
+  margin: 0 auto 14% auto;
+  line-height: 1.3;
+}
+
+.introB {
+  font-size: 4vmin;
+  margin: 0 auto 14% auto;
+  max-width: 560px;
+  opacity: 0;
+  animation: fadeIn .4s ease-in 5.5s forwards, fadeOut .5s ease-in 11s forwards;
+}
+
+.introC {
+  font-size: 4vmin;
+  margin: 0 auto 13% auto;
+  opacity: 0;
+  animation: fadeIn .4s ease-in 11.5s forwards;
+  padding: 5% 8%;
+  max-width: 520px;
+}
+
+.box {
+  position: absolute;
+  bottom: 130vh;
+  left: 55vmin;
+  grid-template-columns: 45vw;
+  grid-template-rows: 45vmin;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  animation: box 1s ease-out 1s forwards, hue 4s infinite;
+}
+
+.modal {
+  position: fixed;
+  overflow: scroll;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(10, 1, 44, 0.938);
+  border-radius: 10px;
+  top: 5%;
+  left: 5%;
+  z-index: 10;
+  transition: .7s ease-out;
+  li {
+    padding: 5%;
+    margin: 5%;
+    border: 5px dotted #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // opacity: 0;
+    div {
+     height: 220px;
+      img {
+        height: 100%;
+        transition: .8s ease-out;
+      }
+    }
+    p {
+      font-size: 20px;
+      text-align: left;
+      line-height: 1.4;
+    }
+  }
+}
+
+.horiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    min-width: 150px;
+    margin-right: 50px;
+  }
+}
+
+.hideHeight{
+height: 0%;
+}
+
+.show {
+  opacity: 1;
+}
+
+.grow {
+    animation: grow 1s ease-out forwards;
+}
+
+h3 {
+  color: white;
+  margin: auto;
+  margin: 5vw;
+}
+
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
+
+.tell {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: green;
+  color: orange;
+  font-size: 33px;
+  position: absolute;
+  top: 24%;
+  left: 14%;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn .7s ease-in 15s forwards, scale 1s ease-out 15s forwards;
+}
+
+.white {
+  background: #fff;
+}
+
+.sud {
+  display: none;
+}
+
+.ship {
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  height: 100px;
+  animation: hoverDown 1.6s ease-out 3s, hover 1s ease-in-out 4.6s alternate-reverse infinite;
+  &:hover {
+    animation: spin .6s ease-out, hover 1s ease-in-out alternate-reverse infinite;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.top {
+  top: -100px;
+  animation: none;
+}

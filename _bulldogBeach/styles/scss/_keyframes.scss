@@ -1,0 +1,71 @@
+@keyframes title {
+  0% { top: -100px; color: transparent; filter: drop-shadow(4px 2px 1px #43094b); scale: 50%}
+  80% { top: 0px; color: white; filter: drop-shadow(-4px 2px 1px #4424dd); scale: 105%}
+  100% {scale: 100%;}
+}
+
+@keyframes shadow {
+  from { filter: drop-shadow(0px 0px 7px #8c2999);}
+  to { filter: drop-shadow(-7px 0px 1px #dd4f24);}
+}
+
+@keyframes fade-in {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@keyframes hue {
+  from { filter: hue-rotate(0deg);}
+  to { filter: hue-rotate(360deg);}
+}
+
+@keyframes suds {
+  from { bottom: -50vh;}
+  to { bottom: 1vmin;}
+}
+
+@keyframes box {
+  from { bottom: 130vh;}
+  to { bottom: 40vmin;}
+}
+
+@keyframes fadeOut {
+  from { opacity: 1;}
+  to { opacity: 0;}
+}
+
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@keyframes grow {
+  from { height: 0%;}
+  to { height: 90%;}
+}
+
+@keyframes scale {
+  0% { scale: 0%;}
+  80% { scale: 110%;}
+  100% { scale: 100%;}
+}
+
+@keyframes hover {
+  0% { top: 20px;}
+  100% { top: 30px;}
+}
+
+@keyframes hoverDown {
+  0% { top: -100px;}
+  100% { top: 30px;}
+}
+
+@keyframes spin {
+  0% { rotate: 0deg;}
+  100% { rotate: 360deg;}
+}
+
+
+
+
+  

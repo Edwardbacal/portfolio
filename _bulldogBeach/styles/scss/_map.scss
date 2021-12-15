@@ -1,0 +1,70 @@
+.mapPage {
+  display: flex;
+  background: url(dog.png);
+  background-color: black;
+}
+
+.map {
+  height: 1080px;
+  width: 1920px;
+  margin: auto;
+  padding: 20px;
+  img {
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.darkModal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.671);
+  cursor: x;
+}
+
+.spots{
+  z-index: 2;
+  img {
+    position: absolute;
+    height: auto;
+    filter: saturate(0);
+    transition: .2s;
+    
+    &:hover {
+      filter: saturate(1);
+    }
+  }
+}
+
+.bocks {
+  top: 560px;
+  left: 300px;
+}
+
+.home {
+  top: 440px;
+  left: 1150px;
+}
+
+.sea {
+  top: 640px;
+  left: 1440px;
+}
+
+.uni {
+  top: 440px;
+  left: 700px;
+}
+
+.volc {
+  top: 120px;
+  left: 330px;
+}
+
+.beach {
+  top: 170px;
+  left: 1120px;
+}
