@@ -60,7 +60,7 @@ $(window).scroll(function() {
 
 const resume = { 
   experience:`
-    <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — pres <br>mrm: digital production developer </span><p>I work on the creative team of a global marketing agency, where I create websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
+    <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — 2022 <br>mrm: digital production developer </span><p>On the creative team of a global marketing agency, I created websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
 
     <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2020 <br>university of toronto: course instructor</span><p>I independently led undergraduate courses in art history. I designed and delivered original curricula, managed course operations, oversaw class-wide communications (including online content and course sites), and reported on student outcomes.
     </p></div></div>
