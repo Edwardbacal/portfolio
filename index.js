@@ -62,7 +62,7 @@ const resume = {
   experience:`
   <div class="resBlock"><div class="innerBlock"><span class="year3">2022 —  <br>camh: communications associate </span><p>Within the office of Healthy Equity, I design and develop e-learning and web media for the Immigrant and Refugee Mental Health Project.</p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2023 <br>university of toronto: course instructor</span><p>I independently lead undergraduate courses in art history, for which I design and deliver original curricula, manage course operations, oversee class-wide communications (including online content), and report on student outcomes.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2024 <br>university of toronto: course instructor</span><p>I independently lead undergraduate courses in art history, for which I design and deliver original curricula, manage course operations, oversee class-wide communications (including online content), and report on student outcomes.
   </p></div></div>
   
   <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — 2022 <br>mrm: digital production developer </span><p>On the creative team of a global marketing agency, I created websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
