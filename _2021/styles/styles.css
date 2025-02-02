@@ -1447,6 +1447,11 @@ p {
   color: #fff;
 }
 
+sub {
+  font-size: small;
+  vertical-align: middle;
+}
+
 @media (max-width: 800px) {
   *,
   .bioBlock,

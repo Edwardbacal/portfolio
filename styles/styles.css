@@ -1104,6 +1104,10 @@ footer p {
   padding-left: 5%;
 }
 
+h4 sub {
+  font-size: small;
+}
+
 @media (max-width: 1187px) {
   .landingLeftColumn {
     height: 682px;

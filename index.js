@@ -60,26 +60,37 @@ $(window).scroll(function() {
 
 const resume = { 
   experience:`
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2022 —  <br>camh: communications associate </span><p>Within the office of Healthy Equity, I design and develop e-learning and web media for the Immigrant and Refugee Mental Health Project.</p></div></div>
-  
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2024 <br>university of toronto: course instructor</span><p>I independently lead undergraduate courses in art history, for which I design and deliver original curricula, manage course operations, oversee class-wide communications (including online content), and report on student outcomes.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2022 —  <br>camh: communications associate </span><p>
+  In the Office of Healthy Equity, I design and develop online courses, web communications, and digital and print media for the Immigrant and Refugee Mental Health Project.
   </p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — 2022 <br>mrm: digital production developer </span><p>On the creative team of a global marketing agency, I created websites, social media content, banners, newsletters, and videos (clients include general motors, lysol, air wick, sanofi, etc).</p></div></div>
-  
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2012 — 2018 <br>university of toronto: teaching assistant</span><p>I led undergraduate tutorials, evaluated large volumes of coursework, liaised with students and staff, and performed administrative tasks.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — <br>university of toronto: course instructor</span><p>
+  I independently lead undergraduate Art History courses. Responsibilities include: designing original curricula, lecturing, creating original course sites, managing course operations, supervising assistants, and overseeing class-wide communications.
+  </p></div></div>
+
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2012 — <br>university of toronto: instructional assistant</span><p>
+  I lead undergraduate tutorials, evaluate large volumes of coursework, liaise with students and staff, and perform administrative tasks.
   </p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — present <br>freelance / volunteer designer</span><p>I design and edit websites, visual reports, social media content, and logos for independent clients.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — 2022 <br>mrm: digital production developer </span><p>
+  On the creative team of a global marketing agency, I created websites, social media content, banners, newsletters, and videos (clients included general motors, lysol, air wick, sanofi, etc).</p></div></div>
+  
+
+  
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2021 <br>freelance / volunteer designer</span><p>
+  I designed and edited websites, visual reports, social media content, and logos for independent clients.
   </p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — present <br>independent writing / research</span><p>I have published twelve articles for print and online venues, presented twenty academic papers at insitutions across North America and Europe, and chaired research panels at conventions for the Universities Arts Association of Canada and the Association for Art History (UK).
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — present <br>independent writing / research</span><p>
+  I have published twelve articles for print and online venues, presented twenty academic papers at insitutions across North America and Europe, and chaired research panels at conventions for the Universities Arts Association of Canada and the Association for Art History (UK).
   </p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — 2017 <br>graduate union of students of art: president</span><p>In the university of toronto’s art history department, I led the graduate union’s direction, programming, communications, and strategy; advocated for student interests; led meetings; and liaised with students, faculty, and staff.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — 2017 <br>graduate union of students of art: president</span><p>
+  In the university of toronto’s art history department, I led the graduate union’s direction, programming, communications, and strategy; advocated for student interests; led meetings; and liaised with students, faculty, and staff.
   </p></div></div>
   
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2013 <br>the power plant contemporary art gallery: curatorial intern</span><p>I conducted research in support of public events, contributed copy writing and editing for exhibition literature, curated research texts, and organized images and information for the gallery’s records.
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2013 <br>the power plant contemporary art gallery: curatorial intern</span><p>
+  I conducted research in support of public events, contributed copy writing and editing for exhibition literature, curated research texts, and organized images and information for the gallery’s records.
   </p></div></div>`,
   
   education: `
@@ -141,12 +152,8 @@ const resume = {
   <li>css3 / scss</li>
   <li>javascript / jQuery</li>
   <li>wordpress</li>
-  <li>shopify</li>
   <li>wcag / aoda <br>web accessibility</li>
   <li>responsive design</li>
-  <li>user experience theory</li>
-  <li>social media</li>
-  <li>seo / analytics</li>
   </ul>
   </div>
   
