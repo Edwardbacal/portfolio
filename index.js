@@ -71,15 +71,13 @@ const resume = {
   <div class="resBlock"><div class="innerBlock"><span class="year3">2012 — <br>university of toronto: instructional assistant</span><p>
   I lead undergraduate tutorials, evaluate large volumes of coursework, liaise with students and staff, and perform administrative tasks.
   </p></div></div>
+
+  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 —  <br>freelance / volunteer designer</span><p>
+  I have designed and edited websites, reports, social media content, and logos for various independent clients.
+  </p></div></div>
   
   <div class="resBlock"><div class="innerBlock"><span class="year3">2020 — 2022 <br>mrm: digital production developer </span><p>
   On the creative team of a global marketing agency, I created websites, social media content, banners, newsletters, and videos (clients included general motors, lysol, air wick, sanofi, etc).</p></div></div>
-  
-
-  
-  <div class="resBlock"><div class="innerBlock"><span class="year3">2016 — 2021 <br>freelance / volunteer designer</span><p>
-  I designed and edited websites, visual reports, social media content, and logos for independent clients.
-  </p></div></div>
   
   <div class="resBlock"><div class="innerBlock"><span class="year3">2014 — present <br>independent writing / research</span><p>
   I have published twelve articles for print and online venues, presented twenty academic papers at insitutions across North America and Europe, and chaired research panels at conventions for the Universities Arts Association of Canada and the Association for Art History (UK).
@@ -128,13 +126,13 @@ const resume = {
   <ul class="skills">
   <li>writing / editing</li>
   <li>visual design</li>
+  <li>teaching and e-learning</li>
   <li>digital media</li>
   <li>content strategy</li>
   <li>research</li>
-  <li>teaching</li>
   </ul>
   
-  <h4 class="skill">design tools</h4>
+  <h4 class="skill">creative tools</h4>
   <ul class="skills">
   <li>adobe photoshop</li>
   <li>adobe illustrator</li>
@@ -144,6 +142,8 @@ const resume = {
   <li>adobe inDesign <br>(print / document design)</li>
   <li>sketch <br>(web design)</li>
   <li>figma <br>(web & graphic design)</li>
+  <li>fl studio <br>(audio production)</li>
+  <li>audacity <br>(audio production)</li>
   </ul>
   
   <h4 class="skill">web media</h4>
