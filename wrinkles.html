@@ -227,7 +227,8 @@
       color: #ff7f37;
     }
     
-    .prev {
+    .prev,
+    .next {
       pointer-events: none;
       opacity: 0
     }
@@ -256,6 +257,20 @@
       }
       100% {
         opacity: 1;
+      }
+    }
+    
+    
+    @media (max-width: 450px) {
+      .mapBox {
+        display: none;
+        top: 33vh;
+        height: 66vh;
+        width: 100%;
+        left: 0px;
+      }
+      i {
+        font-size: .8rem;
       }
     }
     
@@ -304,7 +319,6 @@
       
       <h2>SIDE A</h2>
       <ul class="trax"  style="margin: 0 0 -5rem 0;">
-        <!--  -->
         <li id="1" style="grid-area: 1 / 1 / 2 / 6;">1</li>
         <li id="2" style="grid-area: 2 / 5 / 3 / 13;">2</li>
         <li id="3" style="grid-area: 3 / 12 / 4 / 21;">3</li>
@@ -380,7 +394,7 @@
     }
     
     
-  
+    
     
     const lets = 
     `
@@ -432,6 +446,13 @@
           else {
             $(".prev").css({'pointer-events': 'none', 'opacity': '0'})
           }
+          if (article < 16) {
+            $(".next").css({'pointer-events': 'all', 'opacity': '1'})
+          }
+          else {
+            $(".next").css({'pointer-events': 'none', 'opacity': '0'})
+            console.log('hey')
+          }
         }
       }
       
@@ -476,8 +497,13 @@
           $(tracklist[trackID]).hide().appendTo('.content').fadeIn();
           $("<img src='_wrinkles/" + page + ".jpg' alt='decorative image' aria-hidden='true'>").appendTo('.cover').fadeIn(400);
         }
+        else if (nextPage == 16) {
+          $(".next").css({'pointer-events': 'none', 'opacity': '0'})
+        };
       }
     });
+    
+    
     
     // prev button
     $(".prev").on("click",  function () {
@@ -511,7 +537,7 @@
         </span>
       </h3>
       <p>
-        At some point during the (pleasant) summer of 2010, I realized I hadn't really been challenging myself musically for some time. In an effort to engage with more experimental and avant-garde music, I spent a solid day putting together a list of about 25 experimental-electronic and ambient albums, researched on allmusic.com, that I published on my blog, "Tonight I Dine on Turtle Soup"*. This was when I was working at Gerstein Library and had plenty of downtime to fill out T.I.D.o.T.S. (because virtually no one read it, was a great outlet to log music discoveries and and explore half-baked ideas with relative privacy and minimal algorithmic manipulation). Posting that list, which included <em>Cold Summer<em>, turned out to be a consquential moment in the development of my listening and collecting habits, as it helped drive my interest in experimental and ambient music. Anyways, it wasn't more than a week later that I spotted this unassuming cover in the new arrivals shelf at Vortex Records (R.I.P.) in Midtown Toronto. Sure enough, it was Cold Summer; a promising start.
+        At some point during the (pleasant) summer of 2010, I realized I hadn't really been challenging myself musically for some time. In an effort to engage with more experimental and avant-garde music, I spent a solid day putting together a list of about 25 experimental-electronic and ambient albums, researched on allmusic.com, that I posted on my blog, "Tonight I Dine on Turtle Soup"*. This was when I was working at Gerstein Library and had plenty of downtime to fill out T.I.D.o.T.S. (because virtually no one read it, was a great outlet to log music discoveries and and explore half-baked ideas with relative privacy and minimal algorithmic manipulation). Posting that list, which included <em>Cold Summer<em>, turned out to be a consquential moment in the development of my listening and collecting habits, as it helped drive my interest in experimental and ambient music. Anyways, it wasn't more than a week later that I spotted this unassuming cover in the new arrivals shelf at Vortex Records (R.I.P.) in Midtown Toronto. Sure enough, it was Cold Summer; an auspicious start.
         </p>
         <p>
           What can I saw about Lull expect that it's a dark ambient side project of former Napalm Death drummer and Birmingham techno producer Mick Harris. I appreciate the album's spacious, minimal presence, full of brooding drones and ethereal textures, and its evocative title: qualities that speak to something vaguely ominous, but meditative, calm.
@@ -528,7 +554,7 @@
           From FREE-D ORIGINAL SOUNDTRACK (FREE RECORDS, 1994)
         </h3>
         <p>
-          I believe I learned about this band in 2003, from an Angelfire(?) website my older cousin made to list shoegaze and dreampop bands - that site turned out to be an important reference for my musical discoveries at the time. I remember reading a glowing review of this album on allmusic.com but couln't find it on slsk, so decided I'd wait until I got a real copy to hear it. It took a couple years but I found it in Penguin Music (R.I.P.) in downtown Toronto. It was a surprise to see this not-terribly-common album in the record store I frequented almost every week, and finding it felt like I'd fulfilled fate. Listening to it was a little anti-climactic, but it increasingly grew on me. It may have helped that I fell asleep to it for a good while, planting it into my subconcious. I don't know if that's true, but there was recently a period of a couple years where the glockenspiel section would suddenly pop into my head and I could never remember where it was from (I was so sure it was a Constellation Records band).
+          I believe I learned about this band in 2003, from an Angelfire(?) website my older cousin made to list shoegaze and dreampop bands - that site turned out to be an important reference for my musical discoveries at the time. I remember reading a glowing review of this album on allmusic.com but couln't find it on slsk, so decided I'd wait until I got a real copy to hear it. It took a couple years but I found it in Penguin Music (R.I.P.) in downtown Toronto. It was a surprise to see this not-terribly-common album in the record store I frequented almost every week, and finding it felt like I'd fulfilled fate. Listening to it was a little anti-climactic, but it increasingly grew on me. It may have helped that I fell asleep to it for a good while, planting it into my subconcious. I don't know if that's true, but recently there was a period of a couple years where the glockenspiel section would suddenly become stuck in my head and I could never remember where it was from (I was so sure it was a Constellation Records band).
         </p>
         <p> 
           <em> Free-D Original Soundtrack<em> (a confusing title, as I don't believe there's any film by that name) mixes shoegaze, new age, and trancey chill-out in a guitar band format. Although it's similar to what bands like Seefeel and Bark Psychosis were doing at the time, it has a very distinct sound. I have no idea what was happening musically in the Czech Republic in the years following the Velvet Revolution, or if The Ecstasy of Saint Theresa is representative of that, but in any case, it gave us this. 
@@ -548,7 +574,7 @@
             </span>
           </h3>
           <p>
-            Not much of a story here. I ordered this record online after reading about it on an ILX forum about DJ Sprinkles, who released a "Deeperama" re-work of this song, along with the original mix. I don't know much about Simon Fisher Turner, except that he's a prominent English composer who made this as part of his 2013 score for the 1924 documentary, <em>The Epic of Everest</em>. What a mighty wallop.
+            Not much of a story here. I ordered this record online after reading about it on an ILX forum about DJ Sprinkles, who released a "Deeperama" re-work of this song, along with the original mix. I don't know much about Simon Fisher Turner, except that he's a prominent English composer who made this as part of his 2013 score for the 1924 documentary, <em>The Epic of Everest</em>. It's a mighty wallop.
           </p>
           `,
           4: `
@@ -559,7 +585,7 @@
             From EVOLUTION [APOLLO, 1992]
           </h3>
           <p>
-            I first heard this track as the opener on a Frankie Bones rave tape from the 90s that I came across online. There's something very enchanting about the lo-fi recording of Frankie introducing the set, crowing to the crowd in his Brookyln accent, on top of the song's extended beatless intro. I don't think I found out what the track was until I heard it as the closer on Tako Reyenga's promo mix accompanying the first <em>Virtual Dreams</em> compilation on Music From Memory. The track contains two particular sounds that just flood my neural pathways: The dreamy synth pads, which you can also hear on <em>Le Soleil Et La Mer</em> by Reload (1993), one of my longtime favourite songs (where that sound comes from, I can't say), and the Sarangi sample. For years I wondered where the latter came from, until I saw a comment on discogs, posted by David Morley himself, explaining that it was from an E-mu sound library CD. I'm still not sure if it's the same sound you hear at the end of <em>Tropical Bells</em> by The Olivia Tremor Control, or a trailer to the film <em>Fallen Angels</em> by Wong Kar-Wai that has apparently been memory-holed (I honestly saw it on youtube years ago, but now can only find versions of it without the sample). 
+            I first heard this track as the opener on a Frankie Bones rave tape from the 90s that I came across online. There's something very impressionable about the lo-fi recording of Frankie introducing the set, crowing to the crowd in his Brookyln accent, over the song's extended beatless intro. I don't think I found out what the track was until I heard it as the closer on Tako Reyenga's promo mix accompanying the first <em>Virtual Dreams</em> compilation on Music From Memory. The track contains two particular sounds that are significant for me: The dreamy synth pads, which you can also hear on <em>Le Soleil Et La Mer</em> by Reload (1993), one of my longtime favourite songs (where that sound comes from, I can't say), and the Sarangi sample. For years I wondered where the latter came from, until I saw a comment on discogs, posted by David Morley himself, explaining that it was from an E-mu sound library CD. I'm still not sure if it's the same sound you hear at the end of <em>Tropical Bells</em> by The Olivia Tremor Control, or a trailer to the film <em>Fallen Angels</em> by Wong Kar-Wai that has apparently been memory-holed (I honestly saw it on youtube years ago, but now can only find versions of it without the sample). 
           </p>
           <p>
             I ordered this record on discogs in late 2023, during a short stint living at my parents' house while my apartment was under renovation. Getting this record felt like giving myself a little treat during a very stressful time. 
@@ -573,7 +599,7 @@
             From THE FIFTH MISSION (RETURN TO THE FLIGHTPATH ESTATE) [EMISSIONS AUDIO OUTPUT, 1996]
           </h3>
           <p>
-            I got this album on a balmy September 2005 weekend, just after the start of my last year of highschool. 20 years later, I can still remember what I was wearing that day (brown courduroy pants and a pink aNYthing t-shirt), which I associate with a warm feeling of starting something new while finishing something bigger and, at the same time, preparing to move onto something even bigger than that. I got the album at the original Sonic Boom on Bloor Street in Toronto, before it moved into the ground floor of Honest Ed's (R.I.P.), opened a short-lived second location in Kensington Market, and then moved a second time into its current Chinatown location, where it's now crowded by kids who were born after I got this album and are now the age I was then. To think, back in the original location, all the vinyl was relegated to the basement. Now, the CD to vinyl ratio is reversed. That was truly the golden age of buying CDs: everyone got iPods and started selling off their collections and labels were still pressing CDs like normal, so CDs were abundant and rarely picked over.
+            I got this album on a balmy September 2005 weekend, just after the start of my last year of highschool. 20 years later, I can still remember what I was wearing that day (brown courduroy pants and a pink aNYthing t-shirt). I associate that memory with a warm feeling of starting something new while finishing something bigger and, at the same time, preparing to move onto something even bigger. I got the album at the original Sonic Boom on Bloor Street in Toronto, before it moved into the ground floor of Honest Ed's (R.I.P.), opened and closed a short-lived second location in Kensington Market, then moved a second time into its current Chinatown location, where it's now crowded by kids who were born after I got this album and are now the age I was then. To think, back in the original location, all the vinyl was relegated to the basement. Now, the CD to vinyl ratio is reversed. That was truly the golden age of buying CDs: everyone got iPods and started selling off their collections and labels were still pressing CDs like normal, so CDs were abundant and rarely picked over.
           </p>
           <p>
             Anyways, this is a true beatless (semi-beatless?) banger by Lords Weatherall (R.I.P.) and Tenniswood.
@@ -587,7 +613,7 @@
             From BARKER002 [OSTGUT TON, 2021]
           </h3>
           <p>
-            I got this record at Rotate This in fall 2023, during a lunch break when I temporarily worked at my employer's Queen and Ossington office. I got a used copy that had some Berghain souvenirs (a shopping bag and brochure) tucked into the sleeve. Incidentally, the first time I went to Berghain, I bought a t-shirt that was stolen or lost a few days later, so I'd like to think I'm part of a cosmic cycle of Berghain swag passing hands. I also saw Barker DJ on a separate Berghain visit in 2014, which was far and ahead the best set of the day. Back then, he was pretty much just releasing music with nd_baumecker, and while I liked their co-productions, this was the first inkling of his unique and exciting work as a solo producer.
+            I got this record at Rotate This in fall 2023, during a lunch break when I temporarily worked at my employer's Queen and Ossington office. I got a used copy that had some Berghain souvenirs (a shopping bag and brochure) tucked into the sleeve. Incidentally, the first time I went to Berghain, I bought a t-shirt that was stolen or lost a few days later, so I'd like to think I'm part of a cosmic cycle of Berghain swag passing hands. I also saw Barker DJ on a separate Berghain visit in 2014, which was far and ahead the best set of the day. Back then, he was pretty much just releasing music with nd_baumecker, and while I liked their co-productions, this was the first inkling of his unique and exciting work as a solo producer. This track is a lot more percussive than his other tracks but no less unconventional.
           </p>
           `,
           7: `
@@ -601,10 +627,10 @@
             </span>
           </h3>
           <p>
-            I got <em>Trainer</em> in April 2004 at Penguin Music, right before I went on a life changing high school art class trip to New York City. I listened to it on the 11 hour bus ride and fondly recall driving through the Holland tunnel, where the reflection of headlights bouncing off the tiled walls, paired with the swirling, filter-swept synths of <em>Yak</em>, took on a vivid, trippy quality. I also recall listening to <em>Reishi</em> on repeat in the hotel lobby, as everyone was waiting to settle in, which is when something about the track just clicked. The grand arc of the track and it emotional climax, the weird but funky sounds and textures, there's nothing like it. <em>Trainer</em> took on a kind of talismanic quality after that, and I brought it on many significant travels, including my first trip to the UK, my first trip to East Asia, and others. 
+            I got <em>Trainer</em>, a two-CD compilation of Plaid's early, non-Black Dog Productions work, in April 2004 at Penguin Music. That was right before I went on a life changing high school art class trip to New York City, so I listened to it on the 11 hour bus ride there. I fondly recall going through the Holland tunnel, watching the reflection of headlights bounce off the tiled walls while listening to swirling, filter-swept synths of <em>Yak</em>, a combination that took on a vivid, trippy quality. I also recall listening to <em>Reishi</em> on repeat in the hotel lobby, as everyone was waiting to settle in, which is when something about the track clicked. The grand arc of the track, it's emotional crescendo, the weird but funky sounds and textures, there's nothing like it. <em>Trainer</em> took on a kind of talismanic quality for me after that, and I brought it on many significant travels, including my first trip to the UK, my first trip to East Asia, and others. 
           </p>
           <p>
-            Reishi is by Tura, an alias of Andy Turner of Plaid. I think it might be my favourite track in the Black Dog Productions / Plaid Universe, which for me puts it among the best music ever. 
+            Reishi is by Tura, an alias of Andy Turner of Plaid. I think it might be my favourite track in the Black Dog Productions / Plaid Universe, which for me puts it among the best music ever.
           </p>
           `,
           8: `
@@ -615,24 +641,9 @@
             From JS01 [JUMP SOURCE, 2019]
           </h3>
           <p>
-            I don't actually remember where I got this record, but I'm going to guess it was at Atom Heart in Montreal. I can say it was in 2021, possibly during a trip to Montreal that summer (a mildly life-changing one, since it broke an 18-month long fever of pandemic dissociation and personal/professional crisis). 
+            I actually don't remember where I got this record, but I'm going to guess it was at Atom Heart in Montreal. I do know it was in 2021, possibly during a trip to Montreal that summer (a mildly life-changing vacation, since it broke my 18-month long fever of pandemic dissociation and personal/professional crisis). During the pandemic I became a little obsessed with records like this, which draw on the proggy, trancey, and ambient techno of the 90s - styles that were totally unfashionable when I was getting into electronic music in the mid-2000s but had been reborn in the trend cycle by 2020. During the bleakness and boredom of lockdown, my imagination deepened when it came to music and design from the 90s that used then-novel but now-dated technology to convey a sense of the futuristic. I also took to contemporary records that draw on these older styles, but remain tasteful and fresh by never falling into pastiche or blithe nostalgia. Jump Source, the Montreal duo of Patrick Holland and Francis Latreille, nail that aesthetic. More specifically, Latreille, a/k/a Priori, represents the best of that style, and might be my favourite producer of the 2020s. Anyways, I would listen to records like this, admire their graphics, and fantasize about what it was like to hear music like this in the mid-90s. I'd wonder what it was like to go to record stores or raves in a pre-internet era, when electronic music and digital design carried a novelty that pointed toward a future much cooler that the dystopian tech-bro blandness of the present that actually materialized. I realize this is exactly the kind of blithe nostalgia I just dismissed, but for me it let me access a very distinct <em>feeling</em>, drawn from the depths of first hearing stuff like Orbital or Aphex Twin in the 90s, which seemed like something from another time and place, something closer to the virtual world of video games and arcades, or proto-vapourwave images of hyper-modern neon-lit East Asian megacities. At one point, I even made up my own fictional record label from the 90s, designing centre-labels for singles, each with their own backstory (lockdown is a hell of a drug). It's a little embarassing, but this remains one of the most compelling feelings I experience, and has been an important creative driver for me and many others that do a much better job turning it into something that isn't a simulacra of 90s signifiers. While Jump Source have since moved onto reviving early-00s minimal, which is significantly less appealing to me because I lived through it, their first few records (along with related releases on the NAFF label, and by Priori) stand out. Even the name, whose significance eludes me, touches on a significance that makes a kind of perfect sense, affectively. 
             
             
-            Jump Source is Patrick Holland and Francis Latreille, who usually goes by Priori. As much as I like Patrick Holland's work, Priori is my single favourite producer of the 2020s. I think his work, including his many collaborations, represents the best of the 2020s revival of the proggy, trancey, and ambient techno of the 90s. For me, the sweet spot is where records draw on 90s sounds and graphics that used then-novel but now-dated technology to convey a sense of the futuristic, while remaining tasteful and fresh by never falling into pastiche or blithe nostalgia.
-            
-            
-            In other words, it's about the <em>feeling</em>, the same thing I felt first hearing techno in the 90s, which had presently imagined the future through sounds and images that were theretofore foreign to me - sensations not from another place but another time we had not reached.  
-            Something that to me conveys "science-fiction" not in content but form. 
-            
-            building on those styles with pristine production and artistic savvy rooted in the present.  
-            
-            I don't know if that name signifies anything, but it makes perfect sense to me on a very affective level. 
-
-
-            in a contemporary context.
-
-             in a contemporary context.
-          </p>
           `,
           9: `
           <h2>
@@ -653,7 +664,7 @@
             From FOUR FREQS EP [STRAYLIGHT, 2000]
           </h3>
           <p>
-            I got this in Los Angeles, at the Japonesia x In Sheep's Clothing Record Fair, in February 2022. It took me like 20 stressfil minutes to pay for it, because I'd ran out of cash and, being Canadian, couldn't use Venmo. I'm glad I figured it out (I used Paypal) because it's a great record. I caught onto it, having noticed it was put out by the same record label as a Seafoam record I'd recently got and cherished. I also learned Ilk is the brother of Seafoam (among two others, also producers, in the evidently musical Cavender family). I should note that was a time of peak Seafoam appreciation for me, so this was all valuable info to discover. 
+            I got this in Los Angeles, at the Japonesia x In Sheep's Clothing Record Fair, in February 2022. It took me like 20 stressfil minutes to pay for it, because I'd ran out of cash and, being Canadian, couldn't use Venmo. I'm glad I figured it out (I used Paypal) because it's a great record. I caught onto it because noticed it was put out by the same label as a Seafoam record I'd recently got and cherished. I also learned Ilk is the brother of Seafoam (among two others, also producers, in the evidently musical Cavender family). I should note that was a time of peak Seafoam appreciation for me, so this was all valuable information. 
           </p>
           `,
           11: `
@@ -676,7 +687,7 @@
           </h3>
           <p>
             I got this at the Brooklyn Record Exchange in August 2022. 
-
+            
             This is one of many records by the French duo of Guillaume Berard and Chris Carrier, who ran several also highly prolific labels including Chronobrain, Taka, and Adults Only. This one's a real diamond in a large otherwise mixed bag. The cascading synth line, the wispy vocals, and the tight drums all scream "satisfying"    
           </p>
           `,
@@ -688,10 +699,10 @@
             From SEX IN ZERO GRAVITY [RED PLANET, 1993]
           </h3>
           <p>
-            I got this at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before having to head to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which held a kind of spark in my imagination, and weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This was a good find, though. Like with Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were re-pressed recently (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills did some), and couldn't (easily) find info on this.    
+            I got this record at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before getting my luggage and going to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This record was a good find, though. Like with the neighbourhood of Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were recently re-pressed (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills and Mike Banks did some?), and couldn't (easily) find info on this.    
           </p>
           <p>
-            I assume the title of this track is supposed to sound cool and freaky, but when you think about it, it seems like it'd be awfully awkward, difficult, and frankly, unsexy in practice (a quick google search suggests this has reportedly never happened and is biologically improbable).
+            I assume the idea of "sex in zero gravity" is supposed to sound cool and freaky, but when you think about it, it seems awfully unsexy, awkward and impractical at best, if not impossible (a quick google search suggests this has  never reportedly happened and is biologically improbable).
           </p>
           `,
           14: `
@@ -702,9 +713,8 @@
             From SLAP [URBAN DECAY, 1997]
           </h3>
           <p>
-
+            If, as I wrote about Jump Source, I spent the pandemic daydreaming about records that exemplify the more futuristic and psychedelic aesthetic of 90s dance music, I was just as infatuated with mid to late 90s tech house from the UK and North America. I was, again, drawn to an idea of pre-internet culture when functional but slightly eccentric house was at its peak, well before the tech-house implosion of the late-2000s/2010s. For me, these records symbolized a bygone relation to music when making records and DJing weren't so accelerated by the convenience of DAWs, streaming platforms, and algorithms. How much of that is misplaced nostalgia? A lot, but still, this was during peak lockdown and my imagination latched onto these anchors. This was also a time when late-90s early-00s UK tech house was newly in vogue, thanks to a widespread revival of this sound, driven largely by DJs like Gene on Earth, re-issue labels like Mint Condition and Above Board, and less positively, the boom of the discogs bubble for these records. For better or worse, it was the latter that turned me onto this record. There was a point when I discovered that Layo and Bushwacka didn't just make the terrible turn-of-the-millenium breaks I knew them for, but also genuinely exciting music. Connecting the dots on discogs led to the two (quite expensive) singles by Bicycle Thieves, the only two singles officially released on the label Urban Decay. Right away the then-futuristic now-dated cover art (check the <a href="https://i.discogs.com/7k6dSksyKfQdt4jPnIMFYWVMhh2pft0m0LfYovS-gdo/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMTcy/LTEyMzY1NDYyNDYu/anBlZw.jpeg" target="_blank")>B side</a>, with its 3D text and Death Star-like background) lit up my imagination. 
           </p>
-
           `,
           15:`
           <h2>
@@ -714,7 +724,8 @@
             From SEA BISCUIT [ASTRALWERKS, 1994]
           </h3>
           <p>
-            I got this at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before having to head to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which held a kind of spark in my imagination, and weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This was a good find, though. Like with Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were re-pressed recently (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills did some), and couldn't (easily) find info on this.    
+            I got this CD on discogs this past year. I've been into Spacetime Continuum for 20 years, so I'd been aware of this album but always passed over it. For a long time, I stuck to his album Emit Ecaps and random singles, before looking more seriously at the rest of his work. What turned me onto Sea Biscuit was (like with David Morley's <em>Evolution</em>) Tako Reyenga's promo mix for <em>Virtual Dreams</em>, which inspired me to track down some of its source material.   
+            
           </p>
           `,
           16:`
@@ -725,7 +736,10 @@
             From WOOB 1194 [EM:T, 1994]
           </h3>
           <p>
-            I got this at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before having to head to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which held a kind of spark in my imagination, and weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This was a good find, though. Like with Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were re-pressed recently (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills did some), and couldn't (easily) find info on this.    
+            I have owned 3 copies of this album, which I learned about in my late teens, but didn't get for at least ten years, given that it's moderately rare. Eventually I got it on discogs and very soon after found it at Sonic Boom for like $9 - I got that copy and loaned it to my brother. I then found another copy, laid out among a few hundred CDs a neighbour put out on the lawn in front of their building - I got about 50 CDs that day, which remains one of the great CD hauls of my life, and it was across the street from my apartment, unadvertised and free. While the more chant-heavy world-beat tracks are a little corny, I think this album is a masterpiece. It goes so many places, in so many ways, vastly surpassing all the new age schlock it stands next to. More than the namesake compilation, this album is Pure Moods.
+          </p>
+          <p>
+            This song is incredible, though for the full effect, it's best to listen to the album, where it starts after a long abstract passage that culminates in a sample (presumably from a old movie) of a shriek and gunshot. The effect is startling, and so doesn't fit in this mix, but the shock melts into catharsis and amplifies the effect of the pads. To me, this song is like a sonic representation of passing through darkness, allowing oneself to stay with fear until it settles and dissipates, allowing one to keep moving until light and levity come through from within the darkness itself. I also love the title, Strange Air, which (like "Jump Source") doesn't signify anything I can think of, but makes sense on an affective level. It's long been a favourite mix-closer.     
           </p>
           `,
         }
