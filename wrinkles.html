@@ -129,21 +129,6 @@
       height: 80vmin;
     }
     
-    .flex {
-      display: flex;
-      justify-content: space-between;
-      margin: auto;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    
-    .cover {
-      width: 38%;
-      min-width: 350px;
-      padding: 0 6vmin 3vmin 0;
-      float: left;
-    }
-    
     .b img {
       z-index: 2;
       position: absolute;
@@ -194,9 +179,11 @@
       position: fixed;
       top: calc(160px + 8vmin);
       z-index: 15;
-      max-height: calc(100% - 16vmin - 160px);
+      /* max-height: calc(100% - 16vmin - 160px); */
       overflow: scroll;
       /* box-shadow: 1px 1px 12px #0000000f; */
+      height: calc(100% - 16vmin - 160px);
+
     }
     
     .abtBox {
@@ -206,19 +193,55 @@
       color: #ff7f37;
     }
     
-    
     .mapBox .grid {
       place-items: start;
       gap: 6vmin;
     }
+
+    .flex {
+      /* width: 100%; */
+      /* height: 100%; */
+      /* width: calc(100% - 14vmin); */
+      /* display: none; */
+      /* padding: 6vmin; */
+      display: none;
+      justify-content: space-between;
+      margin: auto;
+      width: calc(100% - 14vmin);
+      position: fixed;
+      top: calc(160px + 8vmin);
+      z-index: 16;
+      height: calc(100% - 16vmin - 160px);
+    }
+    
+    .cover {
+      width: 38%;
+      min-width: 350px;
+      padding: 0 6vmin 3vmin 0;
+      float: left;
+    }
     
     button {
-      /* border: 1px solid #fff; */
       color: #fff;
       cursor: pointer;
-      margin: 1vmin;
-      width: 4vmin;
-      height: 4vmin;
+      margin: 0;
+      width: 5vmin;
+      height: 100%;
+      /* background: #ff7f37; */
+      /* border: 1px solid #fff; */
+      /* position: absolute;
+      top: calc(50% - 3vmin); */
+
+/* 
+      display: none;
+      justify-content: space-between; */
+      /* margin: auto; */
+      /* width: calc(100% - 14vmin); */
+      position: fixed;
+      top: calc(160px + 8vmin);
+      z-index: 16;
+      height: calc(100% - 16vmin - 160px);
+
     }
     
     button:hover,
@@ -231,6 +254,12 @@
     .next {
       pointer-events: none;
       opacity: 0
+    }
+    .prev {
+      left: 7vmin;
+    }
+    .next {
+      right: 7vmin;
     }
     
     @media (max-width: 768px) {
@@ -265,9 +294,22 @@
       .mapBox {
         display: none;
         top: 33vh;
-        height: 66vh;
+        /* height: 66vh; */
+        height: 100%;
         width: 100%;
         left: 0px;
+        padding: 10vmin;
+      }
+      button {
+        top: 33vh;
+        height: 100%;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+        padding-right: 8px;
       }
       i {
         font-size: .8rem;
@@ -349,15 +391,15 @@
       
       
       
+      <button class="prev">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button class="next">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+      <!-- <div class="flex">
+      </div> -->
       <div class="mapBox">
-        <div class="flex" style="position: absolute; top: 0; left: 0">
-          <button class="prev">
-            <i class="fa-solid fa-backward"></i>
-          </button>
-          <button class="next">
-            <i class="fa-solid fa-forward"></i>
-          </button>
-        </div>
         <div class="cover"></div>
         <div class="content"></div>
       </div>
@@ -436,6 +478,7 @@
       for (let trackID in tracklist) {
         if (article === trackID) {
           $(".mapBox").slideDown(200);
+          $("button").slideDown(400);
           $('.cover').empty();
           $('.content').empty();
           $(tracklist[trackID]).appendTo('.content').fadeIn(400);
@@ -455,9 +498,6 @@
           }
         }
       }
-      
-      
-      
     });
     
     
@@ -465,6 +505,7 @@
       var $target = $(event.target);
       var $elementToHide = $('.mapBox'); // Replace with the ID of the element you want to hide
       var $excludedElement = $('.trax li'); // Replace with the ID of the element to exclude
+      var $excludedElement2 = $('button'); // Replace with the ID of the element to exclude
       
       // Check if the element to hide is visible
       if ($elementToHide.is(':visible')) {
@@ -472,11 +513,14 @@
         // AND the click target is NOT within the excluded element
         // AND the click target is NOT the excluded element itself
         if (!$target.closest($elementToHide).length && 
+        !$target.closest($excludedElement2).length && 
+        !$target.is($excludedElement2) &&
         !$target.closest($excludedElement).length && 
         !$target.is($excludedElement)) {
           
           // If all conditions are met, hide the element
           $elementToHide.hide(); 
+          $("button").css({'pointer-events': 'none', 'opacity': '0'})
         }
       }
     });
@@ -489,6 +533,7 @@
       const page = parseInt($(this).attr("id"));
       $(".next").attr('id', (page + 1));
       $(".prev").attr('id', (page - 1));
+      $("button").blur();
       for (let trackID in tracklist) {
         if (nextPage === trackID && nextPage > 1) {   
           $('.cover').empty();
@@ -511,6 +556,7 @@
       const page = parseInt($(this).attr("id"));
       $(".prev").attr('id', (page - 1));
       $(".next").attr('id', (page + 1));
+      $("button").blur();
       for (let trackID in tracklist) {
         if (prevPage === trackID) {   
           $('.cover').empty();
@@ -523,6 +569,8 @@
         };
       }
     });
+
+
     
     
     const tracklist = {
@@ -739,7 +787,7 @@
             I have owned 3 copies of this album, which I learned about in my late teens, but didn't get for at least ten years, given that it's moderately rare. Eventually I got it on discogs and very soon after found it at Sonic Boom for like $9 - I got that copy and loaned it to my brother. I then found another copy, laid out among a few hundred CDs a neighbour put out on the lawn in front of their building - I got about 50 CDs that day, which remains one of the great CD hauls of my life, and it was across the street from my apartment, unadvertised and free. While the more chant-heavy world-beat tracks are a little corny, I think this album is a masterpiece. It goes so many places, in so many ways, vastly surpassing all the new age schlock it stands next to. More than the namesake compilation, this album is Pure Moods.
           </p>
           <p>
-            This song is incredible, though for the full effect, it's best to listen to the album, where it starts after a long abstract passage that culminates in a sample (presumably from a old movie) of a shriek and gunshot. The effect is startling, and so doesn't fit in this mix, but the shock melts into catharsis and amplifies the effect of the pads. To me, this song is like a sonic representation of passing through darkness, allowing oneself to stay with fear until it settles and dissipates, allowing one to keep moving until light and levity come through from within the darkness itself. I also love the title, Strange Air, which (like "Jump Source") doesn't signify anything I can think of, but makes sense on an affective level. It's long been a favourite mix-closer.     
+            This song is incredible, though for the full effect, it's best to listen to the album, where it starts after a long abstract passage that culminates in a sample (presumably from a old movie) of a shriek and gunshot. The effect is startling, and so doesn't fit in this mix, but the shock melts into catharsis and amplifies the effect of the pads. To me, this song is like a sonic representation of passing through darkness, allowing oneself to stay with fear until it settles and dissipates, allowing one to keep moving until light and levity come through from within the darkness itself. I also love the title, Strange Air, which (like "Jump Source") doesn't signify anything I can think of, but makes sense on an affective level. It's long been a favourite mix-closer for me.     
           </p>
           `,
         }
