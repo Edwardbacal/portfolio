@@ -294,22 +294,26 @@
       .mapBox {
         display: none;
         top: 33vh;
-        /* height: 66vh; */
-        height: 100%;
+        height: 66vh;
+        /* height: 100%; */
         width: 100%;
         left: 0px;
         padding: 10vmin;
       }
       button {
         top: 33vh;
-        height: 100%;
+        /* height: 100%; */
+        height: 66vh;
+        /* padding: 20px; */
+        width: 8vmin;
       }
       .prev {
         left: 0;
+        /* padding-left: 8px; */
       }
       .next {
         right: 0;
-        padding-right: 8px;
+        /* padding-right: 8px; */
       }
       i {
         font-size: .8rem;
@@ -494,7 +498,6 @@
           }
           else {
             $(".next").css({'pointer-events': 'none', 'opacity': '0'})
-            console.log('hey')
           }
         }
       }
@@ -562,6 +565,7 @@
           $('.cover').empty();
           $('.content').empty();
           $(tracklist[trackID]).hide().appendTo('.content').fadeIn();
+          $(".next").css({'pointer-events': 'all', 'opacity': '1'}) 
           $("<img src='_wrinkles/" + page + ".jpg' alt='decorative image' aria-hidden='true'>").appendTo('.cover').fadeIn(400);
         }
         else if (prevPage == 1) {
