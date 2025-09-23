@@ -188,7 +188,7 @@
       place-items: start;
       gap: 6vmin;
     }
-
+    
     .flex {
       display: none;
       justify-content: space-between;
@@ -217,15 +217,20 @@
       top: calc(160px + 8vmin);
       z-index: 16;
       height: calc(100% - 16vmin - 160px);
+      background: #ff7f37;
+        color: #fff;
+    }
 
+    @media (hover: hover) and (pointer: fine) {
+      button:hover,
+      button:focus {
+        background: #fff;
+        color: #ff7f37;
+      }
     }
     
-    button:hover,
-    button:focus {
-      background: #fff;
-      color: #ff7f37;
-    }
     
+
     .prev,
     .next {
       pointer-events: none;
@@ -268,14 +273,14 @@
       .mapBox {
         display: none;
         top: 33vh;
-        height: 66vh;
+        height: 67vh;
         width: 100%;
         left: 0px;
-        padding: 10vmin;
+        padding: 10vmin 10vmin 15vmin 10vmin;
       }
       button {
         top: 33vh;
-        height: 66vh;
+        height: 67vh;
         width: 8vmin;
       }
       .prev {
@@ -288,6 +293,8 @@
         font-size: .8rem;
       }
     }
+    
+    
     
   </style>
   
@@ -507,7 +514,7 @@
       }
     });
     
-
+    
     // prev button
     $(".prev").on("click",  function () {
       const prevPage = $(this).attr("id");
@@ -654,111 +661,111 @@
             As for Jump Source, while they've moved onto reviving early-00s minimal (which I find significantly less appealing since I lived it) and making festival bangers, their first few records (along with related releases on the NAFF label and most Priori records) stand out. Even the name, whose significance eludes me, touches on a significance that makes a kind of perfect sense, affectively. 
             
             
-          `,
-          9: `
-          <h2>
-            MERRICK BROWN - STEALTH CRIME
-          </h2>
-          <h3>
-            From CRIME OF STEALTH [TEKTITE RECORDINGS, 1999]
-          </h3>
-          <p>
-            I got this one at Impressions Philadelphia on a trip to (you guessed it) Philadelphia, in April 2024.
-          </p>
-          `,
-          10: `
-          <h2>
-            ILK - UNIFY
-          </h2>
-          <h3>
-            From FOUR FREQS EP [STRAYLIGHT, 2000]
-          </h3>
-          <p>
-            I got this in Los Angeles, at the Japonesia x In Sheep's Clothing Record Fair, in February 2022. It took me like 20 stressfil minutes to pay for it, because I'd ran out of cash and, being Canadian, couldn't use Venmo. I'm glad I figured it out (I used Paypal) because it's a great record. I caught onto it because noticed it was put out by the same label as a Seafoam record I'd recently got and cherished. I also learned Ilk is the brother of Seafoam (among two others, also producers, in the evidently musical Cavender family). I should note that was a time of peak Seafoam appreciation for me, so this was all valuable information. 
-          </p>
-          `,
-          11: `
-          <h2>
-            ALLEN SAEI - EVIDENCE 
-          </h2>
-          <h3>
-            From THE LITTLE MAN PRESENTS... [MOSAIC, 1998]
-          </h3>
-          <p>
-            I got this at Invisible City (its third, current location in Chinatown) in 2023, after seeing it listed on their discogs store. 
-          </p>
-          `,
-          12: `
-          <h2>
-            THE LOGIC BOX - LIQUID
-          </h2>
-          <h3>
-            From THE LITTLE MAN PRESENTS... [ADULT ONLY, 2002]
-          </h3>
-          <p>
-            I got this at the Brooklyn Record Exchange in August 2022. 
-            
-            This is one of many records by the French duo of Guillaume Berard and Chris Carrier, who ran several also highly prolific labels including Chronobrain, Taka, and Adults Only. This one's a real diamond in a large otherwise mixed bag. The cascading synth line, the wispy vocals, and the tight drums all scream "satisfying"    
-          </p>
-          `,
-          13: `
-          <h2>
-            THE MARTIAN - SEX IN ZERO GRAVITY
-          </h2>
-          <h3>
-            From SEX IN ZERO GRAVITY [RED PLANET, 1993]
-          </h3>
-          <p>
-            I got this record at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before getting my luggage and going to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This record was a good find, though. Like with the neighbourhood of Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were recently re-pressed (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills and Mike Banks did some?), and couldn't (easily) find info on this.    
-          </p>
-          <p>
-            I assume the idea of "sex in zero gravity" is supposed to sound cool and freaky, but when you think about it, it seems awfully unsexy, awkward and impractical at best, if not impossible (a quick google search suggests this has  never reportedly happened and is biologically improbable).
-          </p>
-          `,
-          14: `
-          <h2>
-            BICYCLE THIEVES - SLAP (KILLER LOOP REMIX)
-          </h2>
-          <h3>
-            From SLAP [URBAN DECAY, 1997]
-          </h3>
-          <p>
-            If, as I wrote about Jump Source, I spent the pandemic daydreaming about records that exemplify the more futuristic and psychedelic aesthetic of 90s dance music, I was just as infatuated with mid to late 90s tech house from the UK and North America. I was, again, drawn to an idea of pre-internet culture when functional but slightly eccentric house was at its peak, well before the tech-house implosion of the late-2000s/2010s. For me, these records symbolized a bygone relation to music when making records and DJing weren't so accelerated by the convenience of DAWs, streaming platforms, and algorithms. How much of that is misplaced nostalgia? A lot, but still, this was during peak lockdown and my imagination latched onto these anchors. This was also a time when late-90s early-00s UK tech house was newly in vogue, thanks to a widespread revival of this sound, driven largely by DJs like Gene on Earth, re-issue labels like Mint Condition and Above Board, and less positively, the boom of the discogs bubble for these records. For better or worse, it was the latter that turned me onto this record. There was a point when I discovered that Layo and Bushwacka didn't just make the terrible turn-of-the-millenium breaks I knew them for, but also genuinely exciting music. Connecting the dots on discogs led to the two (quite expensive) singles by Bicycle Thieves, the only two singles officially released on the label Urban Decay. Right away the then-futuristic now-dated cover art (check the <a href="https://i.discogs.com/7k6dSksyKfQdt4jPnIMFYWVMhh2pft0m0LfYovS-gdo/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMTcy/LTEyMzY1NDYyNDYu/anBlZw.jpeg" target="_blank")>B side</a>, with its 3D text and Death Star-like background) lit up my imagination. 
-          </p>
-          `,
-          15:`
-          <h2>
-            SPACETIME CONTINUUM - Q 11
-          </h2>
-          <h3>
-            From SEA BISCUIT [ASTRALWERKS, 1994]
-          </h3>
-          <p>
-            I got this CD on discogs this past year. I've been into Spacetime Continuum for 20 years, so I'd been aware of this album but always passed over it. For a long time, I stuck to his album Emit Ecaps and random singles, before looking more seriously at the rest of his work. What turned me onto Sea Biscuit was (like with David Morley's <em>Evolution</em>) Tako Reyenga's promo mix for <em>Virtual Dreams</em>, which inspired me to track down some of its source material.   
-            
-          </p>
-          `,
-          16:`
-          <h2>
-            WOOB - STRANGE AIR
-          </h2>
-          <h3>
-            From WOOB 1194 [EM:T, 1994]
-          </h3>
-          <p>
-            I have owned 3 copies of this album, which I learned about in my late teens, but didn't get for at least ten years, given that it's moderately rare. Eventually I got it on discogs and very soon after found it at Sonic Boom for like $9 - I got that copy and loaned it to my brother. I then found another copy, laid out among a few hundred CDs a neighbour put out on the lawn in front of their building - I got about 50 CDs that day, which remains one of the great CD hauls of my life, and it was across the street from my apartment, unadvertised and free. While the more chant-heavy world-beat tracks are a little corny, I think this album is a masterpiece. It goes so many places, in so many ways, vastly surpassing all the new age schlock it stands next to. More than the namesake compilation, this album is Pure Moods.
-          </p>
-          <p>
-            This song is incredible, though for the full effect, it's best to listen to the album, where it starts after a long abstract passage that culminates in a sample (presumably from a old movie) of a shriek and gunshot. The effect is startling, and so doesn't fit in this mix, but the shock melts into catharsis and amplifies the effect of the pads. To me, this song is like a sonic representation of passing through darkness, allowing oneself to stay with fear until it settles and dissipates, allowing one to keep moving until light and levity come through from within the darkness itself. I also love the title, Strange Air, which (like "Jump Source") doesn't signify anything I can think of, but makes sense on an affective level. It's long been a favourite mix-closer for me.     
-          </p>
-          `,
-        }
-        
-        
-        
-        
-        
-        
-      </script>
-    </body>
-    </html>
+            `,
+            9: `
+            <h2>
+              MERRICK BROWN - STEALTH CRIME
+            </h2>
+            <h3>
+              From CRIME OF STEALTH [TEKTITE RECORDINGS, 1999]
+            </h3>
+            <p>
+              I got this one at Impressions Philadelphia on a trip to (you guessed it) Philadelphia, in April 2024.
+            </p>
+            `,
+            10: `
+            <h2>
+              ILK - UNIFY
+            </h2>
+            <h3>
+              From FOUR FREQS EP [STRAYLIGHT, 2000]
+            </h3>
+            <p>
+              I got this in Los Angeles, at the Japonesia x In Sheep's Clothing Record Fair, in February 2022. It took me like 20 stressfil minutes to pay for it, because I'd ran out of cash and, being Canadian, couldn't use Venmo. I'm glad I figured it out (I used Paypal) because it's a great record. I caught onto it because noticed it was put out by the same label as a Seafoam record I'd recently got and cherished. I also learned Ilk is the brother of Seafoam (among two others, also producers, in the evidently musical Cavender family). I should note that was a time of peak Seafoam appreciation for me, so this was all valuable information. 
+            </p>
+            `,
+            11: `
+            <h2>
+              ALLEN SAEI - EVIDENCE 
+            </h2>
+            <h3>
+              From THE LITTLE MAN PRESENTS... [MOSAIC, 1998]
+            </h3>
+            <p>
+              I got this at Invisible City (its third, current location in Chinatown) in 2023, after seeing it listed on their discogs store. 
+            </p>
+            `,
+            12: `
+            <h2>
+              THE LOGIC BOX - LIQUID
+            </h2>
+            <h3>
+              From THE LITTLE MAN PRESENTS... [ADULT ONLY, 2002]
+            </h3>
+            <p>
+              I got this at the Brooklyn Record Exchange in August 2022. 
+              
+              This is one of many records by the French duo of Guillaume Berard and Chris Carrier, who ran several also highly prolific labels including Chronobrain, Taka, and Adults Only. This one's a real diamond in a large otherwise mixed bag. The cascading synth line, the wispy vocals, and the tight drums all scream "satisfying"    
+            </p>
+            `,
+            13: `
+            <h2>
+              THE MARTIAN - SEX IN ZERO GRAVITY
+            </h2>
+            <h3>
+              From SEX IN ZERO GRAVITY [RED PLANET, 1993]
+            </h3>
+            <p>
+              I got this record at the Ikekuburo Disk Union in Tokyo, on my second visit to Japan in December 2022. On my first visit in 2018, visiting this shop was the last thing I did before getting my luggage and going to the airport. The selection was particularly good that day, so I didn't end up with time to explore the area, which weighed on me until I returned. When I finally got to explore it, 4.5 years later, it wasn't anything special, and the stock at Disk Union wasn't anything special either (of course, the windfalls came at the places that weren't special the first time around). This record was a good find, though. Like with the neighbourhood of Ikekubro, I am sometimes haunted by the recollection of records I passed over at earlier, more ignorant points in life, including some used Red Planet records someone was selling on craigslist. For that reason - and because it's a fascinating label, with its whole design and concept, anonymity, and adjacency to Submerge in Detroit, plus good tracks - I tend to be curious about Red Planet releases, though perhaps less so since many were recently re-pressed (availability dulls the lure of mystery). I don't know who produced this, or really who produced any Red Planet records (I think Jeff Mills and Mike Banks did some?), and couldn't (easily) find info on this.    
+            </p>
+            <p>
+              I assume the idea of "sex in zero gravity" is supposed to sound cool and freaky, but when you think about it, it seems awfully unsexy, awkward and impractical at best, if not impossible (a quick google search suggests this has  never reportedly happened and is biologically improbable).
+            </p>
+            `,
+            14: `
+            <h2>
+              BICYCLE THIEVES - SLAP (KILLER LOOP REMIX)
+            </h2>
+            <h3>
+              From SLAP [URBAN DECAY, 1997]
+            </h3>
+            <p>
+              If, as I wrote about Jump Source, I spent the pandemic daydreaming about records that exemplify the more futuristic and psychedelic aesthetic of 90s dance music, I was just as infatuated with mid to late 90s tech house from the UK and North America. I was, again, drawn to an idea of pre-internet culture when functional but slightly eccentric house was at its peak, well before the tech-house implosion of the late-2000s/2010s. For me, these records symbolized a bygone relation to music when making records and DJing weren't so accelerated by the convenience of DAWs, streaming platforms, and algorithms. How much of that is misplaced nostalgia? A lot, but still, this was during peak lockdown and my imagination latched onto these anchors. This was also a time when late-90s early-00s UK tech house was newly in vogue, thanks to a widespread revival of this sound, driven largely by DJs like Gene on Earth, re-issue labels like Mint Condition and Above Board, and less positively, the boom of the discogs bubble for these records. For better or worse, it was the latter that turned me onto this record. There was a point when I discovered that Layo and Bushwacka didn't just make the terrible turn-of-the-millenium breaks I knew them for, but also genuinely exciting music. Connecting the dots on discogs led to the two (quite expensive) singles by Bicycle Thieves, the only two singles officially released on the label Urban Decay. Right away the then-futuristic now-dated cover art (check the <a href="https://i.discogs.com/7k6dSksyKfQdt4jPnIMFYWVMhh2pft0m0LfYovS-gdo/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMTcy/LTEyMzY1NDYyNDYu/anBlZw.jpeg" target="_blank")>B side</a>, with its 3D text and Death Star-like background) lit up my imagination. 
+            </p>
+            `,
+            15:`
+            <h2>
+              SPACETIME CONTINUUM - Q 11
+            </h2>
+            <h3>
+              From SEA BISCUIT [ASTRALWERKS, 1994]
+            </h3>
+            <p>
+              I got this CD on discogs this past year. I've been into Spacetime Continuum for 20 years, so I'd been aware of this album but always passed over it. For a long time, I stuck to his album Emit Ecaps and random singles, before looking more seriously at the rest of his work. What turned me onto Sea Biscuit was (like with David Morley's <em>Evolution</em>) Tako Reyenga's promo mix for <em>Virtual Dreams</em>, which inspired me to track down some of its source material.   
+              
+            </p>
+            `,
+            16:`
+            <h2>
+              WOOB - STRANGE AIR
+            </h2>
+            <h3>
+              From WOOB 1194 [EM:T, 1994]
+            </h3>
+            <p>
+              I have owned 3 copies of this album, which I learned about in my late teens, but didn't get for at least ten years, given that it's moderately rare. Eventually I got it on discogs and very soon after found it at Sonic Boom for like $9 - I got that copy and loaned it to my brother. I then found another copy, laid out among a few hundred CDs a neighbour put out on the lawn in front of their building - I got about 50 CDs that day, which remains one of the great CD hauls of my life, and it was across the street from my apartment, unadvertised and free. While the more chant-heavy world-beat tracks are a little corny, I think this album is a masterpiece. It goes so many places, in so many ways, vastly surpassing all the new age schlock it stands next to. More than the namesake compilation, this album is Pure Moods.
+            </p>
+            <p>
+              This song is incredible, though for the full effect, it's best to listen to the album, where it starts after a long abstract passage that culminates in a sample (presumably from a old movie) of a shriek and gunshot. The effect is startling, and so doesn't fit in this mix, but the shock melts into catharsis and amplifies the effect of the pads. To me, this song is like a sonic representation of passing through darkness, allowing oneself to stay with fear until it settles and dissipates, allowing one to keep moving until light and levity come through from within the darkness itself. I also love the title, Strange Air, which (like "Jump Source") doesn't signify anything I can think of, but makes sense on an affective level. It's long been a favourite mix-closer for me.     
+            </p>
+            `,
+          }
+          
+          
+          
+          
+          
+          
+        </script>
+      </body>
+      </html>
