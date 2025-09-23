@@ -61,12 +61,11 @@
       line-height: 1.5;
     }
     
-    
     header {
       background: #ff7f37;
       background-image: url('_wrinkles/Liafw-dots.png');
       background-repeat: repeat;
-      height: 99vh;
+      min-height: 99vh;
       width: 100vw;
       margin: 0;
       padding: 8vmin;
@@ -84,7 +83,7 @@
     
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2vmin;
       place-items: center;
       margin: auto;
@@ -125,8 +124,7 @@
     
     .a,
     .b {
-      /* border: 2px solid #ff803772; */
-      height: 80vmin;
+      /* height: 80vmin; */
     }
     
     .b img {
@@ -148,13 +146,9 @@
     img {
       width: 100%; 
       max-height: 100%;     
-      /* margin: 0 auto;
-      max-width: 100%;
-      width: auto; */
     }
     
     .iframeFrame {
-      /* background: #ff8745; */
       background: #fff;
       height:150px;
       overflow: hidden;
@@ -179,11 +173,8 @@
       position: fixed;
       top: calc(160px + 8vmin);
       z-index: 15;
-      /* max-height: calc(100% - 16vmin - 160px); */
       overflow: scroll;
-      /* box-shadow: 1px 1px 12px #0000000f; */
       height: calc(100% - 16vmin - 160px);
-
     }
     
     .abtBox {
@@ -199,11 +190,6 @@
     }
 
     .flex {
-      /* width: 100%; */
-      /* height: 100%; */
-      /* width: calc(100% - 14vmin); */
-      /* display: none; */
-      /* padding: 6vmin; */
       display: none;
       justify-content: space-between;
       margin: auto;
@@ -227,16 +213,6 @@
       margin: 0;
       width: 5vmin;
       height: 100%;
-      /* background: #ff7f37; */
-      /* border: 1px solid #fff; */
-      /* position: absolute;
-      top: calc(50% - 3vmin); */
-
-/* 
-      display: none;
-      justify-content: space-between; */
-      /* margin: auto; */
-      /* width: calc(100% - 14vmin); */
       position: fixed;
       top: calc(160px + 8vmin);
       z-index: 16;
@@ -270,7 +246,6 @@
       }
     }
     
-    
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -289,31 +264,25 @@
       }
     }
     
-    
     @media (max-width: 450px) {
       .mapBox {
         display: none;
         top: 33vh;
         height: 66vh;
-        /* height: 100%; */
         width: 100%;
         left: 0px;
         padding: 10vmin;
       }
       button {
         top: 33vh;
-        /* height: 100%; */
         height: 66vh;
-        /* padding: 20px; */
         width: 8vmin;
       }
       .prev {
         left: 0;
-        /* padding-left: 8px; */
       }
       .next {
         right: 0;
-        /* padding-right: 8px; */
       }
       i {
         font-size: .8rem;
@@ -342,10 +311,6 @@
   
   
   <main>
-    
-    
-    
-    
     <div class="iframeFrame">
       <div style="
       /* background: #f58242;  */
@@ -354,8 +319,6 @@
       ></div>
       <iframe  height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2163633483&color=%23ff7f37&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
     </div>
-    
-    
     
     <div style="padding: 7vmin;">
       
@@ -418,11 +381,8 @@
         <h4>
           I selected, edited, and mixed the tracks; designed and hand-coded the website; wrote the blurbs; made the illustrations and animation.
         </h4>
-      </div>
-      
+      </div> 
     </div>
-    
-    
   </main>
   
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
@@ -438,9 +398,6 @@
     function stopper() {
       $('.letters').empty().prepend(lets);
     }
-    
-    
-    
     
     const lets = 
     `
@@ -503,7 +460,6 @@
       }
     });
     
-    
     $(document).on('click', function(event) {
       var $target = $(event.target);
       var $elementToHide = $('.mapBox'); // Replace with the ID of the element you want to hide
@@ -551,8 +507,7 @@
       }
     });
     
-    
-    
+
     // prev button
     $(".prev").on("click",  function () {
       const prevPage = $(this).attr("id");
@@ -573,9 +528,6 @@
         };
       }
     });
-
-
-    
     
     const tracklist = {
       1: `
@@ -589,7 +541,7 @@
         </span>
       </h3>
       <p>
-        At some point during the (pleasant) summer of 2010, I realized I hadn't really been challenging myself musically for some time. In an effort to engage with more experimental and avant-garde music, I spent a solid day putting together a list of about 25 experimental-electronic and ambient albums, researched on allmusic.com, that I posted on my blog, "Tonight I Dine on Turtle Soup"*. This was when I was working at Gerstein Library and had plenty of downtime to fill out T.I.D.o.T.S. (because virtually no one read it, was a great outlet to log music discoveries and and explore half-baked ideas with relative privacy and minimal algorithmic manipulation). Posting that list, which included <em>Cold Summer<em>, turned out to be a consquential moment in the development of my listening and collecting habits, as it helped drive my interest in experimental and ambient music. Anyways, it wasn't more than a week later that I spotted this unassuming cover in the new arrivals shelf at Vortex Records (R.I.P.) in Midtown Toronto. Sure enough, it was Cold Summer; an auspicious start.
+        At some point during the (pleasant) summer of 2010, I realized I hadn't really been challenging myself musically for some time. In an effort to engage with more experimental, ambient, and avant-garde music, I spent a solid day scouring allmusic.com to put together a list of about 25 relevant albums, which I posted on my blog, "Tonight I Dine on Turtle Soup"*. This was when I was working at Gerstein Library and had plenty of downtime to fill out T.I.D.o.T.S. (because virtually no one read it, was a great outlet to log music discoveries and and explore half-baked ideas with relative privacy and minimal algorithmic manipulation). Posting that list, which included <em>Cold Summer<em>, turned out to be a consquential moment in the development of my listening and collecting habits, as it helped drive my interest in this kind of music. Anyways, it wasn't more than a week later that I spotted this unassuming cover in the new arrivals shelf at Vortex Records (R.I.P.) in Midtown Toronto. Sure enough, it was Cold Summer; an auspicious start.
         </p>
         <p>
           What can I saw about Lull expect that it's a dark ambient side project of former Napalm Death drummer and Birmingham techno producer Mick Harris. I appreciate the album's spacious, minimal presence, full of brooding drones and ethereal textures, and its evocative title: qualities that speak to something vaguely ominous, but meditative, calm.
@@ -637,7 +589,7 @@
             From EVOLUTION [APOLLO, 1992]
           </h3>
           <p>
-            I first heard this track as the opener on a Frankie Bones rave tape from the 90s that I came across online. There's something very impressionable about the lo-fi recording of Frankie introducing the set, crowing to the crowd in his Brookyln accent, over the song's extended beatless intro. I don't think I found out what the track was until I heard it as the closer on Tako Reyenga's promo mix accompanying the first <em>Virtual Dreams</em> compilation on Music From Memory. The track contains two particular sounds that are significant for me: The dreamy synth pads, which you can also hear on <em>Le Soleil Et La Mer</em> by Reload (1993), one of my longtime favourite songs (where that sound comes from, I can't say), and the Sarangi sample. For years I wondered where the latter came from, until I saw a comment on discogs, posted by David Morley himself, explaining that it was from an E-mu sound library CD. I'm still not sure if it's the same sound you hear at the end of <em>Tropical Bells</em> by The Olivia Tremor Control, or a trailer to the film <em>Fallen Angels</em> by Wong Kar-Wai that has apparently been memory-holed (I honestly saw it on youtube years ago, but now can only find versions of it without the sample). 
+            I first heard this track as the opener on a Frankie Bones rave tape from the 90s that I came across online. There's something very impressive about that lo-fi recording of Frankie introducing the set, crowing to the crowd in his Brookyln accent, on top of the song's extended beatless intro. I don't think I found out what the track was until I heard it as the closer on Tako Reyenga's promo mix accompanying the first <em>Virtual Dreams</em> compilation on Music From Memory. The track contains two particular sounds that are significant for me: The dreamy synth pads, which you can also hear on <em>Le Soleil Et La Mer</em> by Reload (1993), one of my longtime favourite songs (where that sound comes from, I can't say), and the Sarangi sample. For years I wondered where the latter came from, until I saw a comment on discogs, posted by David Morley himself, noting that it was from an E-mu sound library CD. I'm still not sure if it's the same sound you hear at the end of <em>Tropical Bells</em> by The Olivia Tremor Control, or a trailer to the film <em>Fallen Angels</em> by Wong Kar-Wai that has apparently been memory-holed (I honestly saw it on youtube years ago, but now can only find versions of it without the sample). 
           </p>
           <p>
             I ordered this record on discogs in late 2023, during a short stint living at my parents' house while my apartment was under renovation. Getting this record felt like giving myself a little treat during a very stressful time. 
@@ -665,7 +617,7 @@
             From BARKER002 [OSTGUT TON, 2021]
           </h3>
           <p>
-            I got this record at Rotate This in fall 2023, during a lunch break when I temporarily worked at my employer's Queen and Ossington office. I got a used copy that had some Berghain souvenirs (a shopping bag and brochure) tucked into the sleeve. Incidentally, the first time I went to Berghain, I bought a t-shirt that was stolen or lost a few days later, so I'd like to think I'm part of a cosmic cycle of Berghain swag passing hands. I also saw Barker DJ on a separate Berghain visit in 2014, which was far and ahead the best set of the day. Back then, he was pretty much just releasing music with nd_baumecker, and while I liked their co-productions, this was the first inkling of his unique and exciting work as a solo producer. This track is a lot more percussive than his other tracks but no less unconventional.
+            I got this record at Rotate This in fall 2023, during a lunch break when I temporarily worked at my employer's Queen and Ossington office. This was a nice find since I don't usually see dance music singles I'm into at Rotate This... at least in the shop's current, Ossington St. location (though their second location on Queen and Manning is home to what is probably my best haul ever, when I got dozens of valuable Perlon and related minimal records, all for single digit prices. I also fondly recall getting some of my first dance music records at their original, Queen and Markham location). I got a used copy that had some Berghain souvenirs (a shopping bag and flyer) tucked into the sleeve. Incidentally, the first time I went to Berghain, I bought a t-shirt that was stolen/lost a few days later, so I'd like to think I'm part of a cosmic cycle of Berghain swag passing hands. I also saw Barker DJ on a separate Berghain visit in 2014, which was far and ahead the best set of the day. Back then, he was pretty much just releasing music with nd_baumecker, and while I liked their co-productions, this was the first inkling of his unique and exciting work as a solo producer. This track is a lot more percussive than his other tracks but no less unconventional.
           </p>
           `,
           7: `
@@ -679,10 +631,10 @@
             </span>
           </h3>
           <p>
-            I got <em>Trainer</em>, a two-CD compilation of Plaid's early, non-Black Dog Productions work, in April 2004 at Penguin Music. That was right before I went on a life changing high school art class trip to New York City, so I listened to it on the 11 hour bus ride there. I fondly recall going through the Holland tunnel, watching the reflection of headlights bounce off the tiled walls while listening to swirling, filter-swept synths of <em>Yak</em>, a combination that took on a vivid, trippy quality. I also recall listening to <em>Reishi</em> on repeat in the hotel lobby, as everyone was waiting to settle in, which is when something about the track clicked. The grand arc of the track, it's emotional crescendo, the weird but funky sounds and textures, there's nothing like it. <em>Trainer</em> took on a kind of talismanic quality for me after that, and I brought it on many significant travels, including my first trip to the UK, my first trip to East Asia, and others. 
+            I got <em>Trainer</em>, a two-CD compilation of Plaid's early, non-Black Dog Productions work, in April 2004 at Penguin Music. That was right before I went on a life changing high school art class trip to New York City, so I listened to it on the 11 hour bus ride there. I fondly recall going through the Holland tunnel, watching the reflection of headlights bounce the tiled walls while listening to swirling, filter-swept synths of <em>Yak</em>, a sensory combination that took on a vivid, trippy quality. After we arrived, I spent a while listening to <em>Reishi</em> on repeat in the hotel lobby, which is when something about the track clicked. The grand arc of the track, it's emotional crescendo, the weird but funky sounds and textures... there's nothing like it. <em>Trainer</em> took on a kind of talismanic quality for me after that, and I brought it on many significant travels, including my first trip to the UK, my first trip to East Asia, and others. 
           </p>
           <p>
-            Reishi is by Tura, an alias of Andy Turner of Plaid. I think it might be my favourite track in the Black Dog Productions / Plaid Universe, which for me puts it among the best music ever.
+            Reishi is by Tura, an alias of Andy Turner of Plaid. I think it might be my favourite track in the early Black Dog Productions / Plaid Universe, which for me puts it among the best music ever.
           </p>
           `,
           8: `
@@ -693,7 +645,13 @@
             From JS01 [JUMP SOURCE, 2019]
           </h3>
           <p>
-            I actually don't remember where I got this record, but I'm going to guess it was at Atom Heart in Montreal. I do know it was in 2021, possibly during a trip to Montreal that summer (a mildly life-changing vacation, since it broke my 18-month long fever of pandemic dissociation and personal/professional crisis). During the pandemic I became a little obsessed with records like this, which draw on the proggy, trancey, and ambient techno of the 90s - styles that were totally unfashionable when I was getting into electronic music in the mid-2000s but had been reborn in the trend cycle by 2020. During the bleakness and boredom of lockdown, my imagination deepened when it came to music and design from the 90s that used then-novel but now-dated technology to convey a sense of the futuristic. I also took to contemporary records that draw on these older styles, but remain tasteful and fresh by never falling into pastiche or blithe nostalgia. Jump Source, the Montreal duo of Patrick Holland and Francis Latreille, nail that aesthetic. More specifically, Latreille, a/k/a Priori, represents the best of that style, and might be my favourite producer of the 2020s. Anyways, I would listen to records like this, admire their graphics, and fantasize about what it was like to hear music like this in the mid-90s. I'd wonder what it was like to go to record stores or raves in a pre-internet era, when electronic music and digital design carried a novelty that pointed toward a future much cooler that the dystopian tech-bro blandness of the present that actually materialized. I realize this is exactly the kind of blithe nostalgia I just dismissed, but for me it let me access a very distinct <em>feeling</em>, drawn from the depths of first hearing stuff like Orbital or Aphex Twin in the 90s, which seemed like something from another time and place, something closer to the virtual world of video games and arcades, or proto-vapourwave images of hyper-modern neon-lit East Asian megacities. At one point, I even made up my own fictional record label from the 90s, designing centre-labels for singles, each with their own backstory (lockdown is a hell of a drug). It's a little embarassing, but this remains one of the most compelling feelings I experience, and has been an important creative driver for me and many others that do a much better job turning it into something that isn't a simulacra of 90s signifiers. While Jump Source have since moved onto reviving early-00s minimal, which is significantly less appealing to me because I lived through it, their first few records (along with related releases on the NAFF label, and by Priori) stand out. Even the name, whose significance eludes me, touches on a significance that makes a kind of perfect sense, affectively. 
+            I actually don't remember where I got this record, but I'm going to guess it was at Atom Heart in Montreal. I do know it was in 2021, possibly during a trip to Montreal that summer (a mildly life-changing vacation, since it broke my 18-month long fever of pandemic dissociation and personal/professional crisis). During the pandemic I got a little obsessed with records like this, which draw on the proggy, trancey, and ambient techno of the 90s - styles that were totally unfashionable when I was getting into electronic music in the mid-2000s but had been reborn in the trend cycle by 2020. Jump Source, the Montreal duo of Patrick Holland and Francis Latreille, nail that aesthetic. More specifically, Latreille, a/k/a Priori, represents the best of that style and might be my favourite producer of the 2020s.
+          </p>
+          <p>
+            During the bleakness and boredom of lockdown, my imagination deepened when it came to 90s music and design that used then-novel but now-dated technology to convey a sense of the futuristic. I also really took to contemporary records that draw on these older styles, but (ideally) remain tasteful and fresh by never falling into pastiche or blithe nostalgia. I would listen to these records, admire their graphics, and fantasize about what it was like to hear music like this in the mid-90s. I'd wonder what it was like to go to record stores or raves in a pre-internet era, when electronic music and digital design carried a novelty that pointed toward a future far cooler than the dystopian tech-bro blandness of the present. At one point, I even made up my own fictional record label from the 90s, designing fake singles with their own graphics and backstories. I realize this is exactly the kind of blithe nostalgia I just dismissed, but for me it let me access a very distinct <em>feeling</em>, drawn from the depths of first hearing stuff like Orbital or Aphex Twin in the 90s. Back then, this music seemed like something from another time and place, something closer to the virtual world of video games and arcades, or proto-vapourwave images of hyper-modern neon-lit East Asian megacities. It's a little embarassing, because so much of it is unabashased nostalgia, but this remains one of the most compelling feelings I experience, and has been an important creative driver for me and many others that do a much better job turning it into something that isn't a simulacra of 90s signifiers. 
+            
+            
+            As for Jump Source, while they've moved onto reviving early-00s minimal (which I find significantly less appealing since I lived it) and making festival bangers, their first few records (along with related releases on the NAFF label and most Priori records) stand out. Even the name, whose significance eludes me, touches on a significance that makes a kind of perfect sense, affectively. 
             
             
           `,
