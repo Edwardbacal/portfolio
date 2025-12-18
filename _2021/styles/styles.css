@@ -981,7 +981,7 @@ h5 {
 }
 
 .g1 {
-  width: 400vw;
+  width: 300vw;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,7 +992,7 @@ h5 {
 }
 
 .g2 {
-  width: 606vw;
+  width: 300vw;
 }
 
 .g2 img {
@@ -1000,7 +1000,7 @@ h5 {
 }
 
 .g3 {
-  width: 431vw;
+  width: 300vw;
 }
 
 .g4 {
@@ -1503,10 +1503,10 @@ sub {
             align-items: center;
   }
   .g1 {
-    width: 370vw;
+    width: 300vw;
   }
   .g2 {
-    width: 615vw;
+    width: 300vw;
   }
   .g3 {
     width: 443vw;
@@ -1728,13 +1728,13 @@ sub {
   }
   .design .g1 {
     height: 100%;
-    width: 610vw;
+    width: 500vw;
   }
   .design .proj img {
     height: 70vw;
   }
   .design .g2 {
-    width: 1540vw;
+    width: 760vw;
   }
   .design .g3 {
     width: 1096vw;

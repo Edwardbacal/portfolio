@@ -272,9 +272,9 @@ $("#gmoil").on("click", function (e) {
 
 // back buttons
 
-document.getElementById("bioEnd").addEventListener("click", function() {
-  document.getElementById("bioStart").scrollLeft = 0;
-}); 
+// document.getElementById("bioEnd").addEventListener("click", function() {
+//   document.getElementById("bioStart").scrollLeft = 0;
+// }); 
 
 document.getElementById("gi").addEventListener("click", function() {
   document.getElementById("G1").scrollLeft = 0;
